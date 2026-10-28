@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-01",
+ "posts": [
+  {
+   "slot": "reel-salah-hitung", "kind": "reel",
+   "scenes": [
+    {"type": "chat", "dur": 3.4, "group": "Customer", "gap": 1.0, "messages": [
+      {"from": "Customer", "text": "Fuso ke Jambi PP, berapa Pak?"},
+      {"from": "Bos", "text": "Oke Pak, deal! Dua hari beres.", "me": true}
+    ], "ghost": "happy"},
+    {"type": "text", "dur": 3.4, "text": "Hari 1... hari 2... *hari 3?*", "sub": "Tripnya ternyata lebih lama", "ghost": "shocked", "truck": true},
+    {"type": "list", "dur": 4.0, "title": "Yang *belum dihitung*:", "mark": "x", "gap": 0.7,
+     "items": ["+1 hari jalan & istirahat sopir", "Tol pulang-pergi", "Harga solar naik"], "ghost": "sad"},
+    {"type": "hook", "dur": 2.6, "text": "Waduh... *nombok* dong", "ghost": "sad"},
+    {"type": "calc", "dur": 5.4, "title": "Hitung yang bener pakai *Ghostrip*", "route": "Palembang → Jambi PP · Fuso",
+     "rows": [["Jarak", "552 km"], ["Solar ±184 L", "Rp 1.251.000"], ["Tol & retribusi", "Rp 400.000"], ["Uang jalan 3 hari", "Rp 1.050.000"], ["Markup", "20%"]],
+     "total": "Rp 3.241.000", "note": "Bos cek, lalu approve"},
+    {"type": "cta", "dur": 3.6, "text": "Biar gak *nombok* lagi", "button": "Coba GRATIS 7 hari", "sub": "Komen DEMO atau WA 0815-1704-7930"}
+   ]
+  }
+ ]
+}

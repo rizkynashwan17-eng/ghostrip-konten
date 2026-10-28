@@ -480,12 +480,18 @@ def main(spec_path):
         elif kind == "story":
             path = os.path.join(outdir, f"{slot}.jpg"); render_static(post["scene"], path, 1080, 1920)
             files = {"media": path}
+        elif kind == "carousel":
+            paths = []
+            for j, sc in enumerate(post["slides"], 1):
+                pth = os.path.join(outdir, f"{slot}-{j}.jpg"); render_static(sc, pth, 1080, 1350); paths.append(pth)
+            files = {"media": paths}
         elif kind == "feed":
             path = os.path.join(outdir, f"{slot}.jpg"); render_static(post["scene"], path, 1080, 1350)
             files = {"media": path}
         else:
             raise ValueError(kind)
-        manifest.append({"slot": slot, "kind": kind, **{k: (os.path.relpath(v, ROOT) if isinstance(v, str) else v) for k, v in files.items()}})
+        rel = lambda v: os.path.relpath(v, ROOT) if isinstance(v, str) else ([os.path.relpath(x, ROOT) for x in v] if isinstance(v, list) else v)
+        manifest.append({"slot": slot, "kind": kind, **{k: rel(v) for k, v in files.items()}})
         print("OK", slot, files)
     json.dump(manifest, open(os.path.join(outdir, "manifest.json"), "w"), indent=1)
 

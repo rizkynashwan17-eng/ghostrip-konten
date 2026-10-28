@@ -1,0 +1,15 @@
+{
+ "date": "2026-10-31",
+ "posts": [
+  {
+   "slot": "carousel-3biaya", "kind": "carousel",
+   "slides": [
+    {"type": "text", "size": 76, "text": "3 biaya yang sering *lupa dihitung* waktu kasih harga trip", "sub": "Nomor 2 paling sering bikin rugi", "ghost": "shocked"},
+    {"type": "text", "size": 74, "text": "1. *Tol*", "sub": "Fuso masuk golongan tol yang lebih mahal, dan rute pulang-pergi sering lupa dihitung dua kali.", "ghost": "sad"},
+    {"type": "text", "size": 74, "text": "2. *Hari istirahat sopir*", "sub": "600 km = 15 jam jalan + istirahat. Totalnya 3 hari, bukan 2. Salah hitung = rugi sekitar Rp1.050.000.", "ghost": "shocked"},
+    {"type": "text", "size": 74, "text": "3. *Harga solar*", "sub": "600 km butuh ±200 liter. Selisih Rp500/liter = Rp100.000 per trip.", "ghost": "sad"},
+    {"type": "cta", "text": "Hitung semuanya *otomatis*", "button": "Coba GRATIS 7 hari", "sub": "Komen DEMO atau WA 0815-1704-7930"}
+   ]
+  }
+ ]
+}
