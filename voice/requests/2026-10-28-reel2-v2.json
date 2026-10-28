@@ -3,24 +3,29 @@
  "lines": [
   {
    "who": "SOPIR",
+   "tone": "penasaran",
    "text": "Bos, CDD sama CDE itu apa sih bedanya?"
   },
   {
    "who": "BOS",
+   "tone": "santai",
    "text": "Dua-duanya dari nama Colt Diesel."
   },
   {
    "who": "HANTU",
+   "tone": "menjelaskan",
    "text": "Engkel roda belakangnya tunggal, double roda belakangnya ganda."
   },
   {
    "who": "BOS",
+   "tone": "kaget",
    "text": "Muat lebih banyak, biayanya juga beda."
   },
   {
    "who": "BOS",
+   "tone": "mengajak",
    "text": "Hitung harga CDD dan CDE sesuai jenis truknya. Komen DEMO."
   }
  ],
- "rev": 2
+ "rev": 3
 }

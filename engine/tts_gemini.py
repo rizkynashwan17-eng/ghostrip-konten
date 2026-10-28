@@ -9,14 +9,29 @@ import base64, json, os, sys, time, urllib.request, urllib.error, wave, glob
 KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 API = "https://generativelanguage.googleapis.com/v1beta"
 MODELS = ["gemini-2.5-flash-preview-tts", "gemini-2.5-pro-preview-tts", "gemini-2.5-flash-tts"]
-VOICE = {"BOS": "Orus", "SOPIR": "Puck", "HANTU": "Leda", "ADMIN": "Kore", "CUSTOMER": "Charon"}
-STYLE = {
-    "BOS": "Ucapkan dalam bahasa Indonesia, gaya bos ekspedisi yang santai tapi tegas",
-    "SOPIR": "Ucapkan dalam bahasa Indonesia, gaya sopir truk yang akrab dan polos",
-    "HANTU": "Ucapkan dalam bahasa Indonesia, suara hantu kecil yang ceria dan ramah",
-    "ADMIN": "Ucapkan dalam bahasa Indonesia, gaya admin kantor yang sopan",
-    "CUSTOMER": "Ucapkan dalam bahasa Indonesia, gaya customer yang buru-buru",
+VOICE = {"BOS": "Algenib", "SOPIR": "Puck", "HANTU": "Leda", "ADMIN": "Kore", "CUSTOMER": "Charon"}
+PERSONA = {
+    "BOS": "a middle-aged Indonesian trucking company boss, deep and slightly gravelly voice, relaxed but authoritative, like a friendly 'Pak Bos' chatting with his staff",
+    "SOPIR": "an Indonesian truck driver in his 30s, warm, casual and a bit cheeky, chatting with his boss",
+    "HANTU": "a small cute friendly ghost mascot, bright, playful and cheerful",
+    "ADMIN": "a polite young Indonesian office admin",
+    "CUSTOMER": "an Indonesian customer who is in a hurry",
 }
+TONE = {
+    "penasaran": "curious, questioning (rising intonation at the end)",
+    "kaget": "surprised and emphatic",
+    "santai": "relaxed and matter-of-fact, with a small smile",
+    "menjelaskan": "explaining enthusiastically like sharing a fun fact",
+    "kecewa": "slightly worried and disappointed",
+    "senang": "happy and satisfied",
+    "mengajak": "energetic and inviting, like a closing call to action",
+    "tegas": "firm and confident",
+}
+
+def prompt(text, who, tone):
+    t = TONE.get(tone, tone or "natural and conversational")
+    return (f"Speak as {PERSONA.get(who, PERSONA['BOS'])}. Use natural everyday spoken Indonesian with lively, expressive intonation "
+            f"that rises and falls like a real conversation, never flat or robotic. Emotion: {t}. Say only this line: {text}")
 
 def post(url, body):
     req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": KEY})
@@ -31,8 +46,8 @@ def list_tts_models():
     except Exception as e:
         print("list models failed:", e); return []
 
-def synth(text, who, model):
-    body = {"contents": [{"parts": [{"text": f"{STYLE.get(who, STYLE['BOS'])}: {text}"}]}],
+def synth(text, who, model, tone=None):
+    body = {"contents": [{"parts": [{"text": prompt(text, who, tone)}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": VOICE.get(who, 'Orus')}}}}}
     for attempt in range(4):
@@ -59,7 +74,7 @@ def main():
         for i, ln in enumerate(req["lines"]):
             pcm = None
             for m in ([used] if used else models):
-                try: pcm = synth(ln["text"], ln.get("who", "BOS"), m); used = m; break
+                try: pcm = synth(ln["text"], ln.get("who", "BOS"), m, ln.get("tone")); used = m; break
                 except Exception as e: print("model", m, "gagal:", e)
             if pcm is None: print("GAGAL baris", i); sys.exit(1)
             fn = f"{out}/{i:02d}.wav"

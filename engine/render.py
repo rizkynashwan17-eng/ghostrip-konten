@@ -657,7 +657,17 @@ def load_voice(post):
 
 def voice_requests(post):
     """Baris dialog untuk request TTS (urutan = scene yang punya `say`)."""
-    return [{"who": s["say"].get("who", "BOS").upper(), "text": s["say"]["text"].replace("&", "dan")} for s in post["scenes"] if s.get("say")]
+    mood_tone = {"shocked": "kaget", "think": "penasaran", "happy": "senang", "sad": "kecewa", "neutral": "santai"}
+    out = []
+    for s in post["scenes"]:
+        if not s.get("say"): continue
+        who = s["say"].get("who", "BOS").upper(); tone = s["say"].get("tone")
+        if not tone:
+            mood = (s.get("char") or "").split(":")[1] if ":" in (s.get("char") or "") else ""
+            tone = "mengajak" if s.get("type") == "cta" else ("menjelaskan" if who == "HANTU" else mood_tone.get(mood, "santai"))
+            if s["say"]["text"].strip().endswith("?"): tone = "penasaran"
+        out.append({"who": who, "tone": tone, "text": s["say"]["text"].replace("&", "dan")})
+    return out
 
 def render_reel(post, out_mp4, seed=0):
     W, H = 1080, 1920; scenes = [dict(s) for s in post["scenes"]]
