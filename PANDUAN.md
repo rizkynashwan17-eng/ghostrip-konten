@@ -70,6 +70,7 @@ B. CEK STOK: `getScheduledPosts` dari besok s.d. hari+5. Hari dianggap "terisi" 
    - Kalau hari pertama yang BELUM terisi masih > 2 hari lagi (stok aman ≥ H-2): JANGAN buat konten. Akhiri dengan 1 baris "Stok aman sampai <tanggal>." (hemat usage).
    - Kalau hari kosong pertama ≤ hari+2: buat konten untuk SEMUA hari kosong sampai hari+4 (biasanya 2–3 hari sekaligus), hanya slot yang kosong.
 C. Suara: kirim semua request sekaligus. Yang tidak kebagian kuota → Reels tetap dijadwalkan tanpa suara + dicatat di `SUSULAN-SUARA.md` (diproses besok di langkah A, masih sebelum jam tayang karena stok ≥ 2 hari).
+C2. OTOMATIS UP KE METRICOOL (ATURAN PATEN Rizky, 28 Okt 2026): konten yang sudah AMAN langsung dijadwalkan/diaktifkan di Metricool tanpa menunggu disuruh. Termasuk posting yang masih `draft: true` di Metricool (mis. Reels manual): cek dulu (video/gambar tidak rusak, ada audio, teks tidak terpotong, angka & hitungan benar, caption sesuai aturan merek), kalau aman → `updateScheduledPost` dengan `draft: false` (isi lain disalin persis). Kalau tidak aman → biarkan draft dan laporkan alasannya. Pengecualian: posting berlabel `[UJI]` tetap draft.
 D. Bersih-bersih repo: hapus folder `media/<tanggal>` dan `voice/out/<tanggal>-*` yang tanggalnya ≥ 10 hari lalu (Metricool sudah menyimpan salinan media sendiri).
 
 ## Langkah membuat konten (dipakai di langkah B)
