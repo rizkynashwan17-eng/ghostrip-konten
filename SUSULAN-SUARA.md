@@ -1,11 +1,10 @@
 # Susulan suara (dikerjakan 29 Okt 2026 sore, setelah kuota Gemini TTS reset)
 
-Request suara yang belum lengkap: `2026-10-29-reel2-v2`, `2026-10-30-reel1-v2`, `2026-10-31-reel1-v2`, `manual-odol`.
+Request suara yang belum lengkap: `2026-10-30-reel1-v2`, `2026-10-31-reel1-v2`, `manual-odol`. (Reels KIR 29 Okt SUDAH bersuara & diganti di Metricool 28 Okt sore — lewati.)
 
 Posting Metricool yang harus diganti medianya (cari id terbaru via getScheduledPosts, cocokkan uuid; isi lain JANGAN diubah, salin dari getScheduledPosts):
 | konten | jadwal WIB | uuid | file baru |
 |---|---|---|---|
-| Reels KIR | 29 Okt 19:30 | -7409696965177752502 | media/2026-10-29/reel2-v2.mp4 |
 | Reels kelas jalan | 30 Okt 11:30 | -8436520620524353127 | media/2026-10-30/reel1-v2.mp4 |
 | Reels Nataru | 31 Okt 11:30 | 4183418540628529089 | media/2026-10-31/reel1-v2.mp4 |
 | Reels Zero ODOL (video Rizky + vokal) | 31 Okt 19:00 | 2577346606753599253 | media/manual/reels-zero-odol-vo.mp4 |
