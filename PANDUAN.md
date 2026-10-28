@@ -21,7 +21,7 @@ Catatan: 28–31 Okt semuanya format FAKTA → konten berikutnya utamakan CERITA
 - Sejarah/fun fact: asal nama merek/istilah truk, truk terpanjang/terberat di Indonesia (jika ada sumber).
 
 
-## Variasi format & alur (WAJIB, permintaan Rizky 28 Okt)
+## Variasi format, alur & latar lokasi — ATURAN PATEN & WAJIB (Rizky, 28 Okt 2026)
 Konten TIDAK boleh fun fact terus dan alur TIDAK boleh monoton. Putar format berikut:
 | kode | format | contoh alur scene |
 |---|---|---|
