@@ -38,7 +38,17 @@ Contoh sudut: "Tahukah kamu?", "Kenapa truk …?", "Arti istilah …", "Aturan b
 Facebook Page belum terhubung; kalau `getBrandSettings` menunjukkan facebookData, tambahkan facebook.
 Reel1 & reel2 = dua topik BERBEDA. Story boleh polling/pertanyaan yang nyambung ke reel hari itu. Feed = ringkasan fakta yang bisa disimpan (compare, list, atau carousel 3–5 slide).
 
-## Langkah harian
+
+## Sistem stok konten (H-2) — dijalankan tugas harian 15.40 WIB
+Urutan setiap hari:
+A. SUSULAN SUARA dulu (kuota Gemini baru saja reset): kerjakan semua baris di `SUSULAN-SUARA.md` (lihat isi file itu).
+B. CEK STOK: `getScheduledPosts` dari besok s.d. hari+5. Hari dianggap "terisi" kalau slot Reels 11:30 & 19:30 (atau Reels manual Rizky di malam hari) sudah ada.
+   - Kalau hari pertama yang BELUM terisi masih > 2 hari lagi (stok aman ≥ H-2): JANGAN buat konten. Akhiri dengan 1 baris "Stok aman sampai <tanggal>." (hemat usage).
+   - Kalau hari kosong pertama ≤ hari+2: buat konten untuk SEMUA hari kosong sampai hari+4 (biasanya 2–3 hari sekaligus), hanya slot yang kosong.
+C. Suara: kirim semua request sekaligus. Yang tidak kebagian kuota → Reels tetap dijadwalkan tanpa suara + dicatat di `SUSULAN-SUARA.md` (diproses besok di langkah A, masih sebelum jam tayang karena stok ≥ 2 hari).
+D. Bersih-bersih repo: hapus folder `media/<tanggal>` dan `voice/out/<tanggal>-*` yang tanggalnya ≥ 10 hari lalu (Metricool sudah menyimpan salinan media sendiri).
+
+## Langkah membuat konten (dipakai di langkah B)
 1. Clone/pull repo. Baca `RIWAYAT.md` (hindari topik 30 hari terakhir).
 2. Pilih 2 topik reel + 1 topik feed, RISET dulu (lihat di atas), catat sumbernya.
 3. Tulis `konten/YYYY-MM-DD.json` (contoh lengkap: `konten/2026-10-28-v2.json`).
