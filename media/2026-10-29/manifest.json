@@ -1,0 +1,26 @@
+[
+ {
+  "slot": "reel1",
+  "kind": "reel",
+  "media": "media/2026-10-29/reel1.mp4",
+  "cover": "media/2026-10-29/reel1-cover.jpg",
+  "dur": 17.0
+ },
+ {
+  "slot": "reel2",
+  "kind": "reel",
+  "media": "media/2026-10-29/reel2.mp4",
+  "cover": "media/2026-10-29/reel2-cover.jpg",
+  "dur": 14.8
+ },
+ {
+  "slot": "story",
+  "kind": "story",
+  "media": "media/2026-10-29/story.jpg"
+ },
+ {
+  "slot": "feed",
+  "kind": "feed",
+  "media": "media/2026-10-29/feed.jpg"
+ }
+]

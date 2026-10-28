@@ -1,0 +1,152 @@
+{
+ "date": "2026-10-29",
+ "posts": [
+  {
+   "slot": "reel1",
+   "kind": "reel",
+   "time": "11:30",
+   "scenes": [
+    {
+     "type": "hook",
+     "dur": 3.2,
+     "text": "Customer tanya harga, *bos masih ngitung* di kalkulator HP?",
+     "ghost": "shocked"
+    },
+    {
+     "type": "chat",
+     "dur": 4.6,
+     "group": "Grup Armada",
+     "gap": 1.1,
+     "messages": [
+      {
+       "from": "Admin",
+       "text": "Bos, customer minta harga Palembang ke Jambi, CDD."
+      },
+      {
+       "from": "Bos",
+       "text": "Bentar, ngitung solar sama tol dulu...",
+       "me": true
+      },
+      {
+       "from": "Admin",
+       "text": "Bos, customernya nanya lagi..."
+      }
+     ]
+    },
+    {
+     "type": "calc",
+     "dur": 5.6,
+     "title": "Pakai *Ghostrip*, 10 detik beres",
+     "route": "Palembang → Jambi · CDD",
+     "rows": [
+      [
+       "Jarak",
+       "276 km"
+      ],
+      [
+       "Solar",
+       "Rp 940.000"
+      ],
+      [
+       "Tol & retribusi",
+       "Rp 150.000"
+      ],
+      [
+       "Uang jalan sopir",
+       "Rp 600.000"
+      ],
+      [
+       "Markup",
+       "20%"
+      ]
+     ],
+     "total": "Rp 2.028.000",
+     "note": "Bos tinggal approve"
+    },
+    {
+     "type": "cta",
+     "dur": 3.6,
+     "text": "Coba *GRATIS 7 hari*",
+     "sub": "Khusus perusahaan trucking & ekspedisi"
+    }
+   ],
+   "caption": "Customer nanya harga, jawabnya harus cepat. Kalau masih hitung manual solar, tol, dan uang jalan satu-satu, customer keburu tanya ke vendor lain 😅\n\nDengan Ghostrip, admin atau sopir bisa hitung harga trip dalam hitungan detik, lalu bos tinggal cek dan approve.\n\n✅ Coba gratis 7 hari, chat WA 0815-1704-7930\n\n#ghostrip #trucking #ekspedisi #logistik #truk #pengusahatruk #hargatrip #cdd #fuso"
+  },
+  {
+   "slot": "reel2",
+   "kind": "reel",
+   "time": "19:30",
+   "scenes": [
+    {
+     "type": "hook",
+     "dur": 3.0,
+     "text": "Untung trip tipis? Bisa jadi ada *biaya yang lupa dihitung*",
+     "ghost": "sad"
+    },
+    {
+     "type": "list",
+     "dur": 4.8,
+     "title": "Yang sering *kelupaan*:",
+     "mark": "x",
+     "gap": 0.7,
+     "items": [
+      "Harga solar sudah naik",
+      "Tol & retribusi pulang",
+      "Uang makan & inap sopir",
+      "Biaya bongkar muat"
+     ],
+     "ghost": "sad"
+    },
+    {
+     "type": "text",
+     "dur": 3.4,
+     "text": "Di *Ghostrip*, semua biaya sudah ada di template",
+     "sub": "Tinggal pilih rute & jenis truk",
+     "ghost": "happy",
+     "truck": true
+    },
+    {
+     "type": "cta",
+     "dur": 3.6,
+     "text": "Hitung harga *tanpa kelupaan*",
+     "sub": "Coba gratis 7 hari"
+    }
+   ],
+   "caption": "Pernah merasa sudah kerja keras, tapi untung trip kok tipis? Seringnya bukan karena tarifnya murah, tapi ada biaya kecil yang kelupaan masuk hitungan.\n\nGhostrip menyimpan semua komponen biaya (solar, tol, uang jalan, markup) per jenis truk, jadi tiap hitung harga tidak ada yang tertinggal.\n\n✅ Coba gratis 7 hari, chat WA 0815-1704-7930\n\n#ghostrip #trucking #ekspedisi #logistik #truk #pengusahatruk #biayatrip #usahatruk"
+  },
+  {
+   "slot": "story",
+   "kind": "story",
+   "time": "07:30",
+   "scene": {
+    "type": "question",
+    "text": "Sekarang hitung harga trip pakai apa?",
+    "options": [
+     "Kalkulator / Excel",
+     "Sudah pakai aplikasi"
+    ],
+    "sub": "Balas story ini, kami kasih trik hitung lebih cepat",
+    "ghost": "happy"
+   }
+  },
+  {
+   "slot": "feed",
+   "kind": "feed",
+   "time": "17:00",
+   "scene": {
+    "type": "list",
+    "title": "3 tanda harga trip kamu *perlu dihitung ulang*",
+    "mark": "check",
+    "size": 66,
+    "item_size": 42,
+    "items": [
+     "Harga solar berubah sejak terakhir hitung",
+     "Rute baru belum pernah dihitung tolnya",
+     "Markup masih pakai angka kira-kira"
+    ],
+    "ghost": "happy"
+   },
+   "caption": "Simpan postingan ini buat cek harga trip kamu 📌\n\n1. Harga solar berubah, tapi tarif masih pakai hitungan lama.\n2. Rute baru belum dicek biaya tol dan retribusinya.\n3. Markup masih kira-kira, belum ada angka pasti.\n\nKalau ada satu saja yang cocok, saatnya hitung ulang. Ghostrip bantu hitung otomatis, bos tinggal approve.\n\n✅ Coba gratis 7 hari, chat WA 0815-1704-7930\n\n#ghostrip #trucking #ekspedisi #logistik #pengusahatruk #tipsbisnis"
+  }
+ ]
+}
