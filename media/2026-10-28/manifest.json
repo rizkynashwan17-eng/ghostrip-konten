@@ -12,15 +12,15 @@
   "media": "media/2026-10-28/feed.jpg"
  },
  {
+  "slot": "feed-v2",
+  "kind": "feed",
+  "media": "media/2026-10-28/feed-v2.jpg"
+ },
+ {
   "slot": "reel2-v2",
   "kind": "reel",
   "media": "media/2026-10-28/reel2-v2.mp4",
   "cover": "media/2026-10-28/reel2-v2-cover.jpg",
-  "dur": 22.4
- },
- {
-  "slot": "feed-v2",
-  "kind": "feed",
-  "media": "media/2026-10-28/feed-v2.jpg"
+  "dur": 27.2137641723356
  }
 ]
