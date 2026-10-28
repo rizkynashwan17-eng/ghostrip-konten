@@ -86,9 +86,9 @@ D. Bersih-bersih repo: hapus folder `media/<tanggal>` dan `voice/out/<tanggal>-*
 6. Tambah baris ke `RIWAYAT.md`, commit & push ke `main`.
 7. URL media = `https://raw.githubusercontent.com/rizkynashwan17-eng/ghostrip-konten/<SHA-commit>/<path>`.
 8. UPLOAD LANGSUNG (WAJIB, tanpa menunggu persetujuan Rizky): begitu scan AMAN (termasuk "AMAN - SUARA MENYUSUL"), langsung jadwalkan dengan `createScheduledPost` (blogId `7702870`, timezone Asia/Jakarta, autoPublish true, draft false), hanya slot yang masih kosong (cek `getScheduledPosts` dulu; konten manual Rizky dihitung mengisi slot sejenis).
-   - Reels: instagramData {type REEL, showReelOnFeed true, isAiGenerated true}, tiktokData {title ≤ 90 karakter, privacyOption PUBLIC_TO_EVERYONE, isAigc true, commercialContentOwnBrand true}.
-   - Story: instagramData {type STORY, isAiGenerated true}, tanpa text.
-   - Feed/carousel: instagramData {type POST, isAiGenerated true}.
+   - Reels: instagramData {type REEL, showReelOnFeed true, isAiGenerated false}, tiktokData {title ≤ 90 karakter, privacyOption PUBLIC_TO_EVERYONE, isAigc false, commercialContentOwnBrand true}.
+   - Story: instagramData {type STORY, isAiGenerated false}, tanpa text.
+   - Feed/carousel: instagramData {type POST, isAiGenerated false}.
 9. Verifikasi dengan `getScheduledPosts`.
 
 ## Format JSON (engine v2)
