@@ -84,7 +84,11 @@ def main():
         print("GEMINI_API_KEY belum diisi di GitHub Secrets"); sys.exit(1)
     models = MODELS + [m for m in list_tts_models() if m not in MODELS]
     print("model kandidat:", models)
-    for path in sorted(glob.glob("voice/requests/*.json")):
+    # Prioritas: jadwal tayang terdekat dulu (kunci "jadwal" = "YYYY-MM-DDTHH:MM" WIB), sisanya urut nama.
+    def prio(path):
+        try: return (json.load(open(path)).get("jadwal") or "9999", path)
+        except Exception: return ("9999", path)
+    for path in sorted(glob.glob("voice/requests/*.json"), key=prio):
         req = json.load(open(path)); rid = req["id"]; out = f"voice/out/{rid}"
         if os.path.exists(f"{out}/done.json"): continue
         os.makedirs(out, exist_ok=True); durs = []; used = None

@@ -1,0 +1,36 @@
+{
+ "id": "manual-salah-hitung",
+ "jadwal": "2026-11-01T19:00",
+ "lines": [
+  {
+   "who": "BOS",
+   "tone": "senang",
+   "text": "Oke Pak, deal! Dua hari beres."
+  },
+  {
+   "who": "SOPIR",
+   "tone": "kaget",
+   "text": "Bos, udah hari ketiga, belum sampai!"
+  },
+  {
+   "who": "HANTU",
+   "tone": "menjelaskan",
+   "text": "Tambah hari, tol pulang pergi, solar naik. Lupa dihitung!"
+  },
+  {
+   "who": "BOS",
+   "tone": "kecewa",
+   "text": "Waduh, nombok dong."
+  },
+  {
+   "who": "HANTU",
+   "tone": "menjelaskan",
+   "text": "Pakai Ghostrip, semua biaya terhitung. Bos tinggal cek, lalu approve."
+  },
+  {
+   "who": "HANTU",
+   "tone": "mengajak",
+   "text": "Biar nggak nombok, komen DEMO sekarang!"
+  }
+ ]
+}
