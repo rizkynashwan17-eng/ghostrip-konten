@@ -37,6 +37,7 @@ Aturan rotasi:
 - Dalam satu hari, reel1 dan reel2 HARUS format berbeda. Dalam 3 hari berturut-turut, maksimal 2 reel FAKTA; minimal 1 CERITA per 2 hari.
 - Scene pembuka bergantian: pertanyaan, pernyataan mengejutkan/angka besar (`stat`), adegan cerita (road/chat), kuis. Jangan selalu `kicker` + judul.
 - Urutan blok berbeda tiap reel (jangan selalu fact → list → stat). Panjang 4–6 scene, durasi scene bervariasi.
+- LATAR LOKASI (permintaan Rizky): jangan di meja terus. Setiap reel minimal 2 scene memakai `set` lokasi, dan scene meja kantor (karakter tanpa `set`) maksimal 2 per reel. Pilihan `set`: `jalan` (truk melaju, pohon), `malam` (bulan, bintang, lampu jalan), `tol` (gerbang tol, palang terbuka, truk masuk), `timbangan` (gantry WIM), `spbu` (kanopi SOLAR, dispenser), `gudang` (pintu rolling, tumpukan muatan, truk mundur), `pool` (parkiran armada). Atur `truck`: box/wing/tank/over/empty, `drive`: true/false, `gantry`: teks papan. Karakter di lokasi otomatis berdiri di kiri bawah (atau `:right`). Jangan pakai set yang sama 2 scene berturut-turut kecuali bagian cerita.
 - Ganti suasana warna `tint`: teal (default), orange, blue, purple, red (masalah/rugi) — maksimal 2 reel berurutan dengan tint sama.
 - Karakter bergantian memimpin: kadang Sopir, kadang Admin/Customer, kadang Hantu sebagai narator; pakai `char2` untuk adegan dua orang.
 - Story: putar polling, kuis, teaser, "tebak angka", behind-the-scene. Feed: putar tabel/simpan ini, carousel cerita, mitos vs fakta, checklist.
@@ -88,6 +89,7 @@ D. Bersih-bersih repo: hapus folder `media/<tanggal>` dan `voice/out/<tanggal>-*
 
 ## Format JSON (engine v2)
 Setiap scene reel (dan `scene` story/feed, `slides` carousel) memakai kunci berikut (semua opsional kecuali yang jelas dibutuhkan):
+- `set`: latar lokasi (jalan/malam/tol/timbangan/spbu/gudang/pool), judul & kartu tetap di atas, lokasi di bawah.
 - `dur` detik (3.5–5.5). `type`: kosong (biasa), `"road"` (truk jalan di jalan raya, + `gantry` teks papan, `truck` = box/over/tank/wing), `"calendar"` (+ `calendar` {top, date}), `"cta"` (penutup, WAJIB di akhir setiap reel).
 - `kicker` pil mint kecil di atas judul (mis. "TAHUKAH KAMU?", "FUN FACT", "ATURAN BARU").
 - `title` judul besar; `*kata*` = sorotan mint. Maks ±8 kata.

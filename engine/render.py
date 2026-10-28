@@ -298,8 +298,8 @@ def road(d, W, y, t, speed=260, h=320):
         x = i * 240 - off
         d.rounded_rectangle((x, y + h * .58, x + 130, y + h * .58 + 16), radius=8, fill=(232, 207, 115))
 
-def gantry(d, W, y, text, t):
-    d.rectangle((120, y, 146, y + 410), fill=(92, 115, 128)); d.rectangle((W - 146, y, W - 120, y + 410), fill=(92, 115, 128))
+def gantry(d, W, y, text, t, h=410):
+    d.rectangle((120, y, 146, y + h), fill=(92, 115, 128)); d.rectangle((W - 146, y, W - 120, y + h), fill=(92, 115, 128))
     d.rounded_rectangle((100, y - 70, W - 100, y), radius=14, fill=(47, 70, 84))
     d.text((W / 2, y - 35), text, font=font(40, "Bold"), fill=(242, 205, 104), anchor="mm")
     on = (t % 1.0) < .6
@@ -351,6 +351,77 @@ def draw_illus(im, d, name, t, W, cy, s=1.0):
         truck(d, W / 2 - sz * .9, cy + sz * .1, sz, "box"); truck(d, W / 2 - sz * .3, cy + sz * .5, sz, "box")
     elif name in ("fuel", "clock", "scale", "toll", "doc", "money", "warn"):
         icon(d, name, W / 2, cy, 220 * sc)
+
+
+# ------------------------------------------------------------------ lokasi (set) — latar berganti seperti video ODOL
+def lamp(d, x, gy, t):
+    d.rectangle((x - 5, gy - 330, x + 5, gy), fill=(70, 92, 104))
+    d.rounded_rectangle((x - 5, gy - 335, x + 70, gy - 320), radius=6, fill=(70, 92, 104))
+    d.ellipse((x + 50, gy - 330, x + 80, gy - 312), fill=(255, 226, 150))
+
+def set_scene(im, d, name, t, W, H, sc):
+    """Gambar latar lokasi. Tanah (ground) di gy. Return gy."""
+    gy = int(H * (.68 if H > 1500 else .74))
+    drive = sc.get("drive", name in ("jalan", "malam"))
+    tx = (-420 + (t * 230) % (W + 900)) if drive else W / 2 - 200
+    load = sc.get("truck", "box")
+    if name in ("jalan", "malam", "timbangan"):
+        if name == "malam":
+            d.ellipse((W * .78, H * .14, W * .78 + 90, H * .14 + 90), fill=(240, 236, 210))
+            for i in range(14):
+                rx = (i * 173) % W; ry = 120 + (i * 97) % int(H * .35)
+                d.ellipse((rx, ry, rx + 4, ry + 4), fill=(200, 220, 230))
+            for x in (160, W - 160): lamp(d, x, gy - 14, t)
+        else:
+            trees(d, W, gy)
+        road(d, W, gy, t, 260 if drive else 0)
+        if name == "timbangan": gantry(d, W, int(gy - 600), sc.get("gantry", "TIMBANGAN OTOMATIS (WIM)"), t, 600)
+        truck(d, tx, gy + 90 + math.sin(t * 7) * 3, 380, load)
+    elif name == "tol":
+        road(d, W, gy, t, 0)
+        d.rectangle((60, gy - 420, W - 60, gy - 360), fill=(47, 70, 84))
+        d.text((W / 2, gy - 390), sc.get("gantry", "GERBANG TOL"), font=font(42, "ExtraBold"), fill=(242, 205, 104), anchor="mm")
+        for bx in (90, W / 2 - 40, W - 170):
+            d.rectangle((bx, gy - 360, bx + 80, gy - 120), fill=(60, 84, 98))
+            d.rectangle((bx + 12, gy - 330, bx + 68, gy - 260), fill=(160, 220, 210))
+        ang = max(0, min(1, (t - 1.2) / .6))
+        x0, y0 = W / 2 + 40, gy - 150
+        x1, y1 = x0 + 260 * math.cos(ang * 1.3), y0 - 260 * math.sin(ang * 1.3)
+        d.line([(x0, y0), (x1, y1)], fill=(230, 70, 70), width=14)
+        tx2 = -420 + min(1, t / 1.4) * (W / 2 - 60) + max(0, t - 1.8) * 260
+        truck(d, tx2, gy + 90, 380, load)
+    elif name == "spbu":
+        road(d, W, gy, t, 0)
+        d.rectangle((40, gy - 470, W - 40, gy - 400), fill=(226, 70, 70))
+        d.rectangle((40, gy - 400, W - 40, gy - 380), fill=WHITE)
+        d.text((W / 2, gy - 435), sc.get("gantry", "SPBU · SOLAR"), font=font(44, "ExtraBold"), fill=WHITE, anchor="mm")
+        for px in (150, W - 150):
+            d.rectangle((px - 10, gy - 380, px + 10, gy), fill=(200, 210, 216))
+        d.rounded_rectangle((W * .62, gy - 230, W * .62 + 110, gy), radius=16, fill=(236, 242, 246))
+        d.rectangle((W * .62 + 18, gy - 200, W * .62 + 92, gy - 150), fill=(30, 46, 58))
+        n = int((t * 37) % 1000); d.text((W * .62 + 55, gy - 175), f"{n:03d}L", font=font(26, "Bold"), fill=MINT, anchor="mm")
+        d.rectangle((W * .62 + 40, gy - 110, W * .62 + 70, gy - 60), fill=ORANGE)
+        truck(d, W * .06, gy + 90, 380, load)
+    elif name == "gudang":
+        d.rectangle((0, gy - 520, W, gy), fill=(30, 46, 58))
+        d.polygon([(0, gy - 520), (W / 2, gy - 640), (W, gy - 520)], fill=(38, 56, 70))
+        for i, dx in enumerate((80, 400, 720)):
+            d.rectangle((dx, gy - 360, dx + 280, gy), fill=(52, 74, 88))
+            op = max(0, min(1, (t - .5 - i * .3) / .8)) if i == 1 else 0
+            for k in range(9):
+                yy = gy - 360 + k * 40
+                if yy < gy - 360 + 360 * op: continue
+                d.line([(dx, yy), (dx + 280, yy)], fill=(70, 96, 110), width=3)
+        d.rectangle((0, gy, W, gy + 330), fill=(40, 54, 64))
+        for j in range(3): box(d, 90 + j * 20, gy - 110 - j * 90, 150, 90)
+        tx3 = W + 60 - min(1, t / 1.6) * (W * .55)
+        truck(d, tx3, gy + 120, 380, load, flip=True)
+    elif name == "pool":
+        d.rectangle((0, gy, W, gy + 330), fill=(40, 54, 64))
+        for k in range(5): d.line([(k * 240 + 60, gy + 20), (k * 240 + 60, gy + 300)], fill=(232, 207, 115), width=6)
+        for k, ld in enumerate(("box", "wing", "tank")):
+            truck(d, -60 + k * 340, gy + 110 + k * 8, 300, ld)
+    return gy
 
 # ------------------------------------------------------------------ scene parts
 def draw_title(d, sc, t, W, y):
@@ -553,7 +624,8 @@ def cta(im, d, sc, t, W, H):
 def frame(sc, t, W, H, static=False):
     typ = sc.get("type", "explain")
     has_person = (bool(sc.get("char")) and not sc["char"].startswith("ghost")) or bool(sc.get("char2"))
-    road_scene = typ == "road"
+    loc = sc.get("set") or ("jalan" if typ == "road" else None)
+    road_scene = bool(loc)
     im = background(W, H, glow=sc.get("glow", True), desk=has_person and not road_scene, tint=sc.get("tint", "teal"))
     d = ImageDraw.Draw(im)
     desk_top = H * .792
@@ -564,11 +636,7 @@ def frame(sc, t, W, H, static=False):
         return im
     if sc.get("sparkles"): sparkles(d, W, H, t)
     if road_scene:
-        trees(d, W, H * .64); road(d, W, int(H * .64), t, sc.get("speed", 260))
-        if sc.get("gantry"): gantry(d, W, int(H * .44), sc["gantry"], t)
-        ld = sc.get("truck", "box"); sz = 380
-        x = W / 2 - sz * .52 + (sc.get("drive", 0) and ((t * 120) % (W + 600) - W / 2 - 300))
-        truck(d, x, H * .64 + 70 + math.sin(t * 7) * 3, sz, ld)
+        set_scene(im, d, loc, t, W, H, sc); d = ImageDraw.Draw(im)
     top = H * (.11 if H > 1500 else .07)
     y = top + draw_title(d, sc, t, W, top) + 30
     d = ImageDraw.Draw(im)
@@ -587,9 +655,9 @@ def frame(sc, t, W, H, static=False):
     d = ImageDraw.Draw(im)
     if sc.get("char"):
         if sc["char"].startswith("ghost"): draw_ghost(im, W * .8, (y + 120) if H > 1500 else H * .7, 260 if H > 1500 else 210, t, .3)
-        else: draw_char(im, sc["char"], t, W, H, desk_top if not road_scene else H * .9)
+        else: draw_char(im, sc["char"] if not road_scene or ":" not in sc["char"] or any(k in sc["char"] for k in ("left", "right", "center")) else sc["char"] + ":left", t, W, H, desk_top if not road_scene else H * .80)
     if sc.get("char2"):
-        draw_char(im, sc["char2"], t, W, H, desk_top if not road_scene else H * .9)
+        draw_char(im, sc["char2"], t, W, H, desk_top if not road_scene else H * .80)
     if static:
         d = ImageDraw.Draw(im)
         f = font(32, "SemiBold"); txt = f"@ghostrip.app  ·  Coba gratis 7 hari  ·  WA {WA}"
