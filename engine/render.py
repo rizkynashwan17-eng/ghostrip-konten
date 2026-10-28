@@ -637,16 +637,47 @@ def write_wav(path, x):
     with wave.open(path, "wb") as w: w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(st.tobytes())
 
 # ------------------------------------------------------------------ output
+def load_voice(post):
+    """Suara Gemini TTS (voice/out/<voice_id>/NN.wav) -> list array 44.1 kHz per baris `say`, atau None."""
+    vid = post.get("voice_id")
+    if not vid: return None
+    d = os.path.join(ROOT, "voice", "out", vid)
+    if not os.path.exists(os.path.join(d, "done.json")): return None
+    import wave
+    out = []
+    for fn in sorted(f for f in os.listdir(d) if f.endswith(".wav")):
+        with wave.open(os.path.join(d, fn)) as w:
+            sr = w.getframerate(); x = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(float) / 32768
+        n2 = int(len(x) * SR / sr); x = np.interp(np.linspace(0, len(x) - 1, n2), np.arange(len(x)), x)
+        # buang hening di awal/akhir
+        nz = np.where(np.abs(x) > .01)[0]
+        if len(nz): x = x[max(0, nz[0] - 800): nz[-1] + 1600]
+        out.append(x * (0.9 / max(.05, np.abs(x).max())))
+    return out
+
+def voice_requests(post):
+    """Baris dialog untuk request TTS (urutan = scene yang punya `say`)."""
+    return [{"who": s["say"].get("who", "BOS").upper(), "text": s["say"]["text"].replace("&", "dan")} for s in post["scenes"] if s.get("say")]
+
 def render_reel(post, out_mp4, seed=0):
-    W, H = 1080, 1920; scenes = post["scenes"]
+    W, H = 1080, 1920; scenes = [dict(s) for s in post["scenes"]]
+    voices = load_voice(post); vi = 0; vstarts = []
+    if voices:
+        for s in scenes:
+            if s.get("say") and vi < len(voices):
+                need = .35 + len(voices[vi]) / SR + .5
+                s["dur"] = max(s.get("dur", 3.5), need); vstarts.append((s, voices[vi])); vi += 1
     total = sum(s.get("dur", 3.5) for s in scenes)
-    audio = music(total, seed); t0 = 0
+    audio = music(total, seed) * (.45 if voices else 1.0); t0 = 0
     for i, s in enumerate(scenes):
         if i:
             w = sfx_whoosh(); a = int(t0 * SR); e = min(len(audio), a + len(w)); audio[a:e] += w[:e - a]
         for et in scene_events(s):
-            p = sfx_pop(); a = int((t0 + et) * SR)
+            p = sfx_pop() * (.6 if voices else 1); a = int((t0 + et) * SR)
             if a < len(audio): e = min(len(audio), a + len(p)); audio[a:e] += p[:e - a]
+        for ss, v in vstarts:
+            if ss is s:
+                a = int((t0 + .35) * SR); e = min(len(audio), a + len(v)); audio[a:e] += v[:e - a] * .95
         t0 += s.get("dur", 3.5)
     wav = out_mp4 + ".wav"; write_wav(wav, audio)
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
@@ -693,5 +724,16 @@ def main(spec_path):
         print("OK", slot, rel(files["media"]))
     json.dump(manifest, open(mpath, "w"), indent=1)
 
+def make_requests(spec_path):
+    """Tulis voice/requests/<date>-<slot>.json untuk setiap reel + set voice_id di JSON konten."""
+    spec = json.load(open(spec_path)); os.makedirs(os.path.join(ROOT, "voice", "requests"), exist_ok=True)
+    for post in spec["posts"]:
+        if post["kind"] != "reel": continue
+        vid = post.get("voice_id") or f"{spec['date']}-{post['slot']}"; post["voice_id"] = vid
+        json.dump({"id": vid, "lines": voice_requests(post)}, open(os.path.join(ROOT, "voice", "requests", vid + ".json"), "w"), ensure_ascii=False, indent=1)
+        print("request", vid)
+    json.dump(spec, open(spec_path, "w"), ensure_ascii=False, indent=1)
+
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if sys.argv[1] == "--voice-requests": make_requests(sys.argv[2])
+    else: main(sys.argv[1])
