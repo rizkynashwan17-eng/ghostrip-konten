@@ -1,0 +1,128 @@
+{
+ "date": "2026-10-28",
+ "posts": [
+  {
+   "slot": "reel2-v2",
+   "kind": "reel",
+   "time": "19:30",
+   "topic": "Fun fact: kenapa disebut CDD & CDE",
+   "scenes": [
+    {
+     "dur": 3.6,
+     "kicker": "TAHUKAH KAMU?",
+     "title": "Kenapa disebut *CDD* & *CDE*?",
+     "illus": "truck_box",
+     "char": "sopir:think",
+     "say": {
+      "who": "SOPIR",
+      "text": "Bos, CDD sama CDE itu apa sih bedanya?"
+     }
+    },
+    {
+     "dur": 4.8,
+     "title": "Asal namanya",
+     "fact": {
+      "n": 1,
+      "head": "Colt Diesel",
+      "body": "*CDD* = Colt Diesel *Double*. *CDE* = Colt Diesel *Engkel*. Dari nama truk Mitsubishi Colt Diesel.",
+      "source": "Moladin"
+     },
+     "illus": "truck_box",
+     "char": "bos:neutral",
+     "say": {
+      "who": "BOS",
+      "text": "Dua-duanya dari nama Colt Diesel."
+     }
+    },
+    {
+     "dur": 4.6,
+     "title": "Bedanya di *roda belakang*",
+     "compare": {
+      "left": {
+       "illus": "truck_box",
+       "label": "Engkel",
+       "sub": "4 roda",
+       "color": "white"
+      },
+      "right": {
+       "illus": "truck_wing",
+       "label": "Double",
+       "sub": "6 roda",
+       "color": "mint",
+       "dual": true
+      }
+     },
+     "say": {
+      "who": "HANTU",
+      "text": "Engkel roda belakangnya tunggal, double roda belakangnya ganda."
+     }
+    },
+    {
+     "dur": 5.2,
+     "title": "Daya angkut *beda jauh*",
+     "fact": {
+      "n": 2,
+      "head": "Berat total (GVW)",
+      "body": "Colt Diesel 4 roda sekitar *5,2 ton*, versi 6 roda sampai *8,25 ton*.",
+      "source": "Moladin"
+     },
+     "stat": {
+      "label": "Solar, tol & tarif trip-nya",
+      "value": "ikut beda",
+      "color": "orange"
+     },
+     "char": "bos:shocked",
+     "say": {
+      "who": "BOS",
+      "text": "Muat lebih banyak, biayanya juga beda."
+     }
+    },
+    {
+     "dur": 4.2,
+     "type": "cta",
+     "char": "ghost",
+     "say": {
+      "who": "BOS",
+      "text": "Hitung harga CDD & CDE sesuai jenis truknya. Komen DEMO."
+     }
+    }
+   ],
+   "caption": "CDD dan CDE sering disebut, tapi tahu nggak asal namanya? 🚚\n\nCDD = Colt Diesel Double, CDE = Colt Diesel Engkel. Engkel roda belakangnya tunggal (4 roda), double roda belakangnya ganda (6 roda).\n\nDaya angkutnya beda jauh: Colt Diesel 4 roda punya berat total (GVW) sekitar 5,2 ton, versi 6 roda sampai 8,25 ton. Karena itu solar, tol, dan harga trip-nya juga harus dihitung beda.\n\nDi Ghostrip, tiap jenis truk punya pengaturan sendiri, bos tinggal cek dan approve.\n\n✅ Coba gratis 7 hari, komen DEMO atau chat WA 0815-1704-7930\n\nSumber data GVW: Moladin\n\n#ghostrip #ekspedisi #trucking #logistik #truk #cdd #cde #coltdiesel #funfact",
+   "tiktok_title": "Kenapa disebut CDD & CDE? Ini bedanya"
+  },
+  {
+   "slot": "feed-v2",
+   "kind": "feed",
+   "time": "17:00",
+   "topic": "Engkel vs Double",
+   "scene": {
+    "kicker": "TAHUKAH KAMU?",
+    "title": "*Engkel* vs *Double*, bedanya apa?",
+    "title_size": 64,
+    "compare": {
+     "left": {
+      "illus": "truck_box",
+      "label": "Engkel (CDE)",
+      "sub": "4 roda · GVW ±5,2 ton",
+      "color": "white"
+     },
+     "right": {
+      "illus": "truck_wing",
+      "label": "Double (CDD)",
+      "sub": "6 roda · GVW s.d. 8,25 ton",
+      "color": "mint",
+      "dual": true
+     }
+    },
+    "glow": true,
+    "stat": {
+     "label": "Beda daya angkut, jadi",
+     "value": "beda harga trip",
+     "size": 70,
+     "color": "mint"
+    }
+   },
+   "caption": "Engkel vs Double, bedanya apa? 🚚\n\nEngkel (CDE) = roda belakang tunggal, total 4 roda. Double (CDD) = roda belakang ganda, total 6 roda.\n\nBerat total (GVW) Colt Diesel 4 roda sekitar 5,2 ton, versi 6 roda sampai 8,25 ton. Beda daya angkut, beda juga solar, tol, dan harga trip-nya.\n\nSimpan buat referensi 📌\n\n✅ Hitung harga per jenis truk di Ghostrip. Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930\n\nSumber data GVW: Moladin\n\n#ghostrip #ekspedisi #trucking #logistik #truk #cdd #cde #engkel #funfact"
+  }
+ ]
+}
