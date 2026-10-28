@@ -1,0 +1,32 @@
+{
+ "date": "2026-10-30",
+ "posts": [
+  {
+   "slot": "story", "kind": "story", "time": "07:30",
+   "scene": {"type": "question", "text": "Truk kamu yang paling sering jalan?", "options": ["CDD / Engkel", "Fuso / Wingbox"], "sub": "Balas story ini, nanti kami kasih tips hitung harganya", "ghost": "happy"}
+  },
+  {
+   "slot": "reel1", "kind": "reel", "time": "11:30",
+   "scenes": [
+    {"type": "hook", "dur": 3.0, "text": "Sopir boleh hitung, *bos yang putuskan*", "ghost": "wink"},
+    {"type": "chat", "dur": 4.8, "group": "Grup Armada", "gap": 1.2, "messages": [
+      {"from": "Sopir", "text": "Bos, ada muatan Palembang ke Jambi, CDD. Saya hitung di Ghostrip ya."},
+      {"from": "Sopir", "text": "Hasilnya Rp 2.028.000, rinciannya saya kirim."},
+      {"from": "Bos", "text": "Sip, sudah saya cek. Approve!", "me": true}
+    ]},
+    {"type": "calc", "dur": 5.6, "title": "Rincian jelas, bos *tinggal cek*", "route": "Palembang → Jambi · CDD",
+     "rows": [["Jarak", "276 km"], ["Solar", "Rp 940.000"], ["Tol & retribusi", "Rp 150.000"], ["Uang jalan sopir", "Rp 600.000"], ["Markup", "20%"]],
+     "total": "Rp 2.028.000", "note": "Bos approve dari HP"},
+    {"type": "cta", "dur": 3.6, "text": "Kerja tim lebih *cepat*", "button": "Coba GRATIS 7 hari", "sub": "Komen DEMO atau WA 0815-1704-7930"}
+   ],
+   "caption": "Bos nggak harus hitung semua harga sendiri. Sopir atau admin bisa hitung di Ghostrip, rinciannya jelas, lalu bos tinggal cek dan approve dari HP.\n\nHarga tetap keputusan bos, tapi kerjanya jauh lebih cepat.\n\n✅ Coba gratis 7 hari, komen DEMO atau chat WA 0815-1704-7930\n\n#ghostrip #ekspedisi #trucking #logistik #truk #pengusahatruk #sopirtruk",
+   "tiktok_title": "Sopir hitung, bos tinggal approve"
+  },
+  {
+   "slot": "feed", "kind": "feed", "time": "17:00",
+   "scene": {"type": "list", "title": "Customer minta harga *rute yang sama* lagi?", "mark": "check", "size": 64, "item_size": 42, "ghost": "wink",
+     "items": ["Buka Riwayat di Ghostrip", "Hitungan sebelumnya langsung ketemu", "Sesuaikan solar terbaru, kirim lagi"]},
+   "caption": "Customer langganan minta harga rute yang sama, tapi hitungan lama entah di kertas mana? 😅\n\nDi Ghostrip semua hitungan tersimpan di Riwayat. Buka, cek, sesuaikan harga solar terbaru, lalu kirim lagi ke customer.\n\n✅ Coba gratis 7 hari, komen DEMO atau chat WA 0815-1704-7930\n\n#ghostrip #ekspedisi #trucking #logistik #truk #pengusahatruk #tipsbisnis"
+  }
+ ]
+}

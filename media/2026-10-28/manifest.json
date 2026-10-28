@@ -1,0 +1,14 @@
+[
+ {
+  "slot": "reel2",
+  "kind": "reel",
+  "media": "media/2026-10-28/reel2.mp4",
+  "cover": "media/2026-10-28/reel2-cover.jpg",
+  "dur": 17.6
+ },
+ {
+  "slot": "feed",
+  "kind": "feed",
+  "media": "media/2026-10-28/feed.jpg"
+ }
+]

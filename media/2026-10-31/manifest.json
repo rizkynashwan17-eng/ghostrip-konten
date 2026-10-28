@@ -1,13 +1,14 @@
 [
  {
-  "slot": "carousel-3biaya",
-  "kind": "carousel",
-  "media": [
-   "media/2026-10-31/carousel-3biaya-1.jpg",
-   "media/2026-10-31/carousel-3biaya-2.jpg",
-   "media/2026-10-31/carousel-3biaya-3.jpg",
-   "media/2026-10-31/carousel-3biaya-4.jpg",
-   "media/2026-10-31/carousel-3biaya-5.jpg"
-  ]
+  "slot": "story",
+  "kind": "story",
+  "media": "media/2026-10-31/story.jpg"
+ },
+ {
+  "slot": "reel1",
+  "kind": "reel",
+  "media": "media/2026-10-31/reel1.mp4",
+  "cover": "media/2026-10-31/reel1-cover.jpg",
+  "dur": 16.4
  }
 ]

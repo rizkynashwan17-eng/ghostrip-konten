@@ -1,0 +1,23 @@
+{
+ "date": "2026-10-28",
+ "posts": [
+  {
+   "slot": "reel2", "kind": "reel", "time": "19:30",
+   "scenes": [
+    {"type": "hook", "dur": 3.0, "text": "Harga solar naik, *tarif masih sama?*", "ghost": "shocked"},
+    {"type": "text", "dur": 3.8, "text": "Fuso 600 km butuh *±200 liter*", "sub": "Naik Rp500/liter = Rp100.000 hilang tiap trip", "ghost": "sad", "truck": true},
+    {"type": "text", "dur": 3.4, "text": "10 trip sebulan = *Rp1 juta* untung hilang", "ghost": "shocked"},
+    {"type": "text", "dur": 3.8, "text": "Di *Ghostrip*, ubah harga solar sekali di Pengaturan", "sub": "Hitungan berikutnya langsung pakai harga baru", "ghost": "happy"},
+    {"type": "cta", "dur": 3.6, "text": "Jangan sampai *untung bocor*", "button": "Coba GRATIS 7 hari", "sub": "Komen DEMO atau WA 0815-1704-7930"}
+   ],
+   "caption": "Harga solar naik Rp500 per liter kelihatannya kecil. Tapi Fuso 600 km butuh sekitar 200 liter, berarti Rp100.000 hilang setiap trip. Kalau 10 trip sebulan, Rp1 juta untung bocor tanpa terasa.\n\nDi Ghostrip, harga solar cukup diubah sekali di Pengaturan. Hitungan harga trip berikutnya langsung pakai harga terbaru, bos tinggal cek dan approve.\n\n✅ Coba gratis 7 hari, komen DEMO atau chat WA 0815-1704-7930\n\n#ghostrip #ekspedisi #trucking #logistik #truk #pengusahatruk #hargasolar #fuso",
+   "tiktok_title": "Solar naik, tarif masih sama? Untung bocor"
+  },
+  {
+   "slot": "feed", "kind": "feed", "time": "17:00",
+   "scene": {"type": "list", "title": "Kenapa harga trip harus dihitung *per jenis truk*", "mark": "check", "size": 64, "item_size": 42, "ghost": "happy",
+     "items": ["Konsumsi solar CDD, Fuso, dan wingbox beda", "Golongan tol tiap jenis truk beda", "Kapasitas muat & uang jalan juga beda"]},
+   "caption": "Pakai satu tarif untuk semua truk? Hati-hati, bisa nombok di jenis truk tertentu.\n\n1. Konsumsi solar CDD, Fuso, dan wingbox tidak sama.\n2. Golongan tolnya beda, makin besar truk makin mahal.\n3. Kapasitas muat dan uang jalan sopir juga beda.\n\nDi Ghostrip, setiap jenis truk punya pengaturan sendiri, jadi harga trip selalu sesuai truk yang jalan.\n\n✅ Coba gratis 7 hari, komen DEMO atau chat WA 0815-1704-7930\n\n#ghostrip #ekspedisi #trucking #logistik #truk #cdd #fuso #wingbox"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "date": "2026-10-31",
+ "posts": [
+  {
+   "slot": "story", "kind": "story", "time": "07:30",
+   "scene": {"type": "question", "label": "ZERO ODOL 1 JAN 2027", "text": "Harga trip kamu sudah dihitung ulang?", "options": ["Sudah", "Belum sempat"], "sub": "Nanti malam jam 7 ada videonya", "ghost": "shocked"}
+  },
+  {
+   "slot": "reel1", "kind": "reel", "time": "11:30",
+   "scenes": [
+    {"type": "hook", "dur": 3.0, "text": "Markup masih *kira-kira?*", "ghost": "shocked"},
+    {"type": "list", "dur": 4.2, "title": "Markup kira-kira itu *bahaya*:", "mark": "x", "gap": 0.7,
+     "items": ["Kemurahan: untung tipis", "Kemahalan: customer kabur", "Beda admin, beda harga"], "ghost": "sad"},
+    {"type": "calc", "dur": 5.6, "title": "Markup *pasti* di Ghostrip", "route": "Palembang → Lahat PP · CDD",
+     "rows": [["Jarak", "440 km"], ["Solar ±98 L", "Rp 666.000"], ["Tol & retribusi", "Rp 100.000"], ["Uang jalan 2 hari", "Rp 500.000"], ["Markup", "25%"]],
+     "total": "Rp 1.582.500", "note": "Bos tentukan markup-nya"},
+    {"type": "cta", "dur": 3.6, "text": "Harga *konsisten*, untung jelas", "button": "Coba GRATIS 7 hari", "sub": "Komen DEMO atau WA 0815-1704-7930"}
+   ],
+   "caption": "Markup kira-kira bikin harga nggak konsisten. Kemurahan, untung tipis. Kemahalan, customer pindah. Beda admin yang hitung, beda pula harganya.\n\nDi Ghostrip, bos tentukan markup sekali di Pengaturan, semua hitungan otomatis pakai angka yang sama.\n\n✅ Coba gratis 7 hari, komen DEMO atau chat WA 0815-1704-7930\n\n#ghostrip #ekspedisi #trucking #logistik #truk #pengusahatruk #markup",
+   "tiktok_title": "Markup masih kira-kira? Bahaya"
+  }
+ ]
+}
