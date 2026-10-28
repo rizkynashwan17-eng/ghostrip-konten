@@ -1,0 +1,30 @@
+{
+ "id": "2026-10-29-reel2-v2",
+ "lines": [
+  {
+   "who": "SOPIR",
+   "tone": "penasaran",
+   "text": "Bos, KIR truk kita kapan habisnya ya?"
+  },
+  {
+   "who": "BOS",
+   "tone": "santai",
+   "text": "KIR itu cek kelayakan truk. Wajib tiap enam bulan."
+  },
+  {
+   "who": "HANTU",
+   "tone": "menjelaskan",
+   "text": "Truk, pick up, mobil box, sampai double cabin niaga wajib KIR."
+  },
+  {
+   "who": "BOS",
+   "tone": "senang",
+   "text": "Truk layak jalan, trip aman, customer tenang."
+  },
+  {
+   "who": "BOS",
+   "tone": "mengajak",
+   "text": "Urus truknya, harga tripnya biar Ghostrip. Komen DEMO."
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "date": "2026-10-30",
+ "posts": [
+  {
+   "slot": "story-v2",
+   "kind": "story",
+   "time": "07:30",
+   "scene": {
+    "kicker": "PERTANYAAN HARI INI",
+    "title": "Pernah dengar istilah *MST*?",
+    "items": [
+     {
+      "text": "Tahu dong",
+      "mark": "check"
+     },
+     {
+      "text": "Baru dengar",
+      "mark": "x"
+     }
+    ],
+    "char": "ghost",
+    "fact": {
+     "label": "INFO",
+     "head": "Jam 11.30",
+     "body": "Kita bahas *kelas jalan* dan batas muatan sumbu truk. Balas story ini!"
+    }
+   }
+  },
+  {
+   "slot": "reel1-v2",
+   "kind": "reel",
+   "time": "11:30",
+   "topic": "Kelas jalan & MST",
+   "scenes": [
+    {
+     "dur": 3.6,
+     "kicker": "TAHUKAH KAMU?",
+     "title": "Jalan raya juga *punya kelas*",
+     "illus": "truck_box",
+     "char": "sopir:think",
+     "say": {
+      "who": "SOPIR",
+      "text": "Bos, emang semua jalan boleh dilewati truk berat?"
+     }
+    },
+    {
+     "dur": 4.8,
+     "title": "Apa itu *MST*?",
+     "fact": {
+      "n": 1,
+      "head": "Muatan Sumbu Terberat",
+      "body": "MST = beban maksimal yang boleh ditanggung *satu sumbu* kendaraan di jalan itu.",
+      "source": "UU 22/2009 Pasal 19"
+     },
+     "illus": "scale",
+     "char": "bos:neutral",
+     "say": {
+      "who": "BOS",
+      "text": "Nggak. Tiap jalan ada batas muatan sumbunya, namanya MST."
+     }
+    },
+    {
+     "dur": 5.2,
+     "title": "Batas tiap *kelas jalan*",
+     "items": [
+      "Kelas I: MST 10 ton, panjang maks 18 m",
+      "Kelas II: MST 8 ton, panjang maks 12 m",
+      "Kelas III: MST 8 ton, panjang maks 9 m"
+     ],
+     "mark": "num",
+     "gap": 0.55,
+     "say": {
+      "who": "HANTU",
+      "text": "Kelas satu sampai sepuluh ton. Kelas dua dan tiga cuma delapan ton."
+     }
+    },
+    {
+     "dur": 4.6,
+     "title": "Rute lewat jalan *kelas III*?",
+     "stat": {
+      "label": "Muatan per trip",
+      "value": "harus lebih kecil",
+      "color": "orange",
+      "size": 70
+     },
+     "char": "bos:shocked",
+     "say": {
+      "who": "BOS",
+      "text": "Kalau rutenya lewat jalan kecil, muatannya dikurangi. Tripnya bisa nambah."
+     }
+    },
+    {
+     "dur": 4.0,
+     "type": "cta",
+     "char": "ghost",
+     "say": {
+      "who": "BOS",
+      "text": "Hitung ulang harga trip sesuai rute. Komen DEMO, coba gratis."
+     }
+    }
+   ],
+   "caption": "Jalan raya ternyata punya kelas, dan tiap kelas punya batas muatan sumbu (MST) 🛣️\n\n• Kelas I: MST 10 ton, panjang kendaraan maks 18 m\n• Kelas II: MST 8 ton, panjang maks 12 m\n• Kelas III: MST 8 ton, panjang maks 9 m\n\nKalau rute trip lewat jalan kelas II/III, muatan per trip harus lebih kecil. Artinya jumlah trip bisa nambah, dan harga trip harus dihitung ulang.\n\nGhostrip bantu hitung harga per trip, bos tinggal cek dan approve.\n\n✅ Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930\n\nSumber: UU No. 22 Tahun 2009 Pasal 19 (teks asli; cek perubahan terbaru)\n\n#ghostrip #ekspedisi #trucking #logistik #truk #kelasjalan #mst #tahukahkamu",
+   "tiktok_title": "Jalan raya punya kelas! Ini batas muatan truk",
+   "voice_id": "2026-10-30-reel1-v2"
+  },
+  {
+   "slot": "feed-v2",
+   "kind": "feed",
+   "time": "17:00",
+   "scene": {
+    "kicker": "SIMPAN INI",
+    "title": "Kelas jalan & *batas muatan sumbu*",
+    "title_size": 64,
+    "items": [
+     "Kelas I: MST 10 ton · lebar 2,5 m · panjang 18 m",
+     "Kelas II: MST 8 ton · lebar 2,5 m · panjang 12 m",
+     "Kelas III: MST 8 ton · lebar 2,1 m · panjang 9 m"
+    ],
+    "mark": "num",
+    "fact": {
+     "label": "SUMBER",
+     "head": "UU 22/2009 Pasal 19",
+     "body": "MST = Muatan Sumbu Terberat, beban maksimal per sumbu kendaraan."
+    }
+   },
+   "caption": "Simpan buat referensi 📌\n\nKelas jalan menentukan ukuran dan berat truk yang boleh lewat:\n• Kelas I: MST 10 ton, lebar 2,5 m, panjang 18 m\n• Kelas II: MST 8 ton, lebar 2,5 m, panjang 12 m\n• Kelas III: MST 8 ton, lebar 2,1 m, panjang 9 m\n\nRute lewat jalan kelas rendah = muatan lebih kecil = trip bisa nambah. Hitung harga trip-nya di Ghostrip.\n\n✅ Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930\n\nSumber: UU No. 22 Tahun 2009 Pasal 19\n\n#ghostrip #ekspedisi #trucking #logistik #truk #kelasjalan #mst"
+  }
+ ]
+}

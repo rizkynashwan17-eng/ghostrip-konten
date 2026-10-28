@@ -1,0 +1,30 @@
+{
+ "id": "2026-10-29-reel1-v2",
+ "lines": [
+  {
+   "who": "SOPIR",
+   "tone": "penasaran",
+   "text": "Bos, kok tol truk kita beda-beda ya tarifnya?"
+  },
+  {
+   "who": "BOS",
+   "tone": "santai",
+   "text": "Lihat porosnya. Gandar itu sumbu roda kiri-kanan."
+  },
+  {
+   "who": "HANTU",
+   "tone": "menjelaskan",
+   "text": "Makin banyak gandar, golongannya naik, tarif tolnya juga naik."
+  },
+  {
+   "who": "BOS",
+   "tone": "kaget",
+   "text": "Tol pulangnya sering lupa dihitung. Bisa nombok!"
+  },
+  {
+   "who": "BOS",
+   "tone": "mengajak",
+   "text": "Biar tol nggak kelewat, hitung pakai Ghostrip. Komen DEMO."
+  }
+ ]
+}

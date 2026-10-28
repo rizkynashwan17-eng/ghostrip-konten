@@ -1,0 +1,11 @@
+{
+ "id": "manual-odol",
+ "lines": [
+  {"who": "SOPIR", "tone": "penasaran", "text": "Bos, katanya truk muatan lebih mau dilarang ya?"},
+  {"who": "BOS", "tone": "tegas", "text": "Iya. Mulai satu Januari dua ribu dua puluh tujuh, Zero ODOL berlaku."},
+  {"who": "SOPIR", "tone": "kaget", "text": "Di tol udah ada timbangan otomatis, Bos."},
+  {"who": "BOS", "tone": "kecewa", "text": "Muatan dipecah jadi dua trip. Harga lama bisa nombok."},
+  {"who": "HANTU", "tone": "menjelaskan", "text": "Ubah jumlah trip, harga baru langsung jadi."},
+  {"who": "BOS", "tone": "mengajak", "text": "Share ke sesama pengusaha truk. Komen DEMO, coba gratis tujuh hari."}
+ ]
+}

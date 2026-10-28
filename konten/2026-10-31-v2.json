@@ -1,0 +1,155 @@
+{
+ "date": "2026-10-31",
+ "posts": [
+  {
+   "slot": "story-v2",
+   "kind": "story",
+   "time": "07:30",
+   "scene": {
+    "kicker": "ZERO ODOL 1 JAN 2027",
+    "title": "Harga trip kamu sudah *dihitung ulang*?",
+    "items": [
+     {
+      "text": "Sudah",
+      "mark": "check"
+     },
+     {
+      "text": "Belum sempat",
+      "mark": "x"
+     }
+    ],
+    "char": "ghost",
+    "fact": {
+     "label": "INFO",
+     "head": "Nanti malam 19.00",
+     "body": "Video lengkap soal *Zero ODOL*. Jangan sampai ketinggalan!"
+    }
+   }
+  },
+  {
+   "slot": "reel1-v2",
+   "kind": "reel",
+   "time": "11:30",
+   "topic": "Pembatasan truk sumbu 3+ saat libur Nataru",
+   "scenes": [
+    {
+     "dur": 3.6,
+     "kicker": "SIAP-SIAP NATARU",
+     "title": "Kenapa truk besar *dibatasi* saat libur?",
+     "illus": "truck_box",
+     "char": "sopir:think",
+     "say": {
+      "who": "SOPIR",
+      "text": "Bos, Desember nanti truk kita bisa jalan di tol nggak?"
+     }
+    },
+    {
+     "dur": 5.0,
+     "title": "Nataru lalu",
+     "fact": {
+      "n": 1,
+      "head": "Truk sumbu 3 ke atas",
+      "body": "Saat libur Natal & Tahun Baru 2025/2026, Kemenhub membatasi truk *sumbu 3 ke atas* di jalan tol.",
+      "source": "Bisnis.com, Nov 2025"
+     },
+     "illus": "toll",
+     "char": "bos:neutral",
+     "say": {
+      "who": "BOS",
+      "text": "Nataru kemarin, truk sumbu tiga ke atas dibatasi di tol."
+     }
+    },
+    {
+     "dur": 4.6,
+     "title": "Alasannya",
+     "items": [
+      "Volume kendaraan libur naik",
+      "Keselamatan & kelancaran arus",
+      "Cuaca musim hujan"
+     ],
+     "mark": "check",
+     "gap": 0.55,
+     "say": {
+      "who": "HANTU",
+      "text": "Biar arus libur lancar dan aman, apalagi pas musim hujan."
+     }
+    },
+    {
+     "dur": 4.8,
+     "title": "Efeknya ke *harga trip*",
+     "stat": {
+      "label": "Rute lebih jauh / tunggu jadwal",
+      "value": "biaya naik",
+      "color": "red"
+     },
+     "char": "bos:shocked",
+     "say": {
+      "who": "BOS",
+      "text": "Kalau harus lewat arteri atau nunggu, biaya trip ikut naik."
+     }
+    },
+    {
+     "dur": 4.0,
+     "type": "cta",
+     "char": "ghost",
+     "say": {
+      "who": "BOS",
+      "text": "Siapkan harga trip Desember dari sekarang. Komen DEMO."
+     }
+    }
+   ],
+   "caption": "Libur Natal & Tahun Baru sudah dekat 🎄\n\nSaat Nataru 2025/2026, Kemenhub membatasi operasional truk sumbu 3 ke atas di jalan tol. Alasannya: volume kendaraan liburan naik, demi keselamatan dan kelancaran arus, plus cuaca musim hujan.\n\nAturan untuk Nataru tahun ini biasanya diumumkan menjelang libur, jadi pantau info resmi Kemenhub. Kalau truk harus lewat jalan arteri atau menunggu jadwal, biaya trip ikut naik, jadi harga Desember sebaiknya dihitung dari sekarang.\n\n✅ Hitung harga trip di Ghostrip. Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930\n\nSumber: Bisnis.com (Nov 2025)\n\n#ghostrip #ekspedisi #trucking #logistik #truk #nataru #truksumbu3",
+   "tiktok_title": "Truk besar dibatasi saat libur Nataru? Ini alasannya",
+   "voice_id": "2026-10-31-reel1-v2"
+  },
+  {
+   "slot": "carousel-v2",
+   "kind": "carousel",
+   "time": "17:00",
+   "slides": [
+    {
+     "kicker": "GESER →",
+     "title": "3 biaya yang sering *lupa dihitung* waktu kasih harga trip",
+     "title_size": 66,
+     "illus": "truck_box",
+     "badge": {
+      "text": "Nomor 2 paling sering",
+      "color": "orange"
+     }
+    },
+    {
+     "title": "1. *Tol*",
+     "fact": {
+      "n": 1,
+      "head": "Golongan & pulang-pergi",
+      "body": "Fuso masuk golongan tol yang lebih tinggi, dan tol rute *pulang-pergi* sering lupa dihitung dua kali."
+     },
+     "illus": "toll"
+    },
+    {
+     "title": "2. *Hari istirahat sopir*",
+     "fact": {
+      "n": 2,
+      "head": "Hari jalan",
+      "body": "600 km bisa butuh ±15 jam di jalan, belum termasuk istirahat. Trip yang dikira 2 hari bisa jadi *3 hari*."
+     },
+     "illus": "clock"
+    },
+    {
+     "title": "3. *Harga solar*",
+     "fact": {
+      "n": 3,
+      "head": "Selisih kecil, total besar",
+      "body": "600 km butuh ±200 liter. Selisih Rp500/liter = *Rp100.000* per trip."
+     },
+     "illus": "fuel"
+    },
+    {
+     "type": "cta",
+     "tagline": "Hitung semua biaya trip otomatis"
+    }
+   ],
+   "caption": "Harga trip kelihatan untung, ternyata pas trip selesai malah nombok? Biasanya karena 3 biaya ini lupa dihitung. Nomor 2 paling sering.\n\nGeser sampai habis, lalu simpan postingan ini buat pengingat 📌\n\nMau hitungannya otomatis? COBA GRATIS 7 HARI\nKomen DEMO atau chat WA 0815-1704-7930 (link di bio)\n\n#ekspedisi #trucking #logistik #truk #aplikasiekspedisi #ghostrip"
+  }
+ ]
+}

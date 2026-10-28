@@ -1,0 +1,204 @@
+{
+ "date": "2026-10-29",
+ "posts": [
+  {
+   "slot": "story-v2",
+   "kind": "story",
+   "time": "07:30",
+   "scene": {
+    "kicker": "PERTANYAAN HARI INI",
+    "title": "Truk kamu sudah *uji KIR* 6 bulan ini?",
+    "items": [
+     {
+      "text": "Sudah, aman",
+      "mark": "check"
+     },
+     {
+      "text": "Belum sempat",
+      "mark": "x"
+     }
+    ],
+    "char": "ghost",
+    "fact": {
+     "label": "INFO",
+     "head": "Nanti malam 19.30",
+     "body": "Kita bahas kenapa KIR wajib *tiap 6 bulan*. Balas story ini!"
+    }
+   }
+  },
+  {
+   "slot": "reel1-v2",
+   "kind": "reel",
+   "time": "11:30",
+   "topic": "Golongan tol truk dihitung dari jumlah gandar",
+   "scenes": [
+    {
+     "dur": 3.6,
+     "kicker": "TAHUKAH KAMU?",
+     "title": "Tarif tol truk dihitung dari *jumlah gandar*",
+     "illus": "toll",
+     "char": "sopir:think",
+     "say": {
+      "who": "SOPIR",
+      "text": "Bos, kok tol truk kita beda-beda ya tarifnya?"
+     }
+    },
+    {
+     "dur": 4.6,
+     "title": "Apa itu *gandar*?",
+     "fact": {
+      "n": 1,
+      "head": "Gandar = sumbu roda",
+      "body": "Gandar adalah poros yang menghubungkan roda kiri dan kanan. Makin banyak gandar, makin besar truknya.",
+      "source": "Auto2000"
+     },
+     "illus": "truck_box",
+     "char": "bos:neutral",
+     "say": {
+      "who": "BOS",
+      "text": "Lihat porosnya. Gandar itu sumbu roda kiri-kanan."
+     }
+    },
+    {
+     "dur": 5.0,
+     "title": "Golongan tol *kendaraan*",
+     "items": [
+      "Gol I: sedan, pick up, truk kecil, bus",
+      "Gol II: truk 2 gandar",
+      "Gol III: truk 3 gandar",
+      "Gol IV–V: truk 4–5 gandar"
+     ],
+     "mark": "num",
+     "gap": 0.5,
+     "say": {
+      "who": "HANTU",
+      "text": "Makin banyak gandar, golongannya naik, tarif tolnya juga naik."
+     }
+    },
+    {
+     "dur": 4.6,
+     "title": "Rute *pulang-pergi*?",
+     "stat": {
+      "label": "Tol pulang jangan lupa,",
+      "value": "hitung 2×",
+      "color": "red"
+     },
+     "char": "bos:shocked",
+     "say": {
+      "who": "BOS",
+      "text": "Tol pulangnya sering lupa dihitung. Bisa nombok!"
+     }
+    },
+    {
+     "dur": 4.0,
+     "type": "cta",
+     "char": "ghost",
+     "say": {
+      "who": "BOS",
+      "text": "Biar tol nggak kelewat, hitung pakai Ghostrip. Komen DEMO."
+     }
+    }
+   ],
+   "caption": "Kenapa tarif tol truk beda-beda? Karena golongan tol ditentukan dari jumlah gandar (sumbu roda) 🚛\n\n• Gol I: sedan, jip, pick up/truk kecil, bus\n• Gol II: truk 2 gandar\n• Gol III: truk 3 gandar\n• Gol IV: truk 4 gandar\n• Gol V: truk 5 gandar atau lebih\n\nMakin banyak gandar, makin mahal tolnya. Dan jangan lupa: kalau rutenya pulang-pergi, tolnya dihitung dua kali.\n\nGhostrip bantu hitung harga trip lengkap dengan tol, bos tinggal cek dan approve.\n\n✅ Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930\n\nSumber: Auto2000 (mengacu Kepmen PUPR No. 370/KPTS/M/2007)\n\n#ghostrip #ekspedisi #trucking #logistik #truk #tarif tol #golongantol #tahukahkamu",
+   "tiktok_title": "Tarif tol truk dihitung dari jumlah gandar",
+   "voice_id": "2026-10-29-reel1-v2"
+  },
+  {
+   "slot": "feed-v2",
+   "kind": "feed",
+   "time": "17:00",
+   "scene": {
+    "kicker": "SIMPAN INI",
+    "title": "Golongan tol *per jumlah gandar*",
+    "title_size": 64,
+    "items": [
+     "Gol I: sedan, jip, pick up / truk kecil, bus",
+     "Gol II: truk 2 gandar",
+     "Gol III: truk 3 gandar",
+     "Gol IV: truk 4 gandar",
+     "Gol V: truk 5 gandar atau lebih"
+    ],
+    "mark": "num"
+   },
+   "caption": "Simpan buat referensi 📌\n\nGolongan tol ditentukan dari jumlah gandar (sumbu roda) kendaraan. Makin banyak gandar, makin tinggi golongannya dan makin mahal tarif tolnya.\n\nJangan lupa hitung tol pulang-pergi waktu kasih harga trip.\n\n✅ Hitung harga trip lengkap dengan tol di Ghostrip. Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930\n\nSumber: Auto2000 (Kepmen PUPR No. 370/KPTS/M/2007)\n\n#ghostrip #ekspedisi #trucking #logistik #truk #golongantol #tol"
+  },
+  {
+   "slot": "reel2-v2",
+   "kind": "reel",
+   "time": "19:30",
+   "topic": "Uji KIR wajib tiap 6 bulan",
+   "scenes": [
+    {
+     "dur": 3.6,
+     "kicker": "ATURAN",
+     "title": "Kenapa truk wajib *uji KIR*?",
+     "badge": {
+      "text": "Tiap 6 bulan",
+      "color": "orange"
+     },
+     "char": "sopir:think",
+     "say": {
+      "who": "SOPIR",
+      "text": "Bos, KIR truk kita kapan habisnya ya?"
+     }
+    },
+    {
+     "dur": 4.8,
+     "title": "Apa itu *KIR*?",
+     "fact": {
+      "n": 1,
+      "head": "Uji berkala",
+      "body": "Pengujian kelayakan jalan kendaraan angkutan barang dan umum oleh Dinas Perhubungan, wajib *setiap 6 bulan*.",
+      "source": "Auto2000 / PM 133 2015"
+     },
+     "char": "bos:neutral",
+     "say": {
+      "who": "BOS",
+      "text": "KIR itu cek kelayakan truk. Wajib tiap enam bulan."
+     }
+    },
+    {
+     "dur": 4.8,
+     "title": "Yang *wajib KIR*",
+     "items": [
+      "Truk & pick up angkutan barang",
+      "Mobil box & double cabin niaga",
+      "Angkutan umum (travel, taksi)"
+     ],
+     "mark": "check",
+     "say": {
+      "who": "HANTU",
+      "text": "Truk, pick up, mobil box, sampai double cabin niaga wajib KIR."
+     }
+    },
+    {
+     "dur": 4.6,
+     "title": "Tujuannya *keselamatan*",
+     "stat": {
+      "label": "Truk layak jalan =",
+      "value": "trip lebih aman",
+      "color": "mint",
+      "size": 70
+     },
+     "char": "bos:happy",
+     "say": {
+      "who": "BOS",
+      "text": "Truk layak jalan, trip aman, customer tenang."
+     }
+    },
+    {
+     "dur": 4.0,
+     "type": "cta",
+     "char": "ghost",
+     "say": {
+      "who": "BOS",
+      "text": "Urus truknya, harga tripnya biar Ghostrip. Komen DEMO."
+     }
+    }
+   ],
+   "caption": "Uji KIR itu apa sih, dan kenapa wajib? 🔧\n\nKIR adalah pengujian berkala kelayakan jalan kendaraan, dilakukan Dinas Perhubungan setiap 6 bulan sekali. Yang wajib antara lain truk, pick up, mobil box, double cabin niaga, dan angkutan umum seperti travel dan taksi.\n\nTujuannya keselamatan: truk layak jalan, trip lebih aman.\n\nUrusan hitung harga trip-nya biar Ghostrip, bos tinggal cek dan approve.\n\n✅ Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930\n\nSumber: Auto2000 (UU 22/2009, Permenhub 133/2015)\n\n#ghostrip #ekspedisi #trucking #logistik #truk #ujikir #kir #tahukahkamu",
+   "tiktok_title": "Kenapa truk wajib uji KIR tiap 6 bulan?",
+   "voice_id": "2026-10-29-reel2-v2"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "id": "2026-10-31-reel1-v2",
+ "lines": [
+  {
+   "who": "SOPIR",
+   "tone": "penasaran",
+   "text": "Bos, Desember nanti truk kita bisa jalan di tol nggak?"
+  },
+  {
+   "who": "BOS",
+   "tone": "santai",
+   "text": "Nataru kemarin, truk sumbu tiga ke atas dibatasi di tol."
+  },
+  {
+   "who": "HANTU",
+   "tone": "menjelaskan",
+   "text": "Biar arus libur lancar dan aman, apalagi pas musim hujan."
+  },
+  {
+   "who": "BOS",
+   "tone": "kaget",
+   "text": "Kalau harus lewat arteri atau nunggu, biaya trip ikut naik."
+  },
+  {
+   "who": "BOS",
+   "tone": "mengajak",
+   "text": "Siapkan harga trip Desember dari sekarang. Komen DEMO."
+  }
+ ]
+}
