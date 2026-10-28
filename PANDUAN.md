@@ -4,9 +4,8 @@ Tujuan: setiap hari otomatis membuat & menjadwalkan konten Ghostrip di Metricool
 Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 
 ## Arah konten (WAJIB)
-Konten = **penjelasan detail & fun fact seputar dunia ekspedisi/truk**, bukan iklan.
-Penonton harus belajar sesuatu yang konkret (angka, aturan, istilah, alasan teknis), lalu di akhir dikaitkan ke harga trip dan ditutup CTA Ghostrip.
-Contoh sudut: "Tahukah kamu?", "Kenapa truk …?", "Arti istilah …", "Aturan baru …", "Hitung-hitungan …".
+Konten = CAMPURAN format (lihat "Variasi format & alur"): cerita/sketsa, fakta & aturan detail, kuis, mitos vs fakta, hitung-hitungan biaya, tips, demo. Penonton harus terhibur atau belajar sesuatu yang konkret, lalu di akhir dikaitkan ke harga trip dan ditutup CTA Ghostrip. Bukan iklan keras.
+Catatan: 28–31 Okt semuanya format FAKTA → konten berikutnya utamakan CERITA, KUIS, MITOS, HITUNG.
 
 ### Riset fakta (WAJIB sebelum menulis)
 - Setiap fakta/angka/aturan harus dicek dengan WebSearch/WebFetch ke sumber yang jelas (situs pemerintah: Kemenhub, BPJT, JDIH/peraturan.bpk.go.id; media: Kompas, Detik, Bisnis.com, Kontan, CNBC, Antara; produsen truk resmi).
