@@ -38,13 +38,13 @@
   "kind": "reel",
   "media": "media/2026-10-29/reel1-v2.mp4",
   "cover": "media/2026-10-29/reel1-v2-cover.jpg",
-  "dur": 30.079455782312923
+  "dur": 28.79877551020408
  },
  {
   "slot": "reel2-v2",
   "kind": "reel",
   "media": "media/2026-10-29/reel2-v2.mp4",
   "cover": "media/2026-10-29/reel2-v2-cover.jpg",
-  "dur": 119.4655328798186
+  "dur": 21.8
  }
 ]
