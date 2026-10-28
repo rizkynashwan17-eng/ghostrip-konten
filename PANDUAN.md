@@ -21,6 +21,29 @@ Contoh sudut: "Tahukah kamu?", "Kenapa truk …?", "Arti istilah …", "Aturan b
 - Bisnis: komponen biaya trip (solar, tol, uang jalan, makan/inap sopir, bongkar muat, retribusi), muatan balik (backhaul), cara menentukan markup, PPN/PPh di quotation, kenapa harga trip harus dihitung ulang saat solar naik.
 - Sejarah/fun fact: asal nama merek/istilah truk, truk terpanjang/terberat di Indonesia (jika ada sumber).
 
+
+## Variasi format & alur (WAJIB, permintaan Rizky 28 Okt)
+Konten TIDAK boleh fun fact terus dan alur TIDAK boleh monoton. Putar format berikut:
+| kode | format | contoh alur scene |
+|---|---|---|
+| CERITA | sketsa/drama pendek Bos–Sopir–Admin–Customer dengan konflik & twist, pelajaran di akhir | adegan jalan (`type: road`) → chat customer → linimasa H1/H2/H3 (`items` + `tag`) → Bos kaget (`char2` dua karakter) → solusi → cta |
+| FAKTA | tahukah kamu / arti istilah / aturan | kicker → fact → compare/list → stat → cta |
+| KUIS | tebak-tebakan, jawaban muncul belakangan | pertanyaan + `mark: "quiz"`, `answer`, `reveal` (detik) → penjelasan fact → cta |
+| MITOS | mitos vs fakta | compare kiri "MITOS" (illus warn) vs kanan "FAKTA" → fact + sumber → cta |
+| HITUNG | studi kasus angka/biaya trip (fiktif tapi masuk akal) | chat/rute → list biaya → stat total → "kalau lupa X, rugi Y" → cta |
+| TIPS | cara/langkah praktis untuk bos ekspedisi | judul angka ("3 cara…") → items num → stat → cta |
+| DEMO | fitur Ghostrip dipakai di situasi nyata (tanpa mengarang fitur) | masalah → hantu datang → langkah pakai app → hasil → cta |
+
+Aturan rotasi:
+- Dalam satu hari, reel1 dan reel2 HARUS format berbeda. Dalam 3 hari berturut-turut, maksimal 2 reel FAKTA; minimal 1 CERITA per 2 hari.
+- Scene pembuka bergantian: pertanyaan, pernyataan mengejutkan/angka besar (`stat`), adegan cerita (road/chat), kuis. Jangan selalu `kicker` + judul.
+- Urutan blok berbeda tiap reel (jangan selalu fact → list → stat). Panjang 4–6 scene, durasi scene bervariasi.
+- Ganti suasana warna `tint`: teal (default), orange, blue, purple, red (masalah/rugi) — maksimal 2 reel berurutan dengan tint sama.
+- Karakter bergantian memimpin: kadang Sopir, kadang Admin/Customer, kadang Hantu sebagai narator; pakai `char2` untuk adegan dua orang.
+- Story: putar polling, kuis, teaser, "tebak angka", behind-the-scene. Feed: putar tabel/simpan ini, carousel cerita, mitos vs fakta, checklist.
+- Catat format di kolom RIWAYAT (mis. "CERITA: trip molor 3 hari"), dan cek riwayat sebelum memilih.
+- Format CERITA/HITUNG/DEMO boleh tanpa sumber berita, tapi angka harus masuk akal dan nama orang/perusahaan fiktif; fakta aturan tetap wajib bersumber.
+
 ## Produk & aturan merek
 - Ghostrip = aplikasi hitung harga trip truk + quotation PDF (kop, TTD, cap, PPN/PPh), riwayat hitungan, pengaturan solar/markup/jenis truk per akun.
 - Langganan Rp149 rb/bln, **coba gratis 7 hari**, **komen DEMO** atau WA **0815-1704-7930**. IG @ghostrip.app, TikTok @ghostrip.id.
@@ -78,7 +101,10 @@ Setiap scene reel (dan `scene` story/feed, `slides` carousel) memakai kunci beri
 - `illus` satu ilustrasi tengah (nama sama dengan di atas).
 - `char` karakter: `bos:neutral|happy|sad|shocked|think` (+ `:up` tangan naik, `:left`/`:right`), `sopir:<mood>`, atau `ghost`. Bos/sopir otomatis duduk di balik meja.
 - `say` {who: BOS/SOPIR/HANTU/ADMIN/CUSTOMER, text} bar dialog bawah. Maks ±12 kata. Setiap scene reel sebaiknya punya `say`.
-- `glow` (default true), `sparkles`.
+- `glow` (default true), `sparkles`, `tint`: teal/orange/blue/purple/red (warna suasana).
+- `char2`: karakter kedua (mis. `"char": "bos:shocked:right", "char2": "sopir:happy:left"`).
+- `items` boleh berisi objek `{"text": "...", "tag": "H1"}` (label oranye, cocok untuk linimasa cerita).
+- Kuis: `"mark": "quiz", "answer": <index 0-based>, "reveal": <detik>` → pilihan A/B/C, jawaban benar menyala setelah `reveal`.
 Jangan menumpuk terlalu banyak di satu scene: maksimal 2 blok (mis. fact + stat, atau title + compare) + karakter.
 Untuk story/feed: footer @ghostrip.app otomatis; tidak ada bar dialog.
 

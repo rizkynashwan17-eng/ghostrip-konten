@@ -45,8 +45,9 @@ def mix(c1, c2, p): return tuple(int(c1[i] * p + c2[i] * (1 - p)) for i in range
 
 # ------------------------------------------------------------------ background
 _bg = {}
-def background(W, H, glow=True, desk=False):
-    k = (W, H, glow, desk)
+GLOWS = {"teal": (32, 86, 84), "orange": (96, 62, 36), "blue": (34, 58, 104), "purple": (70, 44, 96), "red": (100, 40, 44)}
+def background(W, H, glow=True, desk=False, tint="teal"):
+    k = (W, H, glow, desk, tint)
     if k in _bg: return _bg[k].copy()
     y = np.linspace(0, 1, H)[:, None, None]
     arr = (np.array(BG_TOP) * (1 - y) + np.array(BG_BOT) * y).repeat(W, 1)
@@ -54,7 +55,7 @@ def background(W, H, glow=True, desk=False):
         yy, xx = np.mgrid[0:H, 0:W]
         d = np.sqrt(((xx - W / 2) / (W * .62)) ** 2 + ((yy - H * .42) / (H * .36)) ** 2)
         g = np.clip(1 - d, 0, 1)[:, :, None] ** 1.6
-        arr = arr * (1 - g * .55) + np.array(GLOW) * g * .55
+        arr = arr * (1 - g * .55) + np.array(GLOWS.get(tint, GLOW)) * g * .55
     im = Image.fromarray(arr.astype(np.uint8), "RGB")
     if desk:
         d = ImageDraw.Draw(im); top = int(H * .792)
@@ -441,6 +442,7 @@ def calendar_card(im, d, c, t, W, y):
     rotated_paste(im, lay, W / 2, y + h / 2 + 20, 3)
     return h + 60
 
+QUIZ = {}
 def list_cards(im, d, items, t, W, y, mark="check", gap=.55, start=.4):
     f = font(46, "SemiBold"); hh = 0
     for i, it in enumerate(items):
@@ -452,7 +454,20 @@ def list_cards(im, d, items, t, W, y, mark="check", gap=.55, start=.4):
             ImageDraw.Draw(im).rounded_rectangle((x0, y + hh, x0 + W - 140, y + hh + rh), radius=36, fill=CARD2)
             d = ImageDraw.Draw(im); cy = y + hh + rh / 2; r = 34
             m = it.get("mark", mark) if isinstance(it, dict) else mark
-            if m == "num":
+            tag = it.get("tag") if isinstance(it, dict) else None
+            if m == "quiz":
+                ans = QUIZ.get("answer", -1); rv = t >= QUIZ.get("reveal", 99)
+                letter = "ABCD"[i] if i < 4 else str(i + 1)
+                if rv and i == ans:
+                    ImageDraw.Draw(im).rounded_rectangle((x0, y + hh, x0 + W - 140, y + hh + rh), radius=36, outline=MINT, width=6)
+                col = MINT if (rv and i == ans) else ((90, 104, 116) if rv else (236, 242, 246))
+                d.ellipse((x0 + 56 - r, cy - r, x0 + 56 + r, cy + r), fill=col)
+                d.text((x0 + 56, cy), letter, font=font(36, "ExtraBold"), fill=INK, anchor="mm")
+            elif tag:
+                tw = max(2 * r, font(30, "ExtraBold").getlength(tag) + 30)
+                d.rounded_rectangle((x0 + 56 - tw / 2, cy - r, x0 + 56 + tw / 2, cy + r), radius=r, fill=ORANGE)
+                d.text((x0 + 56, cy), tag, font=font(30, "ExtraBold"), fill=INK, anchor="mm")
+            elif m == "num":
                 d.ellipse((x0 + 56 - r, cy - r, x0 + 56 + r, cy + r), fill=MINT)
                 d.text((x0 + 56, cy), str(i + 1), font=font(38, "ExtraBold"), fill=INK, anchor="mm")
             else:
@@ -537,9 +552,9 @@ def cta(im, d, sc, t, W, H):
 # ------------------------------------------------------------------ scene
 def frame(sc, t, W, H, static=False):
     typ = sc.get("type", "explain")
-    has_person = bool(sc.get("char")) and not sc["char"].startswith("ghost")
+    has_person = (bool(sc.get("char")) and not sc["char"].startswith("ghost")) or bool(sc.get("char2"))
     road_scene = typ == "road"
-    im = background(W, H, glow=sc.get("glow", True), desk=has_person and not road_scene)
+    im = background(W, H, glow=sc.get("glow", True), desk=has_person and not road_scene, tint=sc.get("tint", "teal"))
     d = ImageDraw.Draw(im)
     desk_top = H * .792
     if typ == "cta":
@@ -562,6 +577,7 @@ def frame(sc, t, W, H, static=False):
     if sc.get("chat"): y += chat_box(im, ImageDraw.Draw(im), sc["chat"], t, W, y) + 30
     if sc.get("fact"): y += fact_card(im, ImageDraw.Draw(im), sc["fact"], t, W, y, .25 if sc.get("title") else .1) + 40
     if sc.get("compare"): y += compare(im, ImageDraw.Draw(im), sc["compare"], t, W, y) + 20
+    QUIZ.clear(); QUIZ.update({"answer": sc.get("answer", -1), "reveal": sc.get("reveal", 99)})
     if sc.get("items"): y += list_cards(im, ImageDraw.Draw(im), sc["items"], t, W, y, sc.get("mark", "check"), sc.get("gap", .55)) + 20
     if sc.get("stat"): y += stat_card(im, ImageDraw.Draw(im), sc["stat"], t, W, y, .6 if (sc.get("compare") or sc.get("fact")) else .3) + 30
     if sc.get("illus") and not road_scene:
@@ -572,6 +588,8 @@ def frame(sc, t, W, H, static=False):
     if sc.get("char"):
         if sc["char"].startswith("ghost"): draw_ghost(im, W * .8, (y + 120) if H > 1500 else H * .7, 260 if H > 1500 else 210, t, .3)
         else: draw_char(im, sc["char"], t, W, H, desk_top if not road_scene else H * .9)
+    if sc.get("char2"):
+        draw_char(im, sc["char2"], t, W, H, desk_top if not road_scene else H * .9)
     if static:
         d = ImageDraw.Draw(im)
         f = font(32, "SemiBold"); txt = f"@ghostrip.app  ·  Coba gratis 7 hari  ·  WA {WA}"
@@ -589,6 +607,7 @@ def scene_events(sc):
     if sc.get("stat"): ev.append(.6)
     if sc.get("compare"): ev += [.3, .8]
     if sc.get("type") == "cta": ev += [.7, 1.0]
+    if sc.get("reveal"): ev.append(sc["reveal"])
     return ev
 
 # ------------------------------------------------------------------ audio
