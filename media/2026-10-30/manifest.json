@@ -15,5 +15,15 @@
   "slot": "feed",
   "kind": "feed",
   "media": "media/2026-10-30/feed.jpg"
+ },
+ {
+  "slot": "story-v2",
+  "kind": "story",
+  "media": "media/2026-10-30/story-v2.jpg"
+ },
+ {
+  "slot": "feed-v2",
+  "kind": "feed",
+  "media": "media/2026-10-30/feed-v2.jpg"
  }
 ]

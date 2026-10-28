@@ -10,5 +10,21 @@
   "media": "media/2026-10-31/reel1.mp4",
   "cover": "media/2026-10-31/reel1-cover.jpg",
   "dur": 16.4
+ },
+ {
+  "slot": "story-v2",
+  "kind": "story",
+  "media": "media/2026-10-31/story-v2.jpg"
+ },
+ {
+  "slot": "carousel-v2",
+  "kind": "carousel",
+  "media": [
+   "media/2026-10-31/carousel-v2-1.jpg",
+   "media/2026-10-31/carousel-v2-2.jpg",
+   "media/2026-10-31/carousel-v2-3.jpg",
+   "media/2026-10-31/carousel-v2-4.jpg",
+   "media/2026-10-31/carousel-v2-5.jpg"
+  ]
  }
 ]

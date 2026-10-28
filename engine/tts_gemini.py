@@ -59,11 +59,14 @@ def synth(text, who, model, tone=None):
             msg = e.read().decode()[:600]
             print(f"HTTP {e.code} {model}: {msg}")
             LOG.append(f"HTTP {e.code} {model}: {msg}")
-            if e.code in (429, 500, 503): time.sleep(20 * (attempt + 1)); continue
+            if e.code == 429 and "per day" in msg.lower() or "PerDay" in msg:
+                DEAD.add(model); raise
+            if e.code in (429, 500, 503): time.sleep(15 * (attempt + 1)); continue
             raise
     raise RuntimeError("gagal setelah 4 percobaan")
 
 LOG = []
+DEAD = set()
 
 def main():
     if not KEY:
@@ -74,9 +77,16 @@ def main():
         req = json.load(open(path)); rid = req["id"]; out = f"voice/out/{rid}"
         if os.path.exists(f"{out}/done.json"): continue
         os.makedirs(out, exist_ok=True); durs = []; used = None
+        if os.path.exists(f"{out}/error.txt"): os.remove(f"{out}/error.txt")
         for i, ln in enumerate(req["lines"]):
+            fn = f"{out}/{i:02d}.wav"
+            if os.path.exists(fn):
+                with wave.open(fn) as w: durs.append(round(w.getnframes() / 24000, 2))
+                continue
             pcm = None
-            for m in ([used] if used else models):
+            order = ([used] if used else []) + [m for m in models if m != used]
+            for m in order:
+                if m in DEAD: continue
                 try: pcm = synth(ln["text"], ln.get("who", "BOS"), m, ln.get("tone")); used = m; break
                 except Exception as e: print("model", m, "gagal:", e)
             if pcm is None:
