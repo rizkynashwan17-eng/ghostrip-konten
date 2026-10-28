@@ -2,13 +2,12 @@
 
 Rizky sudah mengizinkan: lengkapi suara & ganti video di Metricool TANPA bertanya. Hapus baris dari tabel setelah berhasil diganti. Posting yang jamnya sudah lewat: hapus barisnya (tidak bisa diganti).
 
-Request suara yang belum lengkap: `2026-10-30-reel1-v2` (4/5 kalimat), `2026-10-31-reel1-v2`, `manual-odol`, `manual-salah-hitung`.
+Request suara yang belum lengkap: `2026-10-31-reel1-v2`, `manual-odol`, `manual-salah-hitung`.
 Urutan pengerjaan TTS otomatis menurut kunci `"jadwal"` di request (tayang terdekat dulu), jadi kalau kuota habis yang paling dekat jadwalnya sudah aman duluan. (Reels KIR 29 Okt SUDAH bersuara & diganti di Metricool 28 Okt sore — lewati.)
 
 Posting Metricool yang harus diganti medianya (cari id terbaru via getScheduledPosts, cocokkan uuid; isi lain JANGAN diubah, salin dari getScheduledPosts):
 | konten | jadwal WIB | uuid | file baru | file konten JSON |
 |---|---|---|---|---|
-| Reels kelas jalan | 30 Okt 11:30 | -8436520620524353127 | media/2026-10-30/reel1-v2.mp4 | konten/2026-10-30-v2.json |
 | Reels Nataru | 31 Okt 11:30 | 4183418540628529089 | media/2026-10-31/reel1-v2.mp4 | konten/2026-10-31-v2.json |
 | Reels Zero ODOL (video Rizky + vokal) | 31 Okt 19:00 | 2577346606753599253 | media/manual/reels-zero-odol-vo.mp4 | (video manual, pakai mix_manual.py) |
 | Reels salah hitung / nombok (video manual + vokal) | 1 Nov 19:00 | -6088459601878496524 | media/2026-11-01/reel-salah-hitung-vo.mp4 | (video manual, pakai mix_manual.py) |
