@@ -32,5 +32,19 @@
   "slot": "feed-v2",
   "kind": "feed",
   "media": "media/2026-10-29/feed-v2.jpg"
+ },
+ {
+  "slot": "reel1-v2",
+  "kind": "reel",
+  "media": "media/2026-10-29/reel1-v2.mp4",
+  "cover": "media/2026-10-29/reel1-v2-cover.jpg",
+  "dur": 30.079455782312923
+ },
+ {
+  "slot": "reel2-v2",
+  "kind": "reel",
+  "media": "media/2026-10-29/reel2-v2.mp4",
+  "cover": "media/2026-10-29/reel2-v2-cover.jpg",
+  "dur": 119.4655328798186
  }
 ]

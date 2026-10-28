@@ -46,8 +46,19 @@ def list_tts_models():
     except Exception as e:
         print("list models failed:", e); return []
 
-def synth(text, who, model, tone=None):
-    body = {"contents": [{"parts": [{"text": prompt(text, who, tone)}]}],
+SHORT_TONE = {"penasaran": "curiously", "kaget": "in a surprised way", "santai": "casually", "menjelaskan": "enthusiastically",
+              "kecewa": "with a worried tone", "senang": "happily", "mengajak": "energetically", "tegas": "firmly"}
+
+def prompt_variant(text, who, tone, v):
+    if v == 0: return prompt(text, who, tone)
+    if v == 1: return f"Say {SHORT_TONE.get(tone, 'naturally')}: {text}"
+    return text
+
+def max_len(text):
+    return max(6.0, len(text.split()) * 0.75 + 2.0)
+
+def synth(text, who, model, tone=None, variant=0):
+    body = {"contents": [{"parts": [{"text": prompt_variant(text, who, tone, variant)}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": VOICE.get(who, 'Orus')}}}}}
     for attempt in range(4):
@@ -86,9 +97,18 @@ def main():
             pcm = None
             order = ([used] if used else []) + [m for m in models if m != used]
             for m in order:
-                if m in DEAD: continue
-                try: pcm = synth(ln["text"], ln.get("who", "BOS"), m, ln.get("tone")); used = m; break
-                except Exception as e: print("model", m, "gagal:", e)
+                if pcm is not None: break
+                for v in (0, 1, 2):
+                    if m in DEAD: break
+                    try:
+                        cand = synth(ln["text"], ln.get("who", "BOS"), m, ln.get("tone"), v)
+                    except Exception as e:
+                        print("model", m, "gagal:", e); break
+                    dur = len(cand) / 2 / 24000
+                    if dur <= max_len(ln["text"]):
+                        pcm = cand; used = m; break
+                    print(f"TOLAK {m} v{v}: {dur:.1f} dtk terlalu panjang"); LOG.append(f"tolak {m} v{v} {dur:.1f}s")
+                    time.sleep(5)
             if pcm is None:
                 open(f"{out}/error.txt", "w").write("GAGAL baris %d\n" % i + "\n".join(LOG[-6:]))
                 print("GAGAL baris", i); sys.exit(1)
