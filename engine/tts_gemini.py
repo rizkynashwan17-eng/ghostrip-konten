@@ -56,11 +56,14 @@ def synth(text, who, model, tone=None):
             part = res["candidates"][0]["content"]["parts"][0]["inlineData"]
             return base64.b64decode(part["data"])
         except urllib.error.HTTPError as e:
-            msg = e.read().decode()[:300]
+            msg = e.read().decode()[:600]
             print(f"HTTP {e.code} {model}: {msg}")
+            LOG.append(f"HTTP {e.code} {model}: {msg}")
             if e.code in (429, 500, 503): time.sleep(20 * (attempt + 1)); continue
             raise
     raise RuntimeError("gagal setelah 4 percobaan")
+
+LOG = []
 
 def main():
     if not KEY:
@@ -76,7 +79,9 @@ def main():
             for m in ([used] if used else models):
                 try: pcm = synth(ln["text"], ln.get("who", "BOS"), m, ln.get("tone")); used = m; break
                 except Exception as e: print("model", m, "gagal:", e)
-            if pcm is None: print("GAGAL baris", i); sys.exit(1)
+            if pcm is None:
+                open(f"{out}/error.txt", "w").write("GAGAL baris %d\n" % i + "\n".join(LOG[-6:]))
+                print("GAGAL baris", i); sys.exit(1)
             fn = f"{out}/{i:02d}.wav"
             with wave.open(fn, "wb") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(pcm)
             durs.append(round(len(pcm) / 2 / 24000, 2)); print(rid, i, ln["who"], durs[-1], "dtk")
