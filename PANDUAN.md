@@ -42,14 +42,16 @@ Reel1 & reel2 = dua topik BERBEDA. Story boleh polling/pertanyaan yang nyambung 
 1. Clone/pull repo. Baca `RIWAYAT.md` (hindari topik 30 hari terakhir).
 2. Pilih 2 topik reel + 1 topik feed, RISET dulu (lihat di atas), catat sumbernya.
 3. Tulis `konten/YYYY-MM-DD.json` (contoh lengkap: `konten/2026-10-28-v2.json`).
-4. `python3 engine/render.py konten/YYYY-MM-DD.json`, lalu CEK VISUAL: ambil 4–5 frame tiap reel (`ffmpeg -ss <detik> -i <mp4> -frames:v 1 x.jpg`) + gambar story/feed dan lihat dengan Read. Pastikan teks tidak keluar kartu/terpotong, kartu tidak menimpa karakter atau bar dialog. Perbaiki JSON (teks lebih pendek, hapus `illus`, dll) lalu render ulang.
-5. Tambah baris ke `RIWAYAT.md`, commit & push ke `main`.
-6. URL media = `https://raw.githubusercontent.com/rizkynashwan17-eng/ghostrip-konten/<SHA-commit>/<path>`.
-7. Jadwalkan dengan `createScheduledPost` (blogId `7702870`, timezone Asia/Jakarta, autoPublish true, draft false), hanya slot yang masih kosong (cek `getScheduledPosts` dulu; konten manual Rizky dihitung mengisi slot sejenis).
+4. SUARA (Gemini TTS lewat GitHub Actions): `python3 engine/render.py --voice-requests konten/YYYY-MM-DD.json` → commit & push (file `voice/requests/*.json`) → tunggu sampai `voice/out/<voice_id>/done.json` muncul di origin/main (cek `git fetch` tiap 15 dtk, maks 12 menit) → `git pull`. Kalau gagal/`error.txt` (kuota harian habis), lanjutkan TANPA suara; video tetap dibuat dengan musik + teks.
+   Teks `say` ditulis seperti orang bicara: angka & singkatan yang sulit dibaca tulis dengan huruf di `say` ("dua ribu dua puluh tujuh", "sepuluh ton"). Opsional `"tone"`: penasaran/kaget/santai/menjelaskan/kecewa/senang/mengajak/tegas.
+5. `python3 engine/render.py konten/YYYY-MM-DD.json`, lalu CEK VISUAL: ambil 4–5 frame tiap reel (`ffmpeg -ss <detik> -i <mp4> -frames:v 1 x.jpg`) + gambar story/feed dan lihat dengan Read. Pastikan teks tidak keluar kartu/terpotong, kartu tidak menimpa karakter atau bar dialog. Perbaiki JSON (teks lebih pendek, hapus `illus`, dll) lalu render ulang.
+6. Tambah baris ke `RIWAYAT.md`, commit & push ke `main`.
+7. URL media = `https://raw.githubusercontent.com/rizkynashwan17-eng/ghostrip-konten/<SHA-commit>/<path>`.
+8. Jadwalkan dengan `createScheduledPost` (blogId `7702870`, timezone Asia/Jakarta, autoPublish true, draft false), hanya slot yang masih kosong (cek `getScheduledPosts` dulu; konten manual Rizky dihitung mengisi slot sejenis).
    - Reels: instagramData {type REEL, showReelOnFeed true, isAiGenerated true}, tiktokData {title ≤ 90 karakter, privacyOption PUBLIC_TO_EVERYONE, isAigc true, commercialContentOwnBrand true}.
    - Story: instagramData {type STORY, isAiGenerated true}, tanpa text.
    - Feed/carousel: instagramData {type POST, isAiGenerated true}.
-8. Verifikasi dengan `getScheduledPosts`.
+9. Verifikasi dengan `getScheduledPosts`.
 
 ## Format JSON (engine v2)
 Setiap scene reel (dan `scene` story/feed, `slides` carousel) memakai kunci berikut (semua opsional kecuali yang jelas dibutuhkan):
