@@ -1,6 +1,19 @@
 # Panduan konten harian Ghostrip (dibaca oleh tugas terjadwal)
 
-Tujuan: setiap hari otomatis membuat & menjadwalkan konten Ghostrip di Metricool.
+Tujuan: setiap hari otomatis membuat konten Ghostrip dan memasukkannya ke halaman Posting Ghostrip (Rizky memposting manual).
+
+## MODE POSTING MANUAL — ATURAN PATEN sejak 29 Okt 2026 (menggantikan semua langkah Metricool di bawah)
+Rizky memilih posting manual (Instagram sempat terputus dari Metricool, kuota Metricool terbatas). JANGAN membuat atau mengaktifkan posting di Metricool lagi (`createScheduledPost` / `draft: false` dilarang), kecuali Rizky sendiri memintanya. Posting lama di Metricool sudah dijadikan draft.
+- Halaman: `index.html` (GitHub Pages, https://rizkynashwan17-eng.github.io/ghostrip-konten/) membaca `posting/jadwal.json`. Rizky membuka halaman, ketuk Bagikan → IG/TikTok (caption tersalin otomatis), lalu centang Sudah. Pengingat kalender di HP Rizky: 07.30, 11.30, 17.00, 19.30 setiap hari.
+- Pengganti tiap langkah lama:
+  - `getScheduledPosts` (cek stok/slot/Reels) → baca `posting/jadwal.json` (`python3 engine/posting.py daftar`).
+  - `createScheduledPost` (langkah 8) → `python3 engine/posting.py tambah konten/YYYY-MM-DD-v2.json` (otomatis memakai `media/<tanggal>/manifest.json`, versi `-vo.mp4` dipakai kalau ada). Video manual Rizky → `python3 engine/posting.py manual ...` (lihat docstring).
+  - `updateScheduledPost` ganti media (susulan suara) → render ulang lalu jalankan lagi `posting.py tambah` (id sama = diganti), atau `posting.py manual` dengan id/judul yang sama untuk video manual. Tabel `SUSULAN-SUARA.md` cukup berisi konten, jadwal, file mp4, file JSON (kolom uuid diabaikan).
+  - Langkah D → juga `python3 engine/posting.py bersihkan 10`. Media yang masih tercantum di `posting/jadwal.json` jangan dihapus.
+- Wajib commit & push `posting/jadwal.json` + semua media yang dirujuk (halaman mengambil media dari repo). Setelah push, cek `https://raw.githubusercontent.com/rizkynashwan17-eng/ghostrip-konten/main/posting/jadwal.json` berisi konten baru.
+- Laporan harian ke Rizky tetap wajib; sebut konten baru yang masuk halaman (tanggal · jam · jenis · topik · status suara).
+- Label AI & aturan merek tetap berlaku (caption tanpa nama asli terlarang, dll.).
+
 Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 
 ## Arah konten (WAJIB)
