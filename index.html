@@ -66,11 +66,17 @@ button:disabled{opacity:.6}
 button:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
 .save{grid-column:1/-1;font-size:13px;padding:8px;min-height:0;background:none;color:var(--muted);text-decoration:underline}
 .empty{color:var(--muted);text-align:center;padding:40px 10px}
-.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(120px);background:var(--fg);color:var(--bg);padding:12px 18px;border-radius:999px;font-weight:600;font-size:14px;transition:transform .25s;z-index:9;max-width:90vw;text-align:center}
+.toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(120px);background:var(--fg);color:var(--bg);padding:12px 18px;border-radius:999px;font-weight:600;font-size:14px;transition:transform .25s;z-index:9;max-width:90vw;text-align:center}
 .toast.on{transform:translateX(-50%) translateY(0)}
 .foot{color:var(--muted);font-size:12px;text-align:center;margin-top:26px}
 .toggle{display:block;margin:18px auto 0;background:none;color:var(--muted);text-decoration:underline;font-weight:500;font-size:14px;min-height:0}
-@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+.jump{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:8;background:var(--mint);color:var(--bg);border-radius:999px;padding:14px 22px;font-size:15px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.45);white-space:nowrap;min-height:0}
+.jump b{background:var(--bg);color:var(--mint);border-radius:999px;padding:1px 9px;margin-left:4px;font-variant-numeric:tabular-nums}
+.card{scroll-margin-top:14px}
+.card.flash{animation:flash 1.4s ease-out}
+@keyframes flash{0%{box-shadow:0 0 0 4px var(--orange)}100%{box-shadow:0 0 0 0 transparent}}
+body{padding-bottom:calc(100px + env(safe-area-inset-bottom,0px))}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}.card.flash{animation:none;outline:3px solid var(--orange)}}
 </style>
 </head>
 <body>
@@ -93,6 +99,7 @@ button:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid 
   <button class="toggle" id="toggleDone" hidden></button>
   <p class="foot" id="foot"></p>
 </div>
+<button class="jump" id="jump" type="button" hidden>Ke yang belum diposting <b id="jumpN">0</b></button>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 const KIND = {reel:'Reels', story:'Story', feed:'Feed', carousel:'Carousel'};
@@ -212,7 +219,7 @@ function card(p, isNext){
         ...p.media.map((m,i) => el('a', {class:'btn save', href:m, download:'ghostrip-'+fileName(m)}, p.media.length>1? `Simpan ke galeri (${i+1}/${p.media.length})` : 'Simpan ke galeri'))));
   }));
   const cap = p.caption ? el('div', {class:'cap', onclick:e => e.currentTarget.classList.toggle('open')}, p.caption) : null;
-  return el('article', {class:'card'+(isNext?' next':'')+(allDone(p)?' done':'')},
+  return el('article', {id:'c-'+p.id, 'data-pending': allDone(p)?null:'1', class:'card'+(isNext?' next':'')+(allDone(p)?' done':'')},
     el('div', {class:'top'}, el('span', {class:'time'}, p.jam), el('span', {class:'pill k-'+p.jenis}, KIND[p.jenis]||p.jenis),
       el('span', {class:'when '+r.c}, allDone(p) ? 'selesai ✓' : r.t)),
     el('div', {class:'title'}, p.judul),
@@ -240,6 +247,8 @@ function render(){
     list.append(sec);
   }
   document.getElementById('sub').textContent = pending.length ? `${pending.length} konten belum diposting` : 'Semua sudah diposting ✓';
+  document.getElementById('jump').hidden = !pending.length;
+  document.getElementById('jumpN').textContent = pending.length;
   // siapkan file konten berikutnya supaya Bagikan langsung jalan
   if (next) loadFiles(next).catch(()=>{});
 }
@@ -255,6 +264,17 @@ async function boot(){
     document.getElementById('sub').textContent = 'Jadwal gagal dimuat. Tarik layar ke bawah untuk muat ulang.';
   }
 }
+// Tombol "Ke yang belum diposting": lompat ke kartu belum-diposting berikutnya (memutar)
+document.getElementById('jump').addEventListener('click', () => {
+  const cards = [...document.querySelectorAll('.card[data-pending]')];
+  if (!cards.length) return;
+  const y = 90;
+  // lewati kartu yang sudah terlihat di bagian atas layar
+  const target = cards.find(c => c.getBoundingClientRect().top > Math.max(y + 4, innerHeight * 0.4)) || cards[0];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  target.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
+  target.classList.remove('flash'); void target.offsetWidth; target.classList.add('flash');
+});
 boot();
 setInterval(() => { if (!document.hidden && ![...document.querySelectorAll('video')].some(v => !v.paused)) render(); }, 60000);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) boot(); });
