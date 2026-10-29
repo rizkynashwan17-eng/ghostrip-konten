@@ -8,6 +8,8 @@ Cek tiap post di manifest media/<tanggal>/:
 - Caption (reel/feed/carousel): ada CTA (DEMO / WA 0815-1704-7930 / gratis 7 hari), #ghostrip,
   panjang <= 2200, hashtag <= 30, tanpa nama terlarang; reel butuh tiktok_title <= 90
 - Teks layar & caption: tanpa nama terlarang, tanpa emoji di teks layar
+Aturan tema (30 Okt 2026, STRATEGI-KONTEN.md): field "tema" = cerita → tanpa CTA/Ghostrip di narasi & caption, wajib adegan logo; realita/tips/fitur/humor/edukasi → soft selling wajib; kata kerahasiaan (margin, untung order) ditandai.
+Video Remotion: durasi 15–90 dtk, pemeriksa dengar yang hanya terkendala kuota tidak menghalangi.
 Keluar kode 0 = SEMUA AMAN (WAJIB langsung masuk halaman Posting lewat engine/posting.py tanpa menunggu persetujuan), 1 = ada masalah (perbaiki, render & scan ulang).
 Status "AMAN - SUARA MENYUSUL" = upload sekarang, catat di SUSULAN-SUARA.md.
 """
@@ -53,14 +55,22 @@ def scan(spec_path):
                 info.setdefault("ukuran", f"{wh[0]}x{wh[1]}" if wh else "?")
                 if kind == "reel":
                     dur = float(pr["format"]["duration"]); info["durasi"] = round(dur, 1)
-                    if not 15 <= dur <= 45: issues.append(f"durasi {dur:.1f} dtk (harus 15-45)")
+                    lo, hi = (15, 90) if post.get("engine") == "remotion" else (15, 45)
+                    if not lo <= dur <= hi: issues.append(f"durasi {dur:.1f} dtk (harus {lo}-{hi})")
                     if not any(s["codec_type"] == "audio" for s in pr["streams"]): issues.append("tidak ada audio")
                     if os.path.getsize(p) > 100e6: issues.append("video > 100 MB")
                     n = 1 if post.get("engine") == "remotion" else sum(1 for s in post.get("scenes", []) if s.get("say"))
                     if post.get("engine") == "remotion" and not m.get("bersuara"): issues.append("video Remotion dirender tanpa narasi (pratinjau)")
                     q = check(p, post.get("voice_id"), n or None)
                     info["suara"] = q.get("voiceover"); info["kualitas"] = q.get("status")
-                    if q.get("status") != "AMAN": issues += [f"kualitas: {x}" for x in q.get("masalah", [])] or ["kualitas audio PERLU DICEK"]
+                    masalah = q.get("masalah", [])
+                    if post.get("engine") == "remotion":
+                        # inspeksi ringan untuk Remotion (permintaan Rizky 30 Okt 2026):
+                        # pemeriksa dengar yang hanya terkendala kuota tidak menghalangi
+                        dg = os.path.join(ROOT, "voice", "out", post.get("voice_id") or "", "dengar.json")
+                        kuota = os.path.exists(dg) and json.load(open(dg)).get("belum_dicek") and not any(l.get("lolos") is False for l in json.load(open(dg)).get("lines", []))
+                        masalah = [x for x in masalah if not (kuota and "pemeriksa dengar" in x) and "intonasi datar" not in x]
+                    if masalah: issues += [f"kualitas: {x}" for x in masalah]
         layar = " ".join(texts(post.get("scenes") or post.get("scene") or post.get("slides")))
         if EMOJI.search(layar): issues.append("ada emoji di teks layar")
         if kind != "story":
@@ -69,13 +79,28 @@ def scan(spec_path):
             else:
                 low = cap.lower()
                 if "#ghostrip" not in low: issues.append("caption tanpa #ghostrip")
-                if not ("demo" in low or "0815-1704-7930" in cap): issues.append("caption tanpa CTA (DEMO/WA)")
+                tema = post.get("tema", "")
+                cta = ("demo" in low or "0815-1704-7930" in cap or "gratis 7 hari" in low or "coba gratis" in low)
+                if tema == "cerita":
+                    # Selasa/Jumat (STRATEGI-KONTEN.md): tanpa promosi/CTA di caption & narasi
+                    if cta: issues.append("cerita (Selasa/Jumat) tidak boleh ada CTA di caption")
+                elif tema in ("realita", "tips", "fitur", "humor", "edukasi") and not cta and "ghostrip" not in low:
+                    issues.append("soft selling wajib untuk tema ini (sebut Ghostrip/CTA yang relevan)")
+                elif not tema and not cta:
+                    issues.append("caption tanpa CTA (DEMO/WA)")
                 if len(cap) > 2200: issues.append(f"caption {len(cap)} karakter (> 2200)")
                 if cap.count("#") > 30: issues.append("hashtag > 30")
             if kind == "reel":
                 tt = post.get("tiktok_title", "")
                 if not tt or len(tt) > 90: issues.append(f"tiktok_title kosong/terlalu panjang ({len(tt)})")
+        if post.get("tema") == "cerita":
+            narasi = " ".join(sc.get("narasi", "") for sc in post.get("scenes", [])).lower()
+            if "ghostrip" in narasi: issues.append("cerita: narasi tidak boleh menyebut Ghostrip")
+            if any(sc.get("type") == "cta" for sc in post.get("scenes", [])): issues.append("cerita: ganti adegan cta dengan adegan logo")
+            if not post.get("scenes") or post["scenes"][-1].get("type") != "logo": issues.append("cerita: wajib ditutup adegan logo")
         allt = (layar + " " + post.get("caption", "")).lower()
+        for kata in ("untung order", "margin", "tarif pasar"):
+            if kata in allt: issues.append(f"kerahasiaan: hindari '{kata}' (lihat STRATEGI-KONTEN.md bagian 7)")
         for b in BANNED:
             if b in allt: issues.append(f"nama terlarang: {b}")
         # Suara belum lengkap karena kuota TTS = boleh dijadwalkan dulu (dicatat di SUSULAN-SUARA.md), bukan penghalang upload.

@@ -2,14 +2,35 @@
 
 Tujuan: setiap hari otomatis membuat konten Ghostrip dan memasukkannya ke halaman Posting Ghostrip (Rizky memposting manual).
 
-## FORMAT REELS BARU: "GIMANA KALAU…" (Remotion) — ATURAN PATEN Rizky (30 Okt 2026)
-Mulai stok berikutnya (konten yang dibuat setelah stok lama habis), SEMUA Reels baru dibuat dengan Remotion gaya "Gimana kalau…" (referensi: video "what if" animasi sinematik yang dikirim Rizky). Story & feed tetap pakai `engine/render.py`.
-- Struktur: judul seri "GIMANA KALAU… <SKENARIO> · PART n" + label jam & lokasi di adegan pertama; SATU narator (bukan dialog); ganti adegan cepat (1 kalimat = 1 adegan, ±2–4 dtk); kamera push-in; selingan infografis (peta rute + penghitung, kartu aturan kertas, struk biaya, layar angka); teks besar per frasa di tengah bawah dengan kata kunci oranye; label jam berjalan; penutup CTA hantu Ghostrip.
-- Warna brand: malam navy-teal, cahaya cakrawala & kata kunci oranye #ff9d5c, positif mint #7ff0d6, peringatan merah. Font Outfit. Tokoh: Sopir topi oranye, Bos kumis, hantu Ghostrip (tanpa topi).
-- Isi: skenario nyata dunia trucking (jembatan timbang/ODOL, solar naik di tengah trip, salah rute jalan kelas III, ban pecah di tol, macet Nataru, trip pulang kosong, dll.) yang berujung ke biaya/untung-rugi, lalu "padahal bisa dihitung sebelum berangkat". Variasi PATEN tetap: skenario & lokasi berganti; rotasi tipe adegan; jangan ulang skenario dalam 14 hari. Angka biaya pakai rumus Ghostrip & tandai "*ilustrasi"; fakta aturan wajib sumber (cek web); keputusan harga di tangan bos.
-- File: `konten/YYYY-MM-DD-whatif.json` (contoh: `konten/2026-11-02-whatif.json`; format & jenis adegan di docstring `engine/whatif.py` dan `remotion/src/scenes.tsx`: jalan, dokumen, timbangan, stat, aturan, karakter, peta, struk, angka, cta). Durasi target 25–40 dtk (scan: 15–45).
-- Langkah: (1) `python3 engine/whatif.py suara konten/X-whatif.json` → push (SATU request TTS per video, hemat kuota) → tunggu workflow `voice.yml` sampai `voice/out/<id>/done.json` + `dengar.json` lolos; (2) `python3 engine/whatif.py render konten/X-whatif.json` (pertama kali otomatis `npm install` di `remotion/`; Chromium bawaan dipakai); (3) cek visual beberapa frame (teks tidak menimpa, tidak terpotong); (4) INSPEKSI WAJIB di bawah; (5) `python3 engine/posting.py tambah konten/X-whatif.json`, push.
-- `--tanpa-suara` hanya untuk pratinjau; video tanpa narasi DILARANG masuk halaman posting.
+## STRATEGI KONTEN — ATURAN PATEN Rizky (30 Okt 2026), MENGGANTIKAN semua aturan tema/topik/cara pikir lama
+Baca dan ikuti `STRATEGI-KONTEN.md` (teks asli dari Rizky) sebelum menulis konten apa pun — KECUALI arahan gaya grafik/visual di dalamnya (mis. bagian 5B, AI-generated visuals): itu TIDAK berlaku; gaya grafik video selalu mengikuti bagian GAYA VIDEO di bawah (sama persis dengan pilot). Ringkasan wajib:
+- Tema per HARI (tanggal tayang, WIB). Dua Reels hari itu sama-sama mengikuti tema hari itu, dengan sudut/topik berbeda:
+  - Senin: REALITA DUNIA LOGISTIK → hook → situasi nyata → masalah → pelajaran → soft selling (wajib, nyambung dengan masalah).
+  - Selasa: CINEMATIC LOGISTICS STORYTELLING → TANPA selling: tidak menyebut Ghostrip di narasi, tanpa demo, tanpa CTA, caption juga tanpa CTA. Setelah cerita selesai: end card logo Ghostrip saja (adegan `logo`).
+  - Rabu: TIPS ADMINISTRASI & WORKFLOW → hook → masalah → tips → kaitkan manfaat Ghostrip → soft selling wajib di akhir.
+  - Kamis: GHOSTRIP FEATURE SHOWCASE → masalah → demonstrasi fitur yang BENAR-BENAR ada (hitung trip, riwayat, quotation PDF, TTD & cap, kop perusahaan, kirim ke WhatsApp) → manfaat → CTA relevan.
+  - Jumat: CINEMATIC STORYTELLING kedua (aturan sama dengan Selasa; tema, konflik, tokoh & visual BERBEDA dari Selasa).
+  - Sabtu: HUMOR/relatable ATAU EDUKASI logistik → soft selling wajib di akhir, tidak merusak humor/edukasi.
+  - Minggu: FLEKSIBEL (tutorial, FAQ, polling, eksperimen cerita, tren relevan, edukasi, recap); soft selling opsional.
+- Cerita (Selasa/Jumat): hook 1–3 dtk → setup → konflik → eskalasi → klimaks → ending → logo. Fiksi jangan diklaim nyata; nonfiksi wajib diverifikasi. Realisme logistik: istilah & kendaraan masuk akal, jangan mengarang prosedur teknis, jangan menampilkan berkendara berbahaya sebagai teladan.
+- Soft selling: nyambung dengan masalah yang dibahas, natural, tidak menyebut Ghostrip berkali-kali, CTA tidak sama di setiap video, tanpa klaim hasil yang tidak terbukti ("pasti untung", "bebas kesalahan", hemat X% tanpa bukti).
+- KERAHASIAAN INDUSTRI (wajib): DILARANG tarif aktual per rute sebagai patokan, rincian biaya operasional aktual, MARGIN/UNTUNG transporter, kontrak/penawaran pelanggan, tarif vendor, data customer. Boleh: proses kalkulasi secara umum, kategori biaya tanpa angka komersial, angka FIKTIF berlabel "simulasi".
+- Copywriting: bahasa Indonesia natural, hook relevan, kalimat jelas, detail konkret; tanpa clickbait yang tidak sesuai isi.
+- Checklist sebelum masuk halaman: 12 poin di bagian 11 `STRATEGI-KONTEN.md` (tema hari, tujuan, hook, akurasi, kerahasiaan, soft selling, bebas promosi untuk cerita, logo hanya di akhir, visual/audio/subtitle, caption per platform, klaim terverifikasi).
+- Story (07.30) & feed (17.00) mengikuti tema hari yang sama (mis. Selasa: story pertanyaan/teaser cerita tanpa CTA; Rabu: feed/carousel checklist tips).
+- Pilot `konten/2026-11-02-whatif.json` HANYA referensi gaya visual. JANGAN dimasukkan ke halaman apa adanya (ada adegan untung→rugi dan biaya per rute yang dilarang aturan kerahasiaan).
+
+## GAYA VIDEO — ATURAN PATEN Rizky (30 Okt 2026): SEMUA VIDEO BARU WAJIB REMOTION, gaya grafik SAMA PERSIS (ketiplek) dengan pilot
+Referensi visual tunggal: `media/2026-11-02/reel1-whatif.mp4` (pilot jembatan timbang). Jangan memakai gaya lain, AI-generated visuals, atau arahan visual dari STRATEGI-KONTEN.md. Isi/tema boleh beda, tampilan harus sama.
+- Semua video baru (Reels) dibuat dengan Remotion (`remotion/` + `engine/whatif.py`), art style & grafik SAMA dengan pilot "jembatan timbang": malam sinematik navy-teal dengan cahaya cakrawala oranye, kamera push-in, butiran film & vinyet, kartu kertas krem, peta navy dengan garis rute bercahaya + penanda, kotak penghitung, teks besar per frasa (Outfit tebal, kata kunci oranye), label jam berjalan, tokoh flat Sopir topi oranye & Bos kumis, hantu Ghostrip mint. `engine/render.py` TIDAK dipakai lagi untuk video (story & feed masih boleh).
+- SATU narator (Gemini TTS, satu request per video). 1 kalimat = 1 adegan.
+- Kartu judul adegan pertama: field `seri` (mis. "REALITA LOGISTIK", "CERITA", "TIPS ADMIN", "FITUR GHOSTRIP", "POV", "GIMANA KALAU…") + `judul` + `part`.
+- Penutup: hari dengan soft selling → adegan `cta` (tagline & ajakan disesuaikan, tidak sama tiap video); Selasa/Jumat → adegan `logo` (end card logo saja, tanpa ajakan).
+- Jenis adegan tersedia (remotion/src/scenes.tsx): jalan, dokumen, timbangan, stat, aturan, karakter, peta, struk, angka, cta, logo. Boleh menambah jenis adegan baru di scenes.tsx asalkan memakai komponen & palet yang sama (parts.tsx: NightSky, Lamp, Bokeh, Paper, Truck, Person, Camera, Grain) supaya gaya tetap konsisten.
+- Durasi: alat, bukan target; umumnya 25–60 dtk (scan Remotion: 15–90 dtk).
+- File: `konten/YYYY-MM-DD-whatif.json`, field tambahan `tema` = realita | cerita | tips | fitur | humor | edukasi | bebas.
+- Langkah: (1) `python3 engine/whatif.py suara konten/X-whatif.json` → push → tunggu `voice/out/<id>/done.json` (+ `dengar.json`); (2) `python3 engine/whatif.py render konten/X-whatif.json`; (3) cek visual 4–5 frame; (4) inspeksi; (5) `python3 engine/posting.py tambah konten/X-whatif.json`, push. `--tanpa-suara` hanya untuk pratinjau, tidak boleh masuk halaman.
+- Inspeksi untuk video Remotion lebih ringan (permintaan Rizky): wajib ada narasi, tidak ada suara pecah/klik, dan pemeriksa dengar lolos — kalau pemeriksa dengar hanya terkendala kuota (`belum_dicek`), boleh masuk halaman asalkan `cek_konten` lainnya AMAN; ditambah cek visual singkat. Aturan tema & kerahasiaan tetap dicek (`scan_konten.py` sudah memeriksanya).
 
 ## INSPEKSI WAJIB SETELAH MEMBUAT KONTEN — ATURAN PATEN Rizky (29 Okt 2026)
 Setiap konten yang baru dibuat atau suaranya diganti WAJIB langsung dicek sebelum masuk halaman posting. Tidak boleh ada yang lolos tanpa inspeksi.
@@ -29,46 +50,14 @@ Rizky memilih posting manual (Instagram sempat terputus dari Metricool, kuota Me
 
 Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 
-## Arah konten (WAJIB)
-Konten = CAMPURAN format (lihat "Variasi format & alur"): cerita/sketsa, fakta & aturan detail, kuis, mitos vs fakta, hitung-hitungan biaya, tips, demo. Penonton harus terhibur atau belajar sesuatu yang konkret, lalu di akhir dikaitkan ke harga trip dan ditutup CTA Ghostrip. Bukan iklan keras.
-Catatan: 28–31 Okt semuanya format FAKTA → konten berikutnya utamakan CERITA, KUIS, MITOS, HITUNG.
-
-### Riset fakta (WAJIB sebelum menulis)
+## Riset fakta (tetap berlaku)
 - Setiap fakta/angka/aturan harus dicek dengan WebSearch/WebFetch ke sumber yang jelas (situs pemerintah: Kemenhub, BPJT, JDIH/peraturan.bpk.go.id; media: Kompas, Detik, Bisnis.com, Kontan, CNBC, Antara; produsen truk resmi).
 - Tulis sumbernya di kartu FAKTA (`"source": "Kemenhub, 2025"` atau nama media + bulan/tahun) dan di akhir caption ("Sumber: …").
 - Kalau fakta tidak bisa dipastikan dari sumber, JANGAN dipakai. Pilih fakta lain. Lebih baik sederhana tapi benar.
 - Jangan mengarang angka statistik, kutipan pejabat, atau tanggal aturan.
 
-### Bank topik (putar, jangan ulang dalam 30 hari; boleh topik baru sejenis)
-- Arti istilah: CDD/CDE, fuso, tronton, wingbox, trailer 20ft/40ft, GVW/JBB/JBI, gandar/sumbu, MST.
-- Aturan: Zero ODOL 2027, kelas jalan & MST, uji KIR berkala, golongan tol per jumlah gandar, pembatasan truk saat libur panjang/mudik, jam operasional truk di kota besar, batas kecepatan truk di tol, larangan lajur kanan.
-- Teknis: kenapa truk pakai solar, kenapa roda belakang ganda, blind spot truk, kenapa truk jalan pelan di tanjakan, konsumsi solar per jenis truk, ban & tekanan angin, rem angin.
-- Bisnis: komponen biaya trip (solar, tol, uang jalan, makan/inap sopir, bongkar muat, retribusi), muatan balik (backhaul), cara menentukan markup, PPN/PPh di quotation, kenapa harga trip harus dihitung ulang saat solar naik.
-- Sejarah/fun fact: asal nama merek/istilah truk, truk terpanjang/terberat di Indonesia (jika ada sumber).
 
-
-## Variasi format, alur & latar lokasi — ATURAN PATEN & WAJIB (Rizky, 28 Okt 2026)
-Konten TIDAK boleh fun fact terus dan alur TIDAK boleh monoton. Putar format berikut:
-| kode | format | contoh alur scene |
-|---|---|---|
-| CERITA | sketsa/drama pendek Bos–Sopir–Admin–Customer dengan konflik & twist, pelajaran di akhir | adegan jalan (`type: road`) → chat customer → linimasa H1/H2/H3 (`items` + `tag`) → Bos kaget (`char2` dua karakter) → solusi → cta |
-| FAKTA | tahukah kamu / arti istilah / aturan | kicker → fact → compare/list → stat → cta |
-| KUIS | tebak-tebakan, jawaban muncul belakangan | pertanyaan + `mark: "quiz"`, `answer`, `reveal` (detik) → penjelasan fact → cta |
-| MITOS | mitos vs fakta | compare kiri "MITOS" (illus warn) vs kanan "FAKTA" → fact + sumber → cta |
-| HITUNG | studi kasus angka/biaya trip (fiktif tapi masuk akal) | chat/rute → list biaya → stat total → "kalau lupa X, rugi Y" → cta |
-| TIPS | cara/langkah praktis untuk bos ekspedisi | judul angka ("3 cara…") → items num → stat → cta |
-| DEMO | fitur Ghostrip dipakai di situasi nyata (tanpa mengarang fitur) | masalah → hantu datang → langkah pakai app → hasil → cta |
-
-Aturan rotasi:
-- Dalam satu hari, reel1 dan reel2 HARUS format berbeda. Dalam 3 hari berturut-turut, maksimal 2 reel FAKTA; minimal 1 CERITA per 2 hari.
-- Scene pembuka bergantian: pertanyaan, pernyataan mengejutkan/angka besar (`stat`), adegan cerita (road/chat), kuis. Jangan selalu `kicker` + judul.
-- Urutan blok berbeda tiap reel (jangan selalu fact → list → stat). Panjang 4–6 scene, durasi scene bervariasi.
-- LATAR LOKASI (permintaan Rizky): jangan di meja terus. Setiap reel minimal 2 scene memakai `set` lokasi, dan scene meja kantor (karakter tanpa `set`) maksimal 2 per reel. Pilihan `set`: `jalan` (truk melaju, pohon), `malam` (bulan, bintang, lampu jalan), `tol` (gerbang tol, palang terbuka, truk masuk), `timbangan` (gantry WIM), `spbu` (kanopi SOLAR, dispenser), `gudang` (pintu rolling, tumpukan muatan, truk mundur), `pool` (parkiran armada). Atur `truck`: box/wing/tank/over/empty, `drive`: true/false, `gantry`: teks papan. Karakter di lokasi otomatis berdiri di kiri bawah (atau `:right`). Jangan pakai set yang sama 2 scene berturut-turut kecuali bagian cerita.
-- Ganti suasana warna `tint`: teal (default), orange, blue, purple, red (masalah/rugi) — maksimal 2 reel berurutan dengan tint sama.
-- Karakter bergantian memimpin: kadang Sopir, kadang Admin/Customer, kadang Hantu sebagai narator; pakai `char2` untuk adegan dua orang.
-- Story: putar polling, kuis, teaser, "tebak angka", behind-the-scene. Feed: putar tabel/simpan ini, carousel cerita, mitos vs fakta, checklist.
-- Catat format di kolom RIWAYAT (mis. "CERITA: trip molor 3 hari"), dan cek riwayat sebelum memilih.
-- Format CERITA/HITUNG/DEMO boleh tanpa sumber berita, tapi angka harus masuk akal dan nama orang/perusahaan fiktif; fakta aturan tetap wajib bersumber.
+(Aturan lama "Arah konten", "Bank topik" dan "Variasi format, alur & latar lokasi" DIHAPUS 30 Okt 2026 — diganti STRATEGI KONTEN di atas.)
 
 ## Produk & aturan merek
 - Ghostrip = aplikasi hitung harga trip truk + quotation PDF (kop, TTD, cap, PPN/PPh), riwayat hitungan, pengaturan solar/markup/jenis truk per akun.
@@ -81,9 +70,9 @@ Aturan rotasi:
 | slot | jenis | jam | platform di halaman |
 |---|---|---|---|
 | story | foto 1080×1920 | 07:30 | IG story |
-| reel1 | video 18–25 dtk | 11:30 | IG reel + TikTok |
+| reel1 | video Remotion (tema hari itu) | 11:30 | IG reel + TikTok + FB |
 | feed | foto 1080×1350 (atau carousel) | 17:00 | IG post |
-| reel2 | video 18–25 dtk | 19:30 | IG reel + TikTok |
+| reel2 | video Remotion (tema hari itu, sudut berbeda) | 19:30 | IG reel + TikTok + FB |
 Facebook Page diposting manual oleh Rizky lewat Meta Business Suite (halaman selalu menampilkannya).
 Reel1 & reel2 = dua topik BERBEDA. Story boleh polling/pertanyaan yang nyambung ke reel hari itu. Feed = ringkasan fakta yang bisa disimpan (compare, list, atau carousel 3–5 slide).
 
@@ -102,6 +91,7 @@ C2. MASUK HALAMAN: konten yang sudah AMAN (lihat "INSPEKSI WAJIB") langsung dima
 D. Bersih-bersih repo: `python3 engine/posting.py bersihkan 10`, hapus folder `media/<tanggal>` dan `voice/out/<tanggal>-*` yang tanggalnya ≥ 10 hari lalu, kecuali media yang masih ada di `posting/jadwal.json`.
 
 ## Langkah membuat konten (dipakai di langkah B)
+Catatan 30 Okt 2026: Reels dibuat dengan Remotion (lihat GAYA VIDEO); tema mengikuti STRATEGI KONTEN per hari. Langkah engine/render.py di bawah hanya untuk story & feed/carousel.
 1. Clone/pull repo. Baca `RIWAYAT.md` (hindari topik 30 hari terakhir).
 2. Pilih 2 topik reel + 1 topik feed, RISET dulu (lihat di atas), catat sumbernya.
 3. Tulis `konten/YYYY-MM-DD.json` (contoh lengkap: `konten/2026-10-28-v2.json`).

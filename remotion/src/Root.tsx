@@ -32,7 +32,7 @@ const Caption: React.FC<{text: string; dur: number}> = ({text, dur}) => {
   );
 };
 
-const TitleCard: React.FC<{judul: string; part: number; lokasi: string}> = ({judul, part, lokasi}) => {
+const TitleCard: React.FC<{judul: string; part: number; lokasi: string; seri?: string}> = ({judul, part, lokasi, seri}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const a = spring({frame: f, fps, config: {damping: 14}});
@@ -40,7 +40,7 @@ const TitleCard: React.FC<{judul: string; part: number; lokasi: string}> = ({jud
   return (
     <div style={{position: 'absolute', top: 250, width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, fontFamily: 'Outfit'}}>
       <div style={{transform: `scale(${a})`, background: C.orangeDeep, color: '#fff', fontWeight: 800, fontSize: 36, letterSpacing: 2, padding: '10px 26px', borderRadius: 8, boxShadow: '0 10px 30px rgba(0,0,0,0.5)', textAlign: 'center', maxWidth: 900}}>
-        GIMANA KALAU… {judul} · PART {part}
+        {(seri ?? 'GIMANA KALAU…')} {judul}{part ? ` · PART ${part}` : ''}
       </div>
       <div style={{transform: `scale(${b})`, background: C.cream, color: C.ink, fontWeight: 700, fontSize: 28, padding: '8px 22px', borderRadius: 999, display: 'flex', alignItems: 'center', gap: 10}}>
         <span style={{width: 18, height: 18, borderRadius: '50%', background: C.orange, display: 'inline-block'}} />{lokasi}
@@ -71,9 +71,9 @@ export const WhatIf: React.FC<WhatIfProps> = (p) => {
         return (
           <Sequence key={i} from={s.from} durationInFrames={s.dur}>
             <Comp s={s} />
-            {i === 0 && <TitleCard judul={p.judul} part={p.part} lokasi={p.lokasi} />}
-            {i > 0 && s.type !== 'cta' && p.jam && <Clock start={p.jam} minutesPerScene={3} index={i} />}
-            {s.type !== 'cta' && s.chunks.map((c, j) => (
+            {i === 0 && <TitleCard judul={p.judul} part={p.part} lokasi={p.lokasi} seri={(p as any).seri} />}
+            {i > 0 && s.type !== 'cta' && s.type !== 'logo' && p.jam && <Clock start={p.jam} minutesPerScene={3} index={i} />}
+            {s.type !== 'cta' && s.type !== 'logo' && s.chunks.map((c, j) => (
               <Sequence key={j} from={c.from} durationInFrames={Math.max(1, c.to - c.from)}>
                 <Caption text={c.text} dur={Math.max(1, c.to - c.from)} />
               </Sequence>

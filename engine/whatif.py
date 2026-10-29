@@ -36,7 +36,7 @@ def cmd_suara(spec_path):
         if post.get("engine") != "remotion":
             continue
         vid = voice_id(spec["date"], post); post["voice_id"] = vid
-        text = "\n".join(plain(s["narasi"]) for s in post["scenes"])
+        text = "\n".join(plain(s["narasi"]) for s in post["scenes"] if s.get("narasi"))
         req = {"id": vid, "mode": "narasi", "rev": 1,
                "jadwal": f"{spec['date']}T{post.get('time', '23:59')}",
                "lines": [{"who": "NARATOR", "tone": "narasi", "text": text}]}
@@ -213,7 +213,9 @@ def cmd_render(spec_path, tanpa_suara=False):
         if post.get("engine") != "remotion":
             continue
         vid = voice_id(date, post)
-        sentences = [plain(s["narasi"]) for s in post["scenes"]]
+        all_sc = post["scenes"]
+        nar_sc = [sc for sc in all_sc if sc.get("narasi")]
+        sentences = [plain(sc["narasi"]) for sc in nar_sc]
         wav = os.path.join(ROOT, "voice", "out", vid, "00.wav")
         voiced = (not tanpa_suara) and os.path.exists(wav) and os.path.exists(os.path.join(ROOT, "voice", "out", vid, "done.json"))
         if voiced:
@@ -226,7 +228,7 @@ def cmd_render(spec_path, tanpa_suara=False):
             times, total = timing_perkiraan(sentences)
         off = 6 / FPS  # narasi mulai di frame 6
         scenes = []
-        for i, sc in enumerate(post["scenes"]):
+        for i, sc in enumerate(nar_sc):
             a = 0 if i == 0 else times[i][0] + off - 0.08
             b = (times[i + 1][0] + off - 0.08) if i + 1 < len(times) else times[i][1] + off + 1.8
             f0, f1 = round(a * FPS), round(b * FPS)
@@ -237,12 +239,18 @@ def cmd_render(spec_path, tanpa_suara=False):
             for j, c in enumerate(chunks):
                 c0 = round(spk0 + cum[j] * (spk1 - spk0)); c1 = round(spk0 + cum[j + 1] * (spk1 - spk0))
                 if j == len(chunks) - 1: c1 = f1 - f0
-                ch.append({"text": c.upper().replace("*", "*"), "from": max(0, c0), "to": max(c0 + 8, c1)})
+                ch.append({"text": c.upper(), "from": max(0, c0), "to": max(c0 + 8, c1)})
             d = dict(sc); d.update({"from": f0, "dur": max(24, f1 - f0), "chunks": ch})
             scenes.append(d)
+        # adegan tanpa narasi (mis. end card "logo") ditempel di akhir, 2,5 dtk
+        for sc in all_sc:
+            if not sc.get("narasi"):
+                last = scenes[-1]; d = dict(sc)
+                d.update({"from": last["from"] + last["dur"], "dur": int(sc.get("detik", 2.5) * FPS), "narasi": "", "chunks": []})
+                scenes.append(d)
         dur_frames = scenes[-1]["from"] + scenes[-1]["dur"]
         musik(dur_frames / FPS + 0.5, os.path.join(run, "musik.wav")); whoosh(os.path.join(run, "whoosh.wav"))
-        props = {"judul": post["judul"], "part": post.get("part", 1), "lokasi": post["lokasi"], "jam": post.get("jam"),
+        props = {"judul": post["judul"], "part": post.get("part", 1), "seri": post.get("seri"), "lokasi": post["lokasi"], "jam": post.get("jam"),
                  "handle": "@ghostrip.app", "durationInFrames": dur_frames, "scenes": scenes,
                  "narasi": f"run/{vid}.wav" if voiced else None, "musik": "run/musik.wav", "whoosh": "run/whoosh.wav"}
         pf = os.path.join(run, "props.json"); json.dump(props, open(pf, "w"), ensure_ascii=False)

@@ -362,7 +362,24 @@ export const Cta: React.FC<{s: SceneSpec}> = ({s}) => {
   );
 };
 
+/* ---------- 11. LOGO: end card cerita (Selasa/Jumat) — logo saja, tanpa ajakan ---------- */
+export const Logo: React.FC<{s: SceneSpec}> = ({s}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const pop = spring({frame: f - 4, fps, config: {damping: 14}});
+  const fade = interpolate(f, [0, 10], [0, 1], clamp);
+  return (
+    <AbsoluteFill style={{background: C.night0, opacity: fade}}>
+      <div style={{position: 'absolute', left: 340, top: 640, width: 400, height: 400, borderRadius: '50%', background: 'radial-gradient(circle, rgba(127,240,214,0.22) 0%, transparent 70%)'}} />
+      <div style={{position: 'absolute', top: 720, width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 26, transform: `scale(${0.9 + 0.1 * pop})`, opacity: pop}}>
+        <Img src={staticFile('icon.png')} style={{width: 170, height: 170, borderRadius: 40, boxShadow: '0 0 60px rgba(127,240,214,0.35)'}} />
+        <div style={{fontFamily: 'Outfit', fontWeight: 800, fontSize: 76, color: '#fff', letterSpacing: 1}}>Ghostrip</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 export const SCENES: Record<string, React.FC<{s: SceneSpec}>> = {
   jalan: Jalan, dokumen: Dokumen, timbangan: Timbangan, stat: Stat, aturan: Aturan,
-  karakter: Karakter, peta: Peta, struk: Struk, angka: AngkaBesar, cta: Cta,
+  karakter: Karakter, peta: Peta, struk: Struk, angka: AngkaBesar, cta: Cta, logo: Logo,
 };
