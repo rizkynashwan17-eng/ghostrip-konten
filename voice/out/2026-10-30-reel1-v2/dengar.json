@@ -1,0 +1,41 @@
+{
+ "sig": [
+  [
+   3.49,
+   5.41,
+   5.41,
+   5.73,
+   4.97
+  ],
+  7
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Bos, emang semua jalan boleh dilewati truk berat?",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  },
+  {
+   "naskah": "Nggak. Tiap jalan ada batas muatan sumbunya, namanya MST.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, || gemini-flash-latest: The read operation timed out || HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "naskah": "Kelas satu sampai sepuluh ton. Kelas dua dan tiga cuma delapan ton.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, || HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, || HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "naskah": "Kalau rutenya lewat jalan kecil, muatannya dikurangi. Tripnya bisa nambah.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, || HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, || HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  },
+  {
+   "naskah": "Hitung ulang harga trip sesuai rute. Komen DEMO, coba gratis.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, || HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, || HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  }
+ ]
+}
