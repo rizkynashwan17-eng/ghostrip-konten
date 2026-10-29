@@ -2,6 +2,14 @@
 
 Tujuan: setiap hari otomatis membuat konten Ghostrip dan memasukkannya ke halaman Posting Ghostrip (Rizky memposting manual).
 
+## INSPEKSI WAJIB SETELAH MEMBUAT KONTEN — ATURAN PATEN Rizky (29 Okt 2026)
+Setiap konten yang baru dibuat atau suaranya diganti WAJIB langsung dicek sebelum masuk halaman posting. Tidak boleh ada yang lolos tanpa inspeksi.
+1. Suara: `engine/tts_gemini.py` (satu model per video, tolak suara pecah/terpotong/kepanjangan, normalisasi -3 dBFS) lalu `engine/dengar_gemini.py` (Gemini mendengarkan tiap baris, transkrip dicocokkan dengan naskah, deteksi kresek/distorsi/bahasa salah; baris gagal otomatis dibuat ulang). Keduanya jalan otomatis di workflow `voice.yml`. Tunggu sampai `voice/out/<id>/dengar.json` ada dengan `"lolos": true`.
+2. Video: `python3 engine/cek_konten.py <mp4> <voice_id> <jumlah_dialog>` → harus status AMAN (voiceover lengkap, tidak ada sampel pecah, tidak kresek, intonasi hidup, pemeriksa dengar lolos, model seragam).
+3. Konten: `python3 engine/scan_konten.py konten/YYYY-MM-DD.json` → semua_aman true.
+4. Baru setelah ketiganya AMAN: `python3 engine/posting.py tambah ...`, push. Kalau tidak AMAN: perbaiki/buat ulang; kalau sampai tugas selesai masih gagal, JANGAN dimasukkan ke halaman — catat di SUSULAN-SUARA.md dan laporkan ke Rizky beserta alasannya.
+5. Laporan harian menyebut hasil inspeksi tiap konten (✅ lolos semua / ⚠️ alasan).
+
 ## MODE POSTING MANUAL — ATURAN PATEN sejak 29 Okt 2026 (menggantikan semua langkah Metricool di bawah)
 Rizky memilih posting manual (Instagram sempat terputus dari Metricool, kuota Metricool terbatas). JANGAN membuat atau mengaktifkan posting di Metricool lagi (`createScheduledPost` / `draft: false` dilarang), kecuali Rizky sendiri memintanya. Posting lama di Metricool sudah dijadikan draft.
 - Halaman: `index.html` (GitHub Pages, https://rizkynashwan17-eng.github.io/ghostrip-konten/) membaca `posting/jadwal.json`. Rizky membuka halaman, ketuk Bagikan → IG/TikTok/Meta Business Suite (Facebook Page, diposting manual oleh Rizky lewat Meta Business Suite) (caption tersalin otomatis), lalu centang Sudah. Pengingat kalender di HP Rizky: 07.30, 11.30, 17.00, 19.30 setiap hari.
