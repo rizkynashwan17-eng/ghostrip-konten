@@ -1,4 +1,4 @@
-// Palet brand Ghostrip untuk gaya "Gimana kalau…" (sinematik malam, aksen oranye & mint)
+// Palet BRAND IDENTITY Ghostrip — WAJIB tetap sama (aturan paten Rizky 30 Okt 2026). Jangan diganti.
 export const C = {
   night0: '#040d13',
   night1: '#071a22',
