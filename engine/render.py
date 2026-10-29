@@ -612,6 +612,7 @@ def cta(im, d, sc, t, W, H):
     if pw > 0:
         d = ImageDraw.Draw(im); y = H * .2 + 930
         f = font(54, "Bold"); parts = [("Komen ", INK), ("DEMO", (30, 150, 125)), (" untuk coba", INK)]
+        if sc.get("pill"): parts = [(a, (30, 150, 125) if hl else INK) for a, hl in sc["pill"]]  # opsional: [[teks, sorot], ...]
         tw = sum(f.getlength(a) for a, _ in parts); bw = (tw + 130) * pw
         d.rounded_rectangle((W / 2 - bw / 2, y - 52 * pw, W / 2 + bw / 2, y + 52 * pw), radius=int(52 * pw), fill=WHITE)
         if pw > .8:

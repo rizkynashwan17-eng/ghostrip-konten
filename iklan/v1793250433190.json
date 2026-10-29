@@ -1,0 +1,126 @@
+{
+ "date": "iklan",
+ "posts": [
+  {
+   "slot": "v1793250433190",
+   "kind": "reel",
+   "topic": "IKLAN: Bos, quotation masih nunggu admin? (tujuan chat WA, coba gratis 7 hari)",
+   "scenes": [
+    {
+     "dur": 3.4,
+     "tint": "red",
+     "title": "Bos, quotation masih *nunggu admin*?",
+     "badge": {
+      "text": "Customer keburu pindah",
+      "color": "red"
+     },
+     "char": "bos:shocked:right",
+     "say": {
+      "who": "SOPIR",
+      "tone": "penasaran",
+      "text": "Bos, customer minta harga sekarang. Admin belum balas!"
+     },
+     "title_size": 104,
+     "char2": "sopir:think:left"
+    },
+    {
+     "dur": 4.4,
+     "set": "gudang",
+     "truck": "box",
+     "drive": false,
+     "title": "Customer *nggak mau nunggu*",
+     "chat": {
+      "name": "PT Maju Jaya Logistik",
+      "lines": [
+       "Pak, harga Jakarta–Surabaya CDD berapa?",
+       "Kalau sore belum ada, saya pakai yang lain ya."
+      ]
+     },
+     "say": {
+      "who": "CUSTOMER",
+      "tone": "tegas",
+      "text": "Kalau sore belum ada harga, saya pakai ekspedisi lain."
+     }
+    },
+    {
+     "dur": 4.6,
+     "set": "spbu",
+     "truck": "box",
+     "tint": "red",
+     "title": "Buru-buru hitung, *malah salah*",
+     "stat": {
+      "label": "Selisih solar Rp500/liter × 200 liter",
+      "value": "Rp100.000",
+      "color": "red"
+     },
+     "say": {
+      "who": "HANTU",
+      "tone": "menjelaskan",
+      "text": "Salah hitung solar sedikit saja, satu trip bisa rugi seratus ribu."
+     }
+    },
+    {
+     "dur": 5.0,
+     "set": "pool",
+     "truck": "box",
+     "title": "Pakai *Ghostrip* dari HP",
+     "items": [
+      "Isi rute & jenis truk",
+      "Harga trip langsung terhitung",
+      "Quotation PDF kirim ke WA"
+     ],
+     "mark": "num",
+     "gap": 0.5,
+     "char": "ghost",
+     "say": {
+      "who": "HANTU",
+      "tone": "senang",
+      "text": "Isi rute, harga trip terhitung, quotation PDF langsung kirim ke WA."
+     }
+    },
+    {
+     "dur": 4.2,
+     "title": "Bos tinggal *approve*",
+     "badge": {
+      "text": "Lengkap kop, TTD, cap, PPN",
+      "color": "mint"
+     },
+     "char": "bos:happy:right",
+     "char2": "sopir:happy:left",
+     "sparkles": true,
+     "say": {
+      "who": "BOS",
+      "tone": "senang",
+      "text": "Harga saya cek, saya approve, langsung kirim ke customer."
+     },
+     "illus": "doc"
+    },
+    {
+     "dur": 4.6,
+     "type": "cta",
+     "char": "ghost",
+     "tagline": "Hitung harga trip & quotation dari HP",
+     "button": "COBA GRATIS 7 HARI",
+     "pill": [
+      [
+       "Chat WA ",
+       false
+      ],
+      [
+       "0815-1704-7930",
+       true
+      ]
+     ],
+     "say": {
+      "who": "BOS",
+      "tone": "mengajak",
+      "text": "Coba gratis tujuh hari. Chat WA sekarang, nomornya di layar."
+     }
+    }
+   ],
+   "caption": "Bos, quotation masih nunggu admin? Customer keburu pindah ke ekspedisi lain.\nDengan Ghostrip, harga trip langsung terhitung dan quotation PDF (kop, TTD, cap, PPN) bisa dikirim ke WA dari HP. Bos tinggal cek & approve.\n✅ Coba gratis 7 hari — chat WA 0815-1704-7930\n\n#ghostrip #ekspedisi #trucking #logistik #truk",
+   "tiktok_title": "Bos, quotation masih nunggu admin? Coba Ghostrip gratis 7 hari",
+   "voice_id": "iklan-v1793250433190"
+  }
+ ]
+}
