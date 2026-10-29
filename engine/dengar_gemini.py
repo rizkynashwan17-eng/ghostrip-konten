@@ -65,6 +65,9 @@ def ask(model, wav_b64, naskah):
 DEAD = set()
 
 
+ERR = []
+
+
 def listen(path, naskah):
     b64 = base64.b64encode(open(path, "rb").read()).decode()
     for m in MODELS:
@@ -75,19 +78,19 @@ def listen(path, naskah):
                 return ask(m, b64, naskah), m
             except urllib.error.HTTPError as e:
                 msg = e.read().decode()[:300]
-                print(f"HTTP {e.code} {m}: {msg}")
+                print(f"HTTP {e.code} {m}: {msg}"); ERR.append(f"HTTP {e.code} {m}: {msg[:160]}")
                 if e.code in (404, 400) or (e.code == 429 and ("day" in msg.lower())):
                     DEAD.add(m); break
-                time.sleep(10 * (attempt + 1))
+                time.sleep(6 * (attempt + 1))
             except Exception as e:
-                print("gagal", m, e); time.sleep(5)
+                print("gagal", m, e); ERR.append(f"{m}: {str(e)[:160]}"); time.sleep(5)
     return None, None
 
 
 def relevant(req):
     j = req.get("jadwal")
     if not j:
-        return True
+        return False  # request lama tanpa jadwal (sudah tayang) tidak dicek
     try:
         t = dt.datetime.fromisoformat(j).replace(tzinfo=WIB)
     except Exception:
@@ -114,7 +117,7 @@ def main():
             fn = f"{out}/{i:02d}.wav"
             res, model = listen(fn, ln["text"])
             if res is None:
-                lines.append({"naskah": ln["text"], "transkrip": None, "catatan": "tidak bisa didengar (kuota/model)"})
+                lines.append({"naskah": ln["text"], "transkrip": None, "catatan": "tidak bisa didengar: " + " || ".join(ERR[-3:])})
                 continue
             k = mirip(ln["text"], res.get("transkrip", ""))
             rusak = bool(res.get("rusak"))
