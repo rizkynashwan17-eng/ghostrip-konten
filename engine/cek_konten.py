@@ -66,6 +66,20 @@ def check(mp4, voice_id=None, n_lines=None):
         done = os.path.exists(os.path.join(d, "done.json"))
         r["voiceover"] = f"{len(wavs)}/{n_lines or '?'} baris" + ("" if done else " (belum lengkap)")
         if not done or (n_lines and len(wavs) < n_lines): issues.append("voiceover belum lengkap")
+        # tiap baris suara: sampel pecah & keseragaman model (aturan 29 Okt 2026)
+        clips = []
+        for w_ in wavs:
+            with wave.open(os.path.join(d, w_)) as ww:
+                a = np.frombuffer(ww.readframes(ww.getnframes()), np.int16)
+            clips.append(int((np.abs(a.astype(int)) >= 32700).sum()))
+        r["sampel_pecah_per_baris"] = clips
+        bad = [i for i, c in enumerate(clips) if c > 3]
+        if bad: issues.append(f"suara pecah di baris {', '.join(str(i + 1) for i in bad)}")
+        if done:
+            dj = json.load(open(os.path.join(d, "done.json")))
+            r["model_suara"] = dj.get("model")
+            if not dj.get("satu_model"):
+                issues.append("suara dibuat sistem lama (model bisa campur) — buat ulang")
         ints = [intonation(os.path.join(d, w)) for w in wavs]
         r["intonasi_semitone"] = ints
         flat = [i for i, v in enumerate(ints) if v is not None and v < 4.0]

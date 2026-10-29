@@ -2,7 +2,11 @@
 
 Format request: {"id": "2026-10-28-reel2", "lines": [{"who": "BOS", "text": "..."}, ...]}
 Hanya request yang belum punya voice/out/<id>/done.json yang diproses.
-Hasil: voice/out/<id>/00.wav, 01.wav, ... (mono 24 kHz) + done.json berisi durasi tiap baris.
+Hasil: voice/out/<id>/00.wav, 01.wav, ... (mono 24 kHz) + done.json berisi durasi + model tiap baris.
+Aturan kualitas (29 Okt 2026, setelah Rizky menemukan voiceover rusak):
+- SATU MODEL untuk semua baris dalam satu video. Kalau baris berikutnya terpaksa pindah model, semua baris dibuat ulang dengan model itu.
+- Baris ditolak kalau terlalu panjang (model membaca instruksi), terlalu pendek (terpotong), atau banyak sampel pecah (clipping).
+- Semua baris dinormalkan ke puncak -3 dBFS supaya tidak pecah di video.
 """
 import base64, json, os, sys, time, urllib.request, urllib.error, wave, glob
 
@@ -57,6 +61,30 @@ def prompt_variant(text, who, tone, v):
 def max_len(text):
     return max(6.0, len(text.split()) * 0.75 + 2.0)
 
+def min_len(text):
+    return max(1.2, len(text.split()) * 0.22)
+
+import array
+def clip_count(pcm):
+    a = array.array("h", pcm)
+    return sum(1 for v in a if v >= 32700 or v <= -32700)
+
+def normalize(pcm, peak_db=-3.0):
+    a = array.array("h", pcm)
+    pk = max((abs(v) for v in a), default=0)
+    if pk == 0: return pcm
+    g = (32767 * 10 ** (peak_db / 20)) / pk
+    return array.array("h", (max(-32768, min(32767, int(v * g))) for v in a)).tobytes()
+
+def check(cand, text):
+    """Kembalikan alasan tolak, atau None kalau lolos."""
+    dur = len(cand) / 2 / 24000
+    if dur > max_len(text): return f"{dur:.1f} dtk terlalu panjang"
+    if dur < min_len(text): return f"{dur:.1f} dtk terlalu pendek"
+    c = clip_count(cand)
+    if c > 3: return f"{c} sampel pecah"
+    return None
+
 def synth(text, who, model, tone=None, variant=0):
     body = {"contents": [{"parts": [{"text": prompt_variant(text, who, tone, variant)}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
@@ -91,14 +119,19 @@ def main():
     for path in sorted(glob.glob("voice/requests/*.json"), key=prio):
         req = json.load(open(path)); rid = req["id"]; out = f"voice/out/{rid}"
         if os.path.exists(f"{out}/done.json"): continue
-        os.makedirs(out, exist_ok=True); durs = []; used = None
+        os.makedirs(out, exist_ok=True)
         if os.path.exists(f"{out}/error.txt"): os.remove(f"{out}/error.txt")
-        for i, ln in enumerate(req["lines"]):
-            fn = f"{out}/{i:02d}.wav"
-            if os.path.exists(fn):
-                with wave.open(fn) as w: durs.append(round(w.getnframes() / 24000, 2))
-                continue
-            pcm = None
+        meta_path = f"{out}/meta.json"
+        meta = json.load(open(meta_path)) if os.path.exists(meta_path) else {}
+        used = meta.get("model")
+        # baris lama tanpa catatan model tidak dipercaya: buat ulang semua
+        if not used:
+            for f in glob.glob(f"{out}/*.wav"): os.remove(f)
+        i = 0; lines = req["lines"]
+        while i < len(lines):
+            ln = lines[i]; fn = f"{out}/{i:02d}.wav"
+            if os.path.exists(fn): i += 1; continue
+            pcm = None; got = None
             order = ([used] if used else []) + [m for m in models if m != used]
             for m in order:
                 if pcm is not None: break
@@ -108,19 +141,29 @@ def main():
                         cand = synth(ln["text"], ln.get("who", "BOS"), m, ln.get("tone"), v)
                     except Exception as e:
                         print("model", m, "gagal:", e); break
-                    dur = len(cand) / 2 / 24000
-                    if dur <= max_len(ln["text"]):
-                        pcm = cand; used = m; break
-                    print(f"TOLAK {m} v{v}: {dur:.1f} dtk terlalu panjang"); LOG.append(f"tolak {m} v{v} {dur:.1f}s")
+                    why = check(cand, ln["text"])
+                    if why is None:
+                        pcm = cand; got = m; break
+                    print(f"TOLAK {m} v{v} baris {i}: {why}"); LOG.append(f"tolak {m} v{v} baris {i}: {why}")
                     time.sleep(5)
             if pcm is None:
                 open(f"{out}/error.txt", "w").write("GAGAL baris %d\n" % i + "\n".join(LOG[-6:]))
                 print("GAGAL baris", i); sys.exit(1)
-            fn = f"{out}/{i:02d}.wav"
-            with wave.open(fn, "wb") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(pcm)
-            durs.append(round(len(pcm) / 2 / 24000, 2)); print(rid, i, ln["who"], durs[-1], "dtk")
-            time.sleep(7)
-        json.dump({"model": used, "durations": durs}, open(f"{out}/done.json", "w"), indent=1)
+            if used and got != used:
+                # pindah model → buang baris sebelumnya supaya semua suara seragam
+                print(f"pindah model {used} -> {got}: baris sebelumnya dibuat ulang")
+                for f in glob.glob(f"{out}/*.wav"): os.remove(f)
+                used = got; json.dump({"model": used}, open(meta_path, "w"))
+                with wave.open(f"{out}/{i:02d}.wav", "wb") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(normalize(pcm))
+                i = 0; time.sleep(7); continue
+            used = got; json.dump({"model": used}, open(meta_path, "w"))
+            with wave.open(fn, "wb") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(normalize(pcm))
+            print(rid, i, ln["who"], round(len(pcm) / 2 / 24000, 2), "dtk", used)
+            i += 1; time.sleep(7)
+        durs = []
+        for i in range(len(lines)):
+            with wave.open(f"{out}/{i:02d}.wav") as w: durs.append(round(w.getnframes() / 24000, 2))
+        json.dump({"model": used, "satu_model": True, "durations": durs}, open(f"{out}/done.json", "w"), indent=1)
 
 if __name__ == "__main__":
     main()
