@@ -17,6 +17,13 @@
   "media": "media/2026-10-31/story-v2.jpg"
  },
  {
+  "slot": "reel1-v2",
+  "kind": "reel",
+  "media": "media/2026-10-31/reel1-v2.mp4",
+  "cover": "media/2026-10-31/reel1-v2-cover.jpg",
+  "dur": 26.25265306122449
+ },
+ {
   "slot": "carousel-v2",
   "kind": "carousel",
   "media": [
@@ -26,12 +33,5 @@
    "media/2026-10-31/carousel-v2-4.jpg",
    "media/2026-10-31/carousel-v2-5.jpg"
   ]
- },
- {
-  "slot": "reel1-v2",
-  "kind": "reel",
-  "media": "media/2026-10-31/reel1-v2.mp4",
-  "cover": "media/2026-10-31/reel1-v2-cover.jpg",
-  "dur": 22.0
  }
 ]
