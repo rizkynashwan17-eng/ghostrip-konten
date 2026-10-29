@@ -2,7 +2,7 @@
 
 Rizky sudah mengizinkan: lengkapi suara TANPA bertanya. Sejak 29 Okt 2026 mode posting manual: setelah suara jadi, render ulang lalu perbarui halaman lewat `engine/posting.py` (bukan Metricool). Hapus baris dari tabel setelah berhasil diganti. Posting yang jamnya sudah lewat: hapus barisnya (tidak bisa diganti).
 
-Request suara yang belum lengkap: `2026-10-31-reel1-v2` (Nataru, tayang 31 Okt 11.30), `manual-odol` (31 Okt 19.00), `manual-salah-hitung` (1 Nov 19.00). Suara lama ditolak pemeriksa baru (sistem lama/pecah/tidak cocok naskah) dan dihapus 29 Okt; dibuat ulang via workflow. Setelah dengar.json lolos: Nataru → `python3 engine/render.py konten/2026-10-31-v2.json`; ODOL → `python3 engine/mix_manual.py media/manual/reels-zero-odol.mp4 manual-odol media/manual/reels-zero-odol-vo.mp4 "0.2,3.6,8.5,12.6,17.6,20.6" "3.5,8.0,12.5,17.0,20.5,24.5"`; salah hitung → `python3 engine/mix_manual.py media/2026-11-01/reel-salah-hitung.mp4 manual-salah-hitung media/2026-11-01/reel-salah-hitung-vo.mp4 "0.2,3.5,6.9,11.4,14.4,19.0" "3.3,6.7,10.7,13.3,18.7,22.3"`; lalu `cek_konten.py` + `scan_konten.py` AMAN, hapus ⚠️ catatan di halaman (`posting.py catatan <id> ""`), push.
+Request suara yang belum lengkap: (tidak ada). 29 Okt 15.45 WIB: Nataru reel1-v2, Zero ODOL + vokal, salah hitung + vokal SUDAH bersuara & diganti di Metricool.
 Urutan pengerjaan TTS otomatis menurut kunci `"jadwal"` di request (tayang terdekat dulu), jadi kalau kuota habis yang paling dekat jadwalnya sudah aman duluan. (Reels KIR 29 Okt SUDAH bersuara & diganti di Metricool 28 Okt sore — lewati.)
 
 Posting Metricool yang harus diganti medianya (cari id terbaru via getScheduledPosts, cocokkan uuid; isi lain JANGAN diubah, salin dari getScheduledPosts):
