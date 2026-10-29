@@ -14,7 +14,7 @@
   --bg:#071a22; --panel:#0c2730; --panel2:#11323c; --line:#1d4552;
   --fg:#eaf6f4; --muted:#8fb3b1; --mint:#5eead4; --orange:#fb923c;
   --ok:#4ade80; --warn:#fbbf24; --bad:#f87171;
-  --ig:#e1306c; --tt:#25f4ee;
+  --ig:#e1306c; --tt:#25f4ee; --fb:#1877f2;
   --f:'Outfit',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
   color-scheme:dark;
 }
@@ -82,8 +82,8 @@ button:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid 
   <details class="how">
     <summary>Cara posting (±30 detik per konten)</summary>
     <ol>
-      <li>Ketuk <b>Bagikan</b> di kotak Instagram atau TikTok. Caption ikut tersalin otomatis.</li>
-      <li>Pilih aplikasi <b>Instagram</b> atau <b>TikTok</b> di menu bagikan HP.</li>
+      <li>Ketuk <b>Bagikan</b> di kotak Instagram, TikTok, atau Meta Business Suite. Caption ikut tersalin otomatis.</li>
+      <li>Pilih aplikasi <b>Instagram</b>, <b>TikTok</b>, atau <b>Meta Business Suite</b> di menu bagikan HP. Kalau Meta Business Suite tidak muncul di menu bagikan, ketuk <b>Simpan ke galeri</b>, lalu <b>Buka Meta Business Suite</b> dan pilih video/gambar dari galeri.</li>
       <li>Pilih Reels / Story / Postingan, lalu <b>tempel</b> caption dan posting.</li>
       <li>Kembali ke sini, centang <b>Sudah</b>.</li>
     </ol>
@@ -96,7 +96,9 @@ button:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 const KIND = {reel:'Reels', story:'Story', feed:'Feed', carousel:'Carousel'};
-const PLAT = {ig:{name:'Instagram', color:'var(--ig)'}, tiktok:{name:'TikTok', color:'var(--tt)'}};
+const PLAT = {ig:{name:'Instagram', color:'var(--ig)'}, tiktok:{name:'TikTok', color:'var(--tt)'}, fb:{name:'Meta Business Suite', color:'var(--fb)'}};
+// Meta Business Suite (Facebook Page) selalu ikut di setiap konten
+const platsOf = p => p.platform.includes('fb') ? p.platform : [...p.platform, 'fb'];
 const HARI = ['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
 const BULAN = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
 let DATA = [], showDone = false;
@@ -108,7 +110,7 @@ const store = {
 };
 const doneMap = () => store.get('done') || {};
 const isDone = (p, pl) => !!doneMap()[p.id+':'+pl];
-const allDone = p => p.platform.every(pl => isDone(p, pl));
+const allDone = p => platsOf(p).every(pl => isDone(p, pl));
 
 function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('on'); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove('on'), 2600); }
 
@@ -193,7 +195,7 @@ function card(p, isNext){
     p.media.map(m => m.endsWith('.mp4')
       ? el('video', {src:m, controls:true, playsinline:true, preload:'metadata', poster:p.cover||null})
       : el('img', {src:m, alt:p.judul, loading:'lazy'})));
-  const plats = el('div', {class:'plats'}, p.platform.map(pl => {
+  const plats = el('div', {class:'plats'}, platsOf(p).map(pl => {
     const done = isDone(p, pl);
     const chk = el('input', {type:'checkbox', id:'d-'+p.id+'-'+pl, checked:done, onchange:e => {
       const d=doneMap(); if (e.target.checked) d[p.id+':'+pl]=Date.now(); else delete d[p.id+':'+pl];
@@ -206,6 +208,7 @@ function card(p, isNext){
       el('div', {class:'plat-h'}, el('span', {class:'dot', style:`background:${PLAT[pl].color}`}), PLAT[pl].name,
         el('label', {for:'d-'+p.id+'-'+pl}, chk, 'Sudah')),
       el('div', {class:'btns'}, shareBtn, hasCap ? capBtn : null,
+        pl==='fb' ? el('a', {class:'btn sec', style:'grid-column:1/-1', href:'https://business.facebook.com/latest/composer', target:'_blank', rel:'noopener'}, 'Buka Meta Business Suite') : null,
         ...p.media.map((m,i) => el('a', {class:'btn save', href:m, download:'ghostrip-'+fileName(m)}, p.media.length>1? `Simpan ke galeri (${i+1}/${p.media.length})` : 'Simpan ke galeri'))));
   }));
   const cap = p.caption ? el('div', {class:'cap', onclick:e => e.currentTarget.classList.toggle('open')}, p.caption) : null;

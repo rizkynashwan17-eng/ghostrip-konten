@@ -11,7 +11,7 @@ Pakai:
   python3 engine/posting.py platform <id> ig          → ubah platform (mis. TikTok sudah tayang)
   python3 engine/posting.py bersihkan [hari=10]        → buang post yang lebih tua dari N hari
   python3 engine/posting.py daftar                     → tampilkan isi jadwal
-Jenis: story | reel | feed | carousel. Default platform: reel → ig,tiktok; lainnya → ig.
+Jenis: story | reel | feed | carousel. Default platform: reel → ig,tiktok,fb; lainnya → ig,fb (halaman juga selalu menampilkan Facebook Page).
 """
 import argparse, datetime as dt, json, os, re, sys
 
@@ -81,7 +81,7 @@ def tambah(args):
         post = {
             "id": f"{date}-{p['time'].replace(':', '')}-{p['slot']}",
             "tanggal": date, "jam": p["time"], "jenis": kind,
-            "platform": ["ig", "tiktok"] if kind == "reel" else ["ig"],
+            "platform": ["ig", "tiktok", "fb"] if kind == "reel" else ["ig", "fb"],
             "judul": judul_of(p), "media": media, "cover": m.get("cover"),
             "caption": p.get("caption", ""), "tiktok_title": p.get("tiktok_title", ""),
             "catatan": "",
@@ -94,7 +94,7 @@ def manual(args):
     media = args.media.split(",")
     check_media(media)
     cap = open(args.caption_file).read().strip() if args.caption_file else (args.caption or "")
-    plat = args.platform.split(",") if args.platform else (["ig", "tiktok"] if args.jenis == "reel" else ["ig"])
+    plat = args.platform.split(",") if args.platform else (["ig", "tiktok", "fb"] if args.jenis == "reel" else ["ig", "fb"])
     slug = re.sub(r"[^a-z0-9]+", "-", args.judul.lower()).strip("-")[:30]
     post = {"id": f"{args.tanggal}-{args.jam.replace(':', '')}-{slug}", "tanggal": args.tanggal, "jam": args.jam,
             "jenis": args.jenis, "platform": plat, "judul": args.judul, "media": media, "cover": args.cover,

@@ -4,7 +4,7 @@ Tujuan: setiap hari otomatis membuat konten Ghostrip dan memasukkannya ke halama
 
 ## MODE POSTING MANUAL — ATURAN PATEN sejak 29 Okt 2026 (menggantikan semua langkah Metricool di bawah)
 Rizky memilih posting manual (Instagram sempat terputus dari Metricool, kuota Metricool terbatas). JANGAN membuat atau mengaktifkan posting di Metricool lagi (`createScheduledPost` / `draft: false` dilarang), kecuali Rizky sendiri memintanya. Posting lama di Metricool sudah dijadikan draft.
-- Halaman: `index.html` (GitHub Pages, https://rizkynashwan17-eng.github.io/ghostrip-konten/) membaca `posting/jadwal.json`. Rizky membuka halaman, ketuk Bagikan → IG/TikTok (caption tersalin otomatis), lalu centang Sudah. Pengingat kalender di HP Rizky: 07.30, 11.30, 17.00, 19.30 setiap hari.
+- Halaman: `index.html` (GitHub Pages, https://rizkynashwan17-eng.github.io/ghostrip-konten/) membaca `posting/jadwal.json`. Rizky membuka halaman, ketuk Bagikan → IG/TikTok/Meta Business Suite (Facebook Page, diposting manual oleh Rizky lewat Meta Business Suite) (caption tersalin otomatis), lalu centang Sudah. Pengingat kalender di HP Rizky: 07.30, 11.30, 17.00, 19.30 setiap hari.
 - Pengganti tiap langkah lama:
   - `getScheduledPosts` (cek stok/slot/Reels) → baca `posting/jadwal.json` (`python3 engine/posting.py daftar`).
   - `createScheduledPost` (langkah 8) → `python3 engine/posting.py tambah konten/YYYY-MM-DD-v2.json` (otomatis memakai `media/<tanggal>/manifest.json`, versi `-vo.mp4` dipakai kalau ada). Video manual Rizky → `python3 engine/posting.py manual ...` (lihat docstring).
