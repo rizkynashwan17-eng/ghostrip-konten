@@ -80,6 +80,14 @@ def check(mp4, voice_id=None, n_lines=None):
             r["model_suara"] = dj.get("model")
             if not dj.get("satu_model"):
                 issues.append("suara dibuat sistem lama (model bisa campur) — buat ulang")
+        dg = os.path.join(d, "dengar.json")
+        if os.path.exists(dg):
+            dj2 = json.load(open(dg))
+            r["dengar"] = [{"transkrip": l.get("transkrip"), "kemiripan": l.get("kemiripan"), "alasan": l.get("alasan")} for l in dj2.get("lines", [])]
+            bad2 = [str(i + 1) for i, l in enumerate(dj2.get("lines", [])) if not l.get("lolos")]
+            if bad2: issues.append(f"pemeriksa dengar: baris {', '.join(bad2)} tidak cocok naskah / rusak")
+        else:
+            issues.append("belum dicek pemeriksa dengar (dengar.json)")
         ints = [intonation(os.path.join(d, w)) for w in wavs]
         r["intonasi_semitone"] = ints
         flat = [i for i, v in enumerate(ints) if v is not None and v < 4.0]

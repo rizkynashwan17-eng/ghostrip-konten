@@ -18,7 +18,19 @@ jobs:
       - name: Generate voice lines
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python3 engine/tts_gemini.py
+        run: python3 engine/tts_gemini.py || echo "TTS belum lengkap (kuota?)"
+      - name: Dengar & cocokkan dengan naskah (Gemini)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          set +e
+          python3 engine/dengar_gemini.py; c=$?
+          if [ "$c" = "3" ]; then
+            python3 engine/tts_gemini.py
+            python3 engine/dengar_gemini.py; c=$?
+            if [ "$c" = "3" ]; then python3 engine/tts_gemini.py; python3 engine/dengar_gemini.py; fi
+          fi
+          exit 0
       - name: Commit audio
         if: always()
         run: |
