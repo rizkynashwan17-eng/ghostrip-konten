@@ -124,14 +124,25 @@ export const Truck: React.FC<{x: number; y: number; s?: number; speed?: number; 
 };
 
 // Tokoh SOPIR (topi oranye) dan BOS (kumis), bergerak luwes: napas, kedip, kepala ikut badan
-export const Person: React.FC<{who: 'sopir' | 'bos'; x: number; y: number; s?: number; pose?: 'cemas' | 'santai' | 'telepon' | 'pikir'; face?: 1 | -1}> = ({who, x, y, s = 1, pose = 'santai', face = 1}) => {
+// Tokoh bebas (Rizky 30 Okt 2026): sopir, bos, admin, dispatcher, customer, mekanik — gaya & palet sama
+const ROLES: Record<string, {shirt: string; dark: string; collar: 'v' | 'tie' | 'none' | 'zip'; hair: 'capOrange' | 'capNavy' | 'slick' | 'short' | 'hijab'; mustache?: boolean; glasses?: boolean; headset?: boolean}> = {
+  sopir: {shirt: '#2f6f86', dark: '#24596c', collar: 'v', hair: 'capOrange'},
+  bos: {shirt: '#3d4b5c', dark: '#2f3a48', collar: 'tie', hair: 'slick', mustache: true},
+  admin: {shirt: '#d9ece8', dark: '#b9d3cd', collar: 'none', hair: 'hijab'},
+  dispatcher: {shirt: '#1d5a63', dark: '#164850', collar: 'v', hair: 'short', headset: true},
+  customer: {shirt: '#c9b48a', dark: '#a8956c', collar: 'v', hair: 'short', glasses: true},
+  mekanik: {shirt: '#24333d', dark: '#1a262e', collar: 'zip', hair: 'capNavy'},
+};
+
+export const Person: React.FC<{who: string; x: number; y: number; s?: number; pose?: 'cemas' | 'santai' | 'telepon' | 'pikir'; face?: 1 | -1}> = ({who, x, y, s = 1, pose = 'santai', face = 1}) => {
   const f = useCurrentFrame();
   const t = f / 30;
   const breathe = Math.sin(t * 2.1) * 4;
   const tilt = Math.sin(t * 1.2) * 2.5 + (pose === 'cemas' ? -5 : 0) + (pose === 'pikir' ? 6 : 0);
   const blink = (f + (who === 'bos' ? 40 : 0)) % 96 > 92 ? 0.1 : 1;
-  const shirt = who === 'sopir' ? '#2f6f86' : '#3d4b5c';
-  const shirtDark = who === 'sopir' ? '#24596c' : '#2f3a48';
+  const R = ROLES[who] ?? ROLES.sopir;
+  const shirt = R.shirt;
+  const shirtDark = R.dark;
   // lengan kanan: cemas = mengusap dahi, telepon = pegang HP di depan dada, pikir = dagu
   const wipe = Math.sin(t * 3.4) * 8;
   // sudut dihitung untuk bahu kiri (x=150): negatif = ke kanan/atas
@@ -163,25 +174,27 @@ export const Person: React.FC<{who: 'sopir' | 'bos'; x: number; y: number; s?: n
           <ellipse cx={284} cy={732} rx={44} ry={17} fill="#070e12" />
           <path d={`M146 610 C134 480 146 392 220 ${370 + breathe * 0.3} C294 392 306 480 294 610 Z`} fill={shirt} />
           <path d="M146 610 C140 520 150 450 176 410 L176 610 Z" fill="#000" opacity={0.12} />
-          {who === 'sopir'
-            ? <path d="M186 382 L220 420 L254 382" fill="none" stroke="#dcefee" strokeWidth={8} strokeLinejoin="round" strokeLinecap="round" />
-            : <><path d="M190 382 L220 450 L250 382 Z" fill="#eef2f4" /><path d="M215 396 h10 l7 64 l-12 16 l-12 -16 z" fill={C.orange} /></>}
+          {R.collar === 'v' && <path d="M186 382 L220 420 L254 382" fill="none" stroke="#dcefee" strokeWidth={8} strokeLinejoin="round" strokeLinecap="round" />}
+          {R.collar === 'tie' && <><path d="M190 382 L220 450 L250 382 Z" fill="#eef2f4" /><path d="M215 396 h10 l7 64 l-12 16 l-12 -16 z" fill={C.orange} /></>}
+          {R.collar === 'zip' && <><path d="M220 384 V600" stroke="#55656e" strokeWidth={5} /><rect x={146} y={470} width={148} height={12} fill={C.orange} opacity={0.85} /></>}
           <rect x={144} y={598} width={152} height={18} rx={8} fill="#121c22" />
           <g transform={`rotate(${tilt} 220 350)`}>
             <path d="M202 300 h36 v70 h-36z" fill={C.skinShade} />
             <circle cx={220} cy={232} r={96} fill={C.skin} />
             <ellipse cx={124} cy={240} rx={13} ry={20} fill={C.skinShade} />
-            {who === 'sopir' ? (
+            {(R.hair === 'capOrange' || R.hair === 'capNavy') && (
               <>
                 <g clipPath={`url(#head-${who})`}>
-                  <rect x={110} y={120} width={220} height={74} fill={C.orange} />
-                  <rect x={110} y={186} width={220} height={10} fill={C.orangeDeep} />
+                  <rect x={110} y={120} width={220} height={74} fill={R.hair === 'capOrange' ? C.orange : '#1b2b36'} />
+                  <rect x={110} y={186} width={220} height={10} fill={R.hair === 'capOrange' ? C.orangeDeep : '#0f1b22'} />
                 </g>
-                <path d="M318 190 C350 192 372 202 378 212 C350 216 322 208 302 196 Z" fill={C.orangeDeep} />
+                <path d="M318 190 C350 192 372 202 378 212 C350 216 322 208 302 196 Z" fill={R.hair === 'capOrange' ? C.orangeDeep : '#0f1b22'} />
               </>
-            ) : (
-              <path d="M124 212 C118 122 180 128 222 132 C276 128 322 136 316 212 C296 172 260 162 222 164 C182 162 142 172 124 212 Z" fill="#1f2a33" />
             )}
+            {R.hair === 'slick' && <path d="M124 212 C118 122 180 128 222 132 C276 128 322 136 316 212 C296 172 260 162 222 164 C182 162 142 172 124 212 Z" fill="#1f2a33" />}
+            {R.hair === 'short' && <path d="M126 220 C120 130 180 124 222 126 C270 124 324 134 318 220 C304 186 290 170 270 166 C240 176 200 176 170 166 C150 172 134 190 126 220 Z" fill="#2a2f36" />}
+            {R.hair === 'hijab' && <><path d="M110 250 C100 120 170 112 220 112 C272 112 342 120 330 250 C330 340 300 380 220 392 C140 380 110 340 110 250 Z" fill={C.mintDeep} /><path d="M140 250 C140 170 180 150 220 150 C262 150 300 170 300 250 C300 320 270 352 220 356 C170 352 140 320 140 250 Z" fill={C.skin} /></>}
+            {R.headset && <><path d="M120 230 C120 120 320 120 320 230" stroke="#0e1a20" strokeWidth={12} fill="none" /><rect x={104} y={220} width={28} height={50} rx={10} fill="#0e1a20" /><path d="M120 262 q20 50 70 52" stroke="#0e1a20" strokeWidth={6} fill="none" /><circle cx={192} cy={314} r={8} fill={C.mint} /></>}
             {/* alis: naik saat cemas */}
             <path d={`M176 ${206 - (pose === 'cemas' ? 8 : 0)} q20 -10 38 0`} stroke="#1c2127" strokeWidth={8} strokeLinecap="round" fill="none" />
             <path d={`M240 ${206 - (pose === 'cemas' ? 8 : 0)} q20 -10 38 0`} stroke="#1c2127" strokeWidth={8} strokeLinecap="round" fill="none" />
@@ -189,9 +202,10 @@ export const Person: React.FC<{who: 'sopir' | 'bos'; x: number; y: number; s?: n
             <ellipse cx={258} cy={242} rx={17} ry={19 * blink} fill="#fff" />
             {blink > 0.5 && <><circle cx={203} cy={245} r={9.5} fill="#1c2127" /><circle cx={265} cy={245} r={9.5} fill="#1c2127" /><circle cx={200} cy={240} r={3} fill="#fff" /><circle cx={262} cy={240} r={3} fill="#fff" /></>}
             <path d="M236 256 q12 16 -2 24" stroke={C.skinShade} strokeWidth={6} fill="none" strokeLinecap="round" />
-            {who === 'bos'
+            {R.mustache
               ? <path d="M190 294 q30 -24 60 -6 q30 -18 60 6 q-30 14 -60 4 q-30 10 -60 -4z" fill="#1c2127" transform="translate(-14 0)" />
               : null}
+            {R.glasses && <><circle cx={196} cy={242} r={26} fill="none" stroke="#1c2127" strokeWidth={5} /><circle cx={258} cy={242} r={26} fill="none" stroke="#1c2127" strokeWidth={5} /><path d="M222 242 h10" stroke="#1c2127" strokeWidth={5} /></>}
             <path d={pose === 'cemas' ? 'M210 312 q18 -10 36 0' : 'M210 310 q18 10 36 0'} stroke="#7d2b2b" strokeWidth={6} fill="none" strokeLinecap="round" />
           </g>
           <Arm x={150} y={398} a1={arm.a1} a2={arm.a2} color={shirt} />
