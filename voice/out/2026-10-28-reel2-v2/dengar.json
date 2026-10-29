@@ -1,0 +1,53 @@
+{
+ "sig": [
+  [
+   5.12,
+   3.48,
+   5.44,
+   5.04,
+   6.84
+  ],
+  4
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Bos, CDD sama CDE itu apa sih bedanya?",
+   "transkrip": "Bos, CDD sama CDE itu apa sih bedanya?",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  },
+  {
+   "naskah": "Dua-duanya dari nama Colt Diesel.",
+   "transkrip": "Dua-duanya dari nama Colt Diesel.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  },
+  {
+   "naskah": "Engkel roda belakangnya tunggal, double roda belakangnya ganda.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar (kuota/model)"
+  },
+  {
+   "naskah": "Muat lebih banyak, biayanya juga beda.",
+   "transkrip": "Muat lebih banyak, biayanya juga beda.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  },
+  {
+   "naskah": "Hitung harga CDD dan CDE sesuai jenis truknya. Komen DEMO.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar (kuota/model)"
+  }
+ ]
+}
