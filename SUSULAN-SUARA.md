@@ -8,5 +8,4 @@ Urutan pengerjaan TTS otomatis menurut kunci `"jadwal"` di request (tayang terde
 Posting Metricool yang harus diganti medianya (cari id terbaru via getScheduledPosts, cocokkan uuid; isi lain JANGAN diubah, salin dari getScheduledPosts):
 | konten | jadwal WIB | uuid | file baru | file konten JSON |
 |---|---|---|---|---|
-
-
+| Kelas jalan & MST (reel1-v2) — suara dibuat ulang: sebelumnya ada "Say curiously" (bahasa Inggris) + suara pecah. Kuota TTS habis 30 Okt dini hari; buat ulang setelah reset, INSPEKSI WAJIB (dengar.json lolos), render `python3 engine/render.py konten/2026-10-30-v2.json`, `python3 engine/posting.py tambah konten/2026-10-30-v2.json`, lalu ubah jam post id 2026-10-30-1130-reel1-v2 tetap 19:30 & kosongkan catatan | 2026-10-30 19:30 | - | media/2026-10-30/reel1-v2.mp4 | konten/2026-10-30-v2.json |
