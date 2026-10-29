@@ -109,6 +109,7 @@ def synth(text, who, model, tone=None, variant=0):
 
 LOG = []
 DEAD = set()
+FAILED = []
 
 def main():
     if not KEY:
@@ -151,7 +152,7 @@ def main():
                     time.sleep(5)
             if pcm is None:
                 open(f"{out}/error.txt", "w").write("GAGAL baris %d\n" % i + "\n".join(LOG[-6:]))
-                print("GAGAL baris", i); sys.exit(1)
+                print("GAGAL baris", i, "- lanjut ke request berikutnya"); FAILED.append(rid); break
             if used and got != used:
                 # pindah model → buang baris sebelumnya supaya semua suara seragam
                 print(f"pindah model {used} -> {got}: baris sebelumnya dibuat ulang")
@@ -163,6 +164,7 @@ def main():
             with wave.open(fn, "wb") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(normalize(pcm))
             print(rid, i, ln["who"], round(len(pcm) / 2 / 24000, 2), "dtk", used)
             i += 1; time.sleep(7)
+        if rid in FAILED: continue
         durs = []
         for i in range(len(lines)):
             with wave.open(f"{out}/{i:02d}.wav") as w: durs.append(round(w.getnframes() / 24000, 2))
@@ -170,3 +172,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    if FAILED:
+        print("request gagal:", FAILED); sys.exit(1)
