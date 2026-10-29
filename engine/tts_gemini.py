@@ -13,8 +13,9 @@ import base64, json, os, sys, time, urllib.request, urllib.error, wave, glob
 KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 API = "https://generativelanguage.googleapis.com/v1beta"
 MODELS = ["gemini-2.5-flash-preview-tts", "gemini-2.5-pro-preview-tts", "gemini-2.5-flash-tts"]
-VOICE = {"BOS": "Algenib", "SOPIR": "Puck", "HANTU": "Leda", "ADMIN": "Kore", "CUSTOMER": "Charon"}
+VOICE = {"NARATOR": "Charon", "BOS": "Algenib", "SOPIR": "Puck", "HANTU": "Leda", "ADMIN": "Kore", "CUSTOMER": "Charon"}
 PERSONA = {
+    "NARATOR": "a cinematic Indonesian storyteller narrating a suspenseful 'what if' short video about the trucking business, calm, warm and slightly low voice, clear diction, a short dramatic pause after every sentence",
     "BOS": "a middle-aged Indonesian trucking company boss, deep and slightly gravelly voice, relaxed but authoritative, like a friendly 'Pak Bos' chatting with his staff",
     "SOPIR": "an Indonesian truck driver in his 30s, warm, casual and a bit cheeky, chatting with his boss",
     "HANTU": "a small cute friendly ghost mascot, bright, playful and cheerful",
@@ -22,6 +23,7 @@ PERSONA = {
     "CUSTOMER": "an Indonesian customer who is in a hurry",
 }
 TONE = {
+    "narasi": "suspenseful storytelling with natural rises and falls, slower on key numbers, short pause between sentences",
     "penasaran": "curious, questioning (rising intonation at the end)",
     "kaget": "surprised and emphatic",
     "santai": "relaxed and matter-of-fact, with a small smile",

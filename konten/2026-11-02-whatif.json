@@ -1,0 +1,136 @@
+{
+ "date": "2026-11-02",
+ "posts": [
+  {
+   "slot": "reel1-whatif",
+   "kind": "reel",
+   "engine": "remotion",
+   "time": "11:30",
+   "judul": "TRUK DITAHAN DI JEMBATAN TIMBANG",
+   "part": 1,
+   "lokasi": "02.14 WIB · JALINTIM SUMATERA",
+   "jam": "02:14",
+   "topic": "Gimana kalau truk ditahan di jembatan timbang karena kelebihan muatan",
+   "scenes": [
+    {
+     "type": "jalan",
+     "papan": "JEMBATAN TIMBANG",
+     "narasi": "Jam dua pagi, truk Pak Darto masuk *jembatan timbang*."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "SURAT JALAN",
+     "baris": [
+      [
+       "Rute",
+       "Palembang → Jambi"
+      ],
+      [
+       "Armada",
+       "Fuso box"
+      ],
+      [
+       "Sopir",
+       "Pak Darto"
+      ],
+      [
+       "Muatan",
+       "8 TON"
+      ]
+     ],
+     "sorot": 3,
+     "narasi": "Di surat jalan, muatannya *delapan ton*."
+    },
+    {
+     "type": "timbangan",
+     "dari": 0,
+     "ke": 12,
+     "batas": 8,
+     "peringatan": "MELEBIHI BATAS",
+     "narasi": "Tapi timbangan bilang, *dua belas ton*."
+    },
+    {
+     "type": "stat",
+     "dari": 0,
+     "ke": 50,
+     "label": "KELEBIHAN MUATAN",
+     "narasi": "Kelebihan muatan, *lima puluh persen*."
+    },
+    {
+     "type": "aturan",
+     "no": 1,
+     "judulKartu": "Kelebihan muatan bisa ditilang dan diturunkan di tempat",
+     "ikonTengah": "→",
+     "sumber": "Kemenhub via Kontan (2018) · Target Zero ODOL 1 Jan 2027 (Bisnis.com)",
+     "narasi": "Truk bisa ditilang, bahkan muatannya *diturunkan* di tempat."
+    },
+    {
+     "type": "karakter",
+     "siapa": "sopir",
+     "pose": "cemas",
+     "set": "timbang",
+     "kardus": true,
+     "narasi": "Empat ton harus *ditinggal* di sini."
+    },
+    {
+     "type": "peta",
+     "dari": "PALEMBANG",
+     "ke": "JAMBI",
+     "provDari": "SUMATERA SELATAN",
+     "provKe": "JAMBI",
+     "tripDari": 1,
+     "tripKe": 2,
+     "label": "TRIP KE JAMBI",
+     "narasi": "Artinya, ada *trip tambahan* Palembang ke Jambi."
+    },
+    {
+     "type": "struk",
+     "judulKartu": "BIAYA TRIP TAMBAHAN",
+     "subjudul": "Palembang → Jambi PP · Fuso",
+     "item": [
+      [
+       "Solar ±184 L",
+       1251000
+      ],
+      [
+       "Uang jalan 2 hari",
+       700000
+      ],
+      [
+       "Tol & retribusi",
+       400000
+      ]
+     ],
+     "catatan": "*ilustrasi hitungan",
+     "narasi": "Solar, uang jalan, tol. Tambah *dua koma tiga juta*."
+    },
+    {
+     "type": "angka",
+     "dari": 540000,
+     "ke": -1811000,
+     "label": "UNTUNG ORDER INI",
+     "catatan": "*ilustrasi",
+     "narasi": "Untung dari order ini, langsung jadi *rugi*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Padahal semua bisa dihitung, *sebelum truk berangkat*."
+    },
+    {
+     "type": "cta",
+     "tagline": "Hitung harga trip yang aman, sebelum truk berangkat",
+     "narasi": "Hitung harga trip yang aman di Ghostrip. Komen *DEMO*, coba gratis tujuh hari."
+    }
+   ],
+   "caption": "Gimana kalau truk kamu ditahan di jembatan timbang jam 2 pagi? 🚛⚖️\n\nDi surat jalan 8 ton, ternyata ditimbang 12 ton. Kelebihan muatan bisa ditilang, bahkan muatannya diturunkan di tempat. Sisanya harus dikirim pakai trip tambahan, dan untung order bisa langsung jadi rugi.\n\nHitung muatan, solar, uang jalan, dan tol sebelum truk berangkat. Bos tinggal cek dan approve.\n\n✅ Coba Ghostrip gratis 7 hari, komen DEMO atau WA 0815-1704-7930\n\nAngka biaya: ilustrasi. Sumber aturan: Kemenhub via Kontan (2018); target Zero ODOL 1 Jan 2027 (Bisnis.com)\n\n#ghostrip #ekspedisi #trucking #odol #jembatantimbang",
+   "tiktok_title": "Gimana kalau truk kamu ditahan di jembatan timbang?",
+   "voice_id": "2026-11-02-reel1-whatif"
+  }
+ ]
+}
