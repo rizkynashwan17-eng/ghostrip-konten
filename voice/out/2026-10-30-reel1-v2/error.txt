@@ -1,4 +1,4 @@
-GAGAL baris 3
+GAGAL baris 2
 HTTP 429 gemini-2.5-pro-preview-tts: {
   "error": {
     "code": 429,
@@ -11,7 +11,7 @@ HTTP 404 gemini-2.5-flash-tts: {
   }
 }
 
-tolak gemini-3.8-flash-tts v0 baris 3: 30.0 dtk terlalu panjang
-tolak gemini-3.8-flash-tts v2 baris 3: 10 sampel pecah
-tolak gemini-3.8-flash-lite-tts v0 baris 3: 26.3 dtk terlalu panjang
-tolak gemini-3.8-flash-lite-tts v2 baris 3: 12 sampel pecah
+tolak gemini-3.8-flash-tts v0 baris 2: 10 sampel pecah
+tolak gemini-3.8-flash-tts v2 baris 2: 10 sampel pecah
+tolak gemini-3.8-flash-lite-tts v0 baris 2: 26.2 dtk terlalu panjang
+tolak gemini-3.8-flash-lite-tts v2 baris 2: 10 sampel pecah
