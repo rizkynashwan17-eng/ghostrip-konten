@@ -2,6 +2,15 @@
 
 Tujuan: setiap hari otomatis membuat konten Ghostrip dan memasukkannya ke halaman Posting Ghostrip (Rizky memposting manual).
 
+## FORMAT REELS BARU: "GIMANA KALAU…" (Remotion) — ATURAN PATEN Rizky (30 Okt 2026)
+Mulai stok berikutnya (konten yang dibuat setelah stok lama habis), SEMUA Reels baru dibuat dengan Remotion gaya "Gimana kalau…" (referensi: video "what if" animasi sinematik yang dikirim Rizky). Story & feed tetap pakai `engine/render.py`.
+- Struktur: judul seri "GIMANA KALAU… <SKENARIO> · PART n" + label jam & lokasi di adegan pertama; SATU narator (bukan dialog); ganti adegan cepat (1 kalimat = 1 adegan, ±2–4 dtk); kamera push-in; selingan infografis (peta rute + penghitung, kartu aturan kertas, struk biaya, layar angka); teks besar per frasa di tengah bawah dengan kata kunci oranye; label jam berjalan; penutup CTA hantu Ghostrip.
+- Warna brand: malam navy-teal, cahaya cakrawala & kata kunci oranye #ff9d5c, positif mint #7ff0d6, peringatan merah. Font Outfit. Tokoh: Sopir topi oranye, Bos kumis, hantu Ghostrip (tanpa topi).
+- Isi: skenario nyata dunia trucking (jembatan timbang/ODOL, solar naik di tengah trip, salah rute jalan kelas III, ban pecah di tol, macet Nataru, trip pulang kosong, dll.) yang berujung ke biaya/untung-rugi, lalu "padahal bisa dihitung sebelum berangkat". Variasi PATEN tetap: skenario & lokasi berganti; rotasi tipe adegan; jangan ulang skenario dalam 14 hari. Angka biaya pakai rumus Ghostrip & tandai "*ilustrasi"; fakta aturan wajib sumber (cek web); keputusan harga di tangan bos.
+- File: `konten/YYYY-MM-DD-whatif.json` (contoh: `konten/2026-11-02-whatif.json`; format & jenis adegan di docstring `engine/whatif.py` dan `remotion/src/scenes.tsx`: jalan, dokumen, timbangan, stat, aturan, karakter, peta, struk, angka, cta). Durasi target 25–40 dtk (scan: 15–45).
+- Langkah: (1) `python3 engine/whatif.py suara konten/X-whatif.json` → push (SATU request TTS per video, hemat kuota) → tunggu workflow `voice.yml` sampai `voice/out/<id>/done.json` + `dengar.json` lolos; (2) `python3 engine/whatif.py render konten/X-whatif.json` (pertama kali otomatis `npm install` di `remotion/`; Chromium bawaan dipakai); (3) cek visual beberapa frame (teks tidak menimpa, tidak terpotong); (4) INSPEKSI WAJIB di bawah; (5) `python3 engine/posting.py tambah konten/X-whatif.json`, push.
+- `--tanpa-suara` hanya untuk pratinjau; video tanpa narasi DILARANG masuk halaman posting.
+
 ## INSPEKSI WAJIB SETELAH MEMBUAT KONTEN — ATURAN PATEN Rizky (29 Okt 2026)
 Setiap konten yang baru dibuat atau suaranya diganti WAJIB langsung dicek sebelum masuk halaman posting. Tidak boleh ada yang lolos tanpa inspeksi.
 1. Suara: `engine/tts_gemini.py` (satu model per video, tolak suara pecah/terpotong/kepanjangan, normalisasi -3 dBFS) lalu `engine/dengar_gemini.py` (Gemini mendengarkan tiap baris, transkrip dicocokkan dengan naskah, deteksi kresek/distorsi/bahasa salah; baris gagal otomatis dibuat ulang). Keduanya jalan otomatis di workflow `voice.yml`. Tunggu sampai `voice/out/<id>/dengar.json` ada dengan `"lolos": true`.

@@ -56,7 +56,8 @@ def scan(spec_path):
                     if not 15 <= dur <= 45: issues.append(f"durasi {dur:.1f} dtk (harus 15-45)")
                     if not any(s["codec_type"] == "audio" for s in pr["streams"]): issues.append("tidak ada audio")
                     if os.path.getsize(p) > 100e6: issues.append("video > 100 MB")
-                    n = sum(1 for s in post.get("scenes", []) if s.get("say"))
+                    n = 1 if post.get("engine") == "remotion" else sum(1 for s in post.get("scenes", []) if s.get("say"))
+                    if post.get("engine") == "remotion" and not m.get("bersuara"): issues.append("video Remotion dirender tanpa narasi (pratinjau)")
                     q = check(p, post.get("voice_id"), n or None)
                     info["suara"] = q.get("voiceover"); info["kualitas"] = q.get("status")
                     if q.get("status") != "AMAN": issues += [f"kualitas: {x}" for x in q.get("masalah", [])] or ["kualitas audio PERLU DICEK"]
