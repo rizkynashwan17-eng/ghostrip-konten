@@ -1,12 +1,37 @@
 {
  "id": "iklan-v1793250433190",
  "lines": [
-  {"who": "SOPIR", "tone": "penasaran", "text": "Bos, customer minta harga sekarang. Admin belum balas!"},
-  {"who": "CUSTOMER", "tone": "tegas", "text": "Kalau sore belum ada harga, saya pakai ekspedisi lain."},
-  {"who": "HANTU", "tone": "menjelaskan", "text": "Salah hitung solar sedikit saja, satu trip bisa rugi seratus ribu."},
-  {"who": "HANTU", "tone": "senang", "text": "Isi rute, harga trip terhitung, quotation PDF langsung kirim ke WA."},
-  {"who": "BOS", "tone": "senang", "text": "Harga saya cek, saya approve, langsung kirim ke customer."},
-  {"who": "BOS", "tone": "mengajak", "text": "Coba gratis tujuh hari. Chat WA sekarang, nomornya di layar."}
+  {
+   "who": "SOPIR",
+   "tone": "penasaran",
+   "text": "Bos, customer minta harga sekarang. Admin belum balas!"
+  },
+  {
+   "who": "CUSTOMER",
+   "tone": "tegas",
+   "text": "Kalau sore belum ada harga, saya pakai ekspedisi lain."
+  },
+  {
+   "who": "HANTU",
+   "tone": "menjelaskan",
+   "text": "Salah hitung solar sedikit saja, satu trip bisa rugi seratus ribu."
+  },
+  {
+   "who": "HANTU",
+   "tone": "senang",
+   "text": "Isi rute, harga trip terhitung, quotation PDF langsung kirim ke WA."
+  },
+  {
+   "who": "BOS",
+   "tone": "senang",
+   "text": "Harga saya cek, saya approve, langsung kirim ke customer."
+  },
+  {
+   "who": "BOS",
+   "tone": "mengajak",
+   "text": "Coba gratis tujuh hari. Chat WA sekarang, nomornya di layar."
+  }
  ],
- "jadwal": "2026-10-29T12:30"
+ "jadwal": "2026-10-29T12:30",
+ "rev": 1
 }
