@@ -1,4 +1,4 @@
-"""SCAN WAJIB setelah konten dibuat & dirender, sebelum upload ke Metricool.
+"""SCAN WAJIB setelah konten dibuat & dirender, sebelum konten dimasukkan ke halaman Posting.
 
 Pakai: python3 engine/scan_konten.py konten/YYYY-MM-DD.json
 Cek tiap post di manifest media/<tanggal>/:
@@ -8,7 +8,7 @@ Cek tiap post di manifest media/<tanggal>/:
 - Caption (reel/feed/carousel): ada CTA (DEMO / WA 0815-1704-7930 / gratis 7 hari), #ghostrip,
   panjang <= 2200, hashtag <= 30, tanpa nama terlarang; reel butuh tiktok_title <= 90
 - Teks layar & caption: tanpa nama terlarang, tanpa emoji di teks layar
-Keluar kode 0 = SEMUA AMAN (WAJIB langsung upload ke Metricool tanpa menunggu persetujuan), 1 = ada masalah (perbaiki, render & scan ulang).
+Keluar kode 0 = SEMUA AMAN (WAJIB langsung masuk halaman Posting lewat engine/posting.py tanpa menunggu persetujuan), 1 = ada masalah (perbaiki, render & scan ulang).
 Status "AMAN - SUARA MENYUSUL" = upload sekarang, catat di SUSULAN-SUARA.md.
 """
 import json, os, re, subprocess, sys

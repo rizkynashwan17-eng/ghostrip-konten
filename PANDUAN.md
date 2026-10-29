@@ -19,14 +19,10 @@ Setiap konten yang baru dibuat atau suaranya diganti WAJIB langsung dicek sebelu
 4. Baru setelah ketiganya AMAN: `python3 engine/posting.py tambah ...`, push. Kalau tidak AMAN: perbaiki/buat ulang; kalau sampai tugas selesai masih gagal, JANGAN dimasukkan ke halaman — catat di SUSULAN-SUARA.md dan laporkan ke Rizky beserta alasannya.
 5. Laporan harian menyebut hasil inspeksi tiap konten (✅ lolos semua / ⚠️ alasan).
 
-## MODE POSTING MANUAL — ATURAN PATEN sejak 29 Okt 2026 (menggantikan semua langkah Metricool di bawah)
-Rizky memilih posting manual (Instagram sempat terputus dari Metricool, kuota Metricool terbatas). JANGAN membuat atau mengaktifkan posting di Metricool lagi (`createScheduledPost` / `draft: false` dilarang), kecuali Rizky sendiri memintanya. Posting lama di Metricool sudah dijadikan draft.
+## MODE POSTING MANUAL — ATURAN PATEN sejak 29 Okt 2026 (Metricool TIDAK dipakai lagi, semua langkah di bawah memakai halaman Posting)
+Rizky memilih posting manual (Instagram sempat terputus dari Metricool, kuota Metricool terbatas). Metricool tidak dipakai lagi: jangan memanggil tool Metricool sama sekali (createScheduledPost, updateScheduledPost, getScheduledPosts), kecuali Rizky sendiri memintanya. Semua posting lama di Metricool sudah draft.
 - Halaman: `index.html` (GitHub Pages, https://rizkynashwan17-eng.github.io/ghostrip-konten/) membaca `posting/jadwal.json`. Rizky membuka halaman, ketuk Bagikan → IG/TikTok/Meta Business Suite (Facebook Page, diposting manual oleh Rizky lewat Meta Business Suite) (caption tersalin otomatis), lalu centang Sudah. Pengingat kalender di HP Rizky: 07.30, 11.30, 17.00, 19.30 setiap hari.
-- Pengganti tiap langkah lama:
-  - `getScheduledPosts` (cek stok/slot/Reels) → baca `posting/jadwal.json` (`python3 engine/posting.py daftar`).
-  - `createScheduledPost` (langkah 8) → `python3 engine/posting.py tambah konten/YYYY-MM-DD-v2.json` (otomatis memakai `media/<tanggal>/manifest.json`, versi `-vo.mp4` dipakai kalau ada). Video manual Rizky → `python3 engine/posting.py manual ...` (lihat docstring).
-  - `updateScheduledPost` ganti media (susulan suara) → render ulang lalu jalankan lagi `posting.py tambah` (id sama = diganti), atau `posting.py manual` dengan id/judul yang sama untuk video manual. Tabel `SUSULAN-SUARA.md` cukup berisi konten, jadwal, file mp4, file JSON (kolom uuid diabaikan).
-  - Langkah D → juga `python3 engine/posting.py bersihkan 10`. Media yang masih tercantum di `posting/jadwal.json` jangan dihapus.
+- Perintah halaman (`engine/posting.py`): `daftar` (cek stok/slot), `tambah konten/YYYY-MM-DD-v2.json` (otomatis memakai `media/<tanggal>/manifest.json`, versi `-vo.mp4` dipakai kalau ada; id sama = diganti, dipakai juga untuk susulan suara), `manual ...` (video manual Rizky, lihat docstring), `catatan <id> "teks"`, `bersihkan 10`. Media yang masih tercantum di `posting/jadwal.json` jangan dihapus.
 - Wajib commit & push `posting/jadwal.json` + semua media yang dirujuk (halaman mengambil media dari repo). Setelah push, cek `https://raw.githubusercontent.com/rizkynashwan17-eng/ghostrip-konten/main/posting/jadwal.json` berisi konten baru.
 - Laporan harian ke Rizky tetap wajib; sebut konten baru yang masuk halaman (tanggal · jam · jenis · topik · status suara).
 - Label AI & aturan merek tetap berlaku (caption tanpa nama asli terlarang, dll.).
@@ -82,13 +78,13 @@ Aturan rotasi:
 - Nama perusahaan/orang harus FIKTIF (PT Maju Jaya Logistik, PT Makmur Semakmurnya, Ibu Gadis, Budi Santoso). DILARANG: "PT Gunung Inti Gemilang", "Ibu Lermi", "Trans Anugrah".
 
 ## Jadwal standar (WIB, Asia/Jakarta)
-| slot | jenis | jam | Metricool |
+| slot | jenis | jam | platform di halaman |
 |---|---|---|---|
-| story | foto 1080×1920 | 07:30 | instagram STORY |
-| reel1 | video 18–25 dtk | 11:30 | instagram REEL + tiktok |
-| feed | foto 1080×1350 (atau carousel) | 17:00 | instagram POST |
-| reel2 | video 18–25 dtk | 19:30 | instagram REEL + tiktok |
-Facebook Page belum terhubung; kalau `getBrandSettings` menunjukkan facebookData, tambahkan facebook.
+| story | foto 1080×1920 | 07:30 | IG story |
+| reel1 | video 18–25 dtk | 11:30 | IG reel + TikTok |
+| feed | foto 1080×1350 (atau carousel) | 17:00 | IG post |
+| reel2 | video 18–25 dtk | 19:30 | IG reel + TikTok |
+Facebook Page diposting manual oleh Rizky lewat Meta Business Suite (halaman selalu menampilkannya).
 Reel1 & reel2 = dua topik BERBEDA. Story boleh polling/pertanyaan yang nyambung ke reel hari itu. Feed = ringkasan fakta yang bisa disimpan (compare, list, atau carousel 3–5 slide).
 
 
@@ -96,30 +92,27 @@ Reel1 & reel2 = dua topik BERBEDA. Story boleh polling/pertanyaan yang nyambung 
 Setiap kali membuat, mengisi suara, atau mengganti konten WAJIB diakhiri laporan update untuk Rizky: tanggal & jam tayang, topik, status suara (✅/⏳), dan masalah bila ada. Tugas ini tidak boleh dilewati/dimatikan kecuali Rizky memintanya.
 Urutan setiap hari:
 A. SUSULAN SUARA dulu (kuota Gemini baru saja reset): kerjakan semua baris di `SUSULAN-SUARA.md` (lihat isi file itu).
-   A0. CEK OTOMATIS REELS TANPA SUARA (ATURAN PATEN Rizky, 28 Okt 2026 — tidak perlu disuruh): ambil semua Reels terjadwal (getScheduledPosts, hari ini s.d. +7). Untuk tiap Reels cari sumbernya di repo (manifest `media/<tanggal>/`, `konten/*.json`, `media/manual/`). Kalau belum bersuara (tidak ada `voice/out/<id>/done.json`, atau video manual yang audionya hanya musik) → langsung tulis voiceover Claude: buat `voice/requests/<id>.json` (kalimat pendek sesuai durasi scene, isi `"jadwal": "YYYY-MM-DDTHH:MM"`), tambah baris + perintah mix ke `SUSULAN-SUARA.md`, push. Untuk video manual pakai `engine/mix_manual.py` dengan jendela waktu per scene. Kalau videonya hanya ada di Metricool (tidak ada di repo; static.metricool.com tidak bisa diunduh dari cloud) → laporkan ke Rizky agar file ditaruh di `media/manual/`.
-   PRIORITAS KUOTA: `engine/tts_gemini.py` mengerjakan request urut `jadwal` terdekat dulu. Kalau kuota habis, Reels yang paling dekat tayang yang diselesaikan & diganti di Metricool lebih dulu; sisanya menunggu reset (±14:00 WIB) selama jamnya belum lewat.
-B. CEK STOK: `getScheduledPosts` dari besok s.d. hari+5. Hari dianggap "terisi" kalau slot Reels 11:30 & 19:30 (atau Reels manual Rizky di malam hari) sudah ada.
+   A0. CEK OTOMATIS REELS TANPA SUARA (tidak perlu disuruh): lihat semua Reels di `posting/jadwal.json` (hari ini s.d. +7; `python3 engine/posting.py daftar`). Cari sumbernya di repo (manifest `media/<tanggal>/`, `konten/*.json`, `media/manual/`). Kalau belum bersuara (tidak ada `voice/out/<id>/done.json`, atau video manual yang audionya hanya musik) → tulis voiceover Claude: buat `voice/requests/<id>.json` (kalimat pendek sesuai durasi scene, isi `"jadwal": "YYYY-MM-DDTHH:MM"`), tambah baris + perintah mix ke `SUSULAN-SUARA.md`, push. Video manual pakai `engine/mix_manual.py` dengan jendela waktu per scene.
+   PRIORITAS KUOTA: `engine/tts_gemini.py` mengerjakan request urut `jadwal` terdekat dulu. Kalau kuota habis, Reels yang paling dekat tayang diselesaikan lebih dulu; sisanya menunggu reset (±14:00 WIB) selama jamnya belum lewat.
+B. CEK STOK: `python3 engine/posting.py daftar` dari besok s.d. hari+5. Hari dianggap "terisi" kalau slot Reels 11:30 & 19:30 (atau Reels manual Rizky di malam hari) sudah ada.
    - Kalau hari pertama yang BELUM terisi masih > 2 hari lagi (stok aman ≥ H-2): JANGAN buat konten. Akhiri dengan 1 baris "Stok aman sampai <tanggal>." (hemat usage).
    - Kalau hari kosong pertama ≤ hari+2: buat konten untuk SEMUA hari kosong sampai hari+4 (biasanya 2–3 hari sekaligus), hanya slot yang kosong.
-C. Suara: kirim semua request sekaligus. Yang tidak kebagian kuota → Reels tetap dijadwalkan tanpa suara + dicatat di `SUSULAN-SUARA.md` (diproses besok di langkah A, masih sebelum jam tayang karena stok ≥ 2 hari).
-C2. OTOMATIS UP KE METRICOOL (ATURAN PATEN Rizky, 28 Okt 2026): konten yang sudah AMAN langsung dijadwalkan/diaktifkan di Metricool tanpa menunggu disuruh. Termasuk posting yang masih `draft: true` di Metricool (mis. Reels manual): cek dulu (video/gambar tidak rusak, ada audio, teks tidak terpotong, angka & hitungan benar, caption sesuai aturan merek), kalau aman → `updateScheduledPost` dengan `draft: false` (isi lain disalin persis). Kalau tidak aman → biarkan draft dan laporkan alasannya. Pengecualian: posting berlabel `[UJI]` tetap draft.
-D. Bersih-bersih repo: hapus folder `media/<tanggal>` dan `voice/out/<tanggal>-*` yang tanggalnya ≥ 10 hari lalu (Metricool sudah menyimpan salinan media sendiri).
+C. Suara: kirim semua request sekaligus. Yang tidak kebagian kuota → Reels tetap masuk halaman tanpa suara + dicatat di `SUSULAN-SUARA.md` (diproses besok di langkah A, masih sebelum jam tayang karena stok ≥ 2 hari), dengan catatan ⚠️ di halaman bila belum layak diposting.
+C2. MASUK HALAMAN: konten yang sudah AMAN (lihat "INSPEKSI WAJIB") langsung dimasukkan ke halaman dengan `posting.py tambah` / `manual`, push, tanpa menunggu disuruh. Yang tidak aman jangan dimasukkan; laporkan alasannya.
+D. Bersih-bersih repo: `python3 engine/posting.py bersihkan 10`, hapus folder `media/<tanggal>` dan `voice/out/<tanggal>-*` yang tanggalnya ≥ 10 hari lalu, kecuali media yang masih ada di `posting/jadwal.json`.
 
 ## Langkah membuat konten (dipakai di langkah B)
 1. Clone/pull repo. Baca `RIWAYAT.md` (hindari topik 30 hari terakhir).
 2. Pilih 2 topik reel + 1 topik feed, RISET dulu (lihat di atas), catat sumbernya.
 3. Tulis `konten/YYYY-MM-DD.json` (contoh lengkap: `konten/2026-10-28-v2.json`).
-4. SUARA (Gemini TTS lewat GitHub Actions): `python3 engine/render.py --voice-requests konten/YYYY-MM-DD.json` → commit & push (file `voice/requests/*.json`) → tunggu sampai `voice/out/<voice_id>/done.json` muncul di origin/main (cek `git fetch` tiap 15 dtk, maks 12 menit) → `git pull`. Kalau gagal/`error.txt` (kuota harian habis), lanjutkan TANPA suara; video tetap dibuat dengan musik + teks, LALU setelah dijadwalkan tambahkan baris ke tabel `SUSULAN-SUARA.md` (konten, jadwal WIB, uuid Metricool, file mp4, file konten JSON) supaya tugas susulan jam 15.15 WIB melengkapi suaranya dan mengganti video di Metricool tanpa perlu izin Rizky.
+4. SUARA (Gemini TTS lewat GitHub Actions): `python3 engine/render.py --voice-requests konten/YYYY-MM-DD.json` → commit & push (file `voice/requests/*.json`) → tunggu sampai `voice/out/<voice_id>/done.json` muncul di origin/main (cek `git fetch` tiap 15 dtk, maks 12 menit) → `git pull`. Kalau gagal/`error.txt` (kuota harian habis), lanjutkan TANPA suara; video tetap dibuat dengan musik + teks, LALU tambahkan baris ke tabel `SUSULAN-SUARA.md` (konten, jadwal WIB, file mp4, file konten JSON) supaya tugas harian berikutnya melengkapi suaranya dan memperbarui halaman tanpa perlu izin Rizky.
    Teks `say` ditulis seperti orang bicara: angka & singkatan yang sulit dibaca tulis dengan huruf di `say` ("dua ribu dua puluh tujuh", "sepuluh ton"). Opsional `"tone"`: penasaran/kaget/santai/menjelaskan/kecewa/senang/mengajak/tegas.
 5. `python3 engine/render.py konten/YYYY-MM-DD.json`, lalu CEK VISUAL: ambil 4–5 frame tiap reel (`ffmpeg -ss <detik> -i <mp4> -frames:v 1 x.jpg`) + gambar story/feed dan lihat dengan Read. Pastikan teks tidak keluar kartu/terpotong, kartu tidak menimpa karakter atau bar dialog. Perbaiki JSON (teks lebih pendek, hapus `illus`, dll) lalu render ulang.
 5b. SCAN WAJIB (ATURAN PATEN Rizky, 28 Okt 2026): `python3 engine/scan_konten.py konten/YYYY-MM-DD.json`. Mengecek aspek & resolusi (reel/story 1080x1920 9:16, feed/carousel 1080x1350 4:5), durasi reel 15–45 dtk, audio, voiceover & kualitas suara, jumlah slide, caption (CTA, #ghostrip, panjang, hashtag), tiktok_title ≤ 90, emoji di layar, nama terlarang. Kalau ada "PERBAIKI" → perbaiki JSON, render & scan ulang sampai `semua_aman: true`. Cantumkan hasil scan di laporan.
 6. Tambah baris ke `RIWAYAT.md`, commit & push ke `main`.
 7. URL media = `https://raw.githubusercontent.com/rizkynashwan17-eng/ghostrip-konten/<SHA-commit>/<path>`.
-8. UPLOAD LANGSUNG (WAJIB, tanpa menunggu persetujuan Rizky): begitu scan AMAN (termasuk "AMAN - SUARA MENYUSUL"), langsung jadwalkan dengan `createScheduledPost` (blogId `7702870`, timezone Asia/Jakarta, autoPublish true, draft false), hanya slot yang masih kosong (cek `getScheduledPosts` dulu; konten manual Rizky dihitung mengisi slot sejenis).
-   - Reels: instagramData {type REEL, showReelOnFeed true, isAiGenerated false}, tiktokData {title ≤ 90 karakter, privacyOption PUBLIC_TO_EVERYONE, isAigc false, commercialContentOwnBrand true}.
-   - Story: instagramData {type STORY, isAiGenerated false}, tanpa text.
-   - Feed/carousel: instagramData {type POST, isAiGenerated false}.
-9. Verifikasi dengan `getScheduledPosts`.
+8. MASUK HALAMAN (WAJIB, tanpa menunggu persetujuan Rizky): begitu scan dan inspeksi AMAN, jalankan `python3 engine/posting.py tambah konten/YYYY-MM-DD-v2.json` (hanya slot yang masih kosong; cek `posting.py daftar` dulu; konten manual Rizky dihitung mengisi slot sejenis). Reels → platform IG + TikTok, story/feed/carousel → IG. Story tanpa caption. Caption dan `tiktok_title` (≤ 90 karakter) diambil dari JSON konten.
+9. Commit & push `posting/jadwal.json` + semua media yang dirujuk, lalu verifikasi `https://raw.githubusercontent.com/rizkynashwan17-eng/ghostrip-konten/main/posting/jadwal.json` berisi konten baru.
 
 ## Format JSON (engine v2)
 Setiap scene reel (dan `scene` story/feed, `slides` carousel) memakai kunci berikut (semua opsional kecuali yang jelas dibutuhkan):
