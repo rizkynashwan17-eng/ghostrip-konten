@@ -14,7 +14,7 @@ import base64, datetime as dt, difflib, glob, json, os, re, sys, time, urllib.re
 KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 API = "https://generativelanguage.googleapis.com/v1beta"
 MODELS = ["gemini-2.5-flash", "gemini-flash-latest", "gemini-2.0-flash", "gemini-2.5-flash-lite"]
-AMBANG = 0.75
+AMBANG = 0.8
 WIB = dt.timezone(dt.timedelta(hours=7))
 
 PROMPT = """Kamu pemeriksa kualitas voiceover iklan berbahasa Indonesia.
@@ -33,6 +33,17 @@ def norm(t):
     for a, b in rep.items():
         t = t.replace(f" {a} ", f" {b} ")
     return t.split()
+
+
+# kata perintah bahasa Inggris yang tidak boleh terdengar (tanda model membacakan instruksi)
+INSTRUKSI = {"say", "speak", "curiously", "casually", "enthusiastically", "energetically", "happily", "firmly",
+             "surprised", "worried", "tone", "emotion", "line", "this", "only", "natural", "indonesian", "voice",
+             "boss", "driver", "ghost", "like", "with", "the", "way", "in", "a", "an", "and", "intonation", "expressive"}
+
+
+def kata_asing(naskah, transkrip):
+    n = set(norm(naskah))
+    return [w for w in norm(transkrip) if w in INSTRUKSI and w not in n]
 
 
 def mirip(a, b):
@@ -107,6 +118,10 @@ def main():
                 continue
             k = mirip(ln["text"], res.get("transkrip", ""))
             rusak = bool(res.get("rusak"))
+            asing = kata_asing(ln["text"], res.get("transkrip", ""))
+            if asing:
+                rusak = True
+                res["alasan"] = (res.get("alasan", "") + f" | terdengar kata perintah Inggris: {' '.join(asing)}").strip(" |")
             ok = k >= AMBANG and not rusak
             lines.append({"naskah": ln["text"], "transkrip": res.get("transkrip"), "kemiripan": k,
                           "rusak": rusak, "alasan": res.get("alasan", ""), "lolos": ok, "model": model})

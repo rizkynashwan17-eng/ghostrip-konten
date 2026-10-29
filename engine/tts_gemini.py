@@ -54,8 +54,9 @@ SHORT_TONE = {"penasaran": "curiously", "kaget": "in a surprised way", "santai":
               "kecewa": "with a worried tone", "senang": "happily", "mengajak": "energetically", "tegas": "firmly"}
 
 def prompt_variant(text, who, tone, v):
+    # v0 = arahan persona lengkap; v2 = naskah saja.
+    # Varian pendek "Say curiously: ..." DIHAPUS (29 Okt 2026): model ikut membacakan perintah bahasa Inggris itu.
     if v == 0: return prompt(text, who, tone)
-    if v == 1: return f"Say {SHORT_TONE.get(tone, 'naturally')}: {text}"
     return text
 
 def max_len(text):
@@ -135,7 +136,7 @@ def main():
             order = ([used] if used else []) + [m for m in models if m != used]
             for m in order:
                 if pcm is not None: break
-                for v in (0, 1, 2):
+                for v in (0, 2):
                     if m in DEAD: break
                     try:
                         cand = synth(ln["text"], ln.get("who", "BOS"), m, ln.get("tone"), v)
