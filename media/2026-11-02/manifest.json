@@ -1,0 +1,11 @@
+[
+ {
+  "slot": "reel1-whatif",
+  "kind": "reel",
+  "media": "media/2026-11-02/reel1-whatif.mp4",
+  "cover": "media/2026-11-02/reel1-whatif-cover.jpg",
+  "dur": 39.7,
+  "engine": "remotion",
+  "bersuara": true
+ }
+]

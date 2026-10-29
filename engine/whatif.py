@@ -127,6 +127,30 @@ def timing_dari_suara(path, sentences):
     return [(bounds[i], bounds[i + 1]) for i in range(len(sentences))], len(x) / sr
 
 
+def rapikan_narasi(src, dst, tempo=None, jeda_maks=0.32, target=38.0):
+    """Padatkan jeda panjang (> jeda_maks) lalu percepat tempo (tanpa ubah nada) supaya durasi ±target dtk."""
+    x, sr = baca_wav(src)
+    hop = int(sr * 0.02)
+    e = np.array([np.sqrt((x[i:i + hop] ** 2).mean()) for i in range(0, len(x) - hop, hop)])
+    thr = 0.08 * np.percentile(e, 95)
+    keep = np.ones(len(x), bool); run = 0; maxf = int(jeda_maks / 0.02)
+    for i, v in enumerate(list(e < thr) + [False]):
+        if v: run += 1
+        else:
+            if run > maxf:
+                a = (i - run + maxf // 2) * hop; b = (i - maxf // 2) * hop
+                keep[a:b] = False
+            run = 0
+    y = x[keep]
+    tmp = dst + ".tmp.wav"; tulis_wav(tmp, y, sr)
+    dur = len(y) / sr
+    if tempo is None:
+        tempo = min(1.18, max(1.0, dur / target))
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp, "-af", f"atempo={tempo:.3f}", "-ar", str(SR), "-ac", "1", dst], check=True)
+    os.remove(tmp)
+    print(f"narasi: {len(x) / sr:.1f} dtk → jeda dipadatkan {dur:.1f} dtk → tempo {tempo:.2f}x = {dur / tempo:.1f} dtk")
+
+
 def timing_perkiraan(sentences):
     t = 0.3; out = []
     for s in sentences:
@@ -134,21 +158,38 @@ def timing_perkiraan(sentences):
     return out, t
 
 
-def potong_frasa(text, maks=3):
-    """Pecah kalimat jadi frasa 2-3 kata; *kata kunci* tidak dipotong."""
+def potong_frasa(text, maks=4):
+    """Pecah kalimat per anak kalimat (koma/titik), lalu per 2–4 kata; *kata kunci* tidak dipotong."""
     toks = re.findall(r"\*[^*]+\*[.,!?…]*|\S+", text)
-    chunks, cur, n = [], [], 0
+    clauses, cur = [], []
     for tk in toks:
-        k = len(tk.strip("*").split())
-        if cur and (n + k > maks):
-            chunks.append(" ".join(cur)); cur, n = [], 0
-        cur.append(tk); n += k
-        if re.search(r"[.,!?…]$", tk.strip("*")) and n >= 2:
-            chunks.append(" ".join(cur)); cur, n = [], 0
-    if cur:
-        if chunks and n == 1 and len(chunks[-1].split()) < 4: chunks[-1] += " " + cur[0]
-        else: chunks.append(" ".join(cur))
-    return chunks
+        cur.append(tk)
+        if re.search(r"[.,!?…]$", tk): clauses.append(cur); cur = []
+    if cur: clauses.append(cur)
+    out = []
+    for cl in clauses:
+        n = lambda t: len(t.strip("*").split())
+        total = sum(n(t) for t in cl)
+        if total <= maks: out.append(" ".join(cl)); continue
+        parts = math.ceil(total / maks); size = math.ceil(total / parts)
+        buf, cnt = [], 0
+        for tk in cl:
+            if buf and cnt + n(tk) > size: out.append(" ".join(buf)); buf, cnt = [], 0
+            buf.append(tk); cnt += n(tk)
+        if buf: out.append(" ".join(buf))
+    # gabungkan frasa satu kata supaya tidak berkedip terlalu cepat
+    wc = lambda c: len(c.replace("*", "").split())
+    res = []
+    i = 0
+    while i < len(out):
+        c = out[i]
+        if wc(c) == 1:
+            if re.search(r"[.!?…]$", c) and res and wc(res[-1]) <= 3:
+                res[-1] += " " + c; i += 1; continue
+            if i + 1 < len(out) and wc(out[i + 1]) <= 4:
+                out[i + 1] = c + " " + out[i + 1]; i += 1; continue
+        res.append(c); i += 1
+    return res
 
 
 def chromium():
@@ -176,8 +217,9 @@ def cmd_render(spec_path, tanpa_suara=False):
         wav = os.path.join(ROOT, "voice", "out", vid, "00.wav")
         voiced = (not tanpa_suara) and os.path.exists(wav) and os.path.exists(os.path.join(ROOT, "voice", "out", vid, "done.json"))
         if voiced:
-            times, total = timing_dari_suara(wav, sentences)
-            shutil.copy(wav, os.path.join(run, f"{vid}.wav"))
+            nar = os.path.join(run, f"{vid}.wav")
+            rapikan_narasi(wav, nar, post.get("tempo"))
+            times, total = timing_dari_suara(nar, sentences)
         else:
             if not tanpa_suara:
                 sys.exit(f"{vid}: narasi belum ada (jalankan 'suara' dan tunggu workflow), atau pakai --tanpa-suara untuk pratinjau")
