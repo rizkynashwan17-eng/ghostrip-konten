@@ -17,5 +17,14 @@
   "slot": "feed-realita",
   "kind": "feed",
   "media": "media/2026-11-02/feed-realita.jpg"
+ },
+ {
+  "slot": "reel2-realita",
+  "kind": "reel",
+  "media": "media/2026-11-02/reel2-realita.mp4",
+  "cover": "media/2026-11-02/reel2-realita-cover.jpg",
+  "dur": 41.4,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]

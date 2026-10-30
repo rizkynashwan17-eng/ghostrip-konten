@@ -15,5 +15,14 @@
   "slot": "feed-alur",
   "kind": "feed",
   "media": "media/2026-11-01/feed-alur.jpg"
+ },
+ {
+  "slot": "reel1-alur",
+  "kind": "reel",
+  "media": "media/2026-11-01/reel1-alur.mp4",
+  "cover": "media/2026-11-01/reel1-alur-cover.jpg",
+  "dur": 39.87,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]
