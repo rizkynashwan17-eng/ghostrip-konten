@@ -17,20 +17,20 @@
   "media": "media/2026-10-30/feed.jpg"
  },
  {
-  "slot": "feed-v2",
-  "kind": "feed",
-  "media": "media/2026-10-30/feed-v2.jpg"
+  "slot": "story-v2",
+  "kind": "story",
+  "media": "media/2026-10-30/story-v2.jpg"
  },
  {
   "slot": "reel1-v2",
   "kind": "reel",
   "media": "media/2026-10-30/reel1-v2.mp4",
   "cover": "media/2026-10-30/reel1-v2-cover.jpg",
-  "dur": 33.209274376417234
+  "dur": 27.35095238095238
  },
  {
-  "slot": "story-v2",
-  "kind": "story",
-  "media": "media/2026-10-30/story-v2.jpg"
+  "slot": "feed-v2",
+  "kind": "feed",
+  "media": "media/2026-10-30/feed-v2.jpg"
  }
 ]
