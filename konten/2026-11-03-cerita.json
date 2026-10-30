@@ -58,10 +58,10 @@
      "provKe": "JAWA BARAT",
      "tripDari": 7,
      "tripKe": 7,
-     "label": "SUDAH BERANGKAT",
+     "label": "TRUK SUDAH BERANGKAT",
      "warn": true,
      "narasi": "Truk tujuh sudah berangkat ke Cirebon, membawa dokumen untuk *Bandung*.",
-     "nilai": "TRUK 07",
+     "nilai": "07",
      "penanda": "POOL"
     },
     {
