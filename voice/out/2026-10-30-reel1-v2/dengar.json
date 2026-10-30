@@ -1,0 +1,61 @@
+{
+ "sig": [
+  [
+   3.61,
+   5.37,
+   4.61,
+   5.21,
+   6.01
+  ],
+  8
+ ],
+ "lolos": true,
+ "belum_dicek": false,
+ "lines": [
+  {
+   "naskah": "Bos, emang semua jalan boleh dilewati truk berat?",
+   "transkrip": "Bos, emang semua jalan boleh dilewati truk berat?",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  },
+  {
+   "naskah": "Nggak. Tiap jalan ada batas muatan sumbunya, namanya MST.",
+   "transkrip": "Nggak, tiap jalan ada batas muatan sumbunya, namanya MST.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  },
+  {
+   "naskah": "Kelas satu sampai sepuluh ton. Kelas dua dan tiga cuma delapan ton.",
+   "transkrip": "Kelas satu sampai sepuluh ton. Kelas dua dan tiga cuma delapan ton.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  },
+  {
+   "naskah": "Kalau rutenya lewat jalan kecil, muatannya dikurangi. Tripnya bisa nambah.",
+   "transkrip": "Kalau rutenya lewat jalan kecil, muatannya dikurangi, tripnya bisa nambah",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "didengar ulang dengan ElevenLabs Scribe (Gemini kena kuota/timeout)",
+   "lolos": true,
+   "model": "eleven_scribe_v1"
+  },
+  {
+   "naskah": "Hitung ulang harga trip sesuai rute. Komen DEMO, coba gratis.",
+   "transkrip": "Hitung ulang harga trip sesuai rute, komen DEMO, coba gratis.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  }
+ ]
+}
