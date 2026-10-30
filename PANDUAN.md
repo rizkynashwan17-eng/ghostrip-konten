@@ -68,16 +68,16 @@ Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 - Jangan mengarang fitur lain (GPS, AI, akuntansi, dll). Tanpa testimoni fiktif, tanpa klaim jumlah pengguna, tanpa "pasti untung".
 - Nama perusahaan/orang harus FIKTIF (PT Maju Jaya Logistik, PT Makmur Semakmurnya, Ibu Gadis, Budi Santoso). DILARANG: "PT Gunung Inti Gemilang", "Ibu Lermi", "Trans Anugrah".
 
-## Jadwal standar (WIB, Asia/Jakarta)
+## Jadwal standar (WIB, Asia/Jakarta) — ATURAN PATEN Rizky (30 Okt 2026): mulai 1 Nov 2026 hanya 1 REELS per hari
 | slot | jenis | jam | platform di halaman |
 |---|---|---|---|
-| story | foto 1080×1920 | 07:30 | IG story |
-| reel1 | video Remotion (tema hari itu) | 11:30 | IG reel + TikTok + FB |
-| feed | foto 1080×1350 (atau carousel) | 17:00 | IG post |
-| reel2 | video Remotion (tema hari itu, sudut berbeda) | 19:30 | IG reel + TikTok + FB |
-Facebook Page diposting manual oleh Rizky lewat Meta Business Suite (halaman selalu menampilkannya).
-Reel1 & reel2 = dua topik BERBEDA. Story boleh polling/pertanyaan yang nyambung ke reel hari itu. Feed = ringkasan fakta yang bisa disimpan (compare, list, atau carousel 3–5 slide).
-
+| story | foto 1080×1920 | 07:30 | IG story (+FB) |
+| feed | foto 1080×1350 (atau carousel) | 17:00 | IG post (+FB) |
+| reel | video Remotion gaya pilot reel1-whatif (tema hari itu) | 19:30 | IG reel + TikTok + FB |
+- WAJIB: 1 Reels per hari (bukan 2), dibuat dengan Remotion, gaya animasi sama persis dengan `media/2026-11-02/reel1-whatif.mp4`. Story & feed tetap setiap hari.
+- Facebook Page diposting manual oleh Rizky lewat Meta Business Suite (halaman selalu menampilkannya).
+- Story boleh polling/pertanyaan yang nyambung ke Reels hari itu. Feed = ringkasan/checklist yang bisa disimpan (compare, list, atau carousel 3–5 slide), sesuai tema hari.
+- Stok cadangan Reels yang sudah ditulis tapi belum masuk halaman: cek `konten/*.json` dan `SUSULAN-SUARA.md` sebelum membuat Reels baru untuk suatu tanggal (jangan dobel). Saat ini: 6 Nov (cerita: rem yang tidak boleh ditawar), 9 Nov (realita: tiga permintaan harga jam empat sore).
 
 ## Sistem stok konten (H-2) — dijalankan tugas harian 15.40 WIB (ATURAN PATEN & WAJIB dari Rizky)
 Setiap kali membuat, mengisi suara, atau mengganti konten WAJIB diakhiri laporan update untuk Rizky: tanggal & jam tayang, topik, status suara (✅/⏳), dan masalah bila ada. Tugas ini tidak boleh dilewati/dimatikan kecuali Rizky memintanya.
