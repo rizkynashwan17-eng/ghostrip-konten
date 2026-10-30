@@ -1,0 +1,21 @@
+{
+ "sig": [
+  [
+   66.13
+  ],
+  1
+ ],
+ "lolos": true,
+ "belum_dicek": false,
+ "lines": [
+  {
+   "naskah": "Jam lima sore, truk Pak Yanto akhirnya sampai di gudang penerima.\nSatpam bilang, bongkar muat sudah tutup sejak jam empat.\nDispatcher menelepon customer. Jawabannya: bongkar besok pagi.\nTrip yang direncanakan satu hari, jadi dua hari.\nAda uang makan, parkir menginap, dan order besok yang terpaksa dilepas.\nBos bertanya: siapa yang menanggung hari tambahan ini?\nTernyata di penawaran, jam bongkar dan biaya inap tidak pernah ditulis.\nTulis jam bongkar dan ketentuan inap di penawaran, lalu konfirmasi sehari sebelumnya.\nSusun penawaran yang rapi, lengkap kop, tanda tangan, dan cap, di Ghostrip.",
+   "transkrip": "Jam lima sore, truk Pak Yanto akhirnya sampai di gudang penerima. Satpam bilang, bongkar muat sudah tutup sejak jam empat. Dispatcher menelepon customer. Jawabannya, bongkar besok pagi. Trip yang direncanakan satu hari, jadi dua hari. Ada uang makan, parkir menginap, dan order besok yang terpaksa dilepas. Bos bertanya, siapa yang menanggung hari tambahan ini? Ternyata di penawaran, jam bongkar dan biaya inap tidak pernah ditulis. Tulis jam bongkar dan ketentuan inap di penawaran, lalu konfirmasi sehari sebelumnya. Susun penawaran yang rapi, lengkap kop, tanda tangan, dan cap, di Ghostrip.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  }
+ ]
+}

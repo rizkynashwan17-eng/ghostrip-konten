@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   54.53
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Satu order truk ternyata melahirkan lima dokumen. Ini urutannya.\nPertama, quotation. Isinya rute, armada, muatan, dan harga.\nHarganya dicek dan disetujui bos, baru boleh dikirim.\nKedua, customer setuju dan mengirim PO, pesanan resminya.\nKetiga, surat jalan. Daftar barang yang dibawa sopir sejak muat.\nSurat jalan ikut truk sampai gudang tujuan.\nKeempat, penerima tanda tangan dan cap. Itulah bukti terima.\nKelima, invoice. Biasanya baru bisa ditagih kalau bukti terimanya lengkap.\nLangkah pertamanya, quotation, bisa kamu siapkan rapi di Ghostrip.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: gemini-flash-latest: The read operation timed out || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
