@@ -1,0 +1,165 @@
+{
+ "date": "2026-11-01",
+ "posts": [
+  {
+   "slot": "reel1-alur",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "edukasi",
+   "time": "11:30",
+   "seri": "EDUKASI LOGISTIK",
+   "judul": "PERJALANAN SATU ORDER",
+   "part": 1,
+   "lokasi": "SENIN 08.00 · KANTOR EKSPEDISI",
+   "jam": "08:00",
+   "topic": "Perjalanan satu order: quotation, PO, surat jalan, bukti terima, invoice",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "customer",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Satu order truk ternyata melahirkan *lima dokumen*. Ini urutannya."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "QUOTATION",
+     "nomor": "Q-0112",
+     "baris": [
+      [
+       "Rute",
+       "Jakarta → Semarang"
+      ],
+      [
+       "Armada",
+       "CDD box"
+      ],
+      [
+       "Muatan",
+       "10 palet"
+      ],
+      [
+       "Harga",
+       "simulasi"
+      ]
+     ],
+     "sorot": 3,
+     "narasi": "Pertama, *quotation*. Isinya rute, armada, muatan, dan harga."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Harganya dicek dan disetujui *bos*, baru boleh dikirim."
+    },
+    {
+     "type": "chat",
+     "kontak": "PT Makmur Semakmurnya",
+     "pesan": [
+      {
+       "teks": "Harga oke, kami setuju."
+      },
+      {
+       "teks": "PO resmi kami kirim siang ini ya."
+      },
+      {
+       "aku": true,
+       "teks": "Siap, terima kasih, Bu Gadis"
+      }
+     ],
+     "narasi": "Kedua, customer setuju dan mengirim *PO*, pesanan resminya."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "SURAT JALAN",
+     "nomor": "SJ-0457",
+     "baris": [
+      [
+       "Penerima",
+       "Gudang Semarang"
+      ],
+      [
+       "Barang",
+       "10 palet"
+      ],
+      [
+       "Sopir",
+       "Pak Yanto"
+      ],
+      [
+       "Armada",
+       "CDD box"
+      ]
+     ],
+     "sorot": 1,
+     "narasi": "Ketiga, *surat jalan*. Daftar barang yang dibawa sopir sejak muat."
+    },
+    {
+     "type": "peta",
+     "dari": "JAKARTA",
+     "ke": "SEMARANG",
+     "provDari": "DKI JAKARTA",
+     "provKe": "JAWA TENGAH",
+     "tripDari": 1,
+     "tripKe": 1,
+     "label": "SURAT JALAN IKUT",
+     "warn": false,
+     "narasi": "Surat jalan ikut truk sampai *gudang tujuan*.",
+     "nilai": "SJ-0457",
+     "penanda": "TRUK"
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "BUKTI TERIMA",
+     "nomor": "SJ-0457",
+     "cap": "DITERIMA LENGKAP",
+     "baris": [
+      [
+       "Diterima",
+       "10 palet"
+      ],
+      [
+       "Kondisi",
+       "Baik"
+      ],
+      [
+       "Tanda tangan",
+       "Penerima"
+      ]
+     ],
+     "sorot": 2,
+     "narasi": "Keempat, penerima tanda tangan dan cap. Itulah *bukti terima*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Syarat menagih",
+     "item": [
+      "Quotation",
+      "PO",
+      "Surat jalan",
+      "Bukti terima"
+     ],
+     "tanda": "cek",
+     "narasi": "Kelima, *invoice*. Biasanya baru bisa ditagih kalau bukti terimanya lengkap."
+    },
+    {
+     "type": "cta",
+     "tagline": "Langkah pertamanya: quotation PDF yang rapi, lengkap kop, TTD, dan cap",
+     "pil": "COBA 7 HARI",
+     "ajakan": "Chat WA untuk coba gratis",
+     "narasi": "Langkah pertamanya, quotation, bisa kamu siapkan rapi di *Ghostrip*."
+    }
+   ],
+   "caption": "Satu order truk, lima dokumen. Kamu sudah hafal urutannya? 📄\n\n1. Quotation: rute, armada, muatan, harga (disetujui bos)\n2. PO: pesanan resmi dari customer\n3. Surat jalan: daftar barang yang dibawa sopir\n4. Bukti terima: tanda tangan & cap penerima\n5. Invoice: biasanya ditagih setelah bukti terima lengkap\n\nSatu hilang, urusan tagihan bisa tertahan. Simpan postingan ini buat tim admin kamu.\n\nQuotation PDF dengan kop, TTD, dan cap bisa disiapkan di Ghostrip. Coba gratis 7 hari lewat WA 0815-1704-7930.\n\nSumber: IDX Channel & Jurnal.id (pengertian surat jalan dan delivery order). Nama perusahaan fiktif, harga simulasi.\n\n#ghostrip #ekspedisi #trucking #logistik #adminlogistik",
+   "tiktok_title": "Satu order truk, lima dokumen. Kamu hafal urutannya?",
+   "voice_id": "2026-11-01-reel1-alur"
+  }
+ ]
+}

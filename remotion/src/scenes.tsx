@@ -74,7 +74,7 @@ export const Dokumen: React.FC<{s: SceneSpec}> = ({s}) => {
       <Paper x={140} y={430} w={800} h={760} rot={-2} pop={0.85 + 0.15 * pop}>
         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
           <div style={{fontSize: 52, fontWeight: 800, letterSpacing: 2}}>{s.judulKartu ?? 'SURAT JALAN'}</div>
-          <div style={{fontSize: 22, fontWeight: 700, padding: '6px 14px', border: `3px solid ${C.ink}`, borderRadius: 6}}>No. 0214</div>
+          <div style={{fontSize: 22, fontWeight: 700, padding: '6px 14px', border: `3px solid ${C.ink}`, borderRadius: 6}}>{s.nomor ?? 'No. 0214'}</div>
         </div>
         <div style={{height: 4, background: C.ink, margin: '22px 0 30px'}} />
         {rows.map(([k, v], i) => (
@@ -90,7 +90,7 @@ export const Dokumen: React.FC<{s: SceneSpec}> = ({s}) => {
             </span>
           </div>
         ))}
-        <div style={{position: 'absolute', bottom: 40, right: 50, transform: 'rotate(-10deg)', border: `5px solid ${C.mintDeep}`, color: C.mintDeep, fontWeight: 800, fontSize: 30, padding: '8px 18px', borderRadius: 8, opacity: 0.8}}>PT MAJU JAYA LOGISTIK</div>
+        <div style={{position: 'absolute', bottom: 40, right: 50, transform: 'rotate(-10deg)', border: `5px solid ${C.mintDeep}`, color: C.mintDeep, fontWeight: 800, fontSize: 30, padding: '8px 18px', borderRadius: 8, opacity: 0.8}}>{s.cap ?? 'PT MAJU JAYA LOGISTIK'}</div>
       </Paper>
     </Camera>
   );
@@ -278,8 +278,8 @@ export const Peta: React.FC<{s: SceneSpec}> = ({s}) => {
           </g>
         ))}
       </svg>
-      <div style={{position: 'absolute', left: 150, top: 1600, background: C.mint, color: C.ink, fontFamily: 'Outfit', fontWeight: 800, fontSize: 30, padding: '6px 18px', borderRadius: 20}}>KAMU</div>
-      <Counter x={560} y={240} value={`${trips}×`} label={s.label ?? 'TRIP KE JAMBI'} warn={trips > (s.tripDari ?? 1)} />
+      <div style={{position: 'absolute', left: 150, top: 1600, background: C.mint, color: C.ink, fontFamily: 'Outfit', fontWeight: 800, fontSize: 30, padding: '6px 18px', borderRadius: 20}}>{s.penanda ?? 'KAMU'}</div>
+      <Counter x={560} y={240} value={s.nilai ?? (s.satuan ? `${trips} ${s.satuan}` : `${trips}×`)} label={s.label ?? 'TRIP KE JAMBI'} warn={s.warn ?? trips > (s.tripDari ?? 1)} />
     </Camera>
   );
 };
@@ -321,14 +321,15 @@ export const Struk: React.FC<{s: SceneSpec}> = ({s}) => {
 export const AngkaBesar: React.FC<{s: SceneSpec}> = ({s}) => {
   const f = useCurrentFrame();
   const v = useCount(s.dari ?? 0, s.ke ?? 0, s.dur, 8, 0.6);
-  const neg = v < 0;
+  const neg = s.satuan ? !!s.warn : v < 0;
   const col = neg ? C.red : C.mint;
+  const teks = s.satuan ? `${num(v)} ${s.satuan}` : rp(v);
   const shake = neg ? Math.sin(f * 2.2) * 3 * interpolate(f, [s.dur * 0.6, s.dur * 0.8], [1, 0], clamp) : 0;
   return (
     <Camera dur={s.dur} to={1.06}>
       <AbsoluteFill style={{background: `radial-gradient(80% 50% at 50% 45%, ${neg ? 'rgba(255,90,90,0.18)' : 'rgba(127,240,214,0.14)'} 0%, ${C.night0} 75%)`}} />
       <div style={{position: 'absolute', top: 560, width: '100%', textAlign: 'center', fontFamily: 'Outfit', fontWeight: 700, fontSize: 40, letterSpacing: 6, color: '#9fbfbb'}}>{s.label ?? 'UNTUNG ORDER INI'}</div>
-      <div style={{position: 'absolute', top: 640, width: '100%', textAlign: 'center', fontFamily: 'Outfit', fontWeight: 800, fontSize: 150, color: col, textShadow: `0 0 40px ${col}66`, transform: `translateX(${shake}px)`, fontVariantNumeric: 'tabular-nums', letterSpacing: -2}}>{rp(v)}</div>
+      <div style={{position: 'absolute', top: 640, width: '100%', textAlign: 'center', fontFamily: 'Outfit', fontWeight: 800, fontSize: 150, color: col, textShadow: `0 0 40px ${col}66`, transform: `translateX(${shake}px)`, fontVariantNumeric: 'tabular-nums', letterSpacing: -2}}>{teks}</div>
       <svg width={W} height={300} style={{position: 'absolute', top: 860}}>
         <path d={`M540 40 L540 ${120 + 80 * interpolate(f, [8, s.dur * 0.6], [0, 1], clamp)}`} stroke={col} strokeWidth={14} strokeLinecap="round" />
         <path d={`M490 ${150 + 80 * interpolate(f, [8, s.dur * 0.6], [0, 1], clamp) - 50} l50 50 l50 -50`} stroke={col} strokeWidth={14} fill="none" strokeLinecap="round" strokeLinejoin="round" opacity={neg ? 1 : 0.3} />
@@ -354,9 +355,9 @@ export const Cta: React.FC<{s: SceneSpec}> = ({s}) => {
       </div>
       <div style={{position: 'absolute', top: 800, width: '100%', textAlign: 'center', fontFamily: 'Outfit', fontWeight: 600, fontSize: 46, color: '#cfe9e4', padding: '0 90px', boxSizing: 'border-box', lineHeight: 1.25}}>{s.tagline ?? 'Hitung harga trip yang aman, sebelum truk berangkat'}</div>
       <div style={{position: 'absolute', top: 990, width: '100%', display: 'flex', justifyContent: 'center'}}>
-        <div style={{transform: `scale(${pill})`, background: C.orange, color: '#1a0e05', fontFamily: 'Outfit', fontWeight: 800, fontSize: 56, padding: '22px 54px', borderRadius: 999, boxShadow: '0 16px 50px rgba(255,157,92,0.45)'}}>GRATIS 7 HARI</div>
+        <div style={{transform: `scale(${pill})`, background: C.orange, color: '#1a0e05', fontFamily: 'Outfit', fontWeight: 800, fontSize: 56, padding: '22px 54px', borderRadius: 999, boxShadow: '0 16px 50px rgba(255,157,92,0.45)'}}>{s.pil ?? 'GRATIS 7 HARI'}</div>
       </div>
-      <div style={{position: 'absolute', top: 1140, width: '100%', textAlign: 'center', fontFamily: 'Outfit', fontWeight: 800, fontSize: 52, color: C.mint}}>Komen DEMO untuk coba</div>
+      <div style={{position: 'absolute', top: 1140, width: '100%', textAlign: 'center', fontFamily: 'Outfit', fontWeight: 800, fontSize: 52, color: C.mint}}>{s.ajakan ?? 'Komen DEMO untuk coba'}</div>
       <div style={{position: 'absolute', top: 1220, width: '100%', textAlign: 'center', fontFamily: 'Outfit', fontWeight: 600, fontSize: 32, color: '#8fb4b0'}}>WA 0815-1704-7930</div>
     </AbsoluteFill>
   );
@@ -379,7 +380,77 @@ export const Logo: React.FC<{s: SceneSpec}> = ({s}) => {
   );
 };
 
+/* ---------- 12. CHAT: layar ponsel dengan gelembung pesan yang muncul satu-satu ---------- */
+export const Chat: React.FC<{s: SceneSpec}> = ({s}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const msgs: {dari?: string; teks: string; aku?: boolean}[] = s.pesan ?? [];
+  const per = (s.dur * 0.55) / Math.max(1, msgs.length);
+  const pop = spring({frame: f, fps, config: {damping: 15}});
+  return (
+    <Camera dur={s.dur} to={1.06}>
+      <Bokeh tint="rgba(127,240,214," />
+      <div style={{position: 'absolute', left: 170, top: 330, width: 740, height: 960, borderRadius: 60, background: '#0a1419', border: '14px solid #1c2f36', boxShadow: '0 40px 90px rgba(0,0,0,0.7)', transform: `translateY(${(1 - pop) * 140}px) rotate(1.5deg)`, overflow: 'hidden', fontFamily: 'Outfit'}}>
+        <div style={{height: 120, background: C.teal, display: 'flex', alignItems: 'center', gap: 20, padding: '0 34px', boxSizing: 'border-box'}}>
+          <div style={{width: 64, height: 64, borderRadius: '50%', background: C.mintDeep, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 32, color: C.ink}}>{(s.kontak ?? 'C')[0]}</div>
+          <div>
+            <div style={{fontWeight: 800, fontSize: 36, color: '#fff'}}>{s.kontak ?? 'Customer'}</div>
+            <div style={{fontSize: 22, color: C.mint}}>{s.status ?? 'online'}</div>
+          </div>
+        </div>
+        <div style={{padding: '30px 30px', display: 'flex', flexDirection: 'column', gap: 22}}>
+          {msgs.map((m, i) => {
+            const on = f > 6 + i * per;
+            const a = spring({frame: f - (6 + i * per), fps, config: {damping: 14}});
+            return (
+              <div key={i} style={{alignSelf: m.aku ? 'flex-end' : 'flex-start', maxWidth: 560, opacity: on ? 1 : 0, transform: `scale(${on ? 0.85 + 0.15 * a : 0.85})`, transformOrigin: m.aku ? 'right top' : 'left top', background: m.aku ? '#1d5a63' : C.cream, color: m.aku ? '#eafffa' : C.ink, borderRadius: 26, padding: '18px 26px', boxShadow: '0 8px 20px rgba(0,0,0,0.35)'}}>
+                {m.dari && <div style={{fontSize: 22, fontWeight: 800, color: m.aku ? C.mint : C.orangeDeep, marginBottom: 4}}>{m.dari}</div>}
+                <div style={{fontSize: 36, fontWeight: 600, lineHeight: 1.2}}>{m.teks}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </Camera>
+  );
+};
+
+/* ---------- 13. DAFTAR: kartu kertas berisi daftar/checklist yang muncul satu-satu ---------- */
+export const Daftar: React.FC<{s: SceneSpec}> = ({s}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const items: (string | [string, string])[] = s.item ?? [];
+  const per = (s.dur * 0.6) / Math.max(1, items.length);
+  const pop = spring({frame: f, fps, config: {damping: 14, stiffness: 120}});
+  const tanda = s.tanda ?? 'cek'; // cek | nomor | x
+  return (
+    <Camera dur={s.dur} to={1.05}>
+      <Bokeh />
+      <Paper x={130} y={380} w={820} h={Math.max(560, 230 + items.length * 112)} rot={-1.5} pop={0.85 + 0.15 * pop}>
+        <div style={{textAlign: 'center', fontSize: 46, fontWeight: 800, letterSpacing: 2, textTransform: 'uppercase'}}>{s.judulKartu ?? 'CHECKLIST'}</div>
+        <div style={{height: 4, background: C.orangeDeep, margin: '20px 40px 16px'}} />
+        {items.map((it, i) => {
+          const [k, v] = Array.isArray(it) ? it : [it, ''];
+          const on = f > 6 + i * per;
+          const a = spring({frame: f - (6 + i * per), fps, config: {damping: 13}});
+          const merah = tanda === 'x' || (s.merah ?? []).includes(i);
+          return (
+            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 24, fontSize: 38, padding: '20px 6px', borderBottom: '2px dashed rgba(13,27,36,0.22)', opacity: on ? 1 : 0.15}}>
+              <div style={{width: 58, height: 58, flex: 'none', borderRadius: tanda === 'nomor' ? '50%' : 10, border: `4px solid ${merah ? C.red : C.mintDeep}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 34, color: merah ? C.red : C.mintDeep, transform: `scale(${on ? a : 0.6})`}}>
+                {tanda === 'nomor' ? i + 1 : merah ? '✕' : '✓'}
+              </div>
+              <span style={{flex: 1, fontWeight: 600}}>{k}</span>
+              {v && <span style={{fontWeight: 800, color: C.orangeDeep}}>{v}</span>}
+            </div>
+          );
+        })}
+        {s.catatan && <div style={{fontSize: 22, opacity: 0.55, marginTop: 14, textAlign: 'center'}}>{s.catatan}</div>}
+      </Paper>
+    </Camera>
+  );
+};
+
 export const SCENES: Record<string, React.FC<{s: SceneSpec}>> = {
   jalan: Jalan, dokumen: Dokumen, timbangan: Timbangan, stat: Stat, aturan: Aturan,
-  karakter: Karakter, peta: Peta, struk: Struk, angka: AngkaBesar, cta: Cta, logo: Logo,
+  karakter: Karakter, peta: Peta, struk: Struk, angka: AngkaBesar, cta: Cta, logo: Logo, chat: Chat, daftar: Daftar,
 };

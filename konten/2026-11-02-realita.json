@@ -1,0 +1,257 @@
+{
+ "date": "2026-11-02",
+ "posts": [
+  {
+   "slot": "reel1-realita",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "realita",
+   "time": "11:30",
+   "seri": "REALITA LOGISTIK",
+   "judul": "TIGA PERMINTAAN HARGA, JAM EMPAT SORE",
+   "part": 1,
+   "lokasi": "16.02 WIB · MEJA ADMIN",
+   "jam": "16:02",
+   "topic": "Admin kebanjiran permintaan harga menjelang jam pulang, data hitungan lama tercecer",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Jam empat sore, Mbak Rina dapat *tiga* permintaan harga sekaligus."
+    },
+    {
+     "type": "chat",
+     "kontak": "Grup Order Masuk",
+     "status": "3 pesan baru",
+     "pesan": [
+      {
+       "dari": "PT Sinar Abadi",
+       "teks": "Mbak, harga ke Surabaya berapa?"
+      },
+      {
+       "dari": "CV Lancar Terus",
+       "teks": "Sore ini bisa kirim harga ya."
+      },
+      {
+       "dari": "Bu Gadis",
+       "teks": "Minta quotation PDF hari ini."
+      }
+     ],
+     "narasi": "Semuanya minta jawaban *sebelum kantor tutup*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Satu harga butuh",
+     "item": [
+      "Jarak & rute",
+      "Solar",
+      "Tol",
+      "Uang jalan",
+      "Hari istirahat sopir"
+     ],
+     "tanda": "nomor",
+     "narasi": "Padahal satu harga butuh jarak, solar, tol, uang jalan, dan *hari istirahat*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Rute Surabaya pernah dihitung bulan lalu. Tapi datanya *di mana*?"
+    },
+    {
+     "type": "chat",
+     "kontak": "Folder Harga",
+     "status": "hasil pencarian: surabaya",
+     "pesan": [
+      {
+       "teks": "harga_sby_final.xlsx"
+      },
+      {
+       "teks": "harga_sby_final_revisi.xlsx"
+      },
+      {
+       "teks": "harga_sby_FIX_banget.xlsx"
+      }
+     ],
+     "narasi": "Yang ketemu malah tiga file, semuanya bernama *final*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Bos minta semua angka *dicek ulang* sebelum dikirim."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Status quotation",
+     "item": [
+      [
+       "Surabaya",
+       "17.40"
+      ],
+      [
+       "Semarang",
+       "18.25"
+      ],
+      [
+       "Bu Gadis",
+       "besok"
+      ]
+     ],
+     "merah": [
+      2
+     ],
+     "narasi": "Quotation terakhir baru siap *besok pagi*. Customernya sudah tanya ke vendor lain."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "santai",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Pelajarannya: hitungan yang tersimpan rapi bisa *dipakai ulang*, bukan dicari ulang."
+    },
+    {
+     "type": "cta",
+     "tagline": "Riwayat hitungan tersimpan, rute lama tinggal dibuka lagi",
+     "pil": "GRATIS 7 HARI",
+     "ajakan": "Komen DEMO untuk coba",
+     "narasi": "Di *Ghostrip*, riwayat hitungan tersimpan, dan quotation PDF jadi dari hitungan yang sama."
+    }
+   ],
+   "caption": "Jam 4 sore, tiga permintaan harga masuk barengan. Relate? 😅\n\nSatu harga trip itu bukan satu angka: ada jarak, solar, tol, uang jalan, sampai hari istirahat sopir. Belum lagi cari hitungan lama yang namanya \"final\", \"final_revisi\", dan \"FIX_banget\".\n\nHitungan yang tersimpan rapi bisa dipakai ulang, bukan dicari ulang. Di Ghostrip, riwayat hitungan tersimpan dan quotation PDF dibuat dari hitungan yang sama.\n\nMau coba? Komen DEMO, atau WA 0815-1704-7930 untuk gratis 7 hari.\n\nCerita ilustrasi, nama fiktif.\n\n#ghostrip #ekspedisi #trucking #adminlogistik #logistik",
+   "tiktok_title": "Jam 4 sore, tiga permintaan harga masuk barengan. Relate?",
+   "voice_id": "2026-11-02-reel1-realita"
+  },
+  {
+   "slot": "reel2-realita",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "realita",
+   "time": "19:30",
+   "seri": "REALITA LOGISTIK",
+   "judul": "TRUK SAMPAI, GUDANG SUDAH TUTUP",
+   "part": 1,
+   "lokasi": "17.05 WIB · GUDANG PENERIMA",
+   "jam": "17:05",
+   "topic": "Truk sampai setelah jam bongkar gudang tutup, biaya hari tambahan tidak tertulis di penawaran",
+   "scenes": [
+    {
+     "type": "jalan",
+     "papan": "GUDANG PENERIMA",
+     "stopX": 60,
+     "narasi": "Jam lima sore, truk Pak Yanto akhirnya sampai di *gudang penerima*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "sopir",
+     "pose": "cemas",
+     "set": "malam",
+     "narasi": "Satpam bilang, bongkar muat sudah tutup sejak *jam empat*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "dispatcher",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Dispatcher menelepon customer. Jawabannya: bongkar *besok pagi*."
+    },
+    {
+     "type": "angka",
+     "dari": 1,
+     "ke": 2,
+     "satuan": "HARI",
+     "warn": true,
+     "label": "LAMA TRIP",
+     "narasi": "Trip yang direncanakan *satu hari*, jadi dua hari."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Yang ikut bertambah",
+     "item": [
+      "Uang makan sopir",
+      "Parkir menginap",
+      "Truk batal ambil order besok"
+     ],
+     "tanda": "x",
+     "narasi": "Ada uang makan, parkir menginap, dan order besok yang *terpaksa dilepas*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Bos bertanya: siapa yang *menanggung* hari tambahan ini?"
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "PENAWARAN",
+     "nomor": "Q-0098",
+     "cap": "PT MAJU JAYA LOGISTIK",
+     "baris": [
+      [
+       "Rute",
+       "Cikarang → Karawang"
+      ],
+      [
+       "Armada",
+       "Fuso box"
+      ],
+      [
+       "Jam bongkar",
+       "—"
+      ],
+      [
+       "Biaya inap",
+       "—"
+      ]
+     ],
+     "sorot": 2,
+     "narasi": "Ternyata di penawaran, jam bongkar dan biaya inap *tidak pernah ditulis*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Pelajarannya",
+     "item": [
+      "Tulis jam operasional gudang",
+      "Tulis ketentuan biaya inap",
+      "Konfirmasi jadwal bongkar H-1"
+     ],
+     "tanda": "cek",
+     "narasi": "Tulis jam bongkar dan ketentuan inap di penawaran, lalu *konfirmasi* sehari sebelumnya."
+    },
+    {
+     "type": "cta",
+     "tagline": "Penawaran yang jelas mencegah salah paham di lapangan",
+     "pil": "COBA GRATIS",
+     "ajakan": "Chat WA, coba 7 hari",
+     "narasi": "Susun penawaran yang rapi, lengkap kop, tanda tangan, dan cap, di *Ghostrip*."
+    }
+   ],
+   "caption": "Truk sampai jam 5 sore, gudang bongkarnya tutup jam 4. Terus siapa yang nanggung? 🚛\n\nTrip 1 hari jadi 2 hari: ada uang makan sopir, parkir menginap, dan order besok yang terpaksa dilepas. Sering kali masalahnya bukan di jalan, tapi di penawaran yang tidak menulis jam bongkar dan ketentuan biaya inap.\n\nPelajarannya:\n✔ Tulis jam operasional gudang\n✔ Tulis ketentuan biaya inap\n✔ Konfirmasi jadwal bongkar H-1\n\nSusun penawaran PDF yang rapi (kop, TTD, cap) di Ghostrip. Coba gratis 7 hari, chat WA 0815-1704-7930.\n\nCerita ilustrasi, nama fiktif.\n\n#ghostrip #ekspedisi #trucking #logistik #dispatcher",
+   "tiktok_title": "Truk sampai jam 5, gudang tutup jam 4. Siapa yang nanggung?",
+   "voice_id": "2026-11-02-reel2-realita"
+  }
+ ]
+}

@@ -1,0 +1,269 @@
+{
+ "date": "2026-11-03",
+ "posts": [
+  {
+   "slot": "reel1-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "cerita",
+   "time": "11:30",
+   "seri": "CERITA",
+   "judul": "SURAT JALAN YANG TERTUKAR",
+   "part": 1,
+   "lokasi": "23.10 WIB · KANTOR POOL",
+   "jam": "23:10",
+   "topic": "Cerita fiksi: admin menemukan surat jalan dua truk tertukar tengah malam",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Jam sebelas malam, Bu Sari menemukan kesalahan yang bisa *menggagalkan dua kiriman*."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "SURAT JALAN",
+     "nomor": "TRUK 07",
+     "cap": "PT MAJU JAYA LOGISTIK",
+     "baris": [
+      [
+       "Armada",
+       "Truk 07"
+      ],
+      [
+       "Sopir",
+       "Pak Hendra"
+      ],
+      [
+       "Tujuan",
+       "BANDUNG"
+      ],
+      [
+       "Seharusnya",
+       "CIREBON"
+      ]
+     ],
+     "sorot": 2,
+     "narasi": "Surat jalan truk tujuh dan truk dua belas *tertukar*."
+    },
+    {
+     "type": "peta",
+     "dari": "POOL",
+     "ke": "CIREBON",
+     "provDari": "BEKASI",
+     "provKe": "JAWA BARAT",
+     "tripDari": 7,
+     "tripKe": 7,
+     "label": "SUDAH BERANGKAT",
+     "warn": true,
+     "narasi": "Truk tujuh sudah berangkat ke Cirebon, membawa dokumen untuk *Bandung*.",
+     "nilai": "TRUK 07",
+     "penanda": "POOL"
+    },
+    {
+     "type": "karakter",
+     "siapa": "dispatcher",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Kalau dokumennya tidak cocok, gudang tujuan bisa *menolak bongkar*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Bu Sari menelepon Pak Hendra. *Tidak diangkat*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Pak Hendra · Truk 07",
+     "status": "terakhir dilihat 21.40",
+     "pesan": [
+      {
+       "aku": true,
+       "teks": "Pak, surat jalan tertukar."
+      },
+      {
+       "aku": true,
+       "teks": "Kalau sudah berhenti, tolong kabari ya."
+      }
+     ],
+     "narasi": "Ia hanya bisa mengirim pesan. Pak Hendra tidak pernah memegang ponsel *saat menyetir*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "sopir",
+     "pose": "telepon",
+     "set": "malam",
+     "narasi": "Lalu ia membangunkan Pak Udin, sopir truk dua belas, yang memegang *dokumen Cirebon*."
+    },
+    {
+     "type": "jalan",
+     "papan": "REST AREA KM 57",
+     "stopX": 60,
+     "narasi": "Jam satu pagi, pesan akhirnya dibaca. Pak Hendra menunggu di *rest area*."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "SURAT JALAN",
+     "nomor": "TRUK 07",
+     "cap": "SUDAH SESUAI",
+     "baris": [
+      [
+       "Armada",
+       "Truk 07"
+      ],
+      [
+       "Sopir",
+       "Pak Hendra"
+      ],
+      [
+       "Tujuan",
+       "CIREBON"
+      ]
+     ],
+     "sorot": 2,
+     "narasi": "Di bawah lampu rest area, dua surat jalan *bertukar tangan*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "santai",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Pagi itu, dua kiriman tiba dengan dokumen yang benar. Bu Sari akhirnya bisa *tidur*."
+    },
+    {
+     "type": "logo",
+     "detik": 2.5
+    }
+   ],
+   "caption": "Jam 11 malam. Dua surat jalan tertukar. Satu truk sudah di jalan, dan sopirnya tidak mengangkat telepon. 📄🌙\n\nIni cerita tentang malam panjang seorang admin, dua sopir, dan satu rest area.\n\nKamu pernah mengalami malam seperti ini? Ceritakan di komentar.\n\nCerita fiksi. Nama tokoh dan perusahaan rekaan.\n\n#ghostrip #ceritasopir #trucking #logistik #ekspedisi",
+   "tiktok_title": "Jam 11 malam, dua surat jalan tertukar. Satu truk sudah jalan.",
+   "voice_id": "2026-11-03-reel1-cerita"
+  },
+  {
+   "slot": "reel2-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "cerita",
+   "time": "19:30",
+   "seri": "CERITA",
+   "judul": "REM YANG TIDAK BOLEH DITAWAR",
+   "part": 1,
+   "lokasi": "21.15 WIB · BENGKEL POOL",
+   "jam": "21:15",
+   "topic": "Cerita fiksi: pemilik armada kecil memilih keselamatan di malam sebelum order terbesar",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "mekanik",
+     "pose": "cemas",
+     "set": "malam",
+     "narasi": "Malam sebelum order terbesar tahun itu, mekanik menemukan *rem truk bermasalah*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Pak Harso cuma punya *tiga truk*. Order besok butuh ketiganya."
+    },
+    {
+     "type": "chat",
+     "kontak": "Customer Baru",
+     "status": "online",
+     "pesan": [
+      {
+       "teks": "Besok jam 6 tiga truk siap ya, Pak."
+      },
+      {
+       "teks": "Kalau meleset, bulan depan kami pakai vendor lain."
+      }
+     ],
+     "narasi": "Customer sudah mengingatkan: meleset sedikit, order berikutnya *pindah ke vendor lain*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "mekanik",
+     "pose": "pikir",
+     "set": "malam",
+     "narasi": "Suku cadangnya baru bisa datang *lusa*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "sopir",
+     "pose": "santai",
+     "set": "malam",
+     "narasi": "Sopirnya menawarkan diri. *Saya jalan pelan saja, Pak.*"
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Pak Harso menolak. Ia menelepon teman lamanya, sesama pemilik armada, minta *satu truk*."
+    },
+    {
+     "type": "peta",
+     "dari": "POOL",
+     "ke": "GUDANG",
+     "provDari": "BEKASI",
+     "provKe": "KARAWANG",
+     "tripDari": 2,
+     "tripKe": 3,
+     "label": "BERANGKAT 06.00",
+     "warn": false,
+     "narasi": "Jam enam pagi, *tiga truk* tetap berangkat. Satu di antaranya milik temannya.",
+     "satuan": "TRUK",
+     "penanda": "POOL"
+    },
+    {
+     "type": "karakter",
+     "siapa": "customer",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Seminggu kemudian, customer mendengar ceritanya, lalu menelepon membawa *order baru*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "santai",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Kata Pak Harso, kiriman bisa diatur ulang. *Nyawa tidak*."
+    },
+    {
+     "type": "logo",
+     "detik": 2.5
+    }
+   ],
+   "caption": "Order terbesar tahun itu, tiga truk dibutuhkan, dan satu truk remnya bermasalah. Kamu pilih apa? 🔧\n\nIni cerita Pak Harso, pemilik armada kecil, di malam sebelum order paling penting.\n\nKiriman bisa diatur ulang. Nyawa tidak.\n\nCerita fiksi. Nama tokoh rekaan.\n\n#ghostrip #ceritasopir #trucking #keselamatan #logistik",
+   "tiktok_title": "Truk remnya bermasalah, besok order terbesar. Kamu pilih apa?",
+   "voice_id": "2026-11-03-reel2-cerita"
+  }
+ ]
+}

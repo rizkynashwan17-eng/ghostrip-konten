@@ -1,0 +1,13 @@
+{
+ "id": "2026-11-01-reel1-alur",
+ "mode": "narasi",
+ "rev": 1,
+ "jadwal": "2026-11-01T11:30",
+ "lines": [
+  {
+   "who": "NARATOR",
+   "tone": "narasi",
+   "text": "Satu order truk ternyata melahirkan lima dokumen. Ini urutannya.\nPertama, quotation. Isinya rute, armada, muatan, dan harga.\nHarganya dicek dan disetujui bos, baru boleh dikirim.\nKedua, customer setuju dan mengirim PO, pesanan resminya.\nKetiga, surat jalan. Daftar barang yang dibawa sopir sejak muat.\nSurat jalan ikut truk sampai gudang tujuan.\nKeempat, penerima tanda tangan dan cap. Itulah bukti terima.\nKelima, invoice. Biasanya baru bisa ditagih kalau bukti terimanya lengkap.\nLangkah pertamanya, quotation, bisa kamu siapkan rapi di Ghostrip."
+  }
+ ]
+}
