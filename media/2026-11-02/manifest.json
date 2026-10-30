@@ -7,5 +7,15 @@
   "dur": 39.7,
   "engine": "remotion",
   "bersuara": true
+ },
+ {
+  "slot": "story-realita",
+  "kind": "story",
+  "media": "media/2026-11-02/story-realita.jpg"
+ },
+ {
+  "slot": "feed-realita",
+  "kind": "feed",
+  "media": "media/2026-11-02/feed-realita.jpg"
  }
 ]

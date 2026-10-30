@@ -97,7 +97,8 @@ def scan(spec_path):
             narasi = " ".join(sc.get("narasi", "") for sc in post.get("scenes", [])).lower()
             if "ghostrip" in narasi: issues.append("cerita: narasi tidak boleh menyebut Ghostrip")
             if any(sc.get("type") == "cta" for sc in post.get("scenes", [])): issues.append("cerita: ganti adegan cta dengan adegan logo")
-            if not post.get("scenes") or post["scenes"][-1].get("type") != "logo": issues.append("cerita: wajib ditutup adegan logo")
+            if post.get("kind") == "reel" and (not post.get("scenes") or post["scenes"][-1].get("type") != "logo"): issues.append("cerita: wajib ditutup adegan logo")
+            if post.get("kind") != "reel" and "coba gratis" in (layar.lower() + " " + str(post.get("scene", {}).get("footer", "coba gratis")).lower()): issues.append("cerita: footer gambar tidak boleh berisi ajakan (isi scene.footer)")
         allt = (layar + " " + post.get("caption", "")).lower()
         for kata in ("untung order", "margin", "tarif pasar"):
             if kata in allt: issues.append(f"kerahasiaan: hindari '{kata}' (lihat STRATEGI-KONTEN.md bagian 7)")

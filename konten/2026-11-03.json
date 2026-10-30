@@ -1,0 +1,55 @@
+{
+ "date": "2026-11-03",
+ "posts": [
+  {
+   "slot": "story-cerita",
+   "kind": "story",
+   "time": "07:30",
+   "tema": "cerita",
+   "scene": {
+    "kicker": "CERITA HARI INI",
+    "title": "Pernah salah bawa *dokumen kiriman*?",
+    "items": [
+     {
+      "text": "Pernah",
+      "mark": "check"
+     },
+     {
+      "text": "Hampir",
+      "mark": "check"
+     },
+     {
+      "text": "Belum pernah",
+      "mark": "x"
+     }
+    ],
+    "char": "ghost",
+    "fact": {
+     "label": "CERITA",
+     "head": "Siang ini 11.30",
+     "body": "Jam sebelas malam, dua *surat jalan* tertukar."
+    },
+    "footer": "@ghostrip.app"
+   }
+  },
+  {
+   "slot": "feed-cerita",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "cerita",
+   "scene": {
+    "kicker": "CERITA MALAM INI · 19.30",
+    "title": "Kiriman bisa diatur ulang. *Nyawa tidak.*",
+    "title_size": 70,
+    "illus": "truck_box",
+    "fact": {
+     "label": "CERITA FIKSI",
+     "head": "Rem truk",
+     "body": "Malam sebelum order terbesar, satu truk Pak Harso *remnya bermasalah*."
+    },
+    "footer": "@ghostrip.app"
+   },
+   "caption": "Malam sebelum order terbesar tahun itu, satu dari tiga truk Pak Harso remnya bermasalah. Customer menunggu jam 6 pagi. 🔧\n\nKalau kamu di posisinya, kamu pilih apa?\n\nCeritanya tayang malam ini jam 19.30.\n\nCerita fiksi. Nama tokoh rekaan.\n\n#ghostrip #ceritasopir #trucking #keselamatan #logistik"
+  }
+ ]
+}

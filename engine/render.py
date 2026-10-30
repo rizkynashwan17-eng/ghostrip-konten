@@ -661,7 +661,7 @@ def frame(sc, t, W, H, static=False):
         draw_char(im, sc["char2"], t, W, H, desk_top if not road_scene else H * .80)
     if static:
         d = ImageDraw.Draw(im)
-        f = font(32, "SemiBold"); txt = f"@ghostrip.app  ·  Coba gratis 7 hari  ·  WA {WA}"
+        f = font(32, "SemiBold"); txt = sc.get("footer") or f"@ghostrip.app  ·  Coba gratis 7 hari  ·  WA {WA}"
         d.rounded_rectangle((40, H - 100, W - 40, H - 36), radius=32, fill=(10, 16, 22))
         d.text((W / 2, H - 68), txt, font=f, fill=MINT, anchor="mm")
     else:

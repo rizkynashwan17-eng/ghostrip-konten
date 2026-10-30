@@ -1,0 +1,12 @@
+{"date": "2026-11-02", "posts": [
+ {"slot": "story-realita", "kind": "story", "time": "07:30", "tema": "realita",
+  "scene": {"kicker": "SENIN, REALITA", "title": "Pernah dapat permintaan harga *mepet jam pulang*?",
+   "items": [{"text": "Sering banget", "mark": "check"}, {"text": "Kadang-kadang", "mark": "check"}, {"text": "Jarang", "mark": "x"}],
+   "char": "ghost",
+   "fact": {"label": "INFO", "head": "Siang ini 11.30", "body": "Video: *tiga permintaan harga* jam empat sore."}}},
+ {"slot": "feed-realita", "kind": "feed", "time": "17:00", "tema": "realita",
+  "scene": {"kicker": "SERING KELUPAAN", "title": "Yang sering *lupa ditulis* di penawaran", "title_size": 62,
+   "items": ["Titik muat & titik bongkar yang jelas", "Jenis armada & kapasitas", "Jam operasional gudang", "Ketentuan biaya inap/menunggu", "Masa berlaku harga", "PPN/PPh termasuk atau belum"],
+   "mark": "check"},
+  "caption": "Penawaran yang kurang lengkap sering jadi sumber salah paham di lapangan. Cek lagi, poin mana yang suka kelewat? 📝\n\n✔ Titik muat & titik bongkar\n✔ Jenis armada & kapasitas\n✔ Jam operasional gudang\n✔ Ketentuan biaya inap/menunggu\n✔ Masa berlaku harga\n✔ PPN/PPh termasuk atau belum\n\nBikin penawaran PDF yang rapi (kop, TTD, cap, PPN/PPh) di Ghostrip. Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930.\n\n#ghostrip #ekspedisi #trucking #logistik #adminlogistik"}
+]}

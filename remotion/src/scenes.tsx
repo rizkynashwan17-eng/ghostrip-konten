@@ -390,7 +390,7 @@ export const Chat: React.FC<{s: SceneSpec}> = ({s}) => {
   return (
     <Camera dur={s.dur} to={1.06}>
       <Bokeh tint="rgba(127,240,214," />
-      <div style={{position: 'absolute', left: 170, top: 330, width: 740, height: 960, borderRadius: 60, background: '#0a1419', border: '14px solid #1c2f36', boxShadow: '0 40px 90px rgba(0,0,0,0.7)', transform: `translateY(${(1 - pop) * 140}px) rotate(1.5deg)`, overflow: 'hidden', fontFamily: 'Outfit'}}>
+      <div style={{position: 'absolute', left: 170, top: 330, width: 740, height: 840, borderRadius: 60, background: '#0a1419', border: '14px solid #1c2f36', boxShadow: '0 40px 90px rgba(0,0,0,0.7)', transform: `translateY(${(1 - pop) * 140}px) rotate(1.5deg)`, overflow: 'hidden', fontFamily: 'Outfit'}}>
         <div style={{height: 120, background: C.teal, display: 'flex', alignItems: 'center', gap: 20, padding: '0 34px', boxSizing: 'border-box'}}>
           <div style={{width: 64, height: 64, borderRadius: '50%', background: C.mintDeep, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 32, color: C.ink}}>{(s.kontak ?? 'C')[0]}</div>
           <div>

@@ -1,0 +1,55 @@
+{
+ "date": "2026-11-01",
+ "posts": [
+  {
+   "slot": "story-alur",
+   "kind": "story",
+   "time": "07:30",
+   "tema": "bebas",
+   "scene": {
+    "kicker": "POLLING MINGGU",
+    "title": "Di kantormu, siapa yang *bikin quotation*?",
+    "items": [
+     {
+      "text": "Admin",
+      "mark": "check"
+     },
+     {
+      "text": "Bos sendiri",
+      "mark": "check"
+     },
+     {
+      "text": "Sales",
+      "mark": "check"
+     }
+    ],
+    "char": "ghost",
+    "fact": {
+     "label": "INFO",
+     "head": "Siang ini 11.30",
+     "body": "Video: perjalanan satu order, dari *quotation* sampai invoice."
+    }
+   }
+  },
+  {
+   "slot": "feed-alur",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "edukasi",
+   "scene": {
+    "kicker": "SIMPAN INI",
+    "title": "5 dokumen dalam *satu order* truk",
+    "title_size": 64,
+    "items": [
+     "Quotation: rute, armada, harga",
+     "PO: pesanan resmi customer",
+     "Surat jalan: daftar barang",
+     "Bukti terima: TTD & cap penerima",
+     "Invoice: setelah bukti terima lengkap"
+    ],
+    "mark": "num"
+   },
+   "caption": "Simpan buat tim admin kamu 📌\n\n5 dokumen dalam satu order truk:\n1. Quotation\n2. PO\n3. Surat jalan\n4. Bukti terima\n5. Invoice\n\nSatu dokumen hilang, tagihan bisa tertahan. Untuk langkah pertamanya, quotation PDF dengan kop, TTD, dan cap bisa disiapkan di Ghostrip. Coba gratis 7 hari lewat WA 0815-1704-7930.\n\nSumber: IDX Channel & Jurnal.id (pengertian surat jalan & delivery order)\n\n#ghostrip #ekspedisi #logistik #adminlogistik #trucking"
+  }
+ ]
+}

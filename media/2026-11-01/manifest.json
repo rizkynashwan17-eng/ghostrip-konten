@@ -5,5 +5,15 @@
   "media": "media/2026-11-01/reel-salah-hitung.mp4",
   "cover": "media/2026-11-01/reel-salah-hitung-cover.jpg",
   "dur": 22.4
+ },
+ {
+  "slot": "story-alur",
+  "kind": "story",
+  "media": "media/2026-11-01/story-alur.jpg"
+ },
+ {
+  "slot": "feed-alur",
+  "kind": "feed",
+  "media": "media/2026-11-01/feed-alur.jpg"
  }
 ]

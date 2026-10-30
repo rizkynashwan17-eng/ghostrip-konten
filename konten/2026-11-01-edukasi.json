@@ -112,8 +112,8 @@
      "label": "SURAT JALAN IKUT",
      "warn": false,
      "narasi": "Surat jalan ikut truk sampai *gudang tujuan*.",
-     "nilai": "SJ-0457",
-     "penanda": "TRUK"
+     "penanda": "TRUK",
+     "satuan": "TRUK"
     },
     {
      "type": "dokumen",

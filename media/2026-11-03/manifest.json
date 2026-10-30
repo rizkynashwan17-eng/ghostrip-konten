@@ -1,0 +1,12 @@
+[
+ {
+  "slot": "story-cerita",
+  "kind": "story",
+  "media": "media/2026-11-03/story-cerita.jpg"
+ },
+ {
+  "slot": "feed-cerita",
+  "kind": "feed",
+  "media": "media/2026-11-03/feed-cerita.jpg"
+ }
+]
