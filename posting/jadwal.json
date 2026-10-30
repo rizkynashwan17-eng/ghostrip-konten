@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-10-29T23:59+07:00",
+ "diperbarui": "2026-10-30T15:53+07:00",
  "posts": [
   {
    "id": "2026-10-29-0730-story-v2",
@@ -215,6 +215,42 @@
    "catatan": "Video Rizky + vokal AI"
   },
   {
+   "id": "2026-11-01-0730-story-alur",
+   "tanggal": "2026-11-01",
+   "jam": "07:30",
+   "jenis": "story",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Di kantormu, siapa yang bikin quotation?",
+   "media": [
+    "media/2026-11-01/story-alur.jpg"
+   ],
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-01-1700-feed-alur",
+   "tanggal": "2026-11-01",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "5 dokumen dalam satu order truk",
+   "media": [
+    "media/2026-11-01/feed-alur.jpg"
+   ],
+   "cover": null,
+   "caption": "Simpan buat tim admin kamu 📌\n\n5 dokumen dalam satu order truk:\n1. Quotation\n2. PO\n3. Surat jalan\n4. Bukti terima\n5. Invoice\n\nSatu dokumen hilang, tagihan bisa tertahan. Untuk langkah pertamanya, quotation PDF dengan kop, TTD, dan cap bisa disiapkan di Ghostrip. Coba gratis 7 hari lewat WA 0815-1704-7930.\n\nSumber: IDX Channel & Jurnal.id (pengertian surat jalan & delivery order)\n\n#ghostrip #ekspedisi #logistik #adminlogistik #trucking",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
    "id": "2026-11-01-1900-harga-deal-ternyata-nombok",
    "tanggal": "2026-11-01",
    "jam": "19:00",
@@ -230,6 +266,78 @@
    "cover": null,
    "caption": "Dapat order, harga sudah deal, eh ternyata tripnya tiga hari dan tol belum dihitung. Untungnya hilang.\n\nGhostrip menghitung hari jalan, istirahat sopir, solar, dan tol otomatis, jadi tidak ada biaya yang kelewat waktu kasih harga.\n\nCOBA GRATIS 7 HARI\nKomen DEMO atau chat WA 0815-1704-7930 (link di bio)\n\n#ekspedisi #trucking #logistik #truk #aplikasiekspedisi #ghostrip",
    "tiktok_title": "Harga udah deal, ternyata nombok. Pernah?",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-02-0730-story-realita",
+   "tanggal": "2026-11-02",
+   "jam": "07:30",
+   "jenis": "story",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Pernah dapat permintaan harga mepet jam pulang?",
+   "media": [
+    "media/2026-11-02/story-realita.jpg"
+   ],
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-02-1700-feed-realita",
+   "tanggal": "2026-11-02",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Yang sering lupa ditulis di penawaran",
+   "media": [
+    "media/2026-11-02/feed-realita.jpg"
+   ],
+   "cover": null,
+   "caption": "Penawaran yang kurang lengkap sering jadi sumber salah paham di lapangan. Cek lagi, poin mana yang suka kelewat? 📝\n\n✔ Titik muat & titik bongkar\n✔ Jenis armada & kapasitas\n✔ Jam operasional gudang\n✔ Ketentuan biaya inap/menunggu\n✔ Masa berlaku harga\n✔ PPN/PPh termasuk atau belum\n\nBikin penawaran PDF yang rapi (kop, TTD, cap, PPN/PPh) di Ghostrip. Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930.\n\n#ghostrip #ekspedisi #trucking #logistik #adminlogistik",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-03-0730-story-cerita",
+   "tanggal": "2026-11-03",
+   "jam": "07:30",
+   "jenis": "story",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Pernah salah bawa dokumen kiriman?",
+   "media": [
+    "media/2026-11-03/story-cerita.jpg"
+   ],
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-03-1700-feed-cerita",
+   "tanggal": "2026-11-03",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Kiriman bisa diatur ulang. Nyawa tidak.",
+   "media": [
+    "media/2026-11-03/feed-cerita.jpg"
+   ],
+   "cover": null,
+   "caption": "Malam sebelum order terbesar tahun itu, satu dari tiga truk Pak Harso remnya bermasalah. Customer menunggu jam 6 pagi. 🔧\n\nKalau kamu di posisinya, kamu pilih apa?\n\nCeritanya tayang malam ini jam 19.30.\n\nCerita fiksi. Nama tokoh rekaan.\n\n#ghostrip #ceritasopir #trucking #keselamatan #logistik",
+   "tiktok_title": "",
    "catatan": ""
   }
  ]
