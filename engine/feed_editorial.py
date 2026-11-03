@@ -208,7 +208,7 @@ def main(spec_path):
         if post["kind"] != "feed" or "layout" not in post.get("scene", {}): continue
         sc = post["scene"]
         warna = sc.get("warna") or URUTAN[datetime.date.fromisoformat(day).weekday()]
-        path = os.path.join(outdir, f'{post["slot"]}.jpg')
+        path = os.path.join(outdir, f'{post["slot"]}-ed.jpg')
         ok = render(sc, warna, path)
         manifest = [m for m in manifest if m["slot"] != post["slot"]] + [{"slot": post["slot"], "kind": "feed", "media": os.path.relpath(path, ROOT), "gaya": "editorial", "warna": warna}]
         print("OK" if ok else "CEK", post["slot"], warna, os.path.relpath(path, ROOT))
