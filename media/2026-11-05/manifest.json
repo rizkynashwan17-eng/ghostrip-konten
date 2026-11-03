@@ -10,5 +10,14 @@
   "media": "media/2026-11-05/feed-fitur-ed.jpg",
   "gaya": "editorial",
   "warna": "teal"
+ },
+ {
+  "slot": "reel-fitur",
+  "kind": "reel",
+  "media": "media/2026-11-05/reel-fitur.mp4",
+  "cover": "media/2026-11-05/reel-fitur-cover.jpg",
+  "dur": 38.8,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]

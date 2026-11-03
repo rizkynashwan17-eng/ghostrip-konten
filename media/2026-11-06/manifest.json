@@ -10,5 +10,14 @@
   "media": "media/2026-11-06/feed-cerita-ed.jpg",
   "gaya": "editorial",
   "warna": "navy"
+ },
+ {
+  "slot": "reel2-cerita",
+  "kind": "reel",
+  "media": "media/2026-11-06/reel2-cerita.mp4",
+  "cover": "media/2026-11-06/reel2-cerita-cover.jpg",
+  "dur": 42.37,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]

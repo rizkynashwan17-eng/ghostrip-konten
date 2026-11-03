@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-04T01:02+07:00",
+ "diperbarui": "2026-11-04T01:13+07:00",
  "posts": [
   {
    "id": "2026-10-29-0730-story-v2",
@@ -445,13 +445,32 @@
     "ig",
     "fb"
    ],
-   "judul": "Dari minta harga sampai PDF terkirim",
+   "judul": "Dari minta harga\nsampai PDF terkirim.",
    "media": [
     "media/2026-11-05/feed-fitur-ed.jpg"
    ],
    "cover": null,
    "caption": "Begini alur kerja di Ghostrip 📲\n\n1. Isi rute & jenis truk\n2. Solar, hari jalan, istirahat sopir, dan tol terhitung otomatis\n3. Bos cek & approve\n4. Quotation PDF lengkap kop, TTD, dan cap\n5. Kirim langsung ke WhatsApp customer\n\nCoba gratis 7 hari: komen DEMO atau WA 0815-1704-7930.\n\n#ghostrip #aplikasitrucking #quotation #ekspedisi #logistik",
    "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-05-1930-reel-fitur",
+   "tanggal": "2026-11-05",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Demo fitur: hitung trip, rincian otomatis, approve bos, quotation PDF, kirim ke WhatsApp, riwayat",
+   "media": [
+    "media/2026-11-05/reel-fitur.mp4"
+   ],
+   "cover": "media/2026-11-05/reel-fitur-cover.jpg",
+   "caption": "Customer minta harga pagi ini juga. Begini alurnya di Ghostrip ⏱️\n\nIsi rute & jenis truk → solar, hari jalan, istirahat sopir, dan tol terhitung → bos approve → quotation PDF lengkap kop, TTD, cap → kirim ke WhatsApp. Hitungan lama tersimpan di riwayat.\n\nCoba gratis 7 hari: komen DEMO atau WA 0815-1704-7930.\n\nAngka dan data di video: simulasi.\n\n#ghostrip #aplikasitrucking #quotation #ekspedisi #logistik",
+   "tiktok_title": "Dari hitung trip sampai PDF terkirim ke WA, begini caranya",
    "catatan": ""
   },
   {
@@ -488,6 +507,25 @@
    "cover": null,
    "caption": "Malam sebelum order terbesar tahun itu, satu dari tiga truk Pak Harso remnya bermasalah. Customer menunggu jam 6 pagi. 🔧\n\nKalau kamu di posisinya, kamu pilih apa?\n\nCeritanya tayang malam ini jam 19.30.\n\nCerita fiksi. Nama tokoh rekaan.\n\n#ghostrip #ceritasopir #trucking #keselamatan #logistik",
    "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-06-1930-reel2-cerita",
+   "tanggal": "2026-11-06",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Cerita fiksi: pemilik armada kecil memilih keselamatan di malam sebelum order terbesar",
+   "media": [
+    "media/2026-11-06/reel2-cerita.mp4"
+   ],
+   "cover": "media/2026-11-06/reel2-cerita-cover.jpg",
+   "caption": "Order terbesar tahun itu, tiga truk dibutuhkan, dan satu truk remnya bermasalah. Kamu pilih apa? 🔧\n\nIni cerita Pak Harso, pemilik armada kecil, di malam sebelum order paling penting.\n\nKiriman bisa diatur ulang. Nyawa tidak.\n\nCerita fiksi. Nama tokoh rekaan.\n\n#ghostrip #ceritasopir #trucking #keselamatan #logistik",
+   "tiktok_title": "Truk remnya bermasalah, besok order terbesar. Kamu pilih apa?",
    "catatan": ""
   },
   {

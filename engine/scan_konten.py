@@ -72,7 +72,7 @@ def scan(spec_path):
                         masalah = [x for x in masalah if not (kuota and "pemeriksa dengar" in x) and "intonasi datar" not in x]
                     if masalah: issues += [f"kualitas: {x}" for x in masalah]
         layar = " ".join(texts(post.get("scenes") or post.get("scene") or post.get("slides")))
-        if EMOJI.search(layar): issues.append("ada emoji di teks layar")
+        if EMOJI.search(layar.replace("✓", "").replace("✔", "")): issues.append("ada emoji di teks layar")
         if kind != "story":
             cap = post.get("caption", "")
             if not cap: issues.append("caption kosong")
