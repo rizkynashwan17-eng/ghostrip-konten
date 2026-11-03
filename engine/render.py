@@ -804,6 +804,8 @@ def main(spec_path):
     rel = lambda v: os.path.relpath(v, ROOT) if isinstance(v, str) else ([os.path.relpath(x, ROOT) for x in v] if isinstance(v, list) else v)
     for post in spec["posts"]:
         slot, kind = post["slot"], post["kind"]
+        if post.get("engine") == "remotion":
+            print("lewati", slot, "(Reels Remotion: pakai engine/whatif.py)"); continue
         if kind == "reel":
             path = os.path.join(outdir, f"{slot}.mp4"); dur = render_reel(post, path, seed=sum(map(ord, day + slot)))
             files = {"media": path, "cover": path.replace(".mp4", "-cover.jpg"), "dur": dur}
