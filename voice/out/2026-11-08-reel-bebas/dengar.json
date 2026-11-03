@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   54.41
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Pertanyaan yang sering datang: harga pulang-pergi itu dua kali lipat?\nJawabannya, belum tentu.\nPerjalanan pulang bisa kosong, bisa juga dapat muatan balik.\nYang membedakan: muatan balik, hari jalan, waktu tunggu, dan tol dua arah.\nSatu hari tunggu bongkar saja bisa mengubah total hari trip.\nApalagi kalau gudang tujuan punya jam bongkar yang terbatas.\nKarena itu, PP sebaiknya dihitung sebagai satu perjalanan utuh.\nGhostrip bisa bantu menghitung hari jalan, istirahat, dan tol untuk perjalanan pulang-pergi.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 429 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error,"
+  }
+ ]
+}

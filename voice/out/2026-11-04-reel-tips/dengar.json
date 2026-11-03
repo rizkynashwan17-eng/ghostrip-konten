@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   48.81
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Jam empat sore, Dina siap menekan tombol kirim.\nCustomer sudah menunggu penawaran sejak pagi.\nTapi satu kolom kecil terlewat, masa berlaku harga.\nKesalahan paling sering: salah nama, lupa tol pulang, dan harga tanpa batas waktu.\nSatu kolom terlewat bisa jadi tiga kali revisi.\nJadi sebelum kirim, cek lima hal ini, berurutan.\nDina melengkapi masa berlaku, lalu mengirim versi yang rapi.\nTidak ada pertanyaan balik, langsung diteruskan ke atasan.\nKalau menyiapkan penawaran mulai menyita waktu, Ghostrip bisa bantu bikin lebih praktis.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later"
+  }
+ ]
+}

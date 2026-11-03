@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   46.77
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Customer minta harga Fuso ke Surabaya, pagi ini juga.\nDi Ghostrip, admin cukup isi rute dan jenis truk.\nSolar, hari jalan, istirahat sopir, dan tol terhitung sendiri.\nBos tinggal cek angkanya, lalu approve.\nQuotation terisi sendiri, lengkap kop, tanda tangan, dan cap perusahaan.\nPDF-nya langsung dikirim ke WhatsApp customer.\nHitungan lama tersimpan di riwayat, tinggal buka lagi.\nMau coba alurnya sendiri? Ghostrip gratis tujuh hari, komen DEMO.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || gemini-flash-latest: The read operation timed out"
+  }
+ ]
+}

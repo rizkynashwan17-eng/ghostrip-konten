@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   45.33
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Revisi pertama, customer minta ganti armada.\nRevisi kedua, tambah titik bongkar.\nRevisi ketiga, tanggal kirimnya maju dua hari.\nFolder penuh file final, final dua, dan fix beneran.\nSampai akhirnya, revisi kelima.\nCustomer bilang, pakai versi pertama saja.\nMasalahnya, versi pertama itu sudah ditimpa.\nBiar tidak terulang: simpan tiap versi, dan catat setiap perubahan.\nDi Ghostrip, riwayat hitungan tersimpan, jadi versi lama tidak hilang.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: gemini-flash-latest: The read operation timed out || HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later"
+  }
+ ]
+}

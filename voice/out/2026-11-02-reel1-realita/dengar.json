@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   48.49
+  ],
+  2
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Jam empat sore, Mbak Rina dapat tiga permintaan harga sekaligus.\nSemuanya minta jawaban sebelum kantor tutup.\nPadahal satu harga butuh jarak, solar, tol, uang jalan, dan hari istirahat.\nRute Surabaya pernah dihitung bulan lalu. Tapi datanya di mana?\nYang ketemu malah tiga file, semuanya bernama final.\nBos minta semua angka dicek ulang sebelum dikirim.\nQuotation terakhir baru siap besok pagi. Customernya sudah tanya ke vendor lain.\nPelajarannya: hitungan yang tersimpan rapi bisa dipakai ulang, bukan dicari ulang.\nDi Ghostrip, riwayat hitungan tersimpan, dan quotation PDF jadi dari hitungan yang sama.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
