@@ -1,0 +1,151 @@
+{
+ "date": "2026-11-08",
+ "posts": [
+  {
+   "slot": "story-bebas",
+   "kind": "story",
+   "time": "07:30",
+   "tema": "bebas",
+   "scene": {
+    "kicker": "TEBAK-TEBAKAN",
+    "title": "Harga pulang-pergi = *2× harga sekali jalan*?",
+    "items": [
+     {
+      "text": "Iya, pasti",
+      "mark": "x"
+     },
+     {
+      "text": "Belum tentu",
+      "mark": "check"
+     }
+    ],
+    "char": "ghost",
+    "fact": {
+     "label": "MALAM INI",
+     "head": "19.30",
+     "body": "Kita jawab, kenapa *belum tentu*."
+    },
+    "footer": "@ghostrip.app"
+   }
+  },
+  {
+   "slot": "feed-bebas",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "bebas",
+   "scene": {
+    "kicker": "TANYA JAWAB",
+    "title": "Kenapa harga PP *belum tentu dua kali lipat*?",
+    "title_size": 66,
+    "items": [
+     "Ada muatan balik atau tidak",
+     "Hari jalan & istirahat sopir",
+     "Waktu tunggu bongkar muat",
+     "Tol & biaya jalan dua arah"
+    ],
+    "mark": "num",
+    "fact": {
+     "label": "INTINYA",
+     "head": "Hitung utuh",
+     "body": "Pulang-pergi sebaiknya dihitung sebagai *satu perjalanan utuh*."
+    },
+    "footer": "@ghostrip.app"
+   },
+   "caption": "\"Kalau sekali jalan segini, PP berarti dua kali ya?\" Belum tentu 🤔\n\nYang membedakan: ada muatan balik atau tidak, hari jalan & istirahat sopir, waktu tunggu bongkar muat, dan tol dua arah. Makanya PP sebaiknya dihitung sebagai satu perjalanan utuh.\n\nPunya pertanyaan lain soal hitung trip? Tulis di komentar.\n\n#ghostrip #trucking #ekspedisi #logistik #tanyajawab"
+  },
+  {
+   "slot": "reel-bebas",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "bebas",
+   "time": "19:30",
+   "seri": "TANYA JAWAB",
+   "judul": "PP = DUA KALI LIPAT?",
+   "part": 0,
+   "lokasi": "10.00 WIB · KANTOR",
+   "jam": "10:00",
+   "topic": "Tanya jawab: kenapa harga pulang-pergi belum tentu dua kali harga sekali jalan",
+   "scenes": [
+    {
+     "type": "chat",
+     "kontak": "Customer baru",
+     "status": "online",
+     "pesan": [
+      {
+       "dari": "Customer",
+       "teks": "Pak, kalau sekali jalan segini, PP berarti dua kali ya?"
+      }
+     ],
+     "narasi": "Pertanyaan yang sering datang: harga pulang-pergi itu *dua kali lipat*?"
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Jawabannya, *belum tentu*."
+    },
+    {
+     "type": "peta",
+     "dari": "BEKASI",
+     "ke": "SEMARANG",
+     "provDari": "JAWA BARAT",
+     "provKe": "JAWA TENGAH",
+     "tripDari": 1,
+     "tripKe": 2,
+     "label": "ARAH PERJALANAN",
+     "narasi": "Perjalanan pulang bisa kosong, bisa juga dapat *muatan balik*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Yang membedakan",
+     "tanda": "nomor",
+     "item": [
+      "Ada muatan balik atau tidak",
+      "Hari jalan & istirahat sopir",
+      "Waktu tunggu bongkar muat",
+      "Tol & biaya jalan dua arah"
+     ],
+     "narasi": "Yang membedakan: muatan balik, hari jalan, waktu tunggu, dan *tol dua arah*."
+    },
+    {
+     "type": "angka",
+     "dari": 2,
+     "ke": 3,
+     "satuan": "HARI",
+     "warn": true,
+     "label": "TOTAL HARI TRIP",
+     "narasi": "Satu hari tunggu bongkar saja bisa mengubah *total hari trip*."
+    },
+    {
+     "type": "jalan",
+     "papan": "GUDANG TUJUAN",
+     "narasi": "Apalagi kalau gudang tujuan punya *jam bongkar* yang terbatas."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "santai",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Karena itu, PP sebaiknya dihitung sebagai *satu perjalanan utuh*."
+    },
+    {
+     "type": "cta",
+     "tagline": "Hari jalan, istirahat, dan tol PP terhitung otomatis",
+     "pil": "COBA GRATIS",
+     "ajakan": "Komen DEMO untuk coba",
+     "narasi": "Ghostrip bisa bantu menghitung hari jalan, istirahat, dan tol untuk perjalanan *pulang-pergi*."
+    }
+   ],
+   "caption": "\"Kalau sekali jalan segini, PP berarti dua kali ya?\" Belum tentu 🤔\n\nAda muatan balik atau tidak, hari jalan & istirahat sopir, waktu tunggu bongkar, dan tol dua arah, semuanya bisa mengubah total. Makanya PP sebaiknya dihitung sebagai satu perjalanan utuh.\n\nGhostrip bantu hitung otomatis, coba gratis 7 hari: komen DEMO.\n\n#ghostrip #trucking #ekspedisi #logistik #tanyajawab",
+   "tiktok_title": "Harga pulang-pergi = 2× sekali jalan? Belum tentu",
+   "voice_id": "2026-11-08-reel-bebas"
+  }
+ ]
+}

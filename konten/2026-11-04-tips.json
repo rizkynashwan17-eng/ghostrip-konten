@@ -1,0 +1,197 @@
+{
+ "date": "2026-11-04",
+ "posts": [
+  {
+   "slot": "story-tips",
+   "kind": "story",
+   "time": "07:30",
+   "tema": "tips",
+   "scene": {
+    "kicker": "PERTANYAAN HARI INI",
+    "title": "Pernah kirim quotation lalu *direvisi*?",
+    "items": [
+     {
+      "text": "Sering",
+      "mark": "check"
+     },
+     {
+      "text": "Kadang",
+      "mark": "check"
+     },
+     {
+      "text": "Hampir tidak",
+      "mark": "x"
+     }
+    ],
+    "char": "ghost",
+    "fact": {
+     "label": "MALAM INI",
+     "head": "19.30",
+     "body": "Lima hal yang wajib dicek *sebelum kirim* penawaran."
+    },
+    "footer": "@ghostrip.app"
+   }
+  },
+  {
+   "slot": "feed-tips",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "tips",
+   "scene": {
+    "kicker": "SIMPAN INI · CHECKLIST",
+    "title": "Sebelum kirim quotation, *cek 5 hal ini*",
+    "title_size": 66,
+    "items": [
+     "Nama & alamat customer benar",
+     "Rute dan jenis armada sesuai",
+     "Komponen biaya lengkap",
+     "Masa berlaku harga tertulis",
+     "TTD & cap perusahaan"
+    ],
+    "mark": "num",
+    "fact": {
+     "label": "TIPS ADMIN",
+     "head": "Kesalahan kecil",
+     "body": "Satu kolom terlewat bisa berujung *revisi berulang*."
+    },
+    "footer": "@ghostrip.app"
+   },
+   "caption": "Checklist sebelum kirim quotation ke customer 📋\n\n1. Nama & alamat customer benar\n2. Rute dan jenis armada sesuai permintaan\n3. Komponen biaya lengkap (solar, hari jalan, tol, dll)\n4. Masa berlaku harga tertulis\n5. TTD & cap perusahaan\n\nSimpan postingan ini buat pengingat. Kalau menyiapkan penawaran mulai menyita waktu, Ghostrip bisa bantu bikin quotation lebih rapi.\n\n#ghostrip #adminlogistik #quotation #trucking #ekspedisi"
+  },
+  {
+   "slot": "reel-tips",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "tips",
+   "time": "19:30",
+   "seri": "TIPS ADMIN",
+   "judul": "SEBELUM KLIK KIRIM",
+   "part": 0,
+   "lokasi": "16.02 WIB · KANTOR ADMIN",
+   "jam": "16:02",
+   "topic": "Tips admin: lima hal yang wajib dicek sebelum mengirim quotation",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Jam empat sore, Dina siap menekan tombol *kirim*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Pak Rudi · PT Makmur Semakmurnya",
+     "status": "online",
+     "pesan": [
+      {
+       "dari": "Pak Rudi",
+       "teks": "Mbak, penawarannya jadi hari ini?"
+      },
+      {
+       "teks": "Iya Pak, sebentar lagi saya kirim.",
+       "aku": true
+      }
+     ],
+     "narasi": "Customer sudah menunggu penawaran sejak pagi."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "QUOTATION",
+     "nomor": "Q-1104",
+     "baris": [
+      [
+       "Kepada",
+       "PT Makmur Semakmurnya"
+      ],
+      [
+       "Rute",
+       "Jakarta → Semarang"
+      ],
+      [
+       "Armada",
+       "Wingbox"
+      ],
+      [
+       "Berlaku s.d.",
+       "—"
+      ]
+     ],
+     "sorot": 3,
+     "narasi": "Tapi satu kolom kecil terlewat, *masa berlaku harga*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Kesalahan paling sering",
+     "tanda": "x",
+     "item": [
+      "Salah tulis nama customer",
+      "Lupa tol perjalanan pulang",
+      "Harga tanpa masa berlaku"
+     ],
+     "narasi": "Kesalahan paling sering: salah nama, lupa *tol pulang*, dan harga tanpa batas waktu."
+    },
+    {
+     "type": "angka",
+     "dari": 1,
+     "ke": 3,
+     "satuan": "×",
+     "warn": true,
+     "label": "REVISI QUOTATION",
+     "narasi": "Satu kolom terlewat bisa jadi *tiga kali revisi*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Cek sebelum kirim",
+     "tanda": "nomor",
+     "item": [
+      "Nama & alamat customer",
+      "Rute dan jenis armada",
+      "Komponen biaya lengkap",
+      "Masa berlaku harga",
+      "TTD & cap perusahaan"
+     ],
+     "narasi": "Jadi sebelum kirim, cek lima hal ini, *berurutan*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "santai",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Dina melengkapi masa berlaku, lalu mengirim versi yang *rapi*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Pak Rudi · PT Makmur Semakmurnya",
+     "status": "online",
+     "pesan": [
+      {
+       "teks": "Pak, ini penawarannya. [Quotation.pdf]",
+       "aku": true
+      },
+      {
+       "dari": "Pak Rudi",
+       "teks": "Lengkap ya. Saya teruskan ke atasan."
+      }
+     ],
+     "narasi": "Tidak ada pertanyaan balik, langsung *diteruskan* ke atasan."
+    },
+    {
+     "type": "cta",
+     "tagline": "Quotation rapi lengkap kop, TTD, dan cap, siap kirim dari HP",
+     "pil": "COBA GRATIS",
+     "ajakan": "Chat WA, coba 7 hari",
+     "narasi": "Kalau menyiapkan penawaran mulai menyita waktu, Ghostrip bisa bantu bikin lebih *praktis*."
+    }
+   ],
+   "caption": "Jam 4 sore, quotation siap dikirim. Tapi satu kolom kecil terlewat. 📋\n\nSebelum klik kirim, cek 5 hal ini: nama & alamat customer, rute dan armada, komponen biaya, masa berlaku harga, TTD & cap.\n\nKalau menyiapkan penawaran mulai menyita waktu, Ghostrip bantu bikin quotation lebih rapi. Coba gratis 7 hari, chat WA 0815-1704-7930.\n\nNama tokoh dan perusahaan rekaan.\n\n#ghostrip #adminlogistik #quotation #trucking #ekspedisi",
+   "tiktok_title": "Sebelum kirim quotation, cek 5 hal ini dulu",
+   "voice_id": "2026-11-04-reel-tips"
+  }
+ ]
+}

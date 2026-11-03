@@ -1,0 +1,214 @@
+{
+ "date": "2026-11-05",
+ "posts": [
+  {
+   "slot": "story-fitur",
+   "kind": "story",
+   "time": "07:30",
+   "tema": "fitur",
+   "scene": {
+    "kicker": "PERTANYAAN HARI INI",
+    "title": "Bikin satu quotation biasanya *berapa lama*?",
+    "items": [
+     {
+      "text": "< 15 menit",
+      "mark": "check"
+     },
+     {
+      "text": "15–60 menit",
+      "mark": "check"
+     },
+     {
+      "text": "> 1 jam",
+      "mark": "x"
+     }
+    ],
+    "char": "ghost",
+    "fact": {
+     "label": "MALAM INI",
+     "head": "19.30",
+     "body": "Dari hitung trip sampai *PDF terkirim*, kita tunjukkan caranya."
+    },
+    "footer": "@ghostrip.app"
+   }
+  },
+  {
+   "slot": "feed-fitur",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "fitur",
+   "scene": {
+    "kicker": "FITUR GHOSTRIP",
+    "title": "Dari permintaan harga sampai *PDF terkirim*",
+    "title_size": 66,
+    "items": [
+     "Isi rute & jenis truk",
+     "Solar, hari jalan, tol terhitung",
+     "Bos cek & approve",
+     "Quotation PDF + kop, TTD, cap",
+     "Kirim ke WhatsApp customer"
+    ],
+    "mark": "num",
+    "fact": {
+     "label": "DEMO",
+     "head": "Riwayat tersimpan",
+     "body": "Hitungan lama *tinggal dibuka* lagi kapan saja."
+    },
+    "footer": "@ghostrip.app"
+   },
+   "caption": "Begini alur kerja di Ghostrip 📲\n\n1. Isi rute & jenis truk\n2. Solar, hari jalan, istirahat sopir, dan tol terhitung otomatis\n3. Bos cek & approve\n4. Quotation PDF lengkap kop, TTD, dan cap\n5. Kirim langsung ke WhatsApp customer\n\nCoba gratis 7 hari: komen DEMO atau WA 0815-1704-7930.\n\n#ghostrip #aplikasitrucking #quotation #ekspedisi #logistik"
+  },
+  {
+   "slot": "reel-fitur",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "fitur",
+   "time": "19:30",
+   "seri": "FITUR GHOSTRIP",
+   "judul": "DARI HITUNG TRIP SAMPAI PDF",
+   "part": 0,
+   "lokasi": "09.15 WIB · KANTOR PT MAJU JAYA LOGISTIK",
+   "jam": "09:15",
+   "topic": "Demo fitur: hitung trip, rincian otomatis, approve bos, quotation PDF, kirim ke WhatsApp, riwayat",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Customer minta harga Fuso ke Surabaya, *pagi ini juga*."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "HITUNG TRIP",
+     "nomor": "SIMULASI",
+     "cap": "GHOSTRIP",
+     "baris": [
+      [
+       "Rute",
+       "Jakarta → Surabaya"
+      ],
+      [
+       "Armada",
+       "Fuso box"
+      ],
+      [
+       "Jarak",
+       "±780 km"
+      ],
+      [
+       "Hari",
+       "dihitung otomatis"
+      ]
+     ],
+     "sorot": 3,
+     "narasi": "Di Ghostrip, admin cukup isi *rute dan jenis truk*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Rincian otomatis",
+     "tanda": "cek",
+     "item": [
+      [
+       "Solar",
+       "✓"
+      ],
+      [
+       "Hari jalan & istirahat sopir",
+       "✓"
+      ],
+      [
+       "Tol & biaya lain",
+       "✓"
+      ]
+     ],
+     "narasi": "Solar, hari jalan, istirahat sopir, dan tol *terhitung sendiri*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Bos tinggal cek angkanya, lalu *approve*."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "QUOTATION",
+     "nomor": "Q-1105",
+     "baris": [
+      [
+       "Kepada",
+       "PT Makmur Semakmurnya"
+      ],
+      [
+       "Armada",
+       "Fuso box"
+      ],
+      [
+       "Harga",
+       "simulasi"
+      ],
+      [
+       "TTD & cap",
+       "✓"
+      ]
+     ],
+     "sorot": 3,
+     "narasi": "Quotation terisi sendiri, lengkap kop, tanda tangan, dan *cap perusahaan*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Pak Rudi · PT Makmur Semakmurnya",
+     "status": "online",
+     "pesan": [
+      {
+       "teks": "Pak, ini penawarannya. [Quotation.pdf]",
+       "aku": true
+      },
+      {
+       "dari": "Pak Rudi",
+       "teks": "Cepat juga, Pak. Saya cek ya."
+      }
+     ],
+     "narasi": "PDF-nya langsung dikirim ke *WhatsApp* customer."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Riwayat hitungan",
+     "tanda": "cek",
+     "item": [
+      [
+       "Jakarta → Surabaya · Fuso",
+       "hari ini"
+      ],
+      [
+       "Bekasi → Bandung · CDD",
+       "kemarin"
+      ],
+      [
+       "Cikarang → Semarang · Wingbox",
+       "minggu lalu"
+      ]
+     ],
+     "narasi": "Hitungan lama tersimpan di riwayat, *tinggal buka lagi*."
+    },
+    {
+     "type": "cta",
+     "tagline": "Hitung trip, quotation PDF, kirim ke WA. Semua dari HP.",
+     "pil": "GRATIS 7 HARI",
+     "ajakan": "Komen DEMO untuk coba",
+     "narasi": "Mau coba alurnya sendiri? Ghostrip gratis tujuh hari, komen *DEMO*."
+    }
+   ],
+   "caption": "Customer minta harga pagi ini juga. Begini alurnya di Ghostrip ⏱️\n\nIsi rute & jenis truk → solar, hari jalan, istirahat sopir, dan tol terhitung → bos approve → quotation PDF lengkap kop, TTD, cap → kirim ke WhatsApp. Hitungan lama tersimpan di riwayat.\n\nCoba gratis 7 hari: komen DEMO atau WA 0815-1704-7930.\n\nAngka dan data di video: simulasi.\n\n#ghostrip #aplikasitrucking #quotation #ekspedisi #logistik",
+   "tiktok_title": "Dari hitung trip sampai PDF terkirim ke WA, begini caranya",
+   "voice_id": "2026-11-05-reel-fitur"
+  }
+ ]
+}

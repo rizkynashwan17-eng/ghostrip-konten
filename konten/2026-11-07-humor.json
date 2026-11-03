@@ -1,0 +1,175 @@
+{
+ "date": "2026-11-07",
+ "posts": [
+  {
+   "slot": "story-humor",
+   "kind": "story",
+   "time": "07:30",
+   "tema": "humor",
+   "scene": {
+    "kicker": "JUJUR AJA",
+    "title": "Revisi quotation terbanyak yang pernah kamu alami?",
+    "items": [
+     {
+      "text": "1–2 kali",
+      "mark": "check"
+     },
+     {
+      "text": "3–5 kali",
+      "mark": "check"
+     },
+     {
+      "text": "Lebih dari 5",
+      "mark": "x"
+     }
+    ],
+    "char": "ghost",
+    "fact": {
+     "label": "MALAM INI",
+     "head": "19.30",
+     "body": "POV admin: revisi *kelima* dari customer yang sama."
+    },
+    "footer": "@ghostrip.app"
+   }
+  },
+  {
+   "slot": "feed-humor",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "humor",
+   "scene": {
+    "kicker": "RELATE?",
+    "title": "Isi folder penawaran setelah *5 kali revisi*",
+    "title_size": 66,
+    "items": [
+     "quotation_final.pdf",
+     "quotation_final2.pdf",
+     "quotation_FIX.pdf",
+     "quotation_fix_beneran.pdf",
+     "quotation_PAKAI_INI.pdf"
+    ],
+    "mark": "num",
+    "fact": {
+     "label": "TIPS",
+     "head": "Biar tidak bingung",
+     "body": "Beri nama file pakai *tanggal & versi*."
+    },
+    "footer": "@ghostrip.app"
+   },
+   "caption": "Admin mana yang foldernya begini juga? 😅\n\nquotation_final → final2 → FIX → fix_beneran → PAKAI_INI\n\nTips: beri nama file pakai tanggal & versi, dan catat setiap perubahan. Di Ghostrip, riwayat hitungan tersimpan otomatis.\n\nTag teman admin kamu 👇\n\n#ghostrip #adminlogistik #relate #trucking #ekspedisi"
+  },
+  {
+   "slot": "reel-humor",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "humor",
+   "time": "19:30",
+   "seri": "POV ADMIN",
+   "judul": "REVISI KELIMA",
+   "part": 0,
+   "lokasi": "14.40 WIB · MEJA ADMIN",
+   "jam": "14:40",
+   "topic": "Humor relatable: admin menghadapi revisi quotation berulang dari customer yang sama",
+   "scenes": [
+    {
+     "type": "chat",
+     "kontak": "Customer",
+     "status": "mengetik…",
+     "pesan": [
+      {
+       "dari": "Customer",
+       "teks": "Mbak, armadanya ganti CDD aja ya."
+      }
+     ],
+     "narasi": "Revisi pertama, customer minta *ganti armada*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Customer",
+     "status": "mengetik…",
+     "pesan": [
+      {
+       "dari": "Customer",
+       "teks": "Eh, tambah satu titik bongkar ya, Mbak."
+      }
+     ],
+     "narasi": "Revisi kedua, *tambah titik bongkar*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Revisi ketiga, tanggal kirimnya *maju dua hari*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Folder penawaran",
+     "tanda": "x",
+     "item": [
+      "quotation_final.pdf",
+      "quotation_final2.pdf",
+      "quotation_FIX.pdf",
+      "quotation_fix_beneran.pdf"
+     ],
+     "narasi": "Folder penuh file final, final dua, dan *fix beneran*."
+    },
+    {
+     "type": "angka",
+     "dari": 1,
+     "ke": 5,
+     "satuan": "×",
+     "warn": true,
+     "label": "REVISI HARI INI",
+     "narasi": "Sampai akhirnya, *revisi kelima*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Customer",
+     "status": "online",
+     "pesan": [
+      {
+       "dari": "Customer",
+       "teks": "Mbak, yang versi pertama aja deh. 🙏"
+      }
+     ],
+     "narasi": "Customer bilang, pakai *versi pertama* saja."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Masalahnya, versi pertama itu *sudah ditimpa*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Biar tidak terulang",
+     "tanda": "cek",
+     "item": [
+      "Simpan tiap versi dengan tanggal",
+      "Catat permintaan revisi di satu tempat",
+      "Kirim ringkasan perubahan ke customer"
+     ],
+     "narasi": "Biar tidak terulang: simpan tiap versi, dan catat *setiap perubahan*."
+    },
+    {
+     "type": "cta",
+     "tagline": "Riwayat hitungan tersimpan, versi lama tinggal dibuka",
+     "pil": "COBA 7 HARI",
+     "ajakan": "Chat WA untuk coba gratis",
+     "narasi": "Di Ghostrip, riwayat hitungan tersimpan, jadi versi lama *tidak hilang*."
+    }
+   ],
+   "caption": "POV: revisi kelima dari customer yang sama 😅\n\nGanti armada, tambah titik bongkar, tanggal maju... lalu akhirnya: \"yang versi pertama aja, Mbak.\" Padahal versi pertama sudah ditimpa.\n\nTips: simpan tiap versi dengan tanggal dan catat setiap perubahan. Di Ghostrip, riwayat hitungan tersimpan otomatis. Coba gratis 7 hari, chat WA 0815-1704-7930.\n\n#ghostrip #adminlogistik #relate #trucking #ekspedisi",
+   "tiktok_title": "POV admin: revisi kelima, lalu customer minta versi pertama",
+   "voice_id": "2026-11-07-reel-humor"
+  }
+ ]
+}
