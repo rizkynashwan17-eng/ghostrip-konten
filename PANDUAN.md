@@ -34,6 +34,14 @@ Referensi visual tunggal: `media/2026-11-02/reel1-whatif.mp4` (pilot jembatan ti
 - Langkah: (1) `python3 engine/whatif.py suara konten/X-whatif.json` → push → tunggu `voice/out/<id>/done.json` (+ `dengar.json`); (2) `python3 engine/whatif.py render konten/X-whatif.json`; (3) cek visual 4–5 frame; (4) inspeksi; (5) `python3 engine/posting.py tambah konten/X-whatif.json`, push. `--tanpa-suara` hanya untuk pratinjau, tidak boleh masuk halaman.
 - Inspeksi untuk video Remotion lebih ringan (permintaan Rizky): wajib ada narasi, tidak ada suara pecah/klik, dan pemeriksa dengar lolos — kalau pemeriksa dengar hanya terkendala kuota (`belum_dicek`), boleh masuk halaman asalkan `cek_konten` lainnya AMAN; ditambah cek visual singkat. Aturan tema & kerahasiaan tetap dicek (`scan_konten.py` sudah memeriksanya).
 
+## GAYA FEED — ATURAN PATEN Rizky (4 Nov 2026): SEMUA FEED 17.00 memakai gaya EDITORIAL
+- Mesin: `engine/feed_editorial.py` (render.py melewati feed yang punya `scene.layout`). Contoh acuan: feed 4 Nov `media/2026-11-04/feed-tips.jpg` (disukai Rizky).
+- Gaya (dari referensi Pinterest Rizky): judul besar tebal Outfit, satu frasa *miring + garis sapuan*, ~aksen~ warna, kapsul miring bernomor, gelembung chat, panah coretan tangan, panel bersudut bulat (kartu quotation krem berlabel SIMULASI sebagai pengganti foto), catatan kecil kiri bawah, logo **Ghostrip.id** (ikon + ".id") kanan bawah.
+- WARNA LATAR WAJIB BERGANTI supaya feed tidak monoton, tetap palet brand: `navy`, `teal`, `mint`, `krem`, `oranye`. Dua hari berturut-turut tidak boleh sama. Default per hari (bila `warna` kosong): Sen krem, Sel teal, Rab navy, Kam mint, Jum teal, Sab krem, Min oranye.
+- Layout: `checklist` (panel dokumen + kapsul), `alur` (kartu langkah bernomor + PDF), `chat` (gelembung + kapsul opsional), `file` (tumpukan kapsul nama file + maskot). Boleh tambah layout baru asal gaya sama.
+- Format scene: `{"layout","warna","kicker","pill","title","title_size","sub","items","chat":[{"dari":"kiri|kanan","nama","teks"}],"doc":{"judul","sub","rows"},"kartu","note"}`. Tanpa emoji di layar. Feed cerita (Sel/Jum): tanpa ajakan/CTA di gambar.
+- Setelah render: lihat gambarnya (tidak ada teks bertumpuk/meluber; mesin memberi PERINGATAN bila meluber) + `scan_konten.py`.
+
 ## INSPEKSI WAJIB SETELAH MEMBUAT KONTEN — ATURAN PATEN Rizky (29 Okt 2026)
 Setiap konten yang baru dibuat atau suaranya diganti WAJIB langsung dicek sebelum masuk halaman posting. Tidak boleh ada yang lolos tanpa inspeksi.
 1. Suara: `engine/tts_gemini.py` (satu model per video, tolak suara pecah/terpotong/kepanjangan, normalisasi -3 dBFS) lalu `engine/dengar_gemini.py` (Gemini mendengarkan tiap baris, transkrip dicocokkan dengan naskah, deteksi kresek/distorsi/bahasa salah; baris gagal otomatis dibuat ulang). Keduanya jalan otomatis di workflow `voice.yml`. Tunggu sampai `voice/out/<id>/dengar.json` ada dengan `"lolos": true`.

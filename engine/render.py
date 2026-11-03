@@ -806,6 +806,8 @@ def main(spec_path):
         slot, kind = post["slot"], post["kind"]
         if post.get("engine") == "remotion":
             print("lewati", slot, "(Reels Remotion: pakai engine/whatif.py)"); continue
+        if kind == "feed" and "layout" in post.get("scene", {}):
+            print("lewati", slot, "(Feed editorial: pakai engine/feed_editorial.py)"); continue
         if kind == "reel":
             path = os.path.join(outdir, f"{slot}.mp4"); dur = render_reel(post, path, seed=sum(map(ord, day + slot)))
             files = {"media": path, "cover": path.replace(".mp4", "-cover.jpg"), "dur": dur}

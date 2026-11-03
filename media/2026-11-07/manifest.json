@@ -7,6 +7,8 @@
  {
   "slot": "feed-humor",
   "kind": "feed",
-  "media": "media/2026-11-07/feed-humor.jpg"
+  "media": "media/2026-11-07/feed-humor.jpg",
+  "gaya": "editorial",
+  "warna": "krem"
  }
 ]

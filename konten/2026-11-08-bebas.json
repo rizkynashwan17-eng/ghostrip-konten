@@ -34,24 +34,34 @@
    "time": "17:00",
    "tema": "bebas",
    "scene": {
+    "layout": "chat",
+    "warna": "oranye",
     "kicker": "TANYA JAWAB",
-    "title": "Kenapa harga PP *belum tentu dua kali lipat*?",
-    "title_size": 66,
-    "items": [
-     "Ada muatan balik atau tidak",
-     "Hari jalan & istirahat sopir",
-     "Waktu tunggu bongkar muat",
-     "Tol & biaya jalan dua arah"
+    "pill": "HITUNG TRIP",
+    "title": "Harga PP =\n*dua kali lipat*?",
+    "title_size": 110,
+    "chat": [
+     {
+      "dari": "kiri",
+      "nama": "Customer",
+      "teks": "Sekali jalan segini, PP berarti dua kali ya?"
+     },
+     {
+      "dari": "kanan",
+      "nama": "Admin",
+      "teks": "Belum tentu, Pak. Ada empat hal yang bikin beda:"
+     }
     ],
-    "mark": "num",
-    "fact": {
-     "label": "INTINYA",
-     "head": "Hitung utuh",
-     "body": "Pulang-pergi sebaiknya dihitung sebagai *satu perjalanan utuh*."
-    },
-    "footer": "@ghostrip.app"
+    "items": [
+     "Muatan balik",
+     "Hari jalan & istirahat",
+     "Waktu tunggu bongkar",
+     "Tol dua arah"
+    ],
+    "note": "Pulang-pergi sebaiknya dihitung\nsebagai satu perjalanan utuh."
    },
-   "caption": "\"Kalau sekali jalan segini, PP berarti dua kali ya?\" Belum tentu 🤔\n\nYang membedakan: ada muatan balik atau tidak, hari jalan & istirahat sopir, waktu tunggu bongkar muat, dan tol dua arah. Makanya PP sebaiknya dihitung sebagai satu perjalanan utuh.\n\nPunya pertanyaan lain soal hitung trip? Tulis di komentar.\n\n#ghostrip #trucking #ekspedisi #logistik #tanyajawab"
+   "caption": "\"Kalau sekali jalan segini, PP berarti dua kali ya?\" Belum tentu 🤔\n\nYang membedakan: ada muatan balik atau tidak, hari jalan & istirahat sopir, waktu tunggu bongkar muat, dan tol dua arah. Makanya PP sebaiknya dihitung sebagai satu perjalanan utuh.\n\nPunya pertanyaan lain soal hitung trip? Tulis di komentar.\n\n#ghostrip #trucking #ekspedisi #logistik #tanyajawab",
+   "gaya": "editorial"
   },
   {
    "slot": "reel-bebas",

@@ -38,20 +38,34 @@
    "time": "17:00",
    "tema": "tips",
    "scene": {
-    "kicker": "SIMPAN INI · CHECKLIST",
-    "title": "Sebelum kirim quotation, *cek 5 hal ini*",
-    "title_size": 66,
+    "layout": "checklist",
+    "warna": "navy",
+    "kicker": "TIPS ADMIN",
+    "pill": "QUOTATION",
+    "title": "Sebelum klik\n*kirim*, cek\n~5 hal~ ini.",
+    "title_size": 112,
+    "sub": "Satu angka keliru di penawaran bisa bikin order lepas, atau rugi diam-diam.",
     "items": [
-     "Nama & alamat customer benar",
-     "Rute dan jenis armada sesuai",
-     "Komponen biaya lengkap",
-     "Masa berlaku harga tertulis",
-     "TTD & cap perusahaan"
+     "Rute & jarak",
+     "Jenis truk",
+     "Tol & biaya lain",
+     "Masa berlaku",
+     "TTD & cap"
     ],
-    "mark": "num",
-    "footer": "@ghostrip.app"
+    "doc": {
+     "judul": "QUOTATION",
+     "sub": "PT Maju Jaya Logistik · No. 021/XI",
+     "rows": [
+      "Rute Jakarta → Semarang",
+      "Truk Fuso Box",
+      "Tol & biaya lain",
+      "Berlaku 7 hari"
+     ]
+    },
+    "note": "Simpan post ini buat checklist\nsebelum kirim penawaran."
    },
-   "caption": "Checklist sebelum kirim quotation ke customer 📋\n\n1. Nama & alamat customer benar\n2. Rute dan jenis armada sesuai permintaan\n3. Komponen biaya lengkap (solar, hari jalan, tol, dll)\n4. Masa berlaku harga tertulis\n5. TTD & cap perusahaan\n\nSimpan postingan ini buat pengingat. Kalau menyiapkan penawaran mulai menyita waktu, Ghostrip bisa bantu bikin quotation lebih rapi.\n\n#ghostrip #adminlogistik #quotation #trucking #ekspedisi"
+   "caption": "Checklist sebelum kirim quotation ke customer 📋\n\n1. Nama & alamat customer benar\n2. Rute dan jenis armada sesuai permintaan\n3. Komponen biaya lengkap (solar, hari jalan, tol, dll)\n4. Masa berlaku harga tertulis\n5. TTD & cap perusahaan\n\nSimpan postingan ini buat pengingat. Kalau menyiapkan penawaran mulai menyita waktu, Ghostrip bisa bantu bikin quotation lebih rapi.\n\n#ghostrip #adminlogistik #quotation #trucking #ekspedisi",
+   "gaya": "editorial"
   },
   {
    "slot": "reel-tips",

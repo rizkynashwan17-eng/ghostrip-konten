@@ -38,20 +38,34 @@
    "time": "17:00",
    "tema": "fitur",
    "scene": {
+    "layout": "alur",
+    "warna": "mint",
     "kicker": "FITUR GHOSTRIP",
-    "title": "Dari permintaan harga sampai *PDF terkirim*",
-    "title_size": 66,
+    "pill": "DEMO",
+    "title": "Dari minta harga\nsampai *PDF terkirim*.",
+    "title_size": 96,
+    "sub": "Satu alur, tanpa pindah-pindah Excel dan template Word.",
+    "kartu": "ALUR DI GHOSTRIP",
     "items": [
      "Isi rute & jenis truk",
      "Solar, hari jalan, tol terhitung",
      "Bos cek & approve",
-     "Quotation PDF + kop, TTD, cap",
-     "Kirim ke WhatsApp customer"
+     "PDF + kop, TTD, cap",
+     "Kirim ke WhatsApp"
     ],
-    "mark": "num",
-    "footer": "@ghostrip.app"
+    "doc": {
+     "judul": "QUOTATION",
+     "sub": "PT Makmur Semakmurnya · No. 044/XI",
+     "rows": [
+      "Surabaya → Denpasar",
+      "Truk Tronton",
+      "Kapal & tol"
+     ]
+    },
+    "note": "Coba gratis 7 hari.\nKomen DEMO atau WA 0815-1704-7930."
    },
-   "caption": "Begini alur kerja di Ghostrip 📲\n\n1. Isi rute & jenis truk\n2. Solar, hari jalan, istirahat sopir, dan tol terhitung otomatis\n3. Bos cek & approve\n4. Quotation PDF lengkap kop, TTD, dan cap\n5. Kirim langsung ke WhatsApp customer\n\nCoba gratis 7 hari: komen DEMO atau WA 0815-1704-7930.\n\n#ghostrip #aplikasitrucking #quotation #ekspedisi #logistik"
+   "caption": "Begini alur kerja di Ghostrip 📲\n\n1. Isi rute & jenis truk\n2. Solar, hari jalan, istirahat sopir, dan tol terhitung otomatis\n3. Bos cek & approve\n4. Quotation PDF lengkap kop, TTD, dan cap\n5. Kirim langsung ke WhatsApp customer\n\nCoba gratis 7 hari: komen DEMO atau WA 0815-1704-7930.\n\n#ghostrip #aplikasitrucking #quotation #ekspedisi #logistik",
+   "gaya": "editorial"
   },
   {
    "slot": "reel-fitur",
