@@ -18,14 +18,16 @@ ICON = "file://" + os.path.join(ROOT, "assets", "icon.png")
 GHOST = "file://" + os.path.join(ROOT, "assets", "ghost_wave.png")
 
 # Palet brand — warna latar bergiliran. Jangan tambah warna di luar brand.
+# PATEN 4 Nov (revisi Rizky): feed harus kohesif seperti referensi — satu warna utama (teal),
+# selingan navy & krem, aksen mint konsisten, oranye hanya sentuhan kecil.
 PALET = {
     "navy":   dict(bg="#071a22", fg="#ffffff", sub="#b9d3d6", ac="#ff9d5c", sw="#7ff0d6", panel="#0f3b46", p1="#7ff0d6", p2="#ff9d5c", pf="#ffffff", line="#ffffff", ink="#0d1b24", note="#8fb0b5", dot=".id", dotc="#7ff0d6"),
-    "teal":   dict(bg="#0f3b46", fg="#ffffff", sub="#c6e2e2", ac="#ff9d5c", sw="#7ff0d6", panel="#071a22", p1="#7ff0d6", p2="#ff9d5c", pf="#f2ead9", line="#f2ead9", ink="#0d1b24", note="#9cc3c4", dot=".id", dotc="#7ff0d6"),
+    "teal":   dict(bg="#1d5a63", fg="#ffffff", sub="#c6e2e2", ac="#ff9d5c", sw="#7ff0d6", panel="#0f3b46", p1="#7ff0d6", p2="#ff9d5c", pf="#ffffff", line="#ffffff", ink="#0d1b24", note="#9cc3c4", dot=".id", dotc="#7ff0d6"),
     "mint":   dict(bg="#7ff0d6", fg="#0d1b24", sub="#1d4a4f", ac="#071a22", sw="#ff9d5c", panel="#071a22", p1="#071a22", p2="#ff9d5c", pf="#ffffff", line="#0d1b24", ink="#0d1b24", note="#1d4a4f", dot=".id", dotc="#0f3b46"),
     "krem":   dict(bg="#f2ead9", fg="#0d1b24", sub="#4d5f63", ac="#e2733a", sw="#2fb8a0", panel="#0f3b46", p1="#7ff0d6", p2="#ff9d5c", pf="#071a22", line="#0d1b24", ink="#0d1b24", note="#5d6d70", dot=".id", dotc="#2fb8a0"),
     "oranye": dict(bg="#ff9d5c", fg="#0d1b24", sub="#4a2a14", ac="#ffffff", sw="#071a22", panel="#071a22", p1="#071a22", p2="#ffffff", pf="#f2ead9", line="#0d1b24", ink="#0d1b24", note="#4a2a14", dot=".id", dotc="#ffffff"),
 }
-URUTAN = ["krem", "teal", "navy", "mint", "teal", "krem", "oranye"]  # Senin..Minggu bila 'warna' kosong; hari berturut-turut tidak boleh sama
+URUTAN = ["teal", "navy", "teal", "krem", "navy", "teal", "krem"]  # Sen..Min. TEAL = warna utama (paling sering), navy & krem selingan, aksen selalu mint. Latar mint/oranye penuh TIDAK dipakai.
 
 
 def judul(t, pal):
