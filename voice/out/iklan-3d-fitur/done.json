@@ -1,0 +1,15 @@
+{
+ "model": "gemini-3.1-flash-tts-preview",
+ "satu_model": true,
+ "durations": [
+  4.52,
+  2.64,
+  5.24,
+  6.72,
+  2.96,
+  6.2,
+  7.12,
+  4.24,
+  4.28
+ ]
+}
