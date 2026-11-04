@@ -1,0 +1,47 @@
+{
+ "id": "iklan-3d-muat",
+ "rev": 1,
+ "jadwal": "2026-11-04T23:59",
+ "lines": [
+  {
+   "who": "PROMO",
+   "tone": "upbeat, confident and exciting like a tech launch, clear diction, quick pace",
+   "text": "Barang sudah naik ke truk, ternyata tidak muat?"
+  },
+  {
+   "who": "PROMO",
+   "tone": "upbeat, confident and exciting like a tech launch, clear diction, quick pace",
+   "text": "Cek dulu di Ghostrip."
+  },
+  {
+   "who": "PROMO",
+   "tone": "upbeat, confident and exciting like a tech launch, clear diction, quick pace",
+   "text": "Pilih tipe truk: CDD, Fuso, atau Tronton bak. Ukurannya bisa disimpan."
+  },
+  {
+   "who": "PROMO",
+   "tone": "upbeat, confident and exciting like a tech launch, clear diction, quick pace",
+   "text": "Masukkan nama barang, ukuran, berat, dan jumlahnya."
+  },
+  {
+   "who": "PROMO",
+   "tone": "upbeat, confident and exciting like a tech launch, clear diction, quick pace",
+   "text": "Perkiraan susunannya langsung muncul dalam tampilan tiga dimensi dan dua dimensi."
+  },
+  {
+   "who": "PROMO",
+   "tone": "upbeat, confident and exciting like a tech launch, clear diction, quick pace",
+   "text": "Kelihatan: semua barang muat, atau sisa berapa unit."
+  },
+  {
+   "who": "PROMO",
+   "tone": "upbeat, confident and exciting like a tech launch, clear diction, quick pace",
+   "text": "Berat total juga dicek terhadap muatan maksimal truk."
+  },
+  {
+   "who": "PROMO",
+   "tone": "upbeat, confident and exciting like a tech launch, clear diction, quick pace",
+   "text": "Coba gratis tujuh hari. Chat WhatsApp kami sekarang."
+  }
+ ]
+}
