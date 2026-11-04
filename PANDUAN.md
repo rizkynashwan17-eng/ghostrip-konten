@@ -136,5 +136,20 @@ Setiap scene reel (dan `scene` story/feed, `slides` carousel) memakai kunci beri
 Jangan menumpuk terlalu banyak di satu scene: maksimal 2 blok (mis. fact + stat, atau title + compare) + karakter.
 Untuk story/feed: footer @ghostrip.app otomatis; tidak ada bar dialog.
 
-## Caption
-3–7 baris: hook pertanyaan, penjelasan fakta singkat, kaitan ke harga trip/Ghostrip, CTA "Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930", "Sumber: …", 6–10 hashtag (#ghostrip selalu ada, + #funfact/#tahukahkamu bila cocok). Emoji hanya di caption, bukan di gambar.
+## Caption — PENUTUP BAKU (ATURAN PATEN Rizky, 4 Nov 2026) berlaku untuk SEMUA caption (reel, feed, carousel; IG, TikTok, FB; semua tema termasuk cerita)
+Struktur: isi singkat (hook/pertanyaan + 1–3 baris isi, catatan "Cerita fiksi. Nama tokoh rekaan." / "Angka dan data: simulasi" bila perlu), lalu penutup baku PERSIS ini (sumber tunggal: `engine/caption_akhir.py`):
+
+```
+🚛 Mau urusan logistik lebih praktis?
+
+Coba Ghostrip gratis selama 7 hari!
+
+📲 WhatsApp: 0815-1704-7930
+🌐 ghostrip.id
+
+#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik
+```
+- Jangan menulis CTA, nomor WA, atau hashtag lain di badan caption (hashtag hanya 5 dari penutup baku).
+- Pasang/rapikan otomatis: `python3 engine/caption_akhir.py konten/<file>.json`. `engine/posting.py tambah` juga memasangnya sendiri; `scan_konten.py` menolak caption yang tidak berakhir dengan penutup baku.
+- Cerita (Selasa/Jumat): badan caption tetap tanpa promosi/CTA (narasi video tanpa Ghostrip); hanya penutup baku yang menutup caption (permintaan Rizky 4 Nov).
+- Emoji hanya di caption, bukan di gambar. Sumber fakta ("Sumber: …") boleh di badan bila ada.

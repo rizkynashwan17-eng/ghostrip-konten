@@ -83,7 +83,7 @@ def tambah(args):
             "tanggal": date, "jam": p["time"], "jenis": kind,
             "platform": ["ig", "tiktok", "fb"] if kind == "reel" else ["ig", "fb"],
             "judul": judul_of(p), "media": media, "cover": m.get("cover"),
-            "caption": p.get("caption", ""), "tiktok_title": p.get("tiktok_title", ""),
+            "caption": (__import__("caption_akhir").pasang(p["caption"]) if p.get("caption") and p.get("kind") != "story" else p.get("caption", "")), "tiktok_title": p.get("tiktok_title", ""),
             "catatan": "",
         }
         print(post["id"], upsert(d, post))

@@ -77,17 +77,19 @@ def scan(spec_path):
             cap = post.get("caption", "")
             if not cap: issues.append("caption kosong")
             else:
-                low = cap.lower()
-                if "#ghostrip" not in low: issues.append("caption tanpa #ghostrip")
+                import caption_akhir
+                if not cap.rstrip().endswith(caption_akhir.PENUTUP): issues.append("caption wajib ditutup penutup baku (engine/caption_akhir.py)")
+                body = caption_akhir.badan(cap) if cap.rstrip().endswith(caption_akhir.PENUTUP) else cap
+                low = cap.lower(); lowb = body.lower()
                 tema = post.get("tema", "")
-                cta = ("demo" in low or "0815-1704-7930" in cap or "gratis 7 hari" in low or "coba gratis" in low)
+                # CTA di BADAN caption (penutup baku berlaku untuk semua tema, termasuk cerita)
+                cta = ("demo" in lowb or "0815-1704-7930" in body or "gratis 7 hari" in lowb or "coba gratis" in lowb)
                 if tema == "cerita":
                     # Selasa/Jumat (STRATEGI-KONTEN.md): tanpa promosi/CTA di caption & narasi
                     if cta: issues.append("cerita (Selasa/Jumat) tidak boleh ada CTA di caption")
-                elif tema in ("realita", "tips", "fitur", "humor", "edukasi") and not cta and "ghostrip" not in low:
+                elif tema in ("realita", "tips", "fitur", "humor", "edukasi") and "ghostrip" not in lowb:
                     issues.append("soft selling wajib untuk tema ini (sebut Ghostrip/CTA yang relevan)")
-                elif not tema and not cta:
-                    issues.append("caption tanpa CTA (DEMO/WA)")
+                
                 if len(cap) > 2200: issues.append(f"caption {len(cap)} karakter (> 2200)")
                 if cap.count("#") > 30: issues.append("hashtag > 30")
             if kind == "reel":
