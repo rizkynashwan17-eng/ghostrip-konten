@@ -6,14 +6,14 @@ import {
 } from 'remotion';
 import {C} from './theme';
 
-const cl = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
-const eo = Easing.bezier(0.16, 1, 0.3, 1);
-const F = 'Outfit';
+export const cl = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
+export const eo = Easing.bezier(0.16, 1, 0.3, 1);
+export const F = 'Outfit';
 
 export type IklanScene = {key: string; from: number; dur: number; sub: string};
 export type IklanProps = {scenes: IklanScene[]; durationInFrames: number};
 
-const useOutfit = () => {
+export const useOutfit = () => {
   const [h] = useState(() => delayRender('font'));
   React.useEffect(() => {
     const f = new FontFace('Outfit', `url(${staticFile('Outfit.ttf')})`, {weight: '100 900'});
@@ -21,10 +21,10 @@ const useOutfit = () => {
   }, [h]);
 };
 
-const sp = (f: number, d = 16, s = 140) => spring({frame: f, fps: 30, config: {damping: d, stiffness: s}});
+export const sp = (f: number, d = 16, s = 140) => spring({frame: f, fps: 30, config: {damping: d, stiffness: s}});
 
 /* ---------- latar: lantai grid perspektif + cahaya + partikel ---------- */
-const Stage: React.FC = () => {
+export const Stage: React.FC = () => {
   const f = useCurrentFrame();
   const off = (f * 3) % 120;
   return (
@@ -48,7 +48,7 @@ const Stage: React.FC = () => {
 };
 
 /* ---------- HP 3D ---------- */
-const Phone: React.FC<{src: string; x: number; y: number; w?: number; ry?: number; rx?: number; rz?: number; s?: number; o?: number; glow?: boolean}> = ({src, x, y, w = 560, ry = 0, rx = 0, rz = 0, s = 1, o = 1, glow = true}) => {
+export const Phone: React.FC<{src: string; x: number; y: number; w?: number; ry?: number; rx?: number; rz?: number; s?: number; o?: number; glow?: boolean}> = ({src, x, y, w = 560, ry = 0, rx = 0, rz = 0, s = 1, o = 1, glow = true}) => {
   const h = w * 2.164;
   return (
     <div style={{position: 'absolute', left: x - w / 2, top: y - h / 2, width: w, height: h, perspective: 2200, opacity: o}}>
@@ -67,7 +67,7 @@ const Phone: React.FC<{src: string; x: number; y: number; w?: number; ry?: numbe
 };
 
 /* ---------- tipografi ---------- */
-const Head: React.FC<{text: string; top?: number; size?: number; delay?: number}> = ({text, top = 210, size = 92, delay = 0}) => {
+export const Head: React.FC<{text: string; top?: number; size?: number; delay?: number}> = ({text, top = 210, size = 92, delay = 0}) => {
   const f = useCurrentFrame() - delay;
   const words = text.split(' ');
   return (
@@ -82,7 +82,7 @@ const Head: React.FC<{text: string; top?: number; size?: number; delay?: number}
   );
 };
 
-const Tag: React.FC<{n: string; label: string; delay?: number; top?: number}> = ({n, label, delay = 0, top = 130}) => {
+export const Tag: React.FC<{n: string; label: string; delay?: number; top?: number}> = ({n, label, delay = 0, top = 130}) => {
   const f = useCurrentFrame() - delay;
   const a = sp(f, 18, 160);
   return (
@@ -94,7 +94,7 @@ const Tag: React.FC<{n: string; label: string; delay?: number; top?: number}> = 
   );
 };
 
-const Chip: React.FC<{x: number; y: number; text: string; sub?: string; delay?: number; color?: string; icon?: string}> = ({x, y, text, sub, delay = 0, color = C.mint, icon}) => {
+export const Chip: React.FC<{x: number; y: number; text: string; sub?: string; delay?: number; color?: string; icon?: string}> = ({x, y, text, sub, delay = 0, color = C.mint, icon}) => {
   const f = useCurrentFrame() - delay;
   const a = sp(f, 13, 180);
   const bob = Math.sin((f + delay) / 14) * 8;
@@ -111,7 +111,7 @@ const Chip: React.FC<{x: number; y: number; text: string; sub?: string; delay?: 
   );
 };
 
-const Sub: React.FC<{text: string; dur: number}> = ({text, dur}) => {
+export const Sub: React.FC<{text: string; dur: number}> = ({text, dur}) => {
   const f = useCurrentFrame();
   const o = interpolate(f, [0, 6, dur - 6, dur], [0, 1, 1, 0], cl);
   return (
@@ -121,12 +121,12 @@ const Sub: React.FC<{text: string; dur: number}> = ({text, dur}) => {
   );
 };
 
-const Simulasi: React.FC = () => (
+export const Simulasi: React.FC = () => (
   <div style={{position: 'absolute', right: 50, top: 60, fontFamily: F, fontWeight: 700, fontSize: 22, letterSpacing: 3, color: C.orange, border: `2px solid ${C.orange}88`, borderRadius: 999, padding: '6px 16px'}}>DATA SIMULASI</div>
 );
 
 /* ---------- kubus 3D (untuk cek muatan & hook) ---------- */
-const Cube: React.FC<{x: number; y: number; s: number; rx: number; ry: number; color?: string; label?: string; o?: number}> = ({x, y, s, rx, ry, color = C.mint, label, o = 1}) => {
+export const Cube: React.FC<{x: number; y: number; s: number; rx: number; ry: number; color?: string; label?: string; o?: number}> = ({x, y, s, rx, ry, color = C.mint, label, o = 1}) => {
   const face = (t: string, shade: number) => (
     <div style={{position: 'absolute', width: s, height: s, transform: t, background: `rgba(${color === C.mint ? '127,240,214' : '255,157,92'},${0.16 + shade})`, border: `2px solid ${color}`, boxShadow: `inset 0 0 30px ${color}55`, display: 'grid', placeItems: 'center', color: '#fff', fontFamily: F, fontWeight: 800, fontSize: s * 0.18, backfaceVisibility: 'visible'}}>{label}</div>
   );
@@ -169,7 +169,7 @@ const S0Hook: React.FC<{dur: number}> = ({dur}) => {
   );
 };
 
-const S1Logo: React.FC<{dur: number}> = () => {
+export const S1Logo: React.FC<{dur: number}> = () => {
   const f = useCurrentFrame();
   const a = sp(f, 11, 120);
   const ring = interpolate(f, [0, 40], [0.3, 1.6], {...cl, easing: eo});
@@ -312,7 +312,7 @@ const S7Akun: React.FC<{dur: number}> = () => {
   );
 };
 
-const S8CTA: React.FC<{dur: number}> = () => {
+export const S8CTA: React.FC<{dur: number}> = () => {
   const f = useCurrentFrame();
   const a = sp(f, 13, 130);
   const pulse = 1 + Math.sin(f / 6) * 0.025;
@@ -334,7 +334,7 @@ const S8CTA: React.FC<{dur: number}> = () => {
 
 const MAP: Record<string, React.FC<{dur: number}>> = {hook: S0Hook, logo: S1Logo, hitung: S2Hitung, surat: S3Surat, wa: S4WA, muat: S5Muat, semua: S6Semua, akun: S7Akun, cta: S8CTA};
 
-const Trans: React.FC<{dur: number; children: React.ReactNode; last: boolean}> = ({dur, children, last}) => {
+export const Trans: React.FC<{dur: number; children: React.ReactNode; last: boolean}> = ({dur, children, last}) => {
   const f = useCurrentFrame();
   const i = interpolate(f, [0, 8], [0, 1], {...cl, easing: eo});
   const o = last ? 1 : interpolate(f, [dur - 6, dur], [1, 0], cl);

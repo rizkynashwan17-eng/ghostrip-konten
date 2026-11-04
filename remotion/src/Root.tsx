@@ -7,6 +7,7 @@ import {C, FPS, H, W, WhatIfProps} from './theme';
 import {SCENES} from './scenes';
 import {Grain, clamp} from './parts';
 import {Iklan3D, IklanProps} from './Iklan3D';
+import {IklanFokus} from './IklanFokus';
 
 const useOutfit = () => {
   const [h] = useState(() => delayRender('font'));
@@ -99,6 +100,16 @@ const contoh: WhatIfProps = {
 
 export const RemotionRoot: React.FC = () => (
   <>
+  <Composition
+    id="IklanFokus"
+    component={IklanFokus as any}
+    durationInFrames={900}
+    fps={FPS}
+    width={W}
+    height={H}
+    defaultProps={{scenes: [], durationInFrames: 900} as IklanProps}
+    calculateMetadata={({props}) => ({durationInFrames: (props as IklanProps).durationInFrames})}
+  />
   <Composition
     id="Iklan3D"
     component={Iklan3D as any}

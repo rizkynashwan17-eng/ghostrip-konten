@@ -1,6 +1,6 @@
 """Iklan fitur Ghostrip gaya 3D startup tech (sekali pakai, di luar jadwal harian).
 
-Pakai: python3 iklan/3d/build_iklan3d.py [--tanpa-suara]
+Pakai: python3 iklan/3d/build_iklan3d.py [fitur|muat|truk] [--tanpa-suara]
 Butuh suara di voice/out/iklan-3d-fitur/NN.wav (dibuat workflow voice.yml dari voice/requests/iklan-3d-fitur.json).
 Hasil: iklan/3d/Ghostrip_Iklan_Fitur_3D.mp4 (1080x1920, 30 fps, -14 LUFS).
 """
@@ -19,6 +19,28 @@ SUBS = ["Hitung harga trip masih pakai kalkulator, Excel, lalu ketik ulang?", ""
         "Data truk, masa berlaku STNK dan KIR, sampai berita logistik, semua di satu aplikasi.",
         "Riwayat tersimpan di akun, aman walaupun ganti HP.", ""]
 MIN = [2.8, 1.9, 2.6, 3.4, 2.0, 3.2, 3.6, 2.4, 3.6]
+
+VARIANTS = {
+    "fitur": dict(vid="iklan-3d-fitur", comp="Iklan3D", out="Ghostrip_Iklan_Fitur_3D.mp4", keys=KEYS, subs=SUBS, mins=MIN, hits=("logo", "cta")),
+    "muat": dict(vid="iklan-3d-muat", comp="IklanFokus", out="Ghostrip_Iklan_Cek_Muatan_3D.mp4",
+                 keys=["mhook", "logo", "mtipe", "mbarang", "m3d", "mhasil", "mberat", "cta"],
+                 subs=["Barang sudah naik ke truk, ternyata tidak muat?", "",
+                       "Pilih tipe truk: CDD, Fuso, atau Tronton bak. Ukurannya bisa disimpan.",
+                       "Masukkan nama barang, ukuran, berat, dan jumlahnya.",
+                       "Perkiraan susunannya langsung muncul dalam tampilan 3D dan 2D.",
+                       "Kelihatan: semua barang muat, atau sisa berapa unit.",
+                       "Berat total juga dicek terhadap muatan maksimal truk.", ""],
+                 mins=[2.8, 1.9, 3.0, 2.8, 4.0, 3.0, 3.0, 3.6], hits=("logo", "cta")),
+    "truk": dict(vid="iklan-3d-truk", comp="IklanFokus", out="Ghostrip_Iklan_Data_Truk_3D.mp4",
+                 keys=["thook", "logo", "tcatat", "tdok", "tringkas", "tfilter", "tnotif", "cta"],
+                 subs=["STNK atau KIR truk habis, baru ketahuan di jalan?", "",
+                       "Catat semua armada: plat nomor, jenis truk, dan tahun.",
+                       "Simpan masa berlaku STNK, KIR kepala, dan KIR buntut, lengkap dengan fotonya.",
+                       "Ringkasannya langsung terlihat: yang aktif, yang tinggal 30 hari, dan yang sudah lewat.",
+                       "Filter per dokumen, atau cari plat nomornya dengan cepat.",
+                       "Peringatan muncul di aplikasi saat masa berlaku tinggal sebulan atau seminggu.", ""],
+                 mins=[2.8, 1.9, 3.0, 3.4, 3.6, 3.0, 3.4, 3.6], hits=("logo", "cta")),
+}
 
 
 def baca(path):
@@ -135,6 +157,8 @@ def musik(dur, hits):
 
 def main():
     tanpa = "--tanpa-suara" in sys.argv
+    var = next((a for a in sys.argv[1:] if not a.startswith("--")), "fitur"); V = VARIANTS[var]
+    VID, KEYS, SUBS, MIN = V["vid"], V["keys"], V["subs"], V["mins"]
     vdir = os.path.join(ROOT, "voice", "out", VID)
     if not tanpa and not os.path.exists(os.path.join(vdir, "done.json")):
         sys.exit("suara belum ada")
@@ -156,14 +180,14 @@ def main():
     total = scenes[-1]["from"] + scenes[-1]["dur"]
     print("durasi", round(total / FPS, 2), "dtk")
     run = os.path.join(RM, "public", "run"); os.makedirs(run, exist_ok=True)
-    pf = os.path.join(run, "iklan3d.json"); json.dump({"scenes": scenes, "durationInFrames": total}, open(pf, "w"))
-    vraw = os.path.join(RM, "out", "iklan3d_raw.mp4"); os.makedirs(os.path.dirname(vraw), exist_ok=True)
+    pf = os.path.join(run, f"iklan3d_{var}.json"); json.dump({"scenes": scenes, "durationInFrames": total}, open(pf, "w"))
+    vraw = os.path.join(RM, "out", f"iklan3d_{var}_raw.mp4"); os.makedirs(os.path.dirname(vraw), exist_ok=True)
     ch = subprocess.check_output(["node", "-e", "console.log(require('playwright').chromium.executablePath())"], text=True).strip()
-    subprocess.run(["npx", "remotion", "render", "src/index.ts", "Iklan3D", vraw, f"--props={pf}", "--log=error", f"--browser-executable={ch}",
+    subprocess.run(["npx", "remotion", "render", "src/index.ts", V["comp"], vraw, f"--props={pf}", "--log=error", f"--browser-executable={ch}",
                     "--codec=h264", "--crf=18", "--muted"], cwd=RM, check=True)
     # audio
     dur = total / FPS
-    hits = [(sc["from"] / FPS, sc["key"] in ("logo", "cta")) for sc in scenes[1:]]
+    hits = [(sc["from"] / FPS, sc["key"] in V["hits"]) for sc in scenes[1:]]
     mus = musik(dur + 0.2, hits)
     nar = np.zeros(len(mus))
     for i, x in enumerate(lines):
@@ -175,12 +199,12 @@ def main():
         mix = mus * (duck[:, None] * 0.75) + nar[:, None]
     else:
         mix = mus
-    aw = os.path.join(run, "iklan3d_mix.wav"); tulis(aw, mix / (np.abs(mix).max() + 1e-9) * 0.95)
-    out = os.path.join(HERE, "Ghostrip_Iklan_Fitur_3D.mp4"); tmp = out[:-4] + ".tmp.mp4"
+    aw = os.path.join(run, f"iklan3d_{var}_mix.wav"); tulis(aw, mix / (np.abs(mix).max() + 1e-9) * 0.95)
+    out = os.path.join(HERE, V["out"]); tmp = out[:-4] + ".tmp.mp4"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", vraw, "-i", aw, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                     "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "44100", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", tmp], check=True)
     os.replace(tmp, out)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "8", "-i", out, "-frames:v", "1", "-q:v", "3", os.path.join(HERE, "cover.jpg")], check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "8", "-i", out, "-frames:v", "1", "-q:v", "3", os.path.join(HERE, V["out"][:-4] + "_cover.jpg")], check=True)
     print("OK", out)
 
 
