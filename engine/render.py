@@ -808,6 +808,8 @@ def main(spec_path):
             print("lewati", slot, "(story dihentikan sejak 6 Nov 2026)"); continue
         if post.get("engine") == "remotion":
             print("lewati", slot, "(Reels Remotion: pakai engine/whatif.py)"); continue
+        if kind == "feed" and "foto" in post.get("scene", {}):
+            print("lewati", slot, "(Feed foto-mockup: pakai engine/foto_feed.py)"); continue
         if kind == "feed" and "layout" in post.get("scene", {}):
             print("lewati", slot, "(Feed editorial: pakai engine/feed_editorial.py)"); continue
         if kind == "reel":
