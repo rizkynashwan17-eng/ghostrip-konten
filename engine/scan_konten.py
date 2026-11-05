@@ -111,6 +111,20 @@ def scan(spec_path):
         suara = [x for x in issues if "voiceover" in x]; lain = [x for x in issues if x not in suara]
         ok = not lain; ok_all &= ok
         status = "PERBAIKI" if lain else ("AMAN - SUARA MENYUSUL" if suara else "AMAN")
+        # GAYA REELS SELANG-SELING (PATEN 5 Nov 2026): lihat engine/gaya_reels.py
+        if kind == "reel":
+            try:
+                from gaya_reels import gaya as _gaya
+                want = _gaya(day)
+            except ValueError:
+                want = None
+            got = post.get("gaya", "whatif")
+            if want and got != want:
+                issues.append(f"gaya Reels salah: tanggal ini wajib gaya '{want}', file berisi '{got}' (selang-seling mulai 8 Nov 2026)")
+            if got == "bedah" and post.get("tema") != "teknikal":
+                issues.append("gaya bedah wajib tema 'teknikal' (seputar teknis dunia trucking & logistik)")
+            if got == "bedah" and len([x for x in post.get("scenes", []) if x.get("kutipan")]) < 2:
+                issues.append("gaya bedah wajib minimal 2 kartu sumber (kutipan) dari sumber kredibel")
         report.append({"slot": slot, "jenis": kind, "jam": post.get("time"), **info, "status": status, "masalah": issues})
     print(json.dumps({"tanggal": day, "semua_aman": ok_all, "hasil": report}, ensure_ascii=False, indent=1))
     return ok_all

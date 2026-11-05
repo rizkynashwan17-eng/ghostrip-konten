@@ -9,8 +9,9 @@ Konten yang harus diperbarui di halaman Posting (setelah suara jadi dan lolos in
 | konten | jadwal WIB | file baru | file konten JSON |
 |---|---|---|---|
 | Realita: tiga permintaan harga jam 4 sore (Remotion, voice 2026-11-02-reel1-realita) — DIPINDAH ke Senin | 2026-11-09 19:30 | media/2026-11-09/reel1-realita.mp4 | konten/2026-11-09-realita.json |
-| Cerita: surat jalan yang tertukar (Remotion, voice 2026-11-03-reel1-cerita) — DIPINDAH ke Selasa (3 Nov terlewat) | 2026-11-10 19:30 | media/2026-11-10/reel1-cerita.mp4 | konten/2026-11-10-cerita.json |
+| Cerita: surat jalan yang tertukar (Remotion, voice 2026-11-03-reel1-cerita) — DIPINDAH ke Jumat 13 Nov (10 Nov = hari gaya bedah) | 2026-11-13 19:30 | media/2026-11-13/reel1-cerita.mp4 | konten/2026-11-13-cerita.json |
 
 Cara (31 Okt, setelah kuota reset ±14.00 WIB): naikkan "rev" di kelima `voice/requests/<id>.json` dalam SATU commit, push, tunggu `voice/out/<id>/done.json` (+ dengar.json). Lalu `python3 engine/whatif.py render <file konten>` (render semua post di file), cek 4–5 frame, `python3 engine/cek_konten.py media/<tgl>/<slot>.mp4 <voice_id> 1`, `python3 engine/scan_konten.py <file konten>`, lalu `python3 engine/posting.py tambah <file konten>` dan push. Story & feed 1–3 Nov sudah di halaman.
 Catatan: kalau pemeriksa dengar Gemini kena kuota, transkrip bisa dicek dengan ElevenLabs Scribe (dipakai 30 Okt untuk MST baris 4).
-| Bebas: PP dua kali lipat? (Remotion, voice 2026-11-08-reel-bebas) | 2026-11-08 19:30 | media/2026-11-08/reel-bebas.mp4 | konten/2026-11-08-bebas.json |
+| Bebas: PP dua kali lipat? (Remotion, voice 2026-11-08-reel-bebas) — DIPINDAH ke Minggu 15 Nov (8 Nov = pilot gaya bedah) | 2026-11-15 19:30 | media/2026-11-15/reel-bebas.mp4 | konten/2026-11-15-bebas.json |
+| BEDAH TEKNIKAL pilot: rem blong di turunan panjang (Remotion gaya bedah, voice pilot-bedah-remblong; TTS 5 Nov kena kuota 429, ulangi rev) | 2026-11-08 19:30 | media/2026-11-08/reel-bedah.mp4 | konten/2026-11-08-bedah.json |
