@@ -67,10 +67,10 @@ const AdeganJalan: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
   const speed = s.laju ?? 0.22; // satuan dunia / frame
   const off = ((f * speed) % 4 + 4) % 4;
   const slope = s.miring ?? 0.16;
-  const zoom = interpolate(f, [0, s.dur], [s.zoom0 ?? 52, s.zoom1 ?? 62], cl);
+  const zoom = interpolate(f, [0, s.dur], [s.zoom0 ?? 64, s.zoom1 ?? 74], cl);
   const shake = (s.goyang ?? 0) * Math.sin(f * 1.7) * 0.03;
   return (
-    <ThreeCanvas width={W} height={H} shadows orthographic camera={{position: [16, 13, 16], zoom, near: 0.1, far: 200}}
+    <ThreeCanvas width={W} height={H} shadows orthographic camera={{position: [128, 104, 128], zoom, near: 0.1, far: 4000}}
       style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
       <color attach="background" args={[C.cream]} />
       <ambientLight intensity={0.75} />
@@ -93,11 +93,11 @@ const AdeganJalan: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
         <group position={[s.trukX ?? 0, 0, 0.3]}><Truk f={f} roda={speed / 0.22} /></group>
         {/* panah mint "mesin menahan" */}
         {s.panahMesin && (
-          <group position={[4.6, 2.4, 0]} rotation={[0, 0, 0]}>
+          <group position={[(s.trukX ?? 0) + 2.6, 3.4, 0.3]}>
             {[0, 1, 2].map((k) => {
               const a = ((f / 18 + k / 3) % 1);
-              return <mesh key={k} position={[0.6 + a * 1.6, 0, 0]} rotation={[0, 0, -Math.PI / 2]}>
-                <coneGeometry args={[0.3, 0.6, 3]} /><meshStandardMaterial color={C.mint} emissive={C.mint} emissiveIntensity={0.4} transparent opacity={1 - a} /></mesh>;
+              return <mesh key={k} position={[-a * 3.2, 0, 0]} rotation={[0, 0, Math.PI / 2]}>
+                <coneGeometry args={[0.45, 0.9, 4]} /><meshStandardMaterial color={C.mintDeep} emissive={C.mint} emissiveIntensity={0.3} transparent opacity={Math.min(1, (1 - a) * 1.6)} /></mesh>;
             })}
           </group>
         )}
@@ -124,18 +124,18 @@ const AdeganRem: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
     </group>
   );
   return (
-    <ThreeCanvas width={W} height={H} shadows camera={{position: [Math.sin(camA) * 7.5, 2.6, Math.cos(camA) * 7.5], fov: 34}}
+    <ThreeCanvas width={W} height={H} shadows camera={{position: [Math.sin(camA) * 12.5, 2.2, Math.cos(camA) * 12.5], fov: 34}}
       style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
       <color attach="background" args={[C.cream]} />
       <ambientLight intensity={0.7} />
       <hemisphereLight args={['#fff7e8', '#8fa6a3', 0.5]} />
       <directionalLight castShadow position={[5, 9, 7]} intensity={1.3} />
       <pointLight position={[0, 0, 1.2]} intensity={heat * 6} color="#ff8a3a" distance={6} />
-      <group position={[0, 0.1, 0]} rotation={[0.18, -0.35, 0]}>
+      <group position={[0, 0.35, 0]} rotation={[0.22, -0.55, 0]}>
         {/* tromol (dipotong 3/4 supaya isi terlihat) */}
         <group rotation={[Math.PI / 2, spin, 0]}>
           <mesh castShadow><cylinderGeometry args={[2.1, 2.1, 1.1, 64, 1, true, 0.4, Math.PI * 1.55]} /><meshStandardMaterial color={drumCol} emissive={drumCol} emissiveIntensity={heat * 0.55} side={THREE.DoubleSide} metalness={0.45} roughness={0.5} /></mesh>
-          <mesh position={[0, -0.55, 0]}><cylinderGeometry args={[2.1, 2.1, 0.12, 64]} /><meshStandardMaterial color="#5f6b70" metalness={0.4} roughness={0.55} /></mesh>
+          <mesh position={[0, -0.55, 0]}><cylinderGeometry args={[2.1, 2.1, 0.12, 64]} /><meshStandardMaterial color="#9aa6aa" metalness={0.35} roughness={0.5} /></mesh>
           {Array.from({length: 8}).map((_, i) => (
             <mesh key={i} position={[Math.cos(i * Math.PI / 4) * 1.1, -0.64, Math.sin(i * Math.PI / 4) * 1.1]}><cylinderGeometry args={[0.09, 0.09, 0.2, 10]} /><meshStandardMaterial color="#d8dde0" metalness={0.6} roughness={0.3} /></mesh>
           ))}
@@ -144,7 +144,7 @@ const AdeganRem: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
         <group position={[0, 0, 0.05]}>{shoe(1)}{shoe(-1)}</group>
         {/* S-cam & as */}
         <mesh position={[0, -1.25, 0.1]} rotation={[0, 0, f * 0.0 + (s.tekan ? press * 0.6 : 0)]}><boxGeometry args={[0.5, 0.22, 0.3]} /><meshStandardMaterial color={C.orange} /></mesh>
-        <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 0, -0.6]}><cylinderGeometry args={[0.28, 0.28, 2.2, 20]} /><meshStandardMaterial color="#3c4a50" metalness={0.4} roughness={0.5} /></mesh>
+        <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 0, -0.9]}><cylinderGeometry args={[0.2, 0.2, 1.0, 20]} /><meshStandardMaterial color="#3c4a50" metalness={0.4} roughness={0.5} /></mesh>
       </group>
       {/* uap panas */}
       {heat > 0.55 && Array.from({length: 7}).map((_, i) => {
@@ -168,12 +168,12 @@ const AdeganAngin: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
   const level = interpolate(f, [0, s.dur * 0.9], [s.bar0 ?? 8, s.bar1 ?? 6.4], cl);
   const fill = Math.max(0.05, (level - 4) / 5);
   return (
-    <ThreeCanvas width={W} height={H} shadows camera={{position: [3.5, 3.2, 8.5], fov: 36}} style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
+    <ThreeCanvas width={W} height={H} shadows camera={{position: [4.5, 3.6, 13.5], fov: 36}} style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
       <color attach="background" args={[C.cream]} />
       <ambientLight intensity={0.75} />
       <hemisphereLight args={['#fff7e8', '#8fa6a3', 0.5]} />
       <directionalLight castShadow position={[4, 10, 6]} intensity={1.25} />
-      <group position={[-0.8, 0.3, 0]} rotation={[0, -0.25, 0]}>
+      <group position={[-0.2, 0.6, 0]} rotation={[0, -0.25, 0]} scale={0.72}>
         {/* tabung */}
         <group rotation={[0, 0, Math.PI / 2]}>
           <mesh castShadow><cylinderGeometry args={[0.9, 0.9, 3.2, 40]} /><meshStandardMaterial color={C.tealSoft} roughness={0.5} metalness={0.2} transparent opacity={0.55} /></mesh>
@@ -285,8 +285,8 @@ const Gauge: React.FC<{s: BedahScene}> = ({s}) => {
   const ang = interpolate(v, [0, 10], [-130, 130]);
   const low = v < 7;
   return (
-    <div style={{position: 'absolute', left: 640, top: 600, width: 340, height: 340}}>
-      <svg width={340} height={340} viewBox="-170 -170 340 340">
+    <div style={{position: 'absolute', left: 690, top: 800, width: 300, height: 340}}>
+      <svg width={300} height={340} viewBox="-170 -170 340 385">
         <circle r={160} fill="#fffdf8" stroke={C.ink} strokeWidth={10} />
         {/* zona merah < 7 bar */}
         <path d={arc(-130, interpolate(7, [0, 10], [-130, 130]), 128)} stroke={C.red} strokeWidth={22} fill="none" />
@@ -294,7 +294,7 @@ const Gauge: React.FC<{s: BedahScene}> = ({s}) => {
         {Array.from({length: 11}).map((_, i) => { const a = (-130 + i * 26) * Math.PI / 180; return <text key={i} x={Math.sin(a) * 96} y={-Math.cos(a) * 96 + 9} textAnchor="middle" fontFamily="Outfit" fontWeight={700} fontSize={24} fill={C.ink}>{i}</text>; })}
         <g transform={`rotate(${ang})`}><rect x={-5} y={-120} width={10} height={130} rx={5} fill={low ? C.red : C.ink} /></g>
         <circle r={16} fill={C.ink} />
-        <text y={70} textAnchor="middle" fontFamily="Outfit" fontWeight={800} fontSize={40} fill={low ? C.red : C.ink}>{v.toFixed(1)} bar</text>
+        <rect x={-92} y={176} width={184} height={50} rx={25} fill={low ? C.red : C.ink} /><text y={213} textAnchor="middle" fontFamily="Outfit" fontWeight={800} fontSize={36} fill="#fff">{v.toFixed(1)} bar</text>
       </svg>
     </div>
   );

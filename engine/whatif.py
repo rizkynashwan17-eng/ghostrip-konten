@@ -213,6 +213,7 @@ def cmd_render(spec_path, tanpa_suara=False):
         if post.get("engine") != "remotion":
             continue
         vid = voice_id(date, post)
+        bedah = post.get("gaya") == "bedah"  # gaya BEDAH TEKNIKAL (remotion/src/Bedah.tsx, 3D three.js)
         all_sc = post["scenes"]
         nar_sc = [sc for sc in all_sc if sc.get("narasi")]
         sentences = [plain(sc["narasi"]) for sc in nar_sc]
@@ -239,7 +240,7 @@ def cmd_render(spec_path, tanpa_suara=False):
             for j, c in enumerate(chunks):
                 c0 = round(spk0 + cum[j] * (spk1 - spk0)); c1 = round(spk0 + cum[j + 1] * (spk1 - spk0))
                 if j == len(chunks) - 1: c1 = f1 - f0
-                ch.append({"text": c.upper(), "from": max(0, c0), "to": max(c0 + 8, c1)})
+                ch.append({"text": c if bedah else c.upper(), "from": max(0, c0), "to": max(c0 + 8, c1)})
             d = dict(sc); d.update({"from": f0, "dur": max(24, f1 - f0), "chunks": ch})
             scenes.append(d)
         # adegan tanpa narasi (mis. end card "logo") ditempel di akhir, 2,5 dtk
@@ -250,12 +251,15 @@ def cmd_render(spec_path, tanpa_suara=False):
                 scenes.append(d)
         dur_frames = scenes[-1]["from"] + scenes[-1]["dur"]
         musik(dur_frames / FPS + 0.5, os.path.join(run, "musik.wav")); whoosh(os.path.join(run, "whoosh.wav"))
-        props = {"judul": post["judul"], "part": post.get("part", 1), "seri": post.get("seri"), "lokasi": post["lokasi"], "jam": post.get("jam"),
+        props = {"durationInFrames": dur_frames, "scenes": scenes, "narasi": f"run/{vid}.wav" if voiced else None,
+                 "musik": "run/musik.wav", "whoosh": "run/whoosh.wav"} if bedah else {"judul": post["judul"], "part": post.get("part", 1), "seri": post.get("seri"), "lokasi": post["lokasi"], "jam": post.get("jam"),
                  "handle": "@ghostrip.app", "durationInFrames": dur_frames, "scenes": scenes,
                  "narasi": f"run/{vid}.wav" if voiced else None, "musik": "run/musik.wav", "whoosh": "run/whoosh.wav"}
         pf = os.path.join(run, "props.json"); json.dump(props, open(pf, "w"), ensure_ascii=False)
         raw = os.path.join(RM, "out", f"{vid}.mp4"); os.makedirs(os.path.dirname(raw), exist_ok=True)
-        cmdl = ["npx", "remotion", "render", "src/index.ts", "WhatIf", raw, f"--props={pf}", "--log=error"]
+        cmdl = ["npx", "remotion", "render", "src/index.ts", "Bedah" if bedah else "WhatIf", raw, f"--props={pf}", "--log=error"]
+        if bedah: cmdl += ["--gl=swangle", "--concurrency=4"]
+        if os.environ.get("HANYA_PROPS"): print("props:", pf); continue
         ch_path = chromium()
         if ch_path: cmdl.append(f"--browser-executable={ch_path}")
         subprocess.run(cmdl, cwd=RM, check=True)
