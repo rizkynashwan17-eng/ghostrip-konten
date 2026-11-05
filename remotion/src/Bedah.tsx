@@ -72,14 +72,14 @@ const AdeganJalan: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
   return (
     <ThreeCanvas width={W} height={H} shadows orthographic camera={{position: [128, 104, 128], zoom, near: 0.1, far: 4000}}
       style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
-      <color attach="background" args={[C.cream]} />
+      <color attach="background" args={[C.night1]} />
       <ambientLight intensity={0.75} />
       <hemisphereLight args={['#fff7e8', '#9fb3b0', 0.55]} />
       <directionalLight castShadow position={[8, 18, 6]} intensity={1.35} shadow-mapSize-width={1024} shadow-mapSize-height={1024}
         shadow-camera-left={-14} shadow-camera-right={14} shadow-camera-top={14} shadow-camera-bottom={-14} />
       <group rotation={[0, 0, slope]} position={[0, shake, 0]}>
-        <mesh receiveShadow position={[0, -0.01, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[400, 400]} /><meshStandardMaterial color="#e6dcc6" roughness={1} /></mesh>
-        <mesh receiveShadow position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[400, 4.2]} /><meshStandardMaterial color="#2c3c42" roughness={0.95} /></mesh>
+        <mesh receiveShadow position={[0, -0.01, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[400, 400]} /><meshStandardMaterial color="#0f3540" roughness={1} /></mesh>\n        <gridHelper args={[400, 200, "#2fb8a0", "#1d5a63"]} position={[0, 0.003, 0]} />
+        <mesh receiveShadow position={[0, 0, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[400, 4.2]} /><meshStandardMaterial color="#16262d" roughness={0.95} /></mesh>
         {Array.from({length: 22}).map((_, i) => (
           <mesh key={i} position={[-40 + i * 4 - off, 0.012, 0]} rotation={[-Math.PI / 2, 0, 0]}><planeGeometry args={[2, 0.14]} /><meshStandardMaterial color="#f2ead9" /></mesh>
         ))}
@@ -126,7 +126,7 @@ const AdeganRem: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
   return (
     <ThreeCanvas width={W} height={H} shadows camera={{position: [Math.sin(camA) * 12.5, 2.2, Math.cos(camA) * 12.5], fov: 34}}
       style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
-      <color attach="background" args={[C.cream]} />
+      <color attach="background" args={[C.night1]} />
       <ambientLight intensity={0.7} />
       <hemisphereLight args={['#fff7e8', '#8fa6a3', 0.5]} />
       <directionalLight castShadow position={[5, 9, 7]} intensity={1.3} />
@@ -169,16 +169,16 @@ const AdeganAngin: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
   const fill = Math.max(0.05, (level - 4) / 5);
   return (
     <ThreeCanvas width={W} height={H} shadows camera={{position: [4.5, 3.6, 13.5], fov: 36}} style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
-      <color attach="background" args={[C.cream]} />
+      <color attach="background" args={[C.night1]} />
       <ambientLight intensity={0.75} />
       <hemisphereLight args={['#fff7e8', '#8fa6a3', 0.5]} />
       <directionalLight castShadow position={[4, 10, 6]} intensity={1.25} />
       <group position={[-0.2, 0.6, 0]} rotation={[0, -0.25, 0]} scale={0.72}>
         {/* tabung */}
         <group rotation={[0, 0, Math.PI / 2]}>
-          <mesh castShadow><cylinderGeometry args={[0.9, 0.9, 3.2, 40]} /><meshStandardMaterial color={C.tealSoft} roughness={0.5} metalness={0.2} transparent opacity={0.55} /></mesh>
-          <mesh position={[0, 1.6, 0]} castShadow><sphereGeometry args={[0.9, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2]} /><meshStandardMaterial color={C.tealSoft} roughness={0.5} transparent opacity={0.55} /></mesh>
-          <mesh position={[0, -1.6, 0]} rotation={[Math.PI, 0, 0]} castShadow><sphereGeometry args={[0.9, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2]} /><meshStandardMaterial color={C.tealSoft} roughness={0.5} transparent opacity={0.55} /></mesh>
+          <mesh castShadow><cylinderGeometry args={[0.9, 0.9, 3.2, 40]} /><meshStandardMaterial color="#6fa3aa" roughness={0.45} metalness={0.25} transparent opacity={0.6} /></mesh>
+          <mesh position={[0, 1.6, 0]} castShadow><sphereGeometry args={[0.9, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2]} /><meshStandardMaterial color="#6fa3aa" roughness={0.45} transparent opacity={0.6} /></mesh>
+          <mesh position={[0, -1.6, 0]} rotation={[Math.PI, 0, 0]} castShadow><sphereGeometry args={[0.9, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2]} /><meshStandardMaterial color="#6fa3aa" roughness={0.45} transparent opacity={0.6} /></mesh>
           {/* isi udara */}
           <mesh position={[0, 0, 0]}><cylinderGeometry args={[0.8 * Math.sqrt(fill) + 0.05, 0.8 * Math.sqrt(fill) + 0.05, 3.0, 32]} /><meshStandardMaterial color={C.mint} emissive={C.mint} emissiveIntensity={0.35} transparent opacity={0.6} /></mesh>
         </group>
@@ -189,91 +189,110 @@ const AdeganAngin: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
         {/* bilik rem */}
         <mesh castShadow position={[3.6, -2.6, 0.2]}><cylinderGeometry args={[0.45, 0.45, 0.5, 28]} /><meshStandardMaterial color="#c9d2d4" metalness={0.35} roughness={0.45} /></mesh>
       </group>
-      <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[0, -3, 0]}><planeGeometry args={[40, 40]} /><meshStandardMaterial color="#e6dcc6" /></mesh>
+      <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[0, -3, 0]}><planeGeometry args={[60, 60]} /><meshStandardMaterial color="#0f3540" /></mesh><gridHelper args={[60, 40, "#2fb8a0", "#1d5a63"]} position={[0, -2.99, 0]} />
       {pulses > 0 && null}
     </ThreeCanvas>
   );
 };
 
-/* ============================ lapisan 2D ============================ */
-const Rich: React.FC<{t: string; style?: React.CSSProperties; hl?: string}> = ({t, style, hl = C.tealSoft}) => (
+/* ============================ lapisan 2D (gaya khas Ghostrip) ============================ */
+// Kata kunci *bintang* = mint + garis bawah oranye (tanpa huruf miring)
+const Rich: React.FC<{t: string; style?: React.CSSProperties}> = ({t, style}) => (
   <span style={style}>{t.split(/(\*[^*]+\*)/g).filter(Boolean).map((p, i) => p.startsWith('*')
-    ? <i key={i} style={{fontStyle: 'italic', color: hl}}>{p.slice(1, -1)}</i> : <span key={i}>{p}</span>)}</span>
+    ? <span key={i} style={{color: C.mint, boxShadow: `inset 0 -10px 0 ${C.orange}55`}}>{p.slice(1, -1)}</span> : <span key={i}>{p}</span>)}</span>
 );
 
-const Header: React.FC<{kicker?: string; judul?: string}> = ({kicker, judul}) => {
+/* Logo melayang di tengah atas (hantu tanpa kotak + Ghostrip.id) */
+const LogoFloat: React.FC = () => {
   const f = useCurrentFrame();
-  const a = interpolate(f, [0, 8], [0, 1], {...cl, easing: eo});
+  const bob = Math.sin(f / 18) * 6;
   return (
-    <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 470, background: `linear-gradient(180deg, ${C.cream} 0%, ${C.cream} 62%, rgba(242,234,217,0) 100%)`}}>
-      <div style={{position: 'absolute', left: 64, top: 205, right: 64, opacity: a, transform: `translateY(${(1 - a) * 10}px)`}}>
-        {kicker && <div style={{fontFamily: MONO, fontSize: 24, letterSpacing: 4, color: '#6d7a7e', textTransform: 'uppercase'}}>{kicker}</div>}
-        {judul && <div style={{fontFamily: F, fontWeight: 800, fontSize: 62, lineHeight: 1.08, color: C.ink, marginTop: 10, letterSpacing: -1}}><Rich t={judul} /></div>}
-      </div>
+    <div style={{position: 'absolute', left: 0, right: 0, top: 150, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 14, transform: `translateY(${bob}px)`}}>
+      <Img src={staticFile('logo_float.png')} style={{width: 92, height: 92, filter: 'drop-shadow(0 8px 14px rgba(0,0,0,.45))'}} />
+      <span style={{fontFamily: F, fontWeight: 700, fontSize: 40, color: '#fff', textShadow: '0 3px 12px rgba(0,0,0,.5)'}}>Ghostrip.id</span>
     </div>
   );
 };
 
-const LogoChip: React.FC = () => (
-  <div style={{position: 'absolute', right: 52, top: 392, display: 'flex', alignItems: 'center', gap: 10, background: C.night1, borderRadius: 999, padding: '7px 18px 7px 8px', boxShadow: '0 6px 18px rgba(0,0,0,.18)'}}>
-    <Img src={staticFile('icon.png')} style={{width: 40, height: 40, borderRadius: 12}} />
-    <span style={{fontFamily: F, fontWeight: 700, fontSize: 26, color: '#fff'}}>Ghostrip<span style={{color: C.mint}}>.id</span></span>
-  </div>
-);
+/* Judul bab: nomor bulat oranye + topik kecil mint, judul putih di tengah */
+const Bab: React.FC<{no: number; kicker?: string; judul?: string}> = ({no, kicker, judul}) => {
+  const f = useCurrentFrame();
+  const a = spring({frame: f, fps: FPS, config: {damping: 16, stiffness: 180}});
+  return (
+    <div style={{position: 'absolute', left: 60, right: 60, top: 272, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', opacity: a, transform: `scale(${0.96 + 0.04 * a})`}}>
+      <div style={{display: 'flex', alignItems: 'center', gap: 12}}>
+        <span style={{width: 44, height: 44, borderRadius: '50%', background: C.orange, color: C.ink, fontFamily: F, fontWeight: 900, fontSize: 24, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{String(no).padStart(2, '0')}</span>
+        {kicker && <span style={{fontFamily: F, fontWeight: 700, fontSize: 26, letterSpacing: 5, color: C.mint, textTransform: 'uppercase'}}>{kicker}</span>}
+      </div>
+      {judul && <div style={{fontFamily: F, fontWeight: 800, fontSize: 64, lineHeight: 1.1, color: '#fff', marginTop: 14, letterSpacing: -0.5, textShadow: '0 4px 18px rgba(0,0,0,.45)'}}><Rich t={judul} /></div>}
+    </div>
+  );
+};
 
 const Tag: React.FC<{t: string}> = ({t}) => (
-  <div style={{position: 'absolute', left: '50%', top: 486, transform: 'translateX(-50%)', fontFamily: MONO, fontSize: 20, letterSpacing: 3, color: '#f2ead9', background: 'rgba(13,27,36,.78)', padding: '6px 14px', borderRadius: 6}}>{t}</div>
+  <div style={{position: 'absolute', right: 56, top: 1560, fontFamily: F, fontWeight: 600, fontSize: 22, letterSpacing: 3, color: 'rgba(233,245,243,.55)', textTransform: 'uppercase'}}>{t}</div>
 );
 
-/* subtitle per frasa, kata yang sedang diucapkan menyala mint */
+/* Subtitle tanpa kotak: kata muncul satu per satu, kata yang diucapkan mint */
 const Sub: React.FC<{c: BedahChunk}> = ({c}) => {
   const f = useCurrentFrame();
   const words = c.text.replace(/\*/g, '').split(/\s+/).filter(Boolean);
   const span = Math.max(1, c.to - c.from);
-  const wts = words.map((w) => Math.max(2, w.length)); const tot = wts.reduce((a, b) => a + b, 0);
-  let acc = 0; let cur = words.length - 1;
-  for (let i = 0; i < words.length; i++) { acc += wts[i]; if (f < (acc / tot) * span * 0.92) { cur = i; break; } }
-  const pop = spring({frame: f, fps: FPS, config: {damping: 15, stiffness: 240}});
+  const wts = words.map((w) => Math.max(2, w.length)); const tot = wts.reduce((x, y) => x + y, 0);
+  const starts: number[] = []; let acc = 0;
+  for (let i = 0; i < words.length; i++) { starts.push((acc / tot) * span * 0.9); acc += wts[i]; }
+  let cur = 0; for (let i = 0; i < words.length; i++) if (f >= starts[i]) cur = i;
   return (
-    <div style={{position: 'absolute', left: 70, right: 70, top: 1240, display: 'flex', justifyContent: 'center', transform: `scale(${0.94 + 0.06 * pop})`}}>
-      <div style={{background: 'rgba(7,26,34,.92)', borderRadius: 18, padding: '14px 22px', maxWidth: 900, textAlign: 'center', lineHeight: 1.32, boxShadow: '0 10px 30px rgba(0,0,0,.25)'}}>
-        {words.map((w, i) => (
-          <span key={i} style={{fontFamily: F, fontWeight: 700, fontSize: 54, color: i === cur ? C.ink : '#fff', background: i === cur ? C.mint : 'transparent', borderRadius: 10, padding: '0 8px', margin: '0 1px'}}>{w}</span>
-        ))}
-      </div>
+    <div style={{position: 'absolute', left: 60, right: 60, top: 1270, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0 16px'}}>
+      {words.map((w, i) => {
+        const k = spring({frame: f - starts[i], fps: FPS, config: {damping: 12, stiffness: 260}});
+        const shown = f >= starts[i];
+        return (
+          <span key={i} style={{fontFamily: F, fontWeight: 900, fontSize: 66, lineHeight: 1.18, color: i === cur ? C.mint : shown ? '#fff' : 'rgba(255,255,255,.32)',
+            transform: `translateY(${shown ? (1 - k) * 10 : 0}px) scale(${i === cur ? 1.06 : 1})`, display: 'inline-block',
+            textShadow: `0 4px 0 ${C.night0}, 0 0 18px rgba(0,0,0,.8), 2px 2px 0 ${C.night0}, -2px -2px 0 ${C.night0}`}}>{w}</span>
+        );
+      })}
     </div>
   );
 };
 
+/* Label: chip navy berbingkai mint dengan titik penanda */
 const Label: React.FC<{l: {t: string; x: number; y: number; warna?: string; dari?: number}}> = ({l}) => {
   const f = useCurrentFrame() - (l.dari ?? 6);
   const a = spring({frame: f, fps: FPS, config: {damping: 13, stiffness: 200}});
-  const bg = l.warna === 'merah' ? C.red : l.warna === 'mint' ? C.mint : C.orange;
+  const ac = l.warna === 'merah' ? C.red : l.warna === 'oranye' ? C.orange : C.mint;
   return (
-    <div style={{position: 'absolute', left: l.x, top: l.y, transform: `translate(-50%,-50%) scale(${a})`, background: bg, color: l.warna === 'merah' ? '#fff' : C.ink,
-      fontFamily: F, fontWeight: 800, fontSize: 28, letterSpacing: 1.5, padding: '8px 18px', borderRadius: 999, boxShadow: '0 8px 20px rgba(0,0,0,.25)', whiteSpace: 'nowrap', textTransform: 'uppercase'}}>{l.t}</div>
+    <div style={{position: 'absolute', left: l.x, top: l.y, transform: `translate(-50%,-50%) scale(${a})`, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <div style={{background: 'rgba(7,26,34,.9)', border: `3px solid ${ac}`, color: '#fff', fontFamily: F, fontWeight: 800, fontSize: 28, letterSpacing: 2, padding: '8px 18px', borderRadius: 12, whiteSpace: 'nowrap', textTransform: 'uppercase', boxShadow: '0 8px 20px rgba(0,0,0,.35)'}}>{l.t}</div>
+      <div style={{width: 3, height: 26, background: ac}} /><div style={{width: 14, height: 14, borderRadius: '50%', background: ac, boxShadow: `0 0 12px ${ac}`}} />
+    </div>
   );
 };
 
+/* Kartu sumber: navy, tanda kutip mint, sumber mint */
 const Kutipan: React.FC<{k: NonNullable<BedahScene['kutipan']>}> = ({k}) => {
   const f = useCurrentFrame() - (k.dari ?? 4);
   const a = interpolate(f, [0, 10], [0, 1], {...cl, easing: eo});
   return (
-    <div style={{position: 'absolute', left: 64, right: 200, top: 560, opacity: a, transform: `translateY(${(1 - a) * 24}px)`, background: '#fffdf8', borderRadius: 18,
-      borderLeft: `8px solid ${C.mintDeep}`, padding: '22px 26px', boxShadow: '0 14px 34px rgba(13,27,36,.22)'}}>
-      <div style={{fontFamily: F, fontWeight: 700, fontSize: 36, lineHeight: 1.25, color: C.ink}}>{k.kutip === false ? k.teks : `“${k.teks}”`}</div>
-      <div style={{fontFamily: MONO, fontSize: 20, color: '#6d7a7e', marginTop: 14, letterSpacing: 1}}>{k.sumber}{k.tgl ? <><br />{k.tgl}</> : null}</div>
+    <div style={{position: 'absolute', left: 90, right: 90, top: 520, opacity: a, transform: `translateY(${(1 - a) * 24}px)`, background: 'rgba(7,26,34,.94)', borderRadius: 26,
+      border: `2px solid ${C.mint}55`, padding: '26px 30px 24px', boxShadow: '0 18px 40px rgba(0,0,0,.45)', textAlign: 'center'}}>
+      {k.kutip !== false && <div style={{fontFamily: F, fontWeight: 900, fontSize: 80, lineHeight: 0.6, color: C.mint, height: 34}}>“</div>}
+      <div style={{fontFamily: F, fontWeight: 700, fontSize: 36, lineHeight: 1.28, color: '#fff'}}>{k.teks}</div>
+      <div style={{fontFamily: F, fontWeight: 600, fontSize: 22, color: C.mint, marginTop: 14, letterSpacing: 1}}>— {k.sumber}{k.tgl ? ` · ${k.tgl}` : ''}</div>
     </div>
   );
 };
 
+/* Kata besar gaya STEMPEL (seperti cap di surat penawaran) */
 const Boom: React.FC<{t: string}> = ({t}) => {
   const f = useCurrentFrame();
-  const a = spring({frame: f, fps: FPS, config: {damping: 9, stiffness: 260}});
-  const shadow = Array.from({length: 9}).map((_, i) => `${i + 1}px ${i + 1}px 0 ${C.orangeDeep}`).join(',') + ', 0 18px 30px rgba(0,0,0,.35)';
+  const a = spring({frame: f, fps: FPS, config: {damping: 10, stiffness: 300}});
   return (
-    <div style={{position: 'absolute', left: 0, right: 0, top: 700, textAlign: 'center', transform: `rotate(-7deg) scale(${0.4 + 0.6 * a})`, opacity: Math.min(1, a * 1.4)}}>
-      <span style={{fontFamily: F, fontWeight: 900, fontSize: 170, color: C.orange, WebkitTextStroke: `4px ${C.ink}`, textShadow: shadow, letterSpacing: -2}}>{t}</span>
+    <div style={{position: 'absolute', left: 0, right: 0, top: 760, display: 'flex', justifyContent: 'center', transform: `rotate(-9deg) scale(${1.6 - 0.6 * a})`, opacity: Math.min(1, a * 1.3)}}>
+      <div style={{border: `12px solid ${C.orange}`, borderRadius: 26, padding: '6px 34px', background: 'rgba(7,26,34,.55)', boxShadow: `0 0 0 4px ${C.night0}, 0 20px 40px rgba(0,0,0,.45)`}}>
+        <span style={{fontFamily: F, fontWeight: 900, fontSize: 150, color: C.orange, letterSpacing: 4, textShadow: `0 4px 0 ${C.night0}`}}>{t}</span>
+      </div>
     </div>
   );
 };
@@ -294,7 +313,7 @@ const Gauge: React.FC<{s: BedahScene}> = ({s}) => {
         {Array.from({length: 11}).map((_, i) => { const a = (-130 + i * 26) * Math.PI / 180; return <text key={i} x={Math.sin(a) * 96} y={-Math.cos(a) * 96 + 9} textAnchor="middle" fontFamily="Outfit" fontWeight={700} fontSize={24} fill={C.ink}>{i}</text>; })}
         <g transform={`rotate(${ang})`}><rect x={-5} y={-120} width={10} height={130} rx={5} fill={low ? C.red : C.ink} /></g>
         <circle r={16} fill={C.ink} />
-        <rect x={-92} y={176} width={184} height={50} rx={25} fill={low ? C.red : C.ink} /><text y={213} textAnchor="middle" fontFamily="Outfit" fontWeight={800} fontSize={36} fill="#fff">{v.toFixed(1)} bar</text>
+        <rect x={-92} y={176} width={184} height={50} rx={25} fill={low ? C.red : C.mint} /><text y={213} textAnchor="middle" fontFamily="Outfit" fontWeight={800} fontSize={36} fill={low ? "#fff" : C.ink}>{v.toFixed(1)} bar</text>
       </svg>
     </div>
   );
@@ -346,16 +365,19 @@ const Scene3D: React.FC<{s: BedahScene}> = ({s}) => {
 
 export const Bedah: React.FC<BedahProps> = (p) => {
   useOutfit();
+  const babNo: number[] = []; let nb = 0; let prev = '';
+  p.scenes.forEach((s) => { if (s.kicker && s.kicker !== prev) { nb++; prev = s.kicker; } babNo.push(Math.max(1, nb)); });
   return (
-    <AbsoluteFill style={{background: C.cream}}>
+    <AbsoluteFill style={{background: C.night1}}>
       {p.scenes.map((s, i) => (
         <Sequence key={i} from={s.from} durationInFrames={s.dur}>
           {s.type === 'logo' ? <LogoEnd /> : (
             <>
               <Scene3D s={s} />
-              <Header kicker={s.kicker} judul={s.judul} />
-              <LogoChip />
-              {s.ilustrasi !== '' && <Tag t={s.ilustrasi ?? 'ILUSTRASI'} />}
+              <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 560, background: 'linear-gradient(180deg, rgba(4,13,19,.85) 0%, rgba(4,13,19,.55) 60%, rgba(4,13,19,0) 100%)'}} />
+              <LogoFloat />
+              <Bab no={babNo[i]} kicker={s.kicker} judul={s.judul} />
+              {s.ilustrasi !== '' && <Tag t={s.ilustrasi ?? 'Ilustrasi'} />}
               {s.type === 'angin' && <Gauge s={s} />}
               {s.gigi && <Gigi aktif={s.gigi} />}
               {(s.label ?? []).map((l, j) => <Label key={j} l={l} />)}
