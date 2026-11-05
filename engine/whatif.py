@@ -258,7 +258,7 @@ def cmd_render(spec_path, tanpa_suara=False):
         pf = os.path.join(run, "props.json"); json.dump(props, open(pf, "w"), ensure_ascii=False)
         raw = os.path.join(RM, "out", f"{vid}.mp4"); os.makedirs(os.path.dirname(raw), exist_ok=True)
         cmdl = ["npx", "remotion", "render", "src/index.ts", "Bedah" if bedah else "WhatIf", raw, f"--props={pf}", "--log=error"]
-        if bedah: cmdl += ["--gl=swangle", "--concurrency=4"]
+        if bedah: cmdl += ["--gl=swangle"]
         if os.environ.get("HANYA_PROPS"): print("props:", pf); continue
         ch_path = chromium()
         if ch_path: cmdl.append(f"--browser-executable={ch_path}")
