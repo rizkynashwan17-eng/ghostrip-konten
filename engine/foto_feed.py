@@ -22,7 +22,28 @@ IMG = os.path.join(ROOT, "remotion/public/iklan3d")
 FONT = "file://" + os.path.join(ROOT, "fonts/Outfit.ttf")
 
 
+def layar_web(aspek, L):
+    """Tampilan DESKTOP: jendela browser berisi website ghostrip.id (assets/web/ghostrip-id-1440.png, tangkapan layar penuh 1440 px).
+    L["web"] = {"scroll": px dari atas halaman, "menubar": true/false (laptop), "notch": true/false, "url": "ghostrip.id"}"""
+    Wd = L["web"]; W = 1440; H = int(round(W / aspek))
+    mb = 30 if Wd.get("menubar") else 0; tb = 64
+    site = "file://" + os.path.join(ROOT, "assets/web/ghostrip-id-1440.png"); url = html.escape(Wd.get("url", "ghostrip.id"))
+    notch = f'<div style="position:absolute;left:50%;top:0;margin-left:-82px;width:164px;height:{mb}px;background:#000;border-radius:0 0 14px 14px"></div>' if Wd.get("notch") else ""
+    css = f"""@font-face{{font-family:Outfit;src:url({FONT});font-weight:100 900}}
+*{{margin:0;padding:0;box-sizing:border-box}}body{{width:{W}px;height:{H}px;background:#f3f1ee;font-family:Outfit;position:relative;overflow:hidden}}
+.mb{{position:absolute;left:0;right:0;top:0;height:{mb}px;background:#0b0d0f}}
+.tb{{position:absolute;left:0;right:0;top:{mb}px;height:{tb}px;background:#eceae6;border-bottom:1px solid #d9d5ce;display:flex;align-items:center;justify-content:center}}
+.url{{width:520px;height:38px;border-radius:12px;background:#fbfaf8;color:#4a5559;font-size:21px;display:flex;align-items:center;justify-content:center}}
+.dots{{position:absolute;left:28px;top:22px;display:flex;gap:11px}}.dots i{{width:20px;height:20px;border-radius:50%;background:#c9c4bc}}
+.vw{{position:absolute;left:0;right:0;top:{mb + tb}px;bottom:0;overflow:hidden;background:#eef8f5}}.vw img{{width:{W}px;display:block;margin-top:-{int(Wd.get("scroll", 0))}px}}"""
+    return (f'<!doctype html><html><head><meta charset=utf-8><style>{css}</style></head><body>'
+            f'<div class="mb"></div>{notch}<div class="tb"><div class="dots"><i></i><i></i><i></i></div><div class="url">{url}</div></div>'
+            f'<div class="vw"><img src="{site}"></div></body></html>'), W, H
+
+
 def layar_html(aspek, L):
+    if L.get("web"):
+        return layar_web(aspek, L)
     W = 1200; H = int(round(W / aspek))
     shot = lambda n: "file://" + os.path.join(IMG, n + ".png")
     kartu = L.get("kartu", ["hasil", "home"]); judul = html.escape(L.get("judul", "Hitung trip")); url = html.escape(L.get("url", "ghostrip.id"))
@@ -73,8 +94,8 @@ def ganti_layar(foto, quad, aspek, L, out):
     hsv = cv2.cvtColor(big, cv2.COLOR_BGR2HSV)
     cand = (mask > 0.98) & (hsv[..., 2] > 165) & (hsv[..., 1] < 60)
     ys, xs = np.nonzero(cand)
-    if len(xs) < 2000:  # layar gelap/tak ada piksel terang: pakai rata-rata layar apa adanya
-        light = np.full((1350, 1080, 3), 235, np.float32)
+    if L.get("cahaya") == "tetap" or len(xs) < 2000:  # layar emisif/gelap: cahaya tetap (BGR), tanpa fit dari layar lama
+        light = np.full((1350, 1080, 3), 1, np.float32) * np.array(L.get("cahaya_bgr", [240, 236, 232]), np.float32)
     else:
         if len(xs) > 20000:
             i = np.random.default_rng(1).choice(len(xs), 20000, replace=False); ys, xs = ys[i], xs[i]
@@ -87,6 +108,10 @@ def ganti_layar(foto, quad, aspek, L, out):
             co, *_ = np.linalg.lstsq(X, big[ys, xs, c].astype(np.float64), rcond=None)
             light[..., c] = np.clip((Xa @ co).reshape(1350, 1080), 0, 255)
     lit = np.clip(cv2.GaussianBlur(warp, (0, 0), 0.9).astype(np.float32) / 255 * light * 1.03, 0, 255)
+    k = float(L.get("pantulan", 0))  # kilau/pantulan dari layar lama (0..0.3), supaya terasa satu foto
+    if k:
+        g = cv2.GaussianBlur(cv2.cvtColor(big, cv2.COLOR_BGR2GRAY), (0, 0), 18).astype(np.float32)
+        lit = np.clip(lit + k * g[..., None], 0, 255)
     res = big.astype(np.float32) * (1 - mask[..., None]) + lit * mask[..., None]
     res += np.random.default_rng(3).normal(0, 2.2, res.shape).astype(np.float32)
     cv2.imwrite(out, np.clip(res, 0, 255).astype(np.uint8), [cv2.IMWRITE_JPEG_QUALITY, 95])
