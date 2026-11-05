@@ -1,0 +1,11 @@
+[
+ {
+  "slot": "reel-bedah-remblong",
+  "kind": "reel",
+  "media": "media/pilot-bedah/reel-bedah-remblong.mp4",
+  "cover": "media/pilot-bedah/reel-bedah-remblong-cover.jpg",
+  "dur": 58.8,
+  "engine": "remotion",
+  "bersuara": false
+ }
+]
