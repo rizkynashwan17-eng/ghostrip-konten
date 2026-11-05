@@ -10,6 +10,9 @@ scene (di post kind "feed", slot "feed-foto", jam 12:00):
   quad   : (ganti-layar) 4 sudut layar di foto, piksel foto ASLI, urutan kiri-atas, kanan-atas, kanan-bawah, kiri-bawah
   aspek  : (ganti-layar) lebar/tinggi layar di foto; >=1 lanskap (judul + 2 kartu), <1 potret (1 tangkapan layar)
   layar  : {"judul":"Hitung trip","url":"ghostrip.id/hitung","kartu":["hasil","home"]}  (nama file di remotion/public/iklan3d/*.png)
+           ATAU {"gambar":"assets/web/app-desktop-beranda.png","crop":[x,y,w,h]}  (tangkapan layar jadi: aplikasi DESKTOP setelah login)
+           ATAU {"web":{"scroll":0,"menubar":true,"notch":true}}  (website ghostrip.id di jendela browser)
+           opsi: radius, cahaya:"tetap"+cahaya_bgr, pantulan (0..0.3)
   title, sub : judul tebal & sub-judul (judul pakai \\n untuk baris baru)
 Isi layar = tangkapan layar ASLI dengan data FIKTIF; label DATA SIMULASI otomatis.
 """
@@ -82,7 +85,13 @@ def ganti_layar(foto, quad, aspek, L, out):
     ox, oy = (big.shape[1] - 1080) // 2, (big.shape[0] - 1350) // 2
     big = big[oy:oy + 1350, ox:ox + 1080]
     Q = (np.array(quad, np.float32) * s) - np.array([ox, oy], np.float32)
-    tmp = out + ".layar.png"; render_layar(aspek, L, tmp); scr = cv2.imread(tmp); os.remove(tmp)
+    if L.get("gambar"):  # tangkapan layar jadi (mis. assets/web/app-desktop-beranda.png = aplikasi desktop setelah login)
+        from PIL import Image
+        im = Image.open(L["gambar"] if os.path.isabs(L["gambar"]) else os.path.join(ROOT, L["gambar"])).convert("RGB")
+        if L.get("crop"): x0, y0, cw, ch = L["crop"]; im = im.crop((x0, y0, x0 + cw, y0 + ch))
+        scr = cv2.cvtColor(np.array(im), cv2.COLOR_RGB2BGR)
+    else:
+        tmp = out + ".layar.png"; render_layar(aspek, L, tmp); scr = cv2.imread(tmp); os.remove(tmp)
     h, w = scr.shape[:2]
     M = cv2.getPerspectiveTransform(np.array([(0, 0), (w, 0), (w, h), (0, h)], np.float32), Q)
     warp = cv2.warpPerspective(scr, M, (1080, 1350), flags=cv2.INTER_CUBIC)
