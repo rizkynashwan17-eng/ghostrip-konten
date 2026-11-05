@@ -50,7 +50,10 @@ body{width:1080px;height:1350px;overflow:hidden;position:relative;font-family:Ou
 
 
 def device(spec):
-    d, s = spec["device"], U(spec["screen"])
+    d = spec["device"]
+    if d == "none":  # foto sudah memuat perangkat (lihat engine/foto_tablet.py)
+        return ""
+    s = U(spec["screen"])
     if d == "hp":
         return f'<div class="hp"><div class="scr"><div class="notch"></div><img src="{s}"></div></div>'
     if d == "tablet":
