@@ -10,5 +10,14 @@
   "media": "media/2026-11-07/feed-humor-ed.jpg",
   "gaya": "editorial",
   "warna": "krem"
+ },
+ {
+  "slot": "reel-humor",
+  "kind": "reel",
+  "media": "media/2026-11-07/reel-humor.mp4",
+  "cover": "media/2026-11-07/reel-humor-cover.jpg",
+  "dur": 37.93,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]

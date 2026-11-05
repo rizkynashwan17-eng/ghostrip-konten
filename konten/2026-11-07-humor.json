@@ -79,7 +79,8 @@
        "teks": "Mbak, armadanya ganti CDD aja ya."
       }
      ],
-     "narasi": "Revisi pertama, customer minta *ganti armada*."
+     "narasi": "Revisi pertama, customer minta *ganti armada*.",
+     "geser": 130
     },
     {
      "type": "chat",

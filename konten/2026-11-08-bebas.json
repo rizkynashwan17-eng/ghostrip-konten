@@ -86,7 +86,8 @@
        "teks": "Pak, kalau sekali jalan segini, PP berarti dua kali ya?"
       }
      ],
-     "narasi": "Pertanyaan yang sering datang: harga pulang-pergi itu *dua kali lipat*?"
+     "narasi": "Pertanyaan yang sering datang: harga pulang-pergi itu *dua kali lipat*?",
+     "geser": 130
     },
     {
      "type": "karakter",
