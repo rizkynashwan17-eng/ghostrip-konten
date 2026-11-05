@@ -1,0 +1,233 @@
+{
+ "date": "pilot-bedah",
+ "posts": [
+  {
+   "slot": "reel-bedah-remblong",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "bedah",
+   "tema": "teknikal",
+   "time": "19:30",
+   "voice_id": "pilot-bedah-remblong",
+   "topic": "Teknikal: kenapa rem truk bisa blong di turunan panjang (brake fade, angin tekor) dan cara mencegahnya (gigi rendah, engine brake)",
+   "sumber": [
+    "CNN Indonesia, 25 Sep 2023, 'Kenapa Truk Sering Rem Blong?' (Achmad Wildan, Senior Investigator KNKT): https://www.cnnindonesia.com/otomotif/20230925103736-579-1003289/kenapa-truk-sering-rem-blong",
+    "otodriver, 28 Jan 2022, 'KNKT: Tiga Hal Ini Yang Jadi Penyebab Rem Blong' (Ahmad Wildan): https://otodriver.com/berita/2022/knkt-tiga-hal-ini-yang-jadi-penyebab-rem-blong-knkdjaiiong",
+    "detikOto, 30 Nov 2022, 'Pengemudi bus dan truk banyak tak paham jangan pindah gigi di jalan menurun' (Ahmad Wildan, KNKT): https://oto.detik.com/berita/d-6435769/pengemudi-bus-dan-truk-banyak-tak-paham-jangan-pindah-gigi-di-jalan-menurun"
+   ],
+   "scenes": [
+    {
+     "type": "jalan",
+     "narasi": "Truk muatan penuh, masuk turunan panjang.",
+     "kicker": "TURUNAN PANJANG",
+     "judul": "Kok remnya bisa *blong*?",
+     "laju": 0.18,
+     "label": [
+      {
+       "t": "MUATAN PENUH",
+       "x": 470,
+       "y": 760,
+       "dari": 10
+      }
+     ]
+    },
+    {
+     "type": "jalan",
+     "narasi": "Rem diinjak, tapi truknya tetap meluncur.",
+     "kicker": "TURUNAN PANJANG",
+     "judul": "Kok remnya bisa *blong*?",
+     "laju": 0.42,
+     "goyang": 1,
+     "zoom0": 62,
+     "zoom1": 74,
+     "boom": "BLONG!",
+     "boomDari": 26
+    },
+    {
+     "type": "rem",
+     "narasi": "Kita bedah.",
+     "kicker": "REM TROMOL · DIBELAH",
+     "judul": "Isi *roda* truk",
+     "panas0": 0,
+     "panas1": 0,
+     "putar": 0.06
+    },
+    {
+     "type": "rem",
+     "narasi": "Saat rem diinjak, kampas menekan tromol.",
+     "kicker": "REM TROMOL · DIBELAH",
+     "judul": "Kampas *menekan* tromol",
+     "tekan": true,
+     "panas0": 0,
+     "panas1": 0.15,
+     "label": [
+      {
+       "t": "KAMPAS",
+       "x": 300,
+       "y": 1010,
+       "dari": 14
+      },
+      {
+       "t": "TROMOL",
+       "x": 800,
+       "y": 820,
+       "dari": 22
+      }
+     ]
+    },
+    {
+     "type": "rem",
+     "narasi": "Gesekan itu yang menahan roda, dan gesekan menghasilkan panas.",
+     "kicker": "GESEK = PANAS",
+     "judul": "Gesekan jadi *panas*",
+     "tekan": true,
+     "panas0": 0.15,
+     "panas1": 0.5
+    },
+    {
+     "type": "rem",
+     "narasi": "Di turunan panjang, rem diinjak terus, panasnya menumpuk.",
+     "kicker": "PANAS MENUMPUK",
+     "judul": "Panasnya *menumpuk*",
+     "tekan": true,
+     "panas0": 0.5,
+     "panas1": 1,
+     "ilustrasi": "ILUSTRASI · GERAK LAMBAT"
+    },
+    {
+     "type": "rem",
+     "narasi": "Kampas yang kepanasan jadi licin.",
+     "kicker": "PANAS MENUMPUK",
+     "judul": "Kampas jadi *licin*",
+     "tekan": true,
+     "panas0": 1,
+     "panas1": 1
+    },
+    {
+     "type": "rem",
+     "narasi": "Kata KNKT, direm dapat, tapi enggak gigit.",
+     "kicker": "KATA KNKT",
+     "judul": "Kampas jadi *licin*",
+     "tekan": true,
+     "panas0": 1,
+     "panas1": 1,
+     "kutipan": {
+      "teks": "Direm dapat tapi enggak gigit.",
+      "sumber": "Achmad Wildan, Senior Investigator KNKT",
+      "tgl": "CNN Indonesia, 25 Sep 2023",
+      "dari": 8
+     }
+    },
+    {
+     "type": "angin",
+     "narasi": "Masalah kedua, angin.",
+     "kicker": "REM ANGIN",
+     "judul": "Tabung *angin*",
+     "bar0": 8,
+     "bar1": 7.8
+    },
+    {
+     "type": "angin",
+     "narasi": "Tiap rem diinjak, angin di tabung ikut terpakai.",
+     "kicker": "REM ANGIN",
+     "judul": "Angin *terpakai*",
+     "bar0": 7.8,
+     "bar1": 7.2,
+     "label": [
+      {
+       "t": "TABUNG ANGIN",
+       "x": 330,
+       "y": 1080,
+       "dari": 10
+      }
+     ]
+    },
+    {
+     "type": "angin",
+     "narasi": "Diinjak terus-terusan, anginnya tekor.",
+     "kicker": "ANGIN TEKOR",
+     "judul": "Anginnya *tekor*",
+     "bar0": 7.2,
+     "bar1": 6.4,
+     "boom": "TEKOR!",
+     "boomDari": 24,
+     "kutipan": {
+      "teks": "Angin tekor ini, bisa terjadi karena pengereman dilakukan terus menerus.",
+      "sumber": "Ahmad Wildan, KNKT",
+      "tgl": "otodriver, 28 Jan 2022",
+      "dari": 50
+     }
+    },
+    {
+     "type": "angin",
+     "narasi": "Menurut KNKT, di bawah tujuh bar, pedal rem tidak bisa ditekan.",
+     "kicker": "BATAS TEKANAN",
+     "judul": "Di bawah *7 bar*",
+     "bar0": 6.4,
+     "bar1": 6.2,
+     "kutipan": {
+      "teks": "Di bawah 7 bar, pedal rem tidak bisa ditekan.",
+      "sumber": "Ringkasan keterangan Achmad Wildan, KNKT",
+      "tgl": "CNN Indonesia, 25 Sep 2023",
+      "kutip": false,
+      "dari": 8
+     }
+    },
+    {
+     "type": "jalan",
+     "narasi": "Jadi, pasang gigi rendah sebelum masuk turunan.",
+     "kicker": "SEBELUM TURUNAN",
+     "judul": "Gigi *rendah* dulu",
+     "laju": 0.1,
+     "gigi": [
+      1,
+      2
+     ]
+    },
+    {
+     "type": "jalan",
+     "narasi": "Dan jangan pindah gigi di jalan menurun.",
+     "kicker": "KATA KNKT",
+     "judul": "Jangan *pindah gigi*",
+     "laju": 0.1,
+     "kutipan": {
+      "teks": "Semua pengemudi bus dan truk, jangan sekali-kali memindahkan gigi di jalan menurun.",
+      "sumber": "Ahmad Wildan, KNKT",
+      "tgl": "detikOto, 30 Nov 2022",
+      "dari": 6
+     }
+    },
+    {
+     "type": "jalan",
+     "narasi": "Biar mesin ikut menahan, rem tidak bekerja sendirian.",
+     "kicker": "ENGINE BRAKE",
+     "judul": "Mesin ikut *menahan*",
+     "laju": 0.1,
+     "panahMesin": true,
+     "label": [
+      {
+       "t": "ENGINE BRAKE",
+       "x": 760,
+       "y": 700,
+       "warna": "mint",
+       "dari": 10
+      }
+     ]
+    },
+    {
+     "type": "jalan",
+     "narasi": "Ingat ini, tiap ketemu turunan panjang.",
+     "kicker": "TURUNAN PANJANG",
+     "judul": "Kok remnya bisa *blong*?",
+     "laju": 0.18
+    },
+    {
+     "type": "logo",
+     "detik": 2.2
+    }
+   ],
+   "caption": "Rem diinjak, truk tetap meluncur. Kenapa bisa begitu di turunan panjang?\n\nKita bedah: kampas rem yang kepanasan jadi licin, dan angin rem bisa tekor kalau diinjak terus-terusan. Solusinya: gigi rendah sebelum turunan, jangan pindah gigi di jalan menurun, biar mesin ikut menahan.\n\nSumber: keterangan KNKT (CNN Indonesia 25/9/2023, otodriver 28/1/2022, detikOto 30/11/2022). Ilustrasi.",
+   "tiktok_title": "Kenapa rem truk bisa blong di turunan panjang? Kita bedah"
+  }
+ ]
+}

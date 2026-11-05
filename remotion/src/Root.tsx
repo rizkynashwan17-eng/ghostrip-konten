@@ -8,6 +8,7 @@ import {SCENES} from './scenes';
 import {Grain, clamp} from './parts';
 import {Iklan3D, IklanProps} from './Iklan3D';
 import {IklanFokus} from './IklanFokus';
+import {Bedah, BedahProps} from './Bedah';
 
 const useOutfit = () => {
   const [h] = useState(() => delayRender('font'));
@@ -119,6 +120,16 @@ export const RemotionRoot: React.FC = () => (
     height={H}
     defaultProps={{scenes: [], durationInFrames: 900} as IklanProps}
     calculateMetadata={({props}) => ({durationInFrames: (props as IklanProps).durationInFrames})}
+  />
+  <Composition
+    id="Bedah"
+    component={Bedah as any}
+    durationInFrames={90}
+    fps={FPS}
+    width={W}
+    height={H}
+    defaultProps={{scenes: [{type: 'jalan', from: 0, dur: 90, narasi: 'Contoh', kicker: 'TURUNAN PANJANG', judul: 'Kok remnya bisa *blong*?', chunks: [{text: 'Truk muatan penuh', from: 0, to: 90}]}], durationInFrames: 90} as BedahProps}
+    calculateMetadata={({props}) => ({durationInFrames: (props as BedahProps).durationInFrames})}
   />
   <Composition
     id="WhatIf"

@@ -3,11 +3,17 @@
   "private": true,
   "version": "1.0.0",
   "description": "Video gaya 'Gimana kalau…' untuk Ghostrip (Remotion)",
-  "scripts": {"render": "remotion render src/index.ts WhatIf"},
+  "scripts": {
+    "render": "remotion render src/index.ts WhatIf"
+  },
   "dependencies": {
-    "remotion": "4.0.250",
+    "@react-three/fiber": "^8.17.14",
     "@remotion/cli": "4.0.250",
+    "@remotion/three": "^4.0.250",
+    "@types/three": "^0.169.0",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "remotion": "4.0.250",
+    "three": "^0.169.0"
   }
 }
