@@ -76,10 +76,10 @@ Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 - Jangan mengarang fitur lain (GPS, AI, akuntansi, dll). Tanpa testimoni fiktif, tanpa klaim jumlah pengguna, tanpa "pasti untung".
 - Nama perusahaan/orang harus FIKTIF (PT Maju Jaya Logistik, PT Makmur Semakmurnya, Ibu Gadis, Budi Santoso). DILARANG: "PT Gunung Inti Gemilang", "Ibu Lermi", "Trans Anugrah".
 
-## Jadwal standar (WIB, Asia/Jakarta) — ATURAN PATEN Rizky (5 Nov 2026): mulai 6 Nov 2026 SATU HARI = 1 FEED FOTO-MOCKUP (12:00) + 1 FEED EDITORIAL (17:00) + 1 REELS (19:30), TANPA STORY. (1 Nov: 1 Reels/hari.)
+## Jadwal standar (WIB, Asia/Jakarta) — ATURAN PATEN Rizky (5 Nov 2026): mulai 6 Nov 2026 SATU HARI = 1 FEED (17:00) + 1 REELS (19:30), TANPA STORY. Tambahan: KARTU KOSONG "Feed manual" jam 12:00 untuk gambar buatan Rizky sendiri (lihat bagian FEED MANUAL RIZKY). (1 Nov: 1 Reels/hari.)
 | slot | jenis | jam | platform di halaman |
 |---|---|---|---|
-| feed-foto | foto-mockup 1080×1350 dari foto kiriman Rizky (lihat bagian FEED FOTO-MOCKUP) | 12:00 | IG post (+FB) |
+| feed-manual | kartu KOSONG, gambar dibuat & diunggah Rizky sendiri (bukan buatan Claude) | 12:00 | IG post (+FB) |
 | feed | gambar editorial 1080×1350 (atau carousel) | 17:00 | IG post (+FB) |
 | reel | video Remotion gaya pilot reel1-whatif (tema hari itu) | 19:30 | IG reel + TikTok + FB |
 - WAJIB: 1 Reels per hari (bukan 2), dibuat dengan Remotion, gaya animasi sama persis dengan `media/2026-11-02/reel1-whatif.mp4`, plus 1 feed gaya editorial. TIDAK ADA story (dihentikan 6 Nov 2026): jangan membuat, merender, atau memasukkan story ke halaman (`posting.py`, `render.py`, `scan_konten.py` sudah melewatinya).
@@ -87,13 +87,11 @@ Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 - Feed = ringkasan/checklist yang bisa disimpan, gaya editorial, sesuai tema hari dan nyambung ke Reels hari itu.
 - Stok cadangan Reels yang sudah ditulis tapi belum masuk halaman: cek `konten/*.json` dan `SUSULAN-SUARA.md` sebelum membuat Reels baru untuk suatu tanggal (jangan dobel). Saat ini: 6 Nov (cerita: rem yang tidak boleh ditawar), 9 Nov (realita: tiga permintaan harga jam empat sore).
 
-## FEED FOTO-MOCKUP — ATURAN PATEN Rizky (5 Nov 2026): tiap hari 1 feed foto-mockup (slot `feed-foto`, 12:00), tambahan di luar feed editorial 17:00 dan Reels 19:30
-- Bahan: FOTO KIRIMAN RIZKY (dikirim di chat, H-1; kalau dikirim 2 foto, stok aman 2 hari). Foto selalu beda tiap hari; caption juga selalu beda (hook & isi tidak boleh mengulang caption sebelumnya).
-- Karena foto hanya masuk lewat chat, feed ini DIBUAT DI CHAT begitu fotonya diterima (bukan oleh tugas harian): simpan foto ke `foto/<tanggal>-<nama>.jpg`, buat post `feed-foto` (kind feed, jam 12:00, `gaya` mockup-foto, scene punya field `foto`) di `konten/<tanggal>-foto.json`, render dengan `python3 engine/foto_feed.py konten/<file>.json`, `scan_konten.py` harus AMAN, lalu `posting.py tambah`, commit & push. Foto TIDAK dibuang saat bersih-bersih (`foto/` dipertahankan).
-- Dua mode (lihat docstring `engine/foto_feed.py`): `ganti-layar` (foto sudah memuat tablet/HP/laptop → layar diganti layar Ghostrip, sudut layar `quad` dicari dari foto, perspektif & cahaya mengikuti foto) dan `overlay` (foto polos → perangkat digambar di atas foto lewat `engine/feed_mockup.py`). Perangkat bergantian HP, tablet, laptop.
-- Isi layar = tangkapan layar ASLI aplikasi dengan data FIKTIF (PT Maju Jaya Logistik), label DATA SIMULASI otomatis. Susunan brand tetap: logo Ghostrip.id kiri atas, judul tebal putih kiri bawah, sub-judul di bawahnya. Tanpa emoji di gambar.
-- Foto wajib bebas wajah yang bisa dikenali, plat nomor, nama perusahaan/dokumen asli (kerahasiaan). Tema hari tetap diikuti untuk judul & caption; Selasa/Jumat badan caption tetap tanpa promosi.
-- Tugas harian TIDAK membuat feed ini. Kalau hari s.d. hari+2 belum punya `feed-foto`, cukup laporkan "foto mockup belum ada untuk <tanggal>, kirim foto" (jangan dikarang atau diganti gambar lain).
+## FEED MANUAL RIZKY — ATURAN PATEN Rizky (5 Nov 2026): feed mockup 12:00 DIBUAT RIZKY SENDIRI; Claude hanya menyediakan kartu & caption
+- Rizky membuat gambar feed (mockup foto/perangkat) sendiri. Claude TIDAK membuatnya otomatis dan tugas harian tidak boleh membuatnya. (Mesin `engine/foto_feed.py`, `feed_mockup.py`, `latar_tekstur.py` hanya arsip/uji, tidak dipakai di alur harian.)
+- Tempat di jadwal: kartu kosong `feed-manual` jam 12:00 per hari (`python3 engine/posting.py slot-manual <tanggal> [<tanggal> ...]`), mengikuti stok hari ini s.d. hari+2 (tugas harian menambahkannya bila belum ada). Di halaman Posting kartu itu punya tombol "Unggah gambar" (gambar tersimpan di HP Rizky, lalu Bagikan/Simpan/Sudah seperti kartu lain).
+- Caption: Rizky mengirim gambarnya ke Claude di chat dengan kata "caption". Claude melihat gambar, menulis caption (hook + isi singkat, caption selalu beda dari sebelumnya, tanpa nama asli/harga/data sensitif, + penutup baku), menyimpan gambar ke `foto/manual/<tanggal>.jpg`, lalu `python3 engine/posting.py isi-manual <id> --media foto/manual/<tanggal>.jpg --caption-file cap.txt`, commit & push. Caption TIDAK dibuat sebelum gambarnya diterima.
+- Tugas harian hanya memastikan kartu kosongnya ada; tidak mengisi dan tidak melaporkannya sebagai kekurangan stok.
 
 ## Sistem stok konten (H-2) — dijalankan tugas harian 15.40 WIB (ATURAN PATEN & WAJIB dari Rizky)
 Setiap kali membuat, mengisi suara, atau mengganti konten WAJIB diakhiri laporan update untuk Rizky: tanggal & jam tayang, topik, status suara (✅/⏳), dan masalah bila ada. Tugas ini tidak boleh dilewati/dimatikan kecuali Rizky memintanya.

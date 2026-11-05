@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-05T15:59+07:00",
+ "diperbarui": "2026-11-05T20:28+07:00",
  "posts": [
   {
    "id": "2026-10-29-0730-story-v2",
@@ -474,6 +474,23 @@
    "catatan": ""
   },
   {
+   "id": "2026-11-06-1200-feed-manual",
+   "tanggal": "2026-11-06",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
    "id": "2026-11-06-1700-feed-cerita",
    "tanggal": "2026-11-06",
    "jam": "17:00",
@@ -511,6 +528,23 @@
    "catatan": ""
   },
   {
+   "id": "2026-11-07-1200-feed-manual",
+   "tanggal": "2026-11-07",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
    "id": "2026-11-07-1700-feed-humor",
    "tanggal": "2026-11-07",
    "jam": "17:00",
@@ -546,6 +580,23 @@
    "caption": "POV: revisi kelima dari customer yang sama 😅\n\nGanti armada, tambah titik bongkar, tanggal maju... lalu akhirnya: \"yang versi pertama aja, Mbak.\" Padahal versi pertama sudah ditimpa.\n\nTips: simpan tiap versi dengan tanggal dan catat setiap perubahan. Di Ghostrip, riwayat hitungan tersimpan otomatis.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "POV admin: revisi kelima, lalu customer minta versi pertama",
    "catatan": ""
+  },
+  {
+   "id": "2026-11-08-1200-feed-manual",
+   "tanggal": "2026-11-08",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
   },
   {
    "id": "2026-11-08-1700-feed-bebas",

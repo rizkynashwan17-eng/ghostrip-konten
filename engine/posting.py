@@ -11,6 +11,11 @@ Pakai:
   python3 engine/posting.py platform <id> ig          → ubah platform (mis. TikTok sudah tayang)
   python3 engine/posting.py bersihkan [hari=10]        → buang post yang lebih tua dari N hari
   python3 engine/posting.py daftar                     → tampilkan isi jadwal
+  python3 engine/posting.py slot-manual 2026-11-06 [2026-11-07 ...] [--jam 12:00]
+      → buat KARTU KOSONG "Feed manual (Rizky)" per tanggal: Rizky mengunggah gambar buatannya sendiri di kartu itu (halaman Posting),
+        lalu mengirim gambarnya ke Claude di chat dengan kata "caption"
+  python3 engine/posting.py isi-manual <id> --media foto/manual/x.jpg --caption-file cap.txt [--judul "..."]
+      → isi kartu manual dengan gambar (disimpan di repo) + caption dari Claude (penutup baku dipasang otomatis)
 Jenis: story | reel | feed | carousel. Default platform: reel → ig,tiktok,fb; lainnya → ig,fb (halaman juga selalu menampilkan Facebook Page).
 """
 import argparse, datetime as dt, json, os, re, sys
@@ -104,6 +109,29 @@ def manual(args):
     d = load(); print(post["id"], upsert(d, post)); save(d)
 
 
+def slot_manual(args):
+    d = load()
+    for tgl in args.tanggal:
+        pid = f"{tgl}-{args.jam.replace(':', '')}-feed-manual"
+        if any(p["id"] == pid for p in d["posts"]):
+            print(pid, "sudah ada"); continue
+        d["posts"].append({"id": pid, "tanggal": tgl, "jam": args.jam, "jenis": "feed", "platform": ["ig", "fb"],
+                           "judul": "Feed manual (buatan Rizky)", "media": [], "manual": True, "cover": None, "caption": "", "tiktok_title": "",
+                           "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."})
+        print(pid, "ditambah")
+    save(d)
+
+
+def isi_manual(args):
+    d = load(); p = find(d, args.id)
+    check_media([args.media])
+    cap = open(args.caption_file).read().strip() if args.caption_file else ""
+    p["media"] = [args.media]; p["manual"] = True
+    if cap: p["caption"] = __import__("caption_akhir").pasang(cap)
+    if args.judul: p["judul"] = args.judul
+    p["catatan"] = ""; save(d); print(p["id"], "diisi")
+
+
 def find(d, pid):
     for p in d["posts"]:
         if p["id"] == pid:
@@ -124,9 +152,13 @@ def main():
     e = sp.add_parser("platform"); e.add_argument("id"); e.add_argument("platform")
     f = sp.add_parser("bersihkan"); f.add_argument("hari", nargs="?", type=int, default=10)
     sp.add_parser("daftar")
+    m = sp.add_parser("slot-manual"); m.add_argument("tanggal", nargs="+"); m.add_argument("--jam", default="12:00")
+    n = sp.add_parser("isi-manual"); n.add_argument("id"); n.add_argument("--media", required=True); n.add_argument("--caption-file"); n.add_argument("--judul")
     args = ap.parse_args()
     if args.cmd == "tambah": tambah(args)
     elif args.cmd == "manual": manual(args)
+    elif args.cmd == "slot-manual": slot_manual(args)
+    elif args.cmd == "isi-manual": isi_manual(args)
     elif args.cmd == "catatan":
         d = load(); find(d, args.id)["catatan"] = args.teks; save(d)
     elif args.cmd == "platform":

@@ -46,6 +46,10 @@ header p{margin:2px 0 0;color:var(--muted);font-size:13px}
 .when.soon{color:var(--mint);font-weight:600}
 .title{font-size:17px;font-weight:600;margin:8px 0 4px;text-wrap:balance}
 .note{font-size:13px;color:var(--warn);margin:4px 0 0}
+.drop{margin-top:10px;border:2px dashed var(--teal,#1d8f86);border-radius:14px;padding:16px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;font-size:14px;opacity:.95}
+.drop img{max-height:360px;max-width:100%;border-radius:12px}
+.drop label.pick{display:inline-block;padding:11px 18px;border-radius:12px;background:var(--teal,#1d8f86);color:#fff;font-weight:600;cursor:pointer}
+.drop input{display:none}
 .media{margin-top:10px;display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;border-radius:14px}
 .media video,.media img{display:block;border-radius:14px;background:#000;max-height:360px;max-width:100%;scroll-snap-align:start;flex:none}
 .media.multi img{max-width:78%}
@@ -155,7 +159,20 @@ async function copy(text){
 }
 
 function fileName(path){ return path.split('/').pop(); }
+// ---- kartu manual: gambar buatan Rizky diunggah di HP, disimpan lokal (IndexedDB) ----
+const isLocal = p => p.manual && !(p.media||[]).length;
+function idb(){ return new Promise((ok,no)=>{ const r=indexedDB.open('gp-manual',1); r.onupgradeneeded=()=>r.result.createObjectStore('f'); r.onsuccess=()=>ok(r.result); r.onerror=()=>no(r.error); }); }
+async function idbGet(k){ try{ const d=await idb(); return await new Promise(ok=>{ const q=d.transaction('f').objectStore('f').get(k); q.onsuccess=()=>ok(q.result||null); q.onerror=()=>ok(null); }); }catch(e){ return null; } }
+async function idbSet(k,v){ try{ const d=await idb(); await new Promise((ok,no)=>{ const t=d.transaction('f','readwrite'); t.objectStore('f').put(v,k); t.oncomplete=ok; t.onerror=()=>no(t.error); }); return true; }catch(e){ return false; } }
+async function fillLocal(p, box){
+  const f = await idbGet(p.id); box.innerHTML='';
+  if (f){ const u=URL.createObjectURL(f); box.append(el('img',{src:u,alt:p.judul})); fileCache.set(p.id, Promise.resolve([new File([f],'ghostrip-'+p.id+'.jpg',{type:f.type||'image/jpeg'})])); }
+  else box.append(el('div',{}, 'Belum ada gambar. Unggah gambar buatanmu untuk jam '+p.jam+'.'));
+  const inp = el('input',{type:'file',accept:'image/*',onchange:async e=>{ const g=e.target.files[0]; if(!g) return; fileCache.delete(p.id); const ok=await idbSet(p.id,g); toast(ok?'Gambar tersimpan di HP ini ✓':'Gagal menyimpan gambar'); fillLocal(p,box); }});
+  box.append(el('label',{class:'pick'}, f?'Ganti gambar':'Unggah gambar', inp));
+}
 async function loadFiles(p){
+  if (isLocal(p) && !fileCache.has(p.id)){ const f=await idbGet(p.id); if(!f) throw new Error('belum ada gambar'); fileCache.set(p.id, Promise.resolve([new File([f],'ghostrip-'+p.id+'.jpg',{type:f.type||'image/jpeg'})])); }
   if (fileCache.has(p.id)) return fileCache.get(p.id);
   const pr = Promise.all(p.media.map(async m => {
     const r = await fetch(m); if (!r.ok) throw new Error('media '+r.status);
@@ -198,7 +215,8 @@ function el(tag, attrs={}, ...kids){
 
 function card(p, isNext){
   const r = relTime(p);
-  const media = el('div', {class:'media'+(p.media.length>1?' multi':'')},
+  const local = isLocal(p);
+  const media = local ? el('div', {class:'drop', id:'m-'+p.id}) : el('div', {class:'media'+(p.media.length>1?' multi':'')},
     p.media.map(m => m.endsWith('.mp4')
       ? el('video', {src:m, controls:true, playsinline:true, preload:'metadata', poster:p.cover||null})
       : el('img', {src:m, alt:p.judul, loading:'lazy'})));
@@ -218,7 +236,9 @@ function card(p, isNext){
         pl==='fb' ? el('a', {class:'btn sec', style:'grid-column:1/-1', href:'https://business.facebook.com/latest/composer', target:'_blank', rel:'noopener'}, 'Buka Meta Business Suite') : null,
         ...p.media.map((m,i) => el('a', {class:'btn save', href:m, download:'ghostrip-'+fileName(m)}, p.media.length>1? `Simpan ke galeri (${i+1}/${p.media.length})` : 'Simpan ke galeri'))));
   }));
-  const cap = p.caption ? el('div', {class:'cap', onclick:e => e.currentTarget.classList.toggle('open')}, p.caption) : null;
+  const cap = p.caption ? el('div', {class:'cap', onclick:e => e.currentTarget.classList.toggle('open')}, p.caption)
+    : (local ? el('div', {class:'cap open'}, 'Caption belum ada. Kirim gambar ini ke Claude di chat dengan kata "caption", nanti caption + gambar masuk ke kartu ini.') : null);
+  if (local) fillLocal(p, media);
   return el('article', {id:'c-'+p.id, 'data-pending': allDone(p)?null:'1', class:'card'+(isNext?' next':'')+(allDone(p)?' done':'')},
     el('div', {class:'top'}, el('span', {class:'time'}, p.jam), el('span', {class:'pill k-'+p.jenis}, KIND[p.jenis]||p.jenis),
       el('span', {class:'when '+r.c}, allDone(p) ? 'selesai ✓' : r.t)),
