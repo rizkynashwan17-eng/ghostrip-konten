@@ -41,6 +41,7 @@ def scan(spec_path):
     report, ok_all = [], True
     for post in spec["posts"]:
         slot, kind = post["slot"], post["kind"]; issues = []; info = {}
+        if kind == "story" and day >= "2026-11-06": continue  # story dihentikan (PATEN 5 Nov 2026)
         m = man.get(slot)
         if not m: issues.append("belum dirender (tidak ada di manifest)")
         else:

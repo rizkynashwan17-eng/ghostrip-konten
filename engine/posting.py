@@ -70,6 +70,8 @@ def tambah(args):
     for p in k["posts"]:
         if not p.get("time"):
             print(f"lewati {p['slot']}: tanpa jam"); continue
+        if p["kind"] == "story" and date >= "2026-11-06":
+            print(f"lewati {p['slot']}: story dihentikan (PATEN 5 Nov 2026: 1 feed + 1 reels per hari)"); continue
         m = man.get(p["slot"])
         if not m:
             sys.exit(f"{p['slot']}: belum ada di {man_path} (render dulu)")

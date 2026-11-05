@@ -2,33 +2,6 @@
  "date": "2026-11-08",
  "posts": [
   {
-   "slot": "story-bebas",
-   "kind": "story",
-   "time": "07:30",
-   "tema": "bebas",
-   "scene": {
-    "kicker": "TEBAK-TEBAKAN",
-    "title": "Harga pulang-pergi = *2× harga sekali jalan*?",
-    "items": [
-     {
-      "text": "Iya, pasti",
-      "mark": "x"
-     },
-     {
-      "text": "Belum tentu",
-      "mark": "check"
-     }
-    ],
-    "char": "ghost",
-    "fact": {
-     "label": "MALAM INI",
-     "head": "19.30",
-     "body": "Kita jawab, kenapa *belum tentu*."
-    },
-    "footer": "@ghostrip.app"
-   }
-  },
-  {
    "slot": "feed-bebas",
    "kind": "feed",
    "time": "17:00",

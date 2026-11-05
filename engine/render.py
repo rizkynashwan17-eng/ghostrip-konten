@@ -804,6 +804,8 @@ def main(spec_path):
     rel = lambda v: os.path.relpath(v, ROOT) if isinstance(v, str) else ([os.path.relpath(x, ROOT) for x in v] if isinstance(v, list) else v)
     for post in spec["posts"]:
         slot, kind = post["slot"], post["kind"]
+        if kind == "story" and day >= "2026-11-06":
+            print("lewati", slot, "(story dihentikan sejak 6 Nov 2026)"); continue
         if post.get("engine") == "remotion":
             print("lewati", slot, "(Reels Remotion: pakai engine/whatif.py)"); continue
         if kind == "feed" and "layout" in post.get("scene", {}):

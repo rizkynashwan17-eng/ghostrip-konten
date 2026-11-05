@@ -17,7 +17,7 @@ Baca dan ikuti `STRATEGI-KONTEN.md` (teks asli dari Rizky) sebelum menulis konte
 - KERAHASIAAN INDUSTRI (wajib): DILARANG tarif aktual per rute sebagai patokan, rincian biaya operasional aktual, MARGIN/UNTUNG transporter, kontrak/penawaran pelanggan, tarif vendor, data customer. Boleh: proses kalkulasi secara umum, kategori biaya tanpa angka komersial, angka FIKTIF berlabel "simulasi".
 - Copywriting: bahasa Indonesia natural, hook relevan, kalimat jelas, detail konkret; tanpa clickbait yang tidak sesuai isi.
 - Checklist sebelum masuk halaman: 12 poin di bagian 11 `STRATEGI-KONTEN.md` (tema hari, tujuan, hook, akurasi, kerahasiaan, soft selling, bebas promosi untuk cerita, logo hanya di akhir, visual/audio/subtitle, caption per platform, klaim terverifikasi).
-- Story (07.30) & feed (17.00) mengikuti tema hari yang sama (mis. Selasa: story pertanyaan/teaser cerita tanpa CTA; Rabu: feed/carousel checklist tips).
+- Feed (17.00) & Reels (19.30) mengikuti tema hari yang sama (mis. Selasa: feed teaser cerita tanpa CTA di gambar; Rabu: feed checklist tips). STORY DIHENTIKAN sejak 6 Nov 2026 (PATEN 5 Nov).
 - Pilot `konten/2026-11-02-whatif.json` HANYA referensi gaya visual. JANGAN dimasukkan ke halaman apa adanya (ada adegan untung→rugi dan biaya per rute yang dilarang aturan kerahasiaan).
 
 ## GAYA VIDEO — ATURAN PATEN Rizky (30 Okt 2026): SEMUA VIDEO BARU WAJIB REMOTION, gaya grafik SAMA PERSIS (ketiplek) dengan pilot
@@ -76,15 +76,14 @@ Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 - Jangan mengarang fitur lain (GPS, AI, akuntansi, dll). Tanpa testimoni fiktif, tanpa klaim jumlah pengguna, tanpa "pasti untung".
 - Nama perusahaan/orang harus FIKTIF (PT Maju Jaya Logistik, PT Makmur Semakmurnya, Ibu Gadis, Budi Santoso). DILARANG: "PT Gunung Inti Gemilang", "Ibu Lermi", "Trans Anugrah".
 
-## Jadwal standar (WIB, Asia/Jakarta) — ATURAN PATEN Rizky (30 Okt 2026): mulai 1 Nov 2026 hanya 1 REELS per hari
+## Jadwal standar (WIB, Asia/Jakarta) — ATURAN PATEN Rizky (5 Nov 2026): mulai 6 Nov 2026 SATU HARI = 1 FEED (17:00) + 1 REELS (19:30), TANPA STORY. (1 Nov: 1 Reels/hari.)
 | slot | jenis | jam | platform di halaman |
 |---|---|---|---|
-| story | foto 1080×1920 | 07:30 | IG story (+FB) |
 | feed | foto 1080×1350 (atau carousel) | 17:00 | IG post (+FB) |
 | reel | video Remotion gaya pilot reel1-whatif (tema hari itu) | 19:30 | IG reel + TikTok + FB |
-- WAJIB: 1 Reels per hari (bukan 2), dibuat dengan Remotion, gaya animasi sama persis dengan `media/2026-11-02/reel1-whatif.mp4`. Story & feed tetap setiap hari.
+- WAJIB: 1 Reels per hari (bukan 2), dibuat dengan Remotion, gaya animasi sama persis dengan `media/2026-11-02/reel1-whatif.mp4`, plus 1 feed gaya editorial. TIDAK ADA story (dihentikan 6 Nov 2026): jangan membuat, merender, atau memasukkan story ke halaman (`posting.py`, `render.py`, `scan_konten.py` sudah melewatinya).
 - Facebook Page diposting manual oleh Rizky lewat Meta Business Suite (halaman selalu menampilkannya).
-- Story boleh polling/pertanyaan yang nyambung ke Reels hari itu. Feed = ringkasan/checklist yang bisa disimpan (compare, list, atau carousel 3–5 slide), sesuai tema hari.
+- Feed = ringkasan/checklist yang bisa disimpan, gaya editorial, sesuai tema hari dan nyambung ke Reels hari itu.
 - Stok cadangan Reels yang sudah ditulis tapi belum masuk halaman: cek `konten/*.json` dan `SUSULAN-SUARA.md` sebelum membuat Reels baru untuk suatu tanggal (jangan dobel). Saat ini: 6 Nov (cerita: rem yang tidak boleh ditawar), 9 Nov (realita: tiga permintaan harga jam empat sore).
 
 ## Sistem stok konten (H-2) — dijalankan tugas harian 15.40 WIB (ATURAN PATEN & WAJIB dari Rizky)
@@ -101,7 +100,7 @@ C2. MASUK HALAMAN: konten yang sudah AMAN (lihat "INSPEKSI WAJIB") langsung dima
 D. Bersih-bersih repo: `python3 engine/posting.py bersihkan 10`, hapus folder `media/<tanggal>` dan `voice/out/<tanggal>-*` yang tanggalnya ≥ 10 hari lalu, kecuali media yang masih ada di `posting/jadwal.json`.
 
 ## Langkah membuat konten (dipakai di langkah B)
-Catatan 30 Okt 2026: Reels dibuat dengan Remotion (lihat GAYA VIDEO); tema mengikuti STRATEGI KONTEN per hari. Langkah engine/render.py di bawah hanya untuk story & feed/carousel.
+Catatan 30 Okt 2026: Reels dibuat dengan Remotion (lihat GAYA VIDEO); tema mengikuti STRATEGI KONTEN per hari. Langkah engine/render.py di bawah hanya untuk feed/carousel (story sudah dihentikan).
 1. Clone/pull repo. Baca `RIWAYAT.md` (hindari topik 30 hari terakhir).
 2. Pilih 2 topik reel + 1 topik feed, RISET dulu (lihat di atas), catat sumbernya.
 3. Tulis `konten/YYYY-MM-DD.json` (contoh lengkap: `konten/2026-10-28-v2.json`).
@@ -111,7 +110,7 @@ Catatan 30 Okt 2026: Reels dibuat dengan Remotion (lihat GAYA VIDEO); tema mengi
 5b. SCAN WAJIB (ATURAN PATEN Rizky, 28 Okt 2026): `python3 engine/scan_konten.py konten/YYYY-MM-DD.json`. Mengecek aspek & resolusi (reel/story 1080x1920 9:16, feed/carousel 1080x1350 4:5), durasi reel 15–45 dtk, audio, voiceover & kualitas suara, jumlah slide, caption (CTA, #ghostrip, panjang, hashtag), tiktok_title ≤ 90, emoji di layar, nama terlarang. Kalau ada "PERBAIKI" → perbaiki JSON, render & scan ulang sampai `semua_aman: true`. Cantumkan hasil scan di laporan.
 6. Tambah baris ke `RIWAYAT.md`, commit & push ke `main`.
 7. URL media = `https://raw.githubusercontent.com/rizkynashwan17-eng/ghostrip-konten/<SHA-commit>/<path>`.
-8. MASUK HALAMAN (WAJIB, tanpa menunggu persetujuan Rizky): begitu scan dan inspeksi AMAN, jalankan `python3 engine/posting.py tambah konten/YYYY-MM-DD-v2.json` (hanya slot yang masih kosong; cek `posting.py daftar` dulu; konten manual Rizky dihitung mengisi slot sejenis). Reels → platform IG + TikTok, story/feed/carousel → IG. Story tanpa caption. Caption dan `tiktok_title` (≤ 90 karakter) diambil dari JSON konten.
+8. MASUK HALAMAN (WAJIB, tanpa menunggu persetujuan Rizky): begitu scan dan inspeksi AMAN, jalankan `python3 engine/posting.py tambah konten/YYYY-MM-DD-v2.json` (hanya slot yang masih kosong; cek `posting.py daftar` dulu; konten manual Rizky dihitung mengisi slot sejenis). Reels → platform IG + TikTok, story/feed/carousel → IG. Caption dan `tiktok_title` (≤ 90 karakter) diambil dari JSON konten.
 9. Commit & push `posting/jadwal.json` + semua media yang dirujuk, lalu verifikasi `https://raw.githubusercontent.com/rizkynashwan17-eng/ghostrip-konten/main/posting/jadwal.json` berisi konten baru.
 
 ## Format JSON (engine v2)

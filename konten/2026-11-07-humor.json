@@ -2,37 +2,6 @@
  "date": "2026-11-07",
  "posts": [
   {
-   "slot": "story-humor",
-   "kind": "story",
-   "time": "07:30",
-   "tema": "humor",
-   "scene": {
-    "kicker": "JUJUR AJA",
-    "title": "Revisi quotation terbanyak yang pernah kamu alami?",
-    "items": [
-     {
-      "text": "1–2 kali",
-      "mark": "check"
-     },
-     {
-      "text": "3–5 kali",
-      "mark": "check"
-     },
-     {
-      "text": "Lebih dari 5",
-      "mark": "x"
-     }
-    ],
-    "char": "ghost",
-    "fact": {
-     "label": "MALAM INI",
-     "head": "19.30",
-     "body": "POV admin: revisi *kelima* dari customer yang sama."
-    },
-    "footer": "@ghostrip.app"
-   }
-  },
-  {
    "slot": "feed-humor",
    "kind": "feed",
    "time": "17:00",

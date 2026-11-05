@@ -2,37 +2,6 @@
  "date": "2026-11-06",
  "posts": [
   {
-   "slot": "story-cerita",
-   "kind": "story",
-   "time": "07:30",
-   "tema": "cerita",
-   "scene": {
-    "kicker": "CERITA MALAM INI",
-    "title": "Rem truk bermasalah malam sebelum *order besar*. Kamu pilih?",
-    "items": [
-     {
-      "text": "Tunda kiriman",
-      "mark": "check"
-     },
-     {
-      "text": "Cari truk pengganti",
-      "mark": "check"
-     },
-     {
-      "text": "Tetap jalan",
-      "mark": "x"
-     }
-    ],
-    "char": "ghost",
-    "fact": {
-     "label": "CERITA",
-     "head": "Malam ini 19.30",
-     "body": "Pak Harso harus memilih sebelum *jam enam pagi*."
-    },
-    "footer": "@ghostrip.app"
-   }
-  },
-  {
    "slot": "feed-cerita",
    "kind": "feed",
    "time": "17:00",
