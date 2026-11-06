@@ -277,7 +277,12 @@ async function boot(){
   try{
     const r = await fetch('posting/jadwal.json?t='+Date.now(), {cache:'no-store'});
     const j = await r.json();
-    DATA = j.posts || [];
+    // PATEN 7 Nov 2026 (Rizky): konten tanggal 6 Nov ke belakang tidak ditampilkan di halaman ini.
+    // Urutan tiap hari: Feed -> Reels -> kartu "Postingan karyaku" (feed manual).
+    const MULAI = '2026-11-07';
+    const rank = p => p.manual ? 3 : (p.jenis||p.kind) === 'reel' ? 2 : 1;
+    DATA = (j.posts || []).filter(p => p.tanggal >= MULAI)
+      .sort((a,b) => a.tanggal.localeCompare(b.tanggal) || rank(a)-rank(b) || a.jam.localeCompare(b.jam));
     document.getElementById('foot').textContent = j.diperbarui ? 'Jadwal diperbarui '+new Date(j.diperbarui).toLocaleString('id-ID',{timeZone:'Asia/Jakarta',dateStyle:'medium',timeStyle:'short'})+' WIB' : '';
     render();
   }catch(e){
