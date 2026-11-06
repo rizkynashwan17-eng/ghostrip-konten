@@ -1,12 +1,5 @@
 [
  {
-  "slot": "feed-humor",
-  "kind": "feed",
-  "media": "media/2026-11-07/feed-humor-ed2.jpg",
-  "gaya": "editorial",
-  "warna": "navy"
- },
- {
   "slot": "reel-humor",
   "kind": "reel",
   "media": "media/2026-11-07/reel-humor.mp4",
@@ -14,5 +7,12 @@
   "dur": 37.93,
   "engine": "remotion",
   "bersuara": true
+ },
+ {
+  "slot": "feed-humor",
+  "kind": "feed",
+  "media": "media/2026-11-07/feed-humor-ed3.jpg",
+  "gaya": "editorial",
+  "warna": "teal"
  }
 ]

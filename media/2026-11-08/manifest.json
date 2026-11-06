@@ -1,12 +1,5 @@
 [
  {
-  "slot": "feed-bebas",
-  "kind": "feed",
-  "media": "media/2026-11-08/feed-bebas-ed.jpg",
-  "gaya": "editorial",
-  "warna": "teal"
- },
- {
   "slot": "reel-bedah",
   "kind": "reel",
   "media": "media/2026-11-08/reel-bedah.mp4",
@@ -14,5 +7,12 @@
   "dur": 42.03,
   "engine": "remotion",
   "bersuara": true
+ },
+ {
+  "slot": "feed-bebas",
+  "kind": "feed",
+  "media": "media/2026-11-08/feed-bebas-ed2.jpg",
+  "gaya": "editorial",
+  "warna": "navy"
  }
 ]

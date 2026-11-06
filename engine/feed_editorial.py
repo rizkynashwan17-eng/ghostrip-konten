@@ -10,6 +10,7 @@ Post feed yang punya scene.layout dirender di sini (render.py melewatinya).
 
 Markup judul: *frasa* = miring + garis sapuan; ~frasa~ = warna aksen.
 """
+import datetime
 import html, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,7 +28,9 @@ PALET = {
     "krem":   dict(bg="#f2ead9", fg="#0d1b24", sub="#4d5f63", ac="#e2733a", sw="#2fb8a0", panel="#0f3b46", p1="#7ff0d6", p2="#ff9d5c", pf="#071a22", line="#0d1b24", ink="#0d1b24", note="#5d6d70", dot=".id", dotc="#2fb8a0"),
     "oranye": dict(bg="#ff9d5c", fg="#0d1b24", sub="#4a2a14", ac="#ffffff", sw="#071a22", panel="#071a22", p1="#071a22", p2="#ffffff", pf="#f2ead9", line="#0d1b24", ink="#0d1b24", note="#4a2a14", dot=".id", dotc="#ffffff"),
 }
-URUTAN = ["teal", "navy", "teal", "navy", "navy", "teal", "navy"]  # Sen..Min. TEAL = warna utama, navy selingan (krem TIDAK dipakai untuk feed, Rizky 7 Nov), aksen selalu mint. Latar mint/oranye penuh TIDAK dipakai.
+def warna_hari(day):
+    """PATEN 7 Nov 2026 (Rizky): warna feed digilir tiap hari antara TEAL dan NAVY (4 Nov navy, 5 teal, 6 navy, 7 teal, 8 navy, ...). Krem/mint/oranye penuh TIDAK dipakai."""
+    return "teal" if datetime.date.fromisoformat(day).toordinal() % 2 == 1 else "navy"
 
 
 def judul(t, pal):
@@ -207,7 +210,7 @@ def main(spec_path):
     for post in spec["posts"]:
         if post["kind"] != "feed" or "layout" not in post.get("scene", {}): continue
         sc = post["scene"]
-        warna = sc.get("warna") or URUTAN[datetime.date.fromisoformat(day).weekday()]
+        warna = sc.get("warna") or warna_hari(day)
         path = os.path.join(outdir, f'{post["slot"]}-ed.jpg')
         ok = render(sc, warna, path)
         manifest = [m for m in manifest if m["slot"] != post["slot"]] + [{"slot": post["slot"], "kind": "feed", "media": os.path.relpath(path, ROOT), "gaya": "editorial", "warna": warna}]
