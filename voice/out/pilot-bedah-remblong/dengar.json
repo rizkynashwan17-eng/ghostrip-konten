@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   50.73
+  ],
+  2
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Truk muatan penuh, masuk turunan panjang.\nRem diinjak, tapi truknya tetap meluncur.\nKita bedah.\nSaat rem diinjak, kampas menekan tromol.\nGesekan itu yang menahan roda, dan gesekan menghasilkan panas.\nDi turunan panjang, rem diinjak terus, panasnya menumpuk.\nKampas yang kepanasan jadi licin.\nKata KNKT, direm dapat, tapi enggak gigit.\nMasalah kedua, angin.\nTiap rem diinjak, angin di tabung ikut terpakai.\nDiinjak terus-terusan, anginnya tekor.\nMenurut KNKT, di bawah tujuh bar, pedal rem tidak bisa ditekan.\nJadi, pasang gigi rendah sebelum masuk turunan.\nDan jangan pindah gigi di jalan menurun.\nBiar mesin ikut menahan, rem tidak bekerja sendirian.\nIngat ini, tiap ketemu turunan panjang.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
