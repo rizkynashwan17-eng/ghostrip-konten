@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-05T20:28+07:00",
+ "diperbarui": "2026-11-06T13:14+07:00",
  "posts": [
   {
    "id": "2026-10-29-0730-story-v2",
@@ -483,12 +483,14 @@
     "fb"
    ],
    "judul": "Feed manual (buatan Rizky)",
-   "media": [],
+   "media": [
+    "foto/manual/2026-11-06.jpg"
+   ],
    "manual": true,
    "cover": null,
-   "caption": "",
+   "caption": "Hitung margin di laptop, cek hasilnya di HP. 📱💻\n\nDengan Ghostrip, kalkulasi biaya operasional kargo selesai dalam hitungan menit, bukan berjam-jam di kalkulator dan kertas coretan. Tinggal pilih rute dan muatan, rincian solar, tol, driver sampai harga jual langsung tersusun rapi, siap jadi penawaran.\n\nTampilan di gambar memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+   "catatan": ""
   },
   {
    "id": "2026-11-06-1700-feed-cerita",
