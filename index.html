@@ -55,6 +55,11 @@ header p{margin:2px 0 0;color:var(--muted);font-size:13px}
 .media.multi img{max-width:78%}
 .cap{margin-top:10px;background:var(--panel2);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.5;white-space:pre-wrap;color:#cfe5e2;max-height:4.6em;overflow:hidden;position:relative;cursor:pointer}
 .cap.open{max-height:none}
+.capedit{margin-top:10px;display:grid;gap:8px}
+.capedit textarea{width:100%;min-height:150px;resize:vertical;font:inherit;font-size:15px;line-height:1.5;color:var(--fg);background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.capedit textarea:focus{outline:3px solid var(--mint);outline-offset:1px}
+.capedit .row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.capedit .st{font-size:13px;color:#8fb0b5}
 .cap:not(.open)::after{content:"";position:absolute;inset:auto 0 0;height:1.6em;background:linear-gradient(transparent,var(--panel2))}
 .plats{display:grid;gap:10px;margin-top:12px}
 .plat{border:1px solid var(--line);border-radius:14px;padding:10px;display:grid;gap:8px}
@@ -145,8 +150,11 @@ function relTime(p){
   const h=Math.floor(m/60); return {t: h<24? `${h} jam lagi` : '', c:''};
 }
 
-function tiktokCaption(p){ return (p.tiktok_title ? p.tiktok_title+'\n\n' : '') + (p.caption||''); }
-function captionFor(p, pl){ return pl==='tiktok' ? tiktokCaption(p) : (p.caption||''); }
+// caption kartu manual: ditulis/ditempel Rizky sendiri, disimpan di HP ini (localStorage)
+const manualCaps = () => store.get('caps') || {};
+const capOf = p => p.caption || (isLocal(p) ? (manualCaps()[p.id] || '') : '');
+function tiktokCaption(p){ return (p.tiktok_title ? p.tiktok_title+'\n\n' : '') + capOf(p); }
+function captionFor(p, pl){ return pl==='tiktok' ? tiktokCaption(p) : capOf(p); }
 
 async function copy(text){
   if (!text) return false;
@@ -213,6 +221,19 @@ function el(tag, attrs={}, ...kids){
   return e;
 }
 
+function capEditor(p){
+  const ta = el('textarea', {id:'ce-'+p.id, placeholder:'Tulis atau tempel caption di sini, lalu ketuk Simpan caption.', 'aria-label':'Caption postingan karyaku', rows:'7'});
+  ta.value = manualCaps()[p.id] || '';
+  const st = el('div', {class:'st', 'aria-live':'polite'}, ta.value ? 'Caption tersimpan di HP ini.' : 'Belum ada caption tersimpan.');
+  const save = () => { const c = manualCaps(); if (ta.value.trim()) c[p.id] = ta.value; else delete c[p.id]; store.set('caps', c); };
+  let h; ta.addEventListener('input', () => { st.textContent = 'Mengetik…'; clearTimeout(h); h = setTimeout(() => { save(); st.textContent = 'Tersimpan otomatis ✓'; }, 700); });
+  return el('div', {class:'capedit'}, ta,
+    el('div', {class:'row'},
+      el('button', {type:'button', onclick:() => { clearTimeout(h); save(); st.textContent = ta.value.trim() ? 'Caption tersimpan di HP ini ✓' : 'Caption dikosongkan.'; toast(ta.value.trim() ? 'Caption tersimpan ✓' : 'Caption dikosongkan'); render(); }}, 'Simpan caption'),
+      el('button', {class:'sec', type:'button', onclick:async () => toast(ta.value.trim() ? (await copy(ta.value) ? 'Caption tersalin' : 'Gagal menyalin, tekan lama teks caption') : 'Belum ada caption')}, 'Salin caption')),
+    st);
+}
+
 function card(p, isNext){
   const r = relTime(p);
   const local = isLocal(p);
@@ -226,7 +247,7 @@ function card(p, isNext){
       const d=doneMap(); if (e.target.checked) d[p.id+':'+pl]=Date.now(); else delete d[p.id+':'+pl];
       store.set('done', d); render(); if (e.target.checked) toast('Ditandai sudah diposting di '+PLAT[pl].name);
     }});
-    const hasCap = !!(p.caption||p.tiktok_title);
+    const hasCap = !!(capOf(p)||p.tiktok_title);
     const shareBtn = el('button', {class:'share', type:'button', style: hasCap? null : 'grid-column:1/-1', onclick:e => share(p, pl, e.currentTarget)}, 'Bagikan');
     const capBtn = el('button', {class:'sec', type:'button', onclick:async () => toast(await copy(captionFor(p, pl)) ? 'Caption tersalin' : 'Gagal menyalin, tekan lama teks caption')}, pl==='tiktok'?'Salin caption TikTok':'Salin caption');
     return el('div', {class:'plat'},
@@ -237,7 +258,7 @@ function card(p, isNext){
         ...p.media.map((m,i) => el('a', {class:'btn save', href:m, download:'ghostrip-'+fileName(m)}, p.media.length>1? `Simpan ke galeri (${i+1}/${p.media.length})` : 'Simpan ke galeri'))));
   }));
   const cap = p.caption ? el('div', {class:'cap', onclick:e => e.currentTarget.classList.toggle('open')}, p.caption)
-    : (local ? el('div', {class:'cap open'}, 'Caption belum ada. Kirim gambar ini ke Claude di chat dengan kata "caption", nanti caption + gambar masuk ke kartu ini.') : null);
+    : (local ? capEditor(p) : null);
   if (local) fillLocal(p, media);
   return el('article', {id:'c-'+p.id, 'data-pending': allDone(p)?null:'1', class:'card'+(isNext?' next':'')+(allDone(p)?' done':'')},
     el('div', {class:'top'}, el('span', {class:'time'}, p.jam), el('span', {class:'pill k-'+p.jenis}, KIND[p.jenis]||p.jenis),
@@ -301,7 +322,7 @@ document.getElementById('jump').addEventListener('click', () => {
   target.classList.remove('flash'); void target.offsetWidth; target.classList.add('flash');
 });
 boot();
-setInterval(() => { if (!document.hidden && ![...document.querySelectorAll('video')].some(v => !v.paused)) render(); }, 60000);
+setInterval(() => { if (!document.hidden && document.activeElement?.tagName !== 'TEXTAREA' && ![...document.querySelectorAll('video')].some(v => !v.paused)) render(); }, 60000);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) boot(); });
 </script>
 </body>
