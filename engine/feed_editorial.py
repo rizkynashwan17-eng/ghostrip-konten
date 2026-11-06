@@ -27,7 +27,7 @@ PALET = {
     "krem":   dict(bg="#f2ead9", fg="#0d1b24", sub="#4d5f63", ac="#e2733a", sw="#2fb8a0", panel="#0f3b46", p1="#7ff0d6", p2="#ff9d5c", pf="#071a22", line="#0d1b24", ink="#0d1b24", note="#5d6d70", dot=".id", dotc="#2fb8a0"),
     "oranye": dict(bg="#ff9d5c", fg="#0d1b24", sub="#4a2a14", ac="#ffffff", sw="#071a22", panel="#071a22", p1="#071a22", p2="#ffffff", pf="#f2ead9", line="#0d1b24", ink="#0d1b24", note="#4a2a14", dot=".id", dotc="#ffffff"),
 }
-URUTAN = ["teal", "navy", "teal", "krem", "navy", "teal", "krem"]  # Sen..Min. TEAL = warna utama (paling sering), navy & krem selingan, aksen selalu mint. Latar mint/oranye penuh TIDAK dipakai.
+URUTAN = ["teal", "navy", "teal", "navy", "navy", "teal", "navy"]  # Sen..Min. TEAL = warna utama, navy selingan (krem TIDAK dipakai untuk feed, Rizky 7 Nov), aksen selalu mint. Latar mint/oranye penuh TIDAK dipakai.
 
 
 def judul(t, pal):
@@ -89,7 +89,7 @@ def body(sc, pal):
     if L == "file":  # tumpukan kapsul nama file
         return f'<div class="files">' + "".join(
             f'<div class="fchip {"last" if i==len(sc["items"])-1 else ""}" style="transform:rotate({[-4,3,-2,4,-3,2][i%6]}deg);margin-left:{[0,90,30,120,50,10][i%6]}px"><em class="fi"></em>{e(t)}</div>'
-            for i, t in enumerate(sc["items"])) + "</div>" + f'<img class="ghost" src="{GHOST}">'
+            for i, t in enumerate(sc["items"])) + "</div>"
     raise ValueError(L)
 
 
@@ -145,9 +145,9 @@ h1 .ac{color:%(ac)s}
 .b.r{align-self:flex-end;background:%(br)s;color:%(brfg)s;border-bottom-right-radius:8px}
 .stack .pills{flex-direction:row;flex-wrap:wrap;gap:16px 14px;flex:none}
 .stack .p{font-size:31px;padding:13px 26px}
-.files{display:flex;flex-direction:column;gap:22px;padding-top:10px}
-.fchip{align-self:flex-start;font-size:38px;font-weight:600;padding:18px 32px;border-radius:24px;background:%(pf)s;color:%(pffg)s;box-shadow:0 14px 30px rgba(0,0,0,.12)}
-.fi{display:inline-block;width:24px;height:30px;border-radius:4px;border:3px solid currentColor;margin-right:14px;vertical-align:-3px;opacity:.75}
+.files{display:flex;flex-direction:column;gap:32px;padding-top:24px}
+.fchip{align-self:flex-start;font-size:48px;font-weight:600;padding:26px 42px;border-radius:28px;background:%(pf)s;color:%(pffg)s;box-shadow:0 14px 30px rgba(0,0,0,.12)}
+.fi{display:inline-block;position:relative;width:26px;height:34px;border-radius:4px 10px 4px 4px;border:3.5px solid currentColor;margin-right:18px;vertical-align:-4px;opacity:.8}.fi:before,.fi:after{content:'';position:absolute;left:4px;right:4px;height:3px;background:currentColor;border-radius:2px}.fi:before{top:12px}.fi:after{top:19px;right:9px}
 .fchip.last{background:%(p2)s;color:%(p2fg)s;font-weight:800}
 .ghost{position:absolute;right:20px;bottom:24px;width:190px;transform:rotate(8deg)}
 .foot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:30px}
