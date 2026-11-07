@@ -2,41 +2,39 @@
  "date": "2026-11-10",
  "posts": [
   {
-   "slot": "feed-cerita",
+   "slot": "feed-logistik",
    "kind": "feed",
    "time": "17:00",
-   "tema": "cerita",
+   "tema": "logistik",
    "scene": {
-    "layout": "chat",
-    "kicker": "CERITA SELASA",
-    "pill": "FIKSI",
-    "title": "Perjalanan *terakhir*\nPak Darmin.",
+    "layout": "banding",
+    "kicker": "DUNIA LOGISTIK",
+    "pill": "KONTAINER",
+    "title": "FCL atau LCL?\nBedanya di *berbagi*",
     "title_size": 96,
-    "chat": [
-     {
-      "dari": "kiri",
-      "nama": "Pak Darmin",
-      "teks": "Pak, ini trip terakhir saya. Besok saya pensiun."
-     },
-     {
-      "dari": "kanan",
-      "nama": "Dispatcher",
-      "teks": "Dua puluh delapan tahun, Pak. Besok radio ini pasti terasa sepi."
-     },
-     {
-      "dari": "kiri",
-      "nama": "Pak Darmin",
-      "teks": "Muatan tadi sudah saya cek tiga kali. Kebiasaan."
-     },
-     {
-      "dari": "kanan",
-      "nama": "Dispatcher",
-      "teks": "Kebiasaan itu yang bikin kami tenang, Pak."
-     }
-    ],
-    "note": "Cerita fiksi. Nama tokoh rekaan."
+    "sub": "Dua cara kirim barang lewat kontainer laut.",
+    "kiri": {
+     "judul": "FCL · KONTAINER SENDIRI",
+     "items": [
+      "Satu kontainer untuk satu pengirim",
+      "Cocok untuk muatan besar",
+      "Waktu transit biasanya lebih cepat",
+      "Barang lebih sedikit disentuh"
+     ]
+    },
+    "kanan": {
+     "judul": "LCL · BERBAGI KONTAINER",
+     "items": [
+      "Ruang dibagi dengan pengirim lain",
+      "Cocok untuk muatan kecil",
+      "Biaya sesuai volume dan berat",
+      "Ada proses gabung dan pisah barang"
+     ]
+    },
+    "note": "Simpan buat pengingat sebelum\ntanya tarif ke forwarder."
    },
-   "caption": "Dua puluh delapan tahun di belakang kemudi. Trip terakhir Pak Darmin hari ini. 🚛\n\nMuatan dicek tiga kali sebelum berangkat. Bukan karena tidak percaya, tapi karena kebiasaan yang menjaga semua orang pulang dengan selamat.\n\nPernah kerja bareng sopir atau rekan yang seteliti ini? Ceritakan di komentar.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+   "caption": "FCL atau LCL? Kirim barang lewat kontainer laut punya dua cara. 🚢\n\nFCL (Full Container Load): satu kontainer dipakai untuk satu pengirim saja. Kontainernya tidak harus terisi penuh, tapi tidak dibagi dengan pengirim lain. Biasanya cocok untuk muatan besar dan waktu transit lebih cepat.\n\nLCL (Less than Container Load): barang kamu berbagi ruang kontainer dengan kiriman lain. Cocok untuk muatan kecil karena biaya dihitung dari volume dan berat. Konsekuensinya, ada proses gabung dan pisah barang yang bisa membuat waktunya lebih lama.\n\nSetelah sampai pelabuhan, kontainer tetap butuh truk darat untuk menuju gudang. Kalau kamu pemilik armada atau admin penawaran, Ghostrip bantu hitung harga trip dan bikin surat penawarannya dengan lebih rapi.\n\nPilihan mana yang paling sering kamu pakai, FCL atau LCL? Tulis di komentar 👇\n\nSumber: FedEx Indonesia, glosarium pengiriman (FCL dan LCL).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "gaya": "editorial"
   }
  ]
 }

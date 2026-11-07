@@ -88,7 +88,7 @@ def scan(spec_path):
                 if tema == "cerita":
                     # Selasa/Jumat (STRATEGI-KONTEN.md): tanpa promosi/CTA di caption & narasi
                     if cta: issues.append("cerita (Selasa/Jumat) tidak boleh ada CTA di caption")
-                elif tema in ("realita", "tips", "fitur", "humor", "edukasi") and "ghostrip" not in lowb:
+                elif tema in ("realita", "tips", "fitur", "humor", "edukasi", "logistik", "trucking") and "ghostrip" not in lowb:
                     issues.append("soft selling wajib untuk tema ini (sebut Ghostrip/CTA yang relevan)")
                 
                 if len(cap) > 2200: issues.append(f"caption {len(cap)} karakter (> 2200)")
@@ -111,6 +111,18 @@ def scan(spec_path):
         suara = [x for x in issues if "voiceover" in x]; lain = [x for x in issues if x not in suara]
         ok = not lain; ok_all &= ok
         status = "PERBAIKI" if lain else ("AMAN - SUARA MENYUSUL" if suara else "AMAN")
+        # TEMA FEED DIGILIR (PATEN 7 Nov 2026): lihat engine/tema_feed.py. Feed bukan cerita & bukan teaser Reels.
+        if kind == "feed" and not post.get("manual"):
+            try:
+                from tema_feed import tema as _tf
+                want_t = _tf(day)
+            except ValueError:
+                want_t = None
+            if want_t:
+                if post.get("tema") != want_t:
+                    issues.append(f"tema feed salah: tanggal ini wajib '{want_t}' (logistik/trucking/fitur digilir tiap hari), file berisi '{post.get('tema')}'")
+                if post.get("tema") == "cerita" or "fiksi" in layar.lower() or "teaser" in layar.lower() or "malam ini" in layar.lower():
+                    issues.append("feed dilarang berupa cerita fiksi atau teaser Reels (PATEN 7 Nov 2026)")
         # GAYA REELS SELANG-SELING (PATEN 5 Nov 2026): lihat engine/gaya_reels.py
         if kind == "reel":
             try:

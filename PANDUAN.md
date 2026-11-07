@@ -17,7 +17,13 @@ Baca dan ikuti `STRATEGI-KONTEN.md` (teks asli dari Rizky) sebelum menulis konte
 - KERAHASIAAN INDUSTRI (wajib): DILARANG tarif aktual per rute sebagai patokan, rincian biaya operasional aktual, MARGIN/UNTUNG transporter, kontrak/penawaran pelanggan, tarif vendor, data customer. Boleh: proses kalkulasi secara umum, kategori biaya tanpa angka komersial, angka FIKTIF berlabel "simulasi".
 - Copywriting: bahasa Indonesia natural, hook relevan, kalimat jelas, detail konkret; tanpa clickbait yang tidak sesuai isi.
 - Checklist sebelum masuk halaman: 12 poin di bagian 11 `STRATEGI-KONTEN.md` (tema hari, tujuan, hook, akurasi, kerahasiaan, soft selling, bebas promosi untuk cerita, logo hanya di akhir, visual/audio/subtitle, caption per platform, klaim terverifikasi).
-- Feed (17.00) & Reels (19.30) mengikuti tema hari yang sama (mis. Selasa: feed teaser cerita tanpa CTA di gambar; Rabu: feed checklist tips). STORY DIHENTIKAN sejak 6 Nov 2026 (PATEN 5 Nov).
+- **TEMA FEED (PATEN Rizky, 7 Nov 2026, MENGGANTIKAN aturan lama "feed mengikuti tema Reels"):** FEED (17.00) TIDAK PERNAH berupa CERITA (tidak ada cerita fiksi, tokoh rekaan, chat cerita) dan TIDAK PERNAH menjadi teaser Reels. Tema feed hanya 3, DIGILIR TIAP HARI, mulai 10 Nov 2026 dari "logistik": logistik → trucking → fitur → logistik → ... (otomatis lewat `python3 engine/tema_feed.py [tanggal] [hari]`; isi field `tema` feed persis sesuai hasilnya).
+  - `logistik` = seputar dunia logistik (kontainer, pelabuhan, dokumen, rantai pasok, istilah & proses; edukasi terverifikasi + sumber di caption).
+  - `trucking` = seputar dunia trucking (armada, KIR/STNK, tol, ODOL, operasional umum, dunia admin/sopir sebagai tips/realita/humor singkat, BUKAN cerita).
+  - `fitur` = seputar fitur aplikasi Ghostrip yang benar-benar ada (hitung trip, penawaran PDF, invoice, cek muatan, data truk, tim, news logistik).
+  - Reels tetap memakai tema harian dan gayanya sendiri (Senin realita, Selasa/Jumat cerita, dst.); cerita HANYA boleh di Reels. `scan_konten.py` menolak feed bertema salah, bertema `cerita`, atau bernada fiksi/teaser. Layout feed baru `banding` (dua kartu perbandingan) tersedia di `engine/feed_editorial.py`.
+  - Soft selling di caption feed: tetap wajib menyebut Ghostrip secara relevan dan ringan.
+  - STORY DIHENTIKAN sejak 6 Nov 2026 (PATEN 5 Nov).
 - Pilot `konten/2026-11-02-whatif.json` HANYA referensi gaya visual. JANGAN dimasukkan ke halaman apa adanya (ada adegan untung→rugi dan biaya per rute yang dilarang aturan kerahasiaan).
 
 ## GAYA VIDEO — ATURAN PATEN Rizky (30 Okt 2026): SEMUA VIDEO BARU WAJIB REMOTION, gaya grafik SAMA PERSIS (ketiplek) dengan pilot
@@ -107,7 +113,7 @@ Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 
 ## JEDA REELS 9–10 NOV 2026 (PERMINTAAN Rizky, 7 Nov 2026; usage tidak cukup untuk Reels)
 - Senin 9 Nov dan Selasa 10 Nov hanya FEED (17:00) + kartu Feed manual. TIDAK ADA Reels: jangan dibuat, dirender, diberi suara, atau dimasukkan ke halaman untuk dua tanggal itu, dan jangan dilaporkan sebagai "stok kurang". Untuk langkah B (cek stok), dua hari itu dianggap TERISI bila feed 17:00-nya ada.
-- Feed 9 Nov (Realita: "Penawaran terkirim, balasannya nanti kami kabari", teal) dan 10 Nov (Cerita fiksi: "Perjalanan terakhir Pak Darmin", navy) SUDAH dibuat dan masuk halaman (`konten/2026-11-09-feed.json`, `konten/2026-11-10-feed.json`).
+- Feed 9 Nov ("Penawaran terkirim, balasannya nanti kami kabari", teal) dan 10 Nov (tema logistik: "FCL atau LCL?", navy; menggantikan versi cerita yang dibatalkan Rizky 7 Nov) SUDAH dibuat dan masuk halaman (`konten/2026-11-09-feed.json`, `konten/2026-11-10-feed.json`).
 - Mulai RABU 11 Nov 2026 KEMBALI NORMAL: tiap hari 1 Feed + 1 Reels (gaya Reels sesuai `engine/gaya_reels.py`; 11 Nov = gaya lama). Stok H-2 berlaku lagi seperti biasa, jadi Reels 11 Nov dst. dibuat oleh tugas harian mengikuti aturan stok.
 - `konten/2026-11-09-realita.json` (Reels "tiga permintaan harga jam empat sore") TIDAK dirender untuk 9 Nov; tetap sebagai stok cadangan untuk tanggal Senin lain.
 

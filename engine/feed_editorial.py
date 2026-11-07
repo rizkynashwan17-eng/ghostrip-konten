@@ -93,6 +93,8 @@ def body(sc, pal):
         return f'<div class="files">' + "".join(
             f'<div class="fchip {"last" if i==len(sc["items"])-1 else ""}" style="transform:rotate({[-4,3,-2,4,-3,2][i%6]}deg);margin-left:{[0,90,30,120,50,10][i%6]}px"><em class="fi"></em>{e(t)}</div>'
             for i, t in enumerate(sc["items"])) + "</div>"
+    if L == "banding":  # dua kartu berdampingan (PATEN 7 Nov 2026: layout baru untuk perbandingan)
+        return '<div class="cmp">' + rows_card(sc["kiri"]["items"], sc["kiri"]["judul"]) + rows_card(sc["kanan"]["items"], sc["kanan"]["judul"]) + '</div>'
     raise ValueError(L)
 
 
@@ -134,6 +136,7 @@ h1 .ac{color:%(ac)s}
 .rw{display:flex;gap:20px;align-items:baseline;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:31px;font-weight:600;line-height:1.2}
 .rw:last-child{border-bottom:0}
 .rw b{color:#ff9d5c;font-size:24px;min-width:38px}
+.cmp{display:flex;gap:26px;align-items:stretch;margin-top:8px}.cmp .rows{padding:34px 30px}.cmp .rh{font-size:24px;margin-bottom:12px}.cmp .rw{font-size:30px;padding:18px 0;flex-direction:column;gap:6px}.cmp .rw b{font-size:22px}
 .alur .side{flex:0 0 330px;position:relative;height:460px}
 .alur .panel{flex:none;width:330px;height:460px;background:transparent}
 .alur .panel::before{display:none}
