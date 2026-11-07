@@ -1,0 +1,37 @@
+{
+ "date": "2026-11-09",
+ "posts": [
+  {
+   "slot": "feed-realita",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "realita",
+   "scene": {
+    "layout": "alur",
+    "kicker": "REALITA ADMIN",
+    "pill": "PENAWARAN",
+    "title": "Penawaran terkirim.\nBalasannya: *\"nanti kami kabari\"*",
+    "title_size": 84,
+    "sub": "Setelah itu, tinggal menunggu.",
+    "kartu": "NASIB SEBUAH PENAWARAN",
+    "items": [
+     "Hari 1: terkirim, centang dua",
+     "Hari 2: \"masih kami pertimbangkan\"",
+     "Hari 4: ditanya lagi, belum ada kabar",
+     "Hari 6: ternyata order sudah jalan"
+    ],
+    "doc": {
+     "judul": "QUOTATION",
+     "sub": "PT Contoh Logistik · No. 087/XI",
+     "rows": [
+      "Rute contoh A → B",
+      "Truk Tronton",
+      "Berlaku 7 hari"
+     ]
+    },
+    "note": "Pernah ngalamin juga?\nCerita di komentar."
+   },
+   "caption": "Penawaran sudah dikirim, balasannya \"nanti kami kabari\". Lalu hening. 😶\n\nSetiap admin dan pemilik armada pasti pernah di posisi ini. Kadang order lepas bukan karena harganya, tapi karena penawaran datang terlambat atau tampil kurang meyakinkan.\n\nKalau pekerjaan hitung dan bikin surat penawaran bisa selesai lebih cepat, kamu punya lebih banyak waktu untuk follow-up. Itu salah satu alasan Ghostrip dibuat.\n\nKalian paling lama menunggu kabar penawaran berapa hari? Tulis di komentar 👇\n\nIlustrasi, bukan data nyata.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}

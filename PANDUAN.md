@@ -97,13 +97,19 @@ Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 - WAJIB: 1 Reels per hari (bukan 2), dibuat dengan Remotion; gaya SELANG-SELING mulai 8 Nov 2026 (gaya lama pilot `media/2026-11-02/reel1-whatif.mp4` ↔ gaya BEDAH TEKNIKAL, lihat bagian GAYA REELS SELANG-SELING), plus 1 feed gaya editorial. TIDAK ADA story (dihentikan 6 Nov 2026): jangan membuat, merender, atau memasukkan story ke halaman (`posting.py`, `render.py`, `scan_konten.py` sudah melewatinya).
 - Facebook Page diposting manual oleh Rizky lewat Meta Business Suite (halaman selalu menampilkannya).
 - Feed = ringkasan/checklist yang bisa disimpan, gaya editorial, sesuai tema hari dan nyambung ke Reels hari itu.
-- Stok cadangan Reels yang sudah ditulis tapi belum masuk halaman: cek `konten/*.json` dan `SUSULAN-SUARA.md` sebelum membuat Reels baru untuk suatu tanggal (jangan dobel). Saat ini: 6 Nov (cerita: rem yang tidak boleh ditawar), 9 Nov (realita: tiga permintaan harga jam empat sore).
+- Stok cadangan Reels yang sudah ditulis tapi belum masuk halaman: cek `konten/*.json` dan `SUSULAN-SUARA.md` sebelum membuat Reels baru untuk suatu tanggal (jangan dobel). Saat ini: 6 Nov (cerita: rem yang tidak boleh ditawar), realita "tiga permintaan harga jam empat sore" (tadinya 9 Nov, ditunda karena jeda Reels 9–10 Nov).
 
 ## FEED MANUAL RIZKY — ATURAN PATEN Rizky (5 Nov 2026): feed mockup 12:00 DIBUAT RIZKY SENDIRI; Claude hanya menyediakan kartu & caption
 - Rizky membuat gambar feed (mockup foto/perangkat) sendiri. Claude TIDAK membuatnya otomatis dan tugas harian tidak boleh membuatnya. (Mesin `engine/foto_feed.py`, `feed_mockup.py`, `latar_tekstur.py` hanya arsip/uji, tidak dipakai di alur harian.)
 - Tempat di jadwal: kartu kosong `feed-manual` jam 12:00 per hari (`python3 engine/posting.py slot-manual <tanggal> [<tanggal> ...]`), mengikuti stok hari ini s.d. hari+2 (tugas harian menambahkannya bila belum ada). Di halaman Posting kartu itu punya tombol "Unggah gambar" (gambar tersimpan di HP Rizky, lalu Bagikan/Simpan/Sudah seperti kartu lain).
 - Caption: Rizky mengirim gambarnya ke Claude di chat dengan kata "caption". Claude melihat gambar, menulis caption (hook + isi singkat, caption selalu beda dari sebelumnya, tanpa nama asli/harga/data sensitif, + penutup baku), menyimpan gambar ke `foto/manual/<tanggal>.jpg`, lalu `python3 engine/posting.py isi-manual <id> --media foto/manual/<tanggal>.jpg --caption-file cap.txt`, commit & push. Caption TIDAK dibuat sebelum gambarnya diterima.
 - Tugas harian hanya memastikan kartu kosongnya ada; tidak mengisi dan tidak melaporkannya sebagai kekurangan stok.
+
+## JEDA REELS 9–10 NOV 2026 (PERMINTAAN Rizky, 7 Nov 2026; usage tidak cukup untuk Reels)
+- Senin 9 Nov dan Selasa 10 Nov hanya FEED (17:00) + kartu Feed manual. TIDAK ADA Reels: jangan dibuat, dirender, diberi suara, atau dimasukkan ke halaman untuk dua tanggal itu, dan jangan dilaporkan sebagai "stok kurang". Untuk langkah B (cek stok), dua hari itu dianggap TERISI bila feed 17:00-nya ada.
+- Feed 9 Nov (Realita: "Penawaran terkirim, balasannya nanti kami kabari", teal) dan 10 Nov (Cerita fiksi: "Perjalanan terakhir Pak Darmin", navy) SUDAH dibuat dan masuk halaman (`konten/2026-11-09-feed.json`, `konten/2026-11-10-feed.json`).
+- Mulai RABU 11 Nov 2026 KEMBALI NORMAL: tiap hari 1 Feed + 1 Reels (gaya Reels sesuai `engine/gaya_reels.py`; 11 Nov = gaya lama). Stok H-2 berlaku lagi seperti biasa, jadi Reels 11 Nov dst. dibuat oleh tugas harian mengikuti aturan stok.
+- `konten/2026-11-09-realita.json` (Reels "tiga permintaan harga jam empat sore") TIDAK dirender untuk 9 Nov; tetap sebagai stok cadangan untuk tanggal Senin lain.
 
 ## Sistem stok konten (H-2) — dijalankan tugas harian 15.40 WIB (ATURAN PATEN & WAJIB dari Rizky)
 Setiap kali membuat, mengisi suara, atau mengganti konten WAJIB diakhiri laporan update untuk Rizky: tanggal & jam tayang, topik, status suara (✅/⏳), dan masalah bila ada. Tugas ini tidak boleh dilewati/dimatikan kecuali Rizky memintanya.

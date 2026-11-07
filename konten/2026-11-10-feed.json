@@ -1,0 +1,42 @@
+{
+ "date": "2026-11-10",
+ "posts": [
+  {
+   "slot": "feed-cerita",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "cerita",
+   "scene": {
+    "layout": "chat",
+    "kicker": "CERITA SELASA",
+    "pill": "FIKSI",
+    "title": "Perjalanan *terakhir*\nPak Darmin.",
+    "title_size": 96,
+    "chat": [
+     {
+      "dari": "kiri",
+      "nama": "Pak Darmin",
+      "teks": "Pak, ini trip terakhir saya. Besok saya pensiun."
+     },
+     {
+      "dari": "kanan",
+      "nama": "Dispatcher",
+      "teks": "Dua puluh delapan tahun, Pak. Besok radio ini pasti terasa sepi."
+     },
+     {
+      "dari": "kiri",
+      "nama": "Pak Darmin",
+      "teks": "Muatan tadi sudah saya cek tiga kali. Kebiasaan."
+     },
+     {
+      "dari": "kanan",
+      "nama": "Dispatcher",
+      "teks": "Kebiasaan itu yang bikin kami tenang, Pak."
+     }
+    ],
+    "note": "Cerita fiksi. Nama tokoh rekaan."
+   },
+   "caption": "Dua puluh delapan tahun di belakang kemudi. Trip terakhir Pak Darmin hari ini. 🚛\n\nMuatan dicek tiga kali sebelum berangkat. Bukan karena tidak percaya, tapi karena kebiasaan yang menjaga semua orang pulang dengan selamat.\n\nPernah kerja bareng sopir atau rekan yang seteliti ini? Ceritakan di komentar.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}
