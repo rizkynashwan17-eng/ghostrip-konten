@@ -200,7 +200,7 @@ const BanSatu: React.FC<{f: number; s: BedahScene; p: number; heat: number; x: n
   const R = 1.65, T = 0.62, ROUT = R + T;
   const sq = 0.02 + (1 - p) * 0.3 + Math.max(0, beban - 1) * 0.22;
   const spin = -f * (s.putar ?? 0.07);
-  const rubber = new THREE.Color('#2a343a').lerp(new THREE.Color('#ff5a1f'), Math.min(1, heat));
+  const rubber = new THREE.Color('#4a5b63').lerp(new THREE.Color('#ff5a1f'), Math.min(1, heat));
   const arc = Math.PI * 1.72;
   const k = pecah < 0 ? 1 : Math.max(0, 1 - pecah / 5);
   const wobble = (1 - p) * 0.035 * Math.sin(f / 3.2);
@@ -245,7 +245,7 @@ const AdeganBan: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
   const pecah = pd >= 0 && f >= pd ? f - pd : -1;
   const camA = interpolate(f, [0, dur], [-0.12, 0.2], cl);
   const ganda = !!s.ganda;
-  const sc = ganda ? 0.72 : 1;
+  const sc = ganda ? 0.62 : beban > 0 ? 0.66 : 1;
   const ROUT = 2.27;
   const sq = (pp: number) => 0.02 + (1 - pp) * 0.3 + Math.max(0, beban - 1) * 0.22;
   const topY = ROUT * sc * (1 - sq(p)) - ROUT * sc * sq(p) * 1;
@@ -261,13 +261,13 @@ const AdeganBan: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
       <hemisphereLight args={['#fff7e8', '#8fa6a3', 0.55]} />
       <directionalLight castShadow position={[5, 9, 7]} intensity={1.3} />
       <pointLight position={[0, 0, 2.2]} intensity={heat * 5} color="#ff8a3a" distance={7} />
-      <group position={[0, 0.9, 0]}>
+      <group position={[0, beban > 0 ? 0.2 : 0.9, 0]}>
         <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[0, -ROUT * sc, 0]}><planeGeometry args={[60, 40]} /><meshStandardMaterial color="#0f3540" roughness={1} /></mesh>
         <gridHelper args={[60, 40, '#2fb8a0', '#1d5a63']} position={[0, -ROUT * sc + 0.01, 0]} />
         {ganda ? (
           <>
-            <BanSatu f={f} s={s} p={p} heat={heat} x={-1.35} sc={sc} beban={0} pecah={pecah} />
-            <BanSatu f={f} s={s} p={s.p2 ?? 1} heat={Math.min(heat, 0.2)} x={1.35} sc={sc} beban={0} pecah={-1} />
+            <BanSatu f={f} s={s} p={p} heat={heat} x={-1.65} sc={sc} beban={0} pecah={pecah} />
+            <BanSatu f={f} s={s} p={s.p2 ?? 1} heat={Math.min(heat, 0.2)} x={1.65} sc={sc} beban={0} pecah={-1} />
           </>
         ) : (
           <BanSatu f={f} s={s} p={p} heat={heat} x={0} sc={sc} beban={beban} pecah={pecah} />
@@ -277,8 +277,8 @@ const AdeganBan: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
           <group position={[0, topY + 0.65, 0]}>
             <mesh castShadow><boxGeometry args={[3.2, 1.1, 2.0]} /><meshStandardMaterial color={C.cream} roughness={0.85} /></mesh>
             <mesh position={[0, 0, 1.005]}><boxGeometry args={[3.0, 0.1, 0.01]} /><meshStandardMaterial color={C.orange} /></mesh>
-            {[-1, 0, 1].map((i) => <mesh key={i} position={[i * 0.9, 1.0 + 0.15 * Math.sin(f / 5 + i), 0]} rotation={[Math.PI, 0, 0]}>
-              <coneGeometry args={[0.28, 0.7 * Math.min(1.6, beban), 4]} /><meshStandardMaterial color={C.orange} emissive={C.orange} emissiveIntensity={0.3} /></mesh>)}
+            {[-1, 0, 1].map((i) => <mesh key={i} position={[i * 0.9, 0.95 + 0.1 * Math.sin(f / 5 + i), 0]} rotation={[Math.PI, 0, 0]}>
+              <coneGeometry args={[0.28, 0.55 * Math.min(1.6, beban), 4]} /><meshStandardMaterial color={C.orange} emissive={C.orange} emissiveIntensity={0.3} /></mesh>)}
           </group>
         )}
         {/* serpihan & kilat saat pecah */}
