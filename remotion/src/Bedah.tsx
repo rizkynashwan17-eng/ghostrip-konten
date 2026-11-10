@@ -195,6 +195,109 @@ const AdeganAngin: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
   );
 };
 
+/* Ban truk dibelah: tekanan angin, lentur dinding samping, panas, beban, pecah */
+const BanSatu: React.FC<{f: number; s: BedahScene; p: number; heat: number; x: number; sc: number; beban: number; pecah: number}> = ({f, s, p, heat, x, sc, beban, pecah}) => {
+  const R = 1.65, T = 0.62, ROUT = R + T;
+  const sq = 0.02 + (1 - p) * 0.3 + Math.max(0, beban - 1) * 0.22;
+  const spin = -f * (s.putar ?? 0.07);
+  const rubber = new THREE.Color('#2a343a').lerp(new THREE.Color('#ff5a1f'), Math.min(1, heat));
+  const arc = Math.PI * 1.72;
+  const k = pecah < 0 ? 1 : Math.max(0, 1 - pecah / 5);
+  const wobble = (1 - p) * 0.035 * Math.sin(f / 3.2);
+  const nArrow = 14;
+  return (
+    <group position={[x, -ROUT * sq * sc, 0]} scale={[sc * (1 + sq * 0.7 + wobble) * k, sc * (1 - sq) * k, sc * k]}>
+      <group rotation={[0, 0, spin]}>
+        <mesh castShadow rotation={[0, 0, 0]}>
+          <torusGeometry args={[R, T, 22, 72, arc]} />
+          <meshStandardMaterial color={rubber} emissive={rubber} emissiveIntensity={heat * 0.75} roughness={0.8} side={THREE.DoubleSide} transparent opacity={0.88} />
+        </mesh>
+        {Array.from({length: 38}).map((_, i) => {
+          const a = (i / 38) * arc;
+          return <mesh key={i} position={[Math.cos(a) * (R + T + 0.05), Math.sin(a) * (R + T + 0.05), 0]} rotation={[0, 0, a]}>
+            <boxGeometry args={[0.16, 0.2, 1.05]} /><meshStandardMaterial color={rubber} emissive={rubber} emissiveIntensity={heat * 0.7} roughness={0.9} /></mesh>;
+        })}
+      </group>
+      {/* velg */}
+      <group rotation={[Math.PI / 2, spin, 0]}>
+        <mesh castShadow><cylinderGeometry args={[1.02, 1.02, 0.7, 40]} /><meshStandardMaterial color="#aeb9bd" metalness={0.55} roughness={0.35} /></mesh>
+        <mesh position={[0, 0.37, 0]}><cylinderGeometry args={[0.42, 0.42, 0.12, 24]} /><meshStandardMaterial color="#e3e9eb" metalness={0.5} roughness={0.3} /></mesh>
+        {Array.from({length: 8}).map((_, i) => <mesh key={i} position={[Math.cos(i * Math.PI / 4) * 0.7, 0.4, Math.sin(i * Math.PI / 4) * 0.7]}><cylinderGeometry args={[0.07, 0.07, 0.1, 10]} /><meshStandardMaterial color="#6d7a80" metalness={0.6} /></mesh>)}
+      </group>
+      {/* panah tekanan di dalam: makin penuh makin panjang */}
+      {s.panah !== false && Array.from({length: nArrow}).map((_, i) => {
+        const a = (i / nArrow) * Math.PI * 2 + spin;
+        const pulse = 0.85 + 0.15 * Math.sin(f / 6 + i);
+        const len = (0.25 + 0.55 * p) * pulse;
+        return <mesh key={i} position={[Math.cos(a) * (1.22 + len / 2), Math.sin(a) * (1.22 + len / 2), 0.0]} rotation={[0, 0, a - Math.PI / 2]}>
+          <coneGeometry args={[0.13, len, 6]} /><meshStandardMaterial color={C.mint} emissive={C.mint} emissiveIntensity={0.55} /></mesh>;
+      })}
+    </group>
+  );
+};
+
+const AdeganBan: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
+  const dur = s.dur;
+  const p = interpolate(f, [0, dur * 0.85], [s.p0 ?? 1, s.p1 ?? s.p0 ?? 1], {...cl, easing: Easing.inOut(Easing.quad)});
+  const heat = interpolate(f, [0, dur * 0.85], [s.panas0 ?? 0, s.panas1 ?? s.panas0 ?? 0], {...cl, easing: Easing.inOut(Easing.quad)});
+  const beban = s.beban ? interpolate(f, [0, dur * 0.85], [s.beban0 ?? s.beban, s.beban], cl) : 0;
+  const pd = s.pecahDi ?? -1;
+  const pecah = pd >= 0 && f >= pd ? f - pd : -1;
+  const camA = interpolate(f, [0, dur], [-0.12, 0.2], cl);
+  const ganda = !!s.ganda;
+  const sc = ganda ? 0.72 : 1;
+  const ROUT = 2.27;
+  const sq = (pp: number) => 0.02 + (1 - pp) * 0.3 + Math.max(0, beban - 1) * 0.22;
+  const topY = ROUT * sc * (1 - sq(p)) - ROUT * sc * sq(p) * 1;
+  const frag = Array.from({length: 22}).map((_, i) => {
+    const a = (i / 22) * Math.PI * 2, v = 0.18 + ((i * 37) % 10) / 40;
+    const t = Math.max(0, pecah);
+    return {x: Math.cos(a) * v * t * 1.2, y: Math.sin(a) * v * t * 1.2 - 0.004 * t * t, z: ((i * 13) % 7 - 3) * 0.12 * t * 0.2, r: a + t * 0.2, w: 0.3 + (i % 4) * 0.12};
+  });
+  return (
+    <ThreeCanvas width={W} height={H} shadows camera={{position: [Math.sin(camA) * 12.5, 1.5, Math.cos(camA) * 12.5], fov: 34}} style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
+      <color attach="background" args={[C.night1]} />
+      <ambientLight intensity={0.75} />
+      <hemisphereLight args={['#fff7e8', '#8fa6a3', 0.55]} />
+      <directionalLight castShadow position={[5, 9, 7]} intensity={1.3} />
+      <pointLight position={[0, 0, 2.2]} intensity={heat * 5} color="#ff8a3a" distance={7} />
+      <group position={[0, 0.3, 0]}>
+        <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[0, -ROUT * sc, 0]}><planeGeometry args={[60, 40]} /><meshStandardMaterial color="#0f3540" roughness={1} /></mesh>
+        <gridHelper args={[60, 40, '#2fb8a0', '#1d5a63']} position={[0, -ROUT * sc + 0.01, 0]} />
+        {ganda ? (
+          <>
+            <BanSatu f={f} s={s} p={p} heat={heat} x={-1.35} sc={sc} beban={0} pecah={pecah} />
+            <BanSatu f={f} s={s} p={s.p2 ?? 1} heat={Math.min(heat, 0.2)} x={1.35} sc={sc} beban={0} pecah={-1} />
+          </>
+        ) : (
+          <BanSatu f={f} s={s} p={p} heat={heat} x={0} sc={sc} beban={beban} pecah={pecah} />
+        )}
+        {/* beban di atas ban */}
+        {beban > 0 && !ganda && pecah < 0 && (
+          <group position={[0, topY + 0.65, 0]}>
+            <mesh castShadow><boxGeometry args={[3.2, 1.1, 2.0]} /><meshStandardMaterial color={C.cream} roughness={0.85} /></mesh>
+            <mesh position={[0, 0, 1.005]}><boxGeometry args={[3.0, 0.1, 0.01]} /><meshStandardMaterial color={C.orange} /></mesh>
+            {[-1, 0, 1].map((i) => <mesh key={i} position={[i * 0.9, 1.0 + 0.15 * Math.sin(f / 5 + i), 0]} rotation={[Math.PI, 0, 0]}>
+              <coneGeometry args={[0.28, 0.7 * Math.min(1.6, beban), 4]} /><meshStandardMaterial color={C.orange} emissive={C.orange} emissiveIntensity={0.3} /></mesh>)}
+          </group>
+        )}
+        {/* serpihan & kilat saat pecah */}
+        {pecah >= 0 && pecah < 45 && frag.map((q, i) => (
+          <mesh key={i} position={[q.x, q.y, q.z]} rotation={[q.r, q.r, q.r]}><boxGeometry args={[q.w, 0.14, 0.3]} /><meshStandardMaterial color="#2a343a" /></mesh>
+        ))}
+        {pecah >= 0 && pecah < 10 && (
+          <mesh><sphereGeometry args={[1 + pecah * 0.5, 24, 24]} /><meshStandardMaterial color="#ffffff" emissive="#ffd9a0" emissiveIntensity={1} transparent opacity={(1 - pecah / 10) * 0.55} /></mesh>
+        )}
+        {/* uap panas */}
+        {heat > 0.5 && pecah < 0 && Array.from({length: 7}).map((_, i) => {
+          const a = ((f / 40 + i / 7) % 1);
+          return <mesh key={'u' + i} position={[-1.2 + i * 0.4, 2.0 + a * 2.2, 0.8]}><sphereGeometry args={[0.12 + a * 0.25, 12, 12]} /><meshStandardMaterial color="#ffffff" transparent opacity={(1 - a) * 0.4 * (heat - 0.45) * 2} /></mesh>;
+        })}
+      </group>
+    </ThreeCanvas>
+  );
+};
+
 /* ============================ lapisan 2D (gaya khas Ghostrip) ============================ */
 // Kata kunci *bintang* = mint + garis bawah oranye (tanpa huruf miring)
 const Rich: React.FC<{t: string; style?: React.CSSProperties}> = ({t, style}) => (
@@ -360,6 +463,7 @@ const Scene3D: React.FC<{s: BedahScene}> = ({s}) => {
   const f = useCurrentFrame();
   if (s.type === 'rem') return <AdeganRem f={f} s={s} />;
   if (s.type === 'angin') return <AdeganAngin f={f} s={s} />;
+  if (s.type === 'ban') return <AdeganBan f={f} s={s} />;
   return <AdeganJalan f={f} s={s} />;
 };
 

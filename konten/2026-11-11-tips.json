@@ -1,0 +1,151 @@
+{
+ "date": "2026-11-11",
+ "posts": [
+  {
+   "slot": "feed-tips",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "tips",
+   "scene": {
+    "layout": "checklist",
+    "warna": "teal",
+    "kicker": "TIPS ADMIN",
+    "pill": "KONTAINER",
+    "title": "Penawaran\nkontainer? Tulis\n*4 biaya* ini.",
+    "title_size": 104,
+    "sub": "Telat ambil atau kembalikan kontainer bisa memunculkan biaya harian.",
+    "items": [
+     "Free time (hari bebas biaya)",
+     "Demurrage per hari",
+     "Detention per hari",
+     "Storage (penumpukan)"
+    ],
+    "doc": {
+     "judul": "QUOTATION",
+     "sub": "PT Maju Jaya Logistik · No. 022/XI",
+     "rows": [
+      "Pelabuhan → gudang",
+      "Kontainer 20 feet",
+      "Free time: … hari",
+      "Demurrage & detention"
+     ]
+    },
+    "note": "Simpan post ini buat checklist\nsebelum kirim penawaran kontainer."
+   },
+   "caption": "Kontainer telat dibongkar atau dikembalikan, siapa yang menanggung biayanya? 📦\n\nMenurut DHL, ada tiga biaya yang sering muncul: demurrage (kontainer terlalu lama di terminal pelabuhan), detention (kontainer terlalu lama di luar terminal, misalnya di gudang customer), dan storage (pemakaian ruang simpan). Semuanya dihitung per kontainer per hari setelah masa bebas biaya (free time) habis, dan lamanya free time berbeda-beda.\n\nTipsnya untuk admin: pastikan penawaran mencantumkan free time serta tarif demurrage dan detention per hari per kontainer, supaya customer tahu sejak awal.\n\nAngka di gambar hanya contoh format. Sumber: DHL Global Forwarding, Demurrage, Detention and Storage Charges.\n\nKalau menyiapkan penawaran mulai menyita waktu, Ghostrip bantu bikin quotation lebih rapi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "gaya": "editorial"
+  },
+  {
+   "slot": "reel-tips",
+   "kind": "reel",
+   "engine": "remotion",
+   "tema": "tips",
+   "time": "19:30",
+   "seri": "TIPS SOPIR",
+   "judul": "KELILING TRUK DULU",
+   "part": 0,
+   "lokasi": "05.30 WIB · POOL ARMADA",
+   "jam": "05:30",
+   "topic": "Tips sopir: keliling truk lima area sebelum berangkat (depan, kiri, belakang, kanan, kabin)",
+   "tiktok_title": "Sebelum berangkat, sopir keliling truk dulu. Cek 5 area ini",
+   "voice_id": "2026-11-11-reel-tips",
+   "sumber": [
+    "detikOto, 20 Agu 2024, '5 Hal yang Harus Dicek Sebelum Mengendarai Truk' (Ardi Yanto, Truck Technical Trainer, Daimler Commercial Vehicles Indonesia): https://oto.detik.com/kendaraan-niaga/d-7498865/5-hal-yang-harus-dicek-sebelum-mengendarai-truk"
+   ],
+   "scenes": [
+    {
+     "type": "jalan",
+     "papan": "POOL ARMADA",
+     "stopX": 60,
+     "narasi": "Jam setengah enam pagi, Pak Yanto sampai di *pool armada*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "sopir",
+     "pose": "santai",
+     "set": "malam",
+     "narasi": "Sebelum berangkat, ia tidak langsung naik. Ia *keliling truk* dulu."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Keliling 5 area",
+     "tanda": "nomor",
+     "item": [
+      "Bagian depan",
+      "Sisi kiri",
+      "Bagian belakang",
+      "Sisi kanan",
+      "Kabin"
+     ],
+     "narasi": "Kata trainer Daimler Commercial Vehicles Indonesia, ada *lima area* yang dicek."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Depan dan sisi kiri",
+     "tanda": "check",
+     "item": [
+      "Lampu dan bumper",
+      "Oli dan radiator",
+      "Spion, kemudi, rem",
+      "Ban depan"
+     ],
+     "narasi": "Depan dan kiri: lampu, oli, radiator, spion, kemudi, rem, dan *ban depan*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Belakang dan sisi kanan",
+     "tanda": "check",
+     "item": [
+      "Lampu belakang",
+      "Gandar belakang",
+      "Ban belakang dan rangka",
+      "Tangki bahan bakar"
+     ],
+     "narasi": "Belakang dan kanan: lampu, gandar, *ban belakang*, rangka, dan tangki."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Terakhir, kabin",
+     "tanda": "x",
+     "item": [
+      "Lampu peringatan merah",
+      "Lampu peringatan kuning",
+      "Indikator error di dasbor"
+     ],
+     "narasi": "Terakhir kabin. Lampu peringatan merah atau kuning di dasbor *tidak boleh menyala*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "sopir",
+     "pose": "pikir",
+     "set": "malam",
+     "narasi": "Beberapa menit di pool bisa menghindarkan masalah di *jalan*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Dispatcher",
+     "status": "online",
+     "pesan": [
+      {
+       "dari": "Dispatcher",
+       "teks": "Pak Yanto, truknya aman?"
+      },
+      {
+       "teks": "Aman, sudah saya cek keliling. Berangkat.",
+       "aku": true
+      }
+     ],
+     "narasi": "Kabar ke dispatcher pun singkat, truk *aman*, siap berangkat."
+    },
+    {
+     "type": "cta",
+     "tagline": "Jadwal armada dan hitungan trip, rapi dalam satu aplikasi",
+     "pil": "COBA GRATIS",
+     "ajakan": "Chat WA, coba 7 hari",
+     "narasi": "Urusan hitung trip dan penawaran, biar Ghostrip yang *bantu*."
+    }
+   ],
+   "caption": "Sebelum berangkat, Pak Yanto keliling truk dulu. Kamu juga? 🚛\n\nMenurut trainer Daimler Commercial Vehicles Indonesia, cek truk dibagi lima area: bagian depan, sisi kiri, bagian belakang, sisi kanan, dan kabin. Lampu, rem, ban, tangki, sampai indikator di dasbor tidak boleh terlewat.\n\nSumber: detikOto, 20 Agustus 2024 (Ardi Yanto, Daimler Commercial Vehicles Indonesia).\n\nNama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}

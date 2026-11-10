@@ -1,0 +1,286 @@
+{
+ "date": "2026-11-12",
+ "posts": [
+  {
+   "slot": "feed-fitur",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "fitur",
+   "scene": {
+    "layout": "alur",
+    "warna": "navy",
+    "kicker": "FITUR GHOSTRIP",
+    "pill": "HITUNG TRIP",
+    "title": "Dari hitungan trip\nke *harga jual*.",
+    "title_size": 100,
+    "sub": "Rincian biaya tersusun rapi, tinggal cek angkanya.",
+    "kartu": "ALUR DI GHOSTRIP",
+    "items": [
+     "Isi rute dan jenis truk",
+     "Solar, tol, driver terhitung",
+     "Atur markup sesuai kebijakan",
+     "Lihat harga jual dan total",
+     "Buat penawaran"
+    ],
+    "doc": {
+     "judul": "HASIL HITUNG",
+     "sub": "Contoh tampilan · data simulasi",
+     "rows": [
+      "Bandung → Surabaya",
+      "Truk Fuso Box",
+      "Harga jual tersusun"
+     ]
+    },
+    "note": "Coba gratis 7 hari.\nKomen COBA atau WA 0815-1704-7930."
+   },
+   "caption": "Hitung biaya trip masih pakai kalkulator dan kertas coretan? 🧮\n\nDi Ghostrip, admin cukup isi rute dan jenis truk. Solar, tol, dan biaya driver terhitung, lalu markup bisa diatur sesuai kebijakan perusahaan. Harga jual dan total langsung terlihat, siap dijadikan penawaran.\n\nContoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "gaya": "editorial"
+  },
+  {
+   "slot": "reel-bedah",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "bedah",
+   "tema": "teknikal",
+   "time": "19:30",
+   "voice_id": "2026-11-12-reel-bedah",
+   "topic": "Teknikal: kenapa ban truk bisa pecah (kurang angin → lentur → panas, muatan berlebih, tekanan ban ganda, ukur saat dingin)",
+   "sumber": [
+    "detikOto, 22 Sep 2024, 'Begini Cara Mencegah Pecah Ban Truk di Jalan Tol' (Ahmad Juweni, National Sales Manager TBR PT Hankook Tire Sales Indonesia): https://oto.detik.com/tips-and-tricks/d-7552181/begini-cara-mencegah-pecah-ban-truk-di-jalan-tol",
+    "detikOto, 22 Okt 2020, 'Banyak Kecelakaan Truk karena Ban Pecah, Pahami Pentingnya Tekanan Angin' (Ahmad Juweni, Hankook Tire Sales Indonesia): https://oto.detik.com/tips-and-tricks-mobil/d-5223621/banyak-kecelakaan-truk-karena-ban-pecah-pahami-pentingnya-tekanan-angin"
+   ],
+   "caption": "Truk melaju di tol, lalu ban pecah. Kenapa bisa begitu?\n\nKita bedah: ban yang kurang angin melentur berlebihan dan menghasilkan panas, muatan melebihi batas membuat ban menanggung beban terlalu besar. Cek tekanan angin secara rutin, samakan tekanan pada ban ganda, dan ukur saat ban masih dingin.\n\nSumber: detikOto, 22 September 2024 dan 22 Oktober 2020 (Ahmad Juweni, Hankook Tire Sales Indonesia). Ilustrasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Kenapa ban truk bisa pecah di tol? Kita bedah",
+   "scenes": [
+    {
+     "type": "jalan",
+     "narasi": "Truk muatan penuh melaju di tol.",
+     "kicker": "BAN PECAH",
+     "judul": "Kok ban truk bisa *pecah*?",
+     "laju": 0.3,
+     "miring": 0.02,
+     "label": [
+      {
+       "t": "MUATAN PENUH",
+       "x": 470,
+       "y": 760,
+       "dari": 10
+      }
+     ]
+    },
+    {
+     "type": "ban",
+     "narasi": "Tiba-tiba, bannya pecah.",
+     "kicker": "BAN PECAH",
+     "judul": "Kok ban truk bisa *pecah*?",
+     "p0": 0.7,
+     "p1": 0.7,
+     "panas0": 0.9,
+     "panas1": 0.9,
+     "pecahDi": 22,
+     "boom": "PECAH!",
+     "boomDari": 24
+    },
+    {
+     "type": "ban",
+     "narasi": "Kita bedah.",
+     "kicker": "BAN TRUK · DIBELAH",
+     "judul": "Isi *ban* truk",
+     "p0": 1,
+     "p1": 1,
+     "panah": false
+    },
+    {
+     "type": "ban",
+     "narasi": "Ban menahan beban lewat tekanan angin di dalamnya.",
+     "kicker": "TEKANAN ANGIN",
+     "judul": "Angin *menahan* beban",
+     "p0": 1,
+     "p1": 1,
+     "label": [
+      {
+       "t": "TEKANAN ANGIN",
+       "x": 540,
+       "y": 880,
+       "dari": 12
+      }
+     ]
+    },
+    {
+     "type": "ban",
+     "narasi": "Kalau kurang angin, dinding ban melentur berlebihan.",
+     "kicker": "KURANG ANGIN",
+     "judul": "Ban jadi *melentur*",
+     "p0": 1,
+     "p1": 0.5,
+     "label": [
+      {
+       "t": "DINDING MELENTUR",
+       "x": 300,
+       "y": 1020,
+       "warna": "oranye",
+       "dari": 20
+      }
+     ]
+    },
+    {
+     "type": "ban",
+     "narasi": "Lenturan terus-menerus itu menghasilkan panas.",
+     "kicker": "LENTUR = PANAS",
+     "judul": "Lentur jadi *panas*",
+     "p0": 0.5,
+     "p1": 0.5,
+     "panas0": 0,
+     "panas1": 0.55
+    },
+    {
+     "type": "ban",
+     "narasi": "Panas menumpuk di dalam ban, apalagi kalau melaju kencang terus-menerus.",
+     "kicker": "PANAS MENUMPUK",
+     "judul": "Panasnya *menumpuk*",
+     "p0": 0.5,
+     "p1": 0.5,
+     "panas0": 0.55,
+     "panas1": 1,
+     "ilustrasi": "ILUSTRASI · GERAK LAMBAT"
+    },
+    {
+     "type": "ban",
+     "narasi": "Lama-lama, lapisan ban melemah, lalu pecah.",
+     "kicker": "PANAS MENUMPUK",
+     "judul": "Lapisan *melemah*",
+     "p0": 0.5,
+     "p1": 0.5,
+     "panas0": 1,
+     "panas1": 1,
+     "pecahDi": 40,
+     "boom": "PECAH!",
+     "boomDari": 42
+    },
+    {
+     "type": "ban",
+     "narasi": "Kata praktisi ban, kurang angin bikin ban melentur dan menghasilkan panas.",
+     "kicker": "KATA PRAKTISI BAN",
+     "judul": "Kurang angin = *panas*",
+     "p0": 0.55,
+     "p1": 0.55,
+     "panas0": 0.6,
+     "panas1": 0.6,
+     "kutipan": {
+      "teks": "Ban yang kurang angin melentur berlebihan dan menghasilkan panas.",
+      "sumber": "Ahmad Juweni, Hankook Tire Sales Indonesia",
+      "tgl": "detikOto, 22 Sep 2024",
+      "kutip": false,
+      "dari": 8
+     }
+    },
+    {
+     "type": "ban",
+     "narasi": "Masalah kedua, muatan.",
+     "kicker": "MUATAN",
+     "judul": "Beban di *atas* ban",
+     "p0": 1,
+     "p1": 1,
+     "beban": 1.0,
+     "beban0": 0.6
+    },
+    {
+     "type": "ban",
+     "narasi": "Setiap ban punya batas beban, tertulis di dinding sampingnya.",
+     "kicker": "BATAS BEBAN",
+     "judul": "Ada *batas* beban",
+     "p0": 1,
+     "p1": 1,
+     "beban": 1.0,
+     "label": [
+      {
+       "t": "INDEKS BEBAN",
+       "x": 300,
+       "y": 1000,
+       "dari": 12
+      }
+     ]
+    },
+    {
+     "type": "ban",
+     "narasi": "Muatan berlebih membuat ban menanggung lebih dari kemampuannya.",
+     "kicker": "MUATAN BERLEBIH",
+     "judul": "Beban *kelebihan*",
+     "p0": 1,
+     "p1": 1,
+     "beban0": 1.0,
+     "beban": 1.6,
+     "panas0": 0,
+     "panas1": 0.5,
+     "boom": "KELEBIHAN!",
+     "boomDari": 24
+    },
+    {
+     "type": "ban",
+     "narasi": "Jadi, cek tekanan angin secara rutin, minimal dua minggu sekali.",
+     "kicker": "CEK RUTIN",
+     "judul": "Cek *tekanan* rutin",
+     "p0": 1,
+     "p1": 1,
+     "kutipan": {
+      "teks": "Periksa tekanan angin minimal dua minggu sekali.",
+      "sumber": "Ahmad Juweni, Hankook Tire Sales Indonesia",
+      "tgl": "detikOto, 22 Sep 2024",
+      "kutip": false,
+      "dari": 8
+     }
+    },
+    {
+     "type": "ban",
+     "narasi": "Pada ban ganda, tekanan kedua ban juga harus sama.",
+     "kicker": "BAN GANDA",
+     "judul": "Tekanan *harus sama*",
+     "ganda": true,
+     "p0": 0.55,
+     "p1": 1,
+     "p2": 1,
+     "label": [
+      {
+       "t": "BEDA TEKANAN",
+       "x": 300,
+       "y": 1000,
+       "warna": "oranye",
+       "dari": 10
+      }
+     ]
+    },
+    {
+     "type": "ban",
+     "narasi": "Dan ukur saat ban masih dingin, karena panas menaikkan angka tekanan.",
+     "kicker": "UKUR SAAT DINGIN",
+     "judul": "Ukur saat *dingin*",
+     "p0": 1,
+     "p1": 1,
+     "panas0": 0.4,
+     "panas1": 0,
+     "label": [
+      {
+       "t": "UKUR SAAT DINGIN",
+       "x": 540,
+       "y": 880,
+       "warna": "mint",
+       "dari": 10
+      }
+     ]
+    },
+    {
+     "type": "jalan",
+     "narasi": "Ingat ini, sebelum truk berangkat, cek bannya.",
+     "kicker": "BAN PECAH",
+     "judul": "Kok ban truk bisa *pecah*?",
+     "laju": 0.2,
+     "miring": 0.02
+    },
+    {
+     "type": "logo",
+     "detik": 2.2
+    }
+   ]
+  }
+ ]
+}
