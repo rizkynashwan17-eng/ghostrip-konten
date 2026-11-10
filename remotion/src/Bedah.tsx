@@ -255,13 +255,13 @@ const AdeganBan: React.FC<{f: number; s: BedahScene}> = ({f, s}) => {
     return {x: Math.cos(a) * v * t * 1.2, y: Math.sin(a) * v * t * 1.2 - 0.004 * t * t, z: ((i * 13) % 7 - 3) * 0.12 * t * 0.2, r: a + t * 0.2, w: 0.3 + (i % 4) * 0.12};
   });
   return (
-    <ThreeCanvas width={W} height={H} shadows camera={{position: [Math.sin(camA) * 12.5, 1.5, Math.cos(camA) * 12.5], fov: 34}} style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
+    <ThreeCanvas width={W} height={H} shadows camera={{position: [Math.sin(camA) * 20, 2.0, Math.cos(camA) * 20], fov: 34}} style={{position: 'absolute', inset: 0}} gl={{antialias: true, preserveDrawingBuffer: true}}>
       <color attach="background" args={[C.night1]} />
       <ambientLight intensity={0.75} />
       <hemisphereLight args={['#fff7e8', '#8fa6a3', 0.55]} />
       <directionalLight castShadow position={[5, 9, 7]} intensity={1.3} />
       <pointLight position={[0, 0, 2.2]} intensity={heat * 5} color="#ff8a3a" distance={7} />
-      <group position={[0, 0.3, 0]}>
+      <group position={[0, 0.9, 0]}>
         <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[0, -ROUT * sc, 0]}><planeGeometry args={[60, 40]} /><meshStandardMaterial color="#0f3540" roughness={1} /></mesh>
         <gridHelper args={[60, 40, '#2fb8a0', '#1d5a63']} position={[0, -ROUT * sc + 0.01, 0]} />
         {ganda ? (

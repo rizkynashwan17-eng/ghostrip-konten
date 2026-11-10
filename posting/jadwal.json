@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-07T12:40+07:00",
+ "diperbarui": "2026-11-10T22:05+07:00",
  "posts": [
   {
    "id": "2026-10-29-0730-story-v2",
@@ -706,6 +706,57 @@
    "caption": "FCL atau LCL? Kirim barang lewat kontainer laut punya dua cara. 🚢\n\nFCL (Full Container Load): satu kontainer dipakai untuk satu pengirim saja. Kontainernya tidak harus terisi penuh, tapi tidak dibagi dengan pengirim lain. Biasanya cocok untuk muatan besar dan waktu transit lebih cepat.\n\nLCL (Less than Container Load): barang kamu berbagi ruang kontainer dengan kiriman lain. Cocok untuk muatan kecil karena biaya dihitung dari volume dan berat. Konsekuensinya, ada proses gabung dan pisah barang yang bisa membuat waktunya lebih lama.\n\nSetelah sampai pelabuhan, kontainer tetap butuh truk darat untuk menuju gudang. Kalau kamu pemilik armada atau admin penawaran, Ghostrip bantu hitung harga trip dan bikin surat penawarannya dengan lebih rapi.\n\nPilihan mana yang paling sering kamu pakai, FCL atau LCL? Tulis di komentar 👇\n\nSumber: FedEx Indonesia, glosarium pengiriman (FCL dan LCL).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "",
    "catatan": ""
+  },
+  {
+   "id": "2026-11-11-1200-feed-manual",
+   "tanggal": "2026-11-11",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-12-1200-feed-manual",
+   "tanggal": "2026-11-12",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-13-1200-feed-manual",
+   "tanggal": "2026-11-13",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
   }
  ]
 }

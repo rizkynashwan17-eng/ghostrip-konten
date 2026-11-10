@@ -15,10 +15,10 @@
     "title_size": 104,
     "sub": "Telat ambil atau kembalikan kontainer bisa memunculkan biaya harian.",
     "items": [
-     "Free time (hari bebas biaya)",
+     "Free time",
      "Demurrage per hari",
      "Detention per hari",
-     "Storage (penumpukan)"
+     "Storage"
     ],
     "doc": {
      "judul": "QUOTATION",
