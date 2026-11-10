@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   46.21
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Jam setengah enam pagi, Pak Yanto sampai di pool armada.\nSebelum berangkat, ia tidak langsung naik. Ia keliling truk dulu.\nKata trainer Daimler Commercial Vehicles Indonesia, ada lima area yang dicek.\nDepan dan kiri: lampu, oli, radiator, spion, kemudi, rem, dan ban depan.\nBelakang dan kanan: lampu, gandar, ban belakang, rangka, dan tangki.\nTerakhir kabin. Lampu peringatan merah atau kuning di dasbor tidak boleh menyala.\nBeberapa menit di pool bisa menghindarkan masalah di jalan.\nKabar ke dispatcher pun singkat, truk aman, siap berangkat.\nUrusan hitung trip dan penawaran, biar Ghostrip yang bantu.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
