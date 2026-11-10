@@ -5,5 +5,14 @@
   "media": "media/2026-11-12/feed-fitur-ed.jpg",
   "gaya": "editorial",
   "warna": "navy"
+ },
+ {
+  "slot": "reel-bedah",
+  "kind": "reel",
+  "media": "media/2026-11-12/reel-bedah.mp4",
+  "cover": "media/2026-11-12/reel-bedah-cover.jpg",
+  "dur": 52.8,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]
