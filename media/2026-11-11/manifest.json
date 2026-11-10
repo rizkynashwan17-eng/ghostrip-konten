@@ -5,5 +5,14 @@
   "media": "media/2026-11-11/feed-tips-ed.jpg",
   "gaya": "editorial",
   "warna": "teal"
+ },
+ {
+  "slot": "reel-tips",
+  "kind": "reel",
+  "media": "media/2026-11-11/reel-tips.mp4",
+  "cover": "media/2026-11-11/reel-tips-cover.jpg",
+  "dur": 39.83,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]
