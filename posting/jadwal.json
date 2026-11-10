@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-10T22:05+07:00",
+ "diperbarui": "2026-11-10T22:55+07:00",
  "posts": [
   {
    "id": "2026-10-29-0730-story-v2",
@@ -725,6 +725,43 @@
    "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
   },
   {
+   "id": "2026-11-11-1700-feed-tips",
+   "tanggal": "2026-11-11",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Penawaran\nkontainer? Tulis\n4 biaya ini.",
+   "media": [
+    "media/2026-11-11/feed-tips-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Kontainer telat dibongkar atau dikembalikan, siapa yang menanggung biayanya? 📦\n\nMenurut DHL, ada tiga biaya yang sering muncul: demurrage (kontainer terlalu lama di terminal pelabuhan), detention (kontainer terlalu lama di luar terminal, misalnya di gudang customer), dan storage (pemakaian ruang simpan). Semuanya dihitung per kontainer per hari setelah masa bebas biaya (free time) habis, dan lamanya free time berbeda-beda.\n\nTipsnya untuk admin: pastikan penawaran mencantumkan free time serta tarif demurrage dan detention per hari per kontainer, supaya customer tahu sejak awal.\n\nAngka di gambar hanya contoh format. Sumber: DHL Global Forwarding, Demurrage, Detention and Storage Charges.\n\nKalau menyiapkan penawaran mulai menyita waktu, Ghostrip bantu bikin quotation lebih rapi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-11-1930-reel-tips",
+   "tanggal": "2026-11-11",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Tips sopir: keliling truk lima area sebelum berangkat (depan, kiri, belakang, kanan, kabin)",
+   "media": [
+    "media/2026-11-11/reel-tips.mp4"
+   ],
+   "cover": "media/2026-11-11/reel-tips-cover.jpg",
+   "caption": "Sebelum berangkat, Pak Yanto keliling truk dulu. Kamu juga? 🚛\n\nMenurut trainer Daimler Commercial Vehicles Indonesia, cek truk dibagi lima area: bagian depan, sisi kiri, bagian belakang, sisi kanan, dan kabin. Lampu, rem, ban, tangki, sampai indikator di dasbor tidak boleh terlewat.\n\nUrusan hitung trip dan penawaran, Ghostrip bantu bikin lebih praktis.\n\nSumber: detikOto, 20 Agustus 2024 (Ardi Yanto, Daimler Commercial Vehicles Indonesia).\n\nNama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Sebelum berangkat, sopir keliling truk dulu. Cek 5 area ini",
+   "catatan": ""
+  },
+  {
    "id": "2026-11-12-1200-feed-manual",
    "tanggal": "2026-11-12",
    "jam": "12:00",
@@ -740,6 +777,43 @@
    "caption": "",
    "tiktok_title": "",
    "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-12-1700-feed-fitur",
+   "tanggal": "2026-11-12",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Dari hitungan trip\nke harga jual.",
+   "media": [
+    "media/2026-11-12/feed-fitur-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Hitung biaya trip masih pakai kalkulator dan kertas coretan? 🧮\n\nDi Ghostrip, admin cukup isi rute dan jenis truk. Solar, tol, dan biaya driver terhitung, lalu markup bisa diatur sesuai kebijakan perusahaan. Harga jual dan total langsung terlihat, siap dijadikan penawaran.\n\nContoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-12-1930-reel-bedah",
+   "tanggal": "2026-11-12",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Teknikal: kenapa ban truk bisa pecah (kurang angin → lentur → panas, muatan berlebih, tekanan ban ganda, ukur saat dingin)",
+   "media": [
+    "media/2026-11-12/reel-bedah.mp4"
+   ],
+   "cover": "media/2026-11-12/reel-bedah-cover.jpg",
+   "caption": "Truk melaju di tol, lalu ban pecah. Kenapa bisa begitu?\n\nKita bedah: ban yang kurang angin melentur berlebihan dan menghasilkan panas, muatan melebihi batas membuat ban menanggung beban terlalu besar. Cek tekanan angin secara rutin, samakan tekanan pada ban ganda, dan ukur saat ban masih dingin.\n\nSumber: detikOto, 22 September 2024 dan 22 Oktober 2020 (Ahmad Juweni, Hankook Tire Sales Indonesia). Ilustrasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Kenapa ban truk bisa pecah di tol? Kita bedah",
+   "catatan": ""
   },
   {
    "id": "2026-11-13-1200-feed-manual",
