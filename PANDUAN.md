@@ -117,6 +117,12 @@ Tidak ada orang yang mengecek sebelum tayang, jadi patuhi semua aturan di bawah.
 - Mulai RABU 11 Nov 2026 KEMBALI NORMAL: tiap hari 1 Feed + 1 Reels (gaya Reels sesuai `engine/gaya_reels.py`; 11 Nov = gaya lama). Stok H-2 berlaku lagi seperti biasa, jadi Reels 11 Nov dst. dibuat oleh tugas harian mengikuti aturan stok.
 - `konten/2026-11-09-realita.json` (Reels "tiga permintaan harga jam empat sore") TIDAK dirender untuk 9 Nov; tetap sebagai stok cadangan untuk tanggal Senin lain.
 
+## REVISI PATEN 11 Nov 2026 (menang atas bagian di bawah dan atas "Sistem stok H-2")
+- **Tanpa stok**: tiap hari jam 12.07 WIB Claude membuat konten BESOK saja dan langsung memasukkannya ke halaman Posting setelah lolos inspeksi (tanpa menunggu persetujuan). Hari ini membuat konten untuk besok; 13 Nov siang untuk 14 Nov, dst.
+- **1 Reels per hari, selang-seling A/B** mulai 13 Nov: 13 Nov = A (naskah 13 Nov), 14 Nov = B (naskah 13 Nov), 15 Nov = A (naskah 14 Nov), dst. 36 naskah = 36 hari tayang (13 Nov s.d. 18 Des 2026). Jenis & naskah tiap tanggal: `python3 engine/gaya_reels.py <tanggal> 1`. A jam 11:30, B jam 19:30. Naskah habis → lapor ke Rizky, minta naskah baru.
+- Feed editorial 17:00 + kartu manual 12:00 tetap. Naskah Rizky WAJIB dipakai.
+- Komposisi B: `remotion/src/Produk.tsx` (contoh: konten/2026-11-14-produk-naskah.json); A: contoh konten/2026-11-13-cerita-naskah.json.
+
 ## FORMAT NASKAH 13–30 NOV 2026 — ATURAN PATEN Rizky (11 Nov 2026): tiap hari 2 Reels dari naskah (A cerita + B produk)
 Sumber naskah: `naskah/naskah-13-30-nov.txt` (teks) dan `naskah/Naskah-Konten-Ghostrip-13-30-November.pdf` (asli) — 36 naskah, urut per tanggal, masing-masing punya "Teks layar", "Hook", "Isi", "CTA". Naskah dibuat Rizky; Claude membuat videonya. Mulai Jumat 13 Nov 2026 gaya Reels selang-seling lama/bedah DIHENTIKAN (`engine/gaya_reels.py` mengembalikan "naskah").
 - Slot harian: kartu Feed manual 12:00 (tetap), **Reels A "cerita" 11:30**, feed 17:00 (tetap, tema digilir, caption baku), **Reels B "produk" 19:30**. Total 2 Reels + 1 feed Claude + 1 feed manual Rizky per hari. Tanpa story.
