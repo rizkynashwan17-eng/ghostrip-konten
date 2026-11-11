@@ -1,0 +1,81 @@
+{
+ "date": "2026-11-13",
+ "posts": [
+  {
+   "slot": "reel-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "cerita",
+   "tema": "realita",
+   "time": "11:30",
+   "seri": "CERITA",
+   "judul": "JAM 10 MALAM, CUSTOMER MINTA HARGA",
+   "part": 1,
+   "lokasi": "22.00 WIB · RUMAH",
+   "jam": "22:00",
+   "voice_id": "2026-11-13-reel-cerita",
+   "topic": "Cerita A naskah 13 Nov: customer minta harga jam 10 malam, harga sulit dijawab cepat; ditutup soft selling",
+   "scenes": [
+    {
+     "type": "chat",
+     "kontak": "Customer · PT Makmur",
+     "pesan": [
+      {
+       "teks": "Pak, harga ke Surabaya berapa?"
+      },
+      {
+       "teks": "Besok pagi muat ya."
+      }
+     ],
+     "narasi": "Jam sepuluh malam, customer kirim chat: *harga ke Surabaya* berapa, besok pagi muat."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "santai",
+     "set": "malam",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Siapa yang pernah dapat chat kayak gini pas lagi *santai di rumah*?"
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Yang dibutuhkan",
+     "item": [
+      "Kalkulator di kantor",
+      "Catatan tarif di laptop",
+      "Harga solar terakhir"
+     ],
+     "tanda": "x",
+     "narasi": "Kalkulator ada di kantor, catatan tarif di laptop, harga solar terakhir *lupa*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "cemas",
+     "set": "malam",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Mau jawab asal, takut rugi. Mau jawab besok, takut customer *pindah ke ekspedisi lain*."
+    },
+    {
+     "type": "angka",
+     "nilai": "Rp 8.500.000",
+     "label": "ANGKA BULAT, HITUNG KASAR",
+     "narasi": "Akhirnya hitung kasar di kertas, kirim angka bulat, lalu *nggak bisa tidur* mikirin tolnya sudah masuk atau belum."
+    },
+    {
+     "type": "cta",
+     "tagline": "Harga bisa keluar dari HP dalam hitungan detik",
+     "pil": "GHOSTRIP",
+     "ajakan": "Komen PERNAH kalau senasib",
+     "narasi": "Kalau kamu pernah ngalamin, komen *PERNAH*. Dan kalau mau jawab cepat dari HP, ada *Ghostrip*."
+    }
+   ],
+   "caption": "Jam 10 malam. Customer: \"Pak, harga ke Surabaya berapa? Besok pagi muat.\" 📱🌙\n\nKalkulator di kantor, catatan tarif di laptop, harga solar terakhir lupa. Mau jawab asal takut rugi, mau jawab besok takut customer pindah.\n\nKalau kamu pernah ngalamin, komen PERNAH. Penasaran berapa banyak yang senasib.\n\nBuat yang mau jawab harga lebih cepat dari HP, Ghostrip bisa bantu hitung dan bikin penawarannya.\n\nCerita ini fiktif sebagai gambaran.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Jam 10 malam customer minta harga ke Surabaya. Pernah?"
+  }
+ ]
+}
