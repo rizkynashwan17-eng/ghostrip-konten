@@ -203,3 +203,5 @@ Coba Ghostrip gratis selama 7 hari!
 - Pasang/rapikan otomatis: `python3 engine/caption_akhir.py konten/<file>.json`. `engine/posting.py tambah` juga memasangnya sendiri; `scan_konten.py` menolak caption yang tidak berakhir dengan penutup baku.
 - Cerita (Selasa/Jumat): badan caption tetap tanpa promosi/CTA (narasi video tanpa Ghostrip); hanya penutup baku yang menutup caption (permintaan Rizky 4 Nov).
 - Emoji hanya di caption, bukan di gambar. Sumber fakta ("Sumber: …") boleh di badan bila ada.
+
+> Catatan teknis suara: `engine/tts_gemini.py` hanya memproses request yang belum punya `voice/out/<id>/done.json`. Untuk MEMBUAT ULANG suara (mis. ganti nada), hapus dulu folder `voice/out/<id>` (git rm), commit & push, lalu dispatch workflow voice.yml; menaikkan "rev" saja TIDAK cukup.
