@@ -13,3 +13,5 @@
 | 2026-11-07 (Sabtu, humor) | Reels 19:30 humor POV admin: revisi kelima, versi pertama tertimpa (admin, customer) — dirender & masuk halaman 5 Nov | — | polling revisi terbanyak | feed: isi folder penawaran setelah 5 revisi |
 | 2026-11-11 (Rabu, tips) | Reels tips sopir: keliling truk 5 area sebelum berangkat (detikOto 20 Agu 2024, Daimler CV Indonesia) | — | — | feed tips admin: 4 biaya kontainer di penawaran (DHL: free time, demurrage, detention, storage) |
 | 2026-11-12 (Kamis, bedah+fitur) | Reels BEDAH: kenapa ban truk bisa pecah (kurang angin, panas, muatan, ban ganda, ukur saat dingin; detikOto 2024 & 2020) | — | — | feed fitur: dari hitungan trip ke harga jual |
+| 2026-11-13 (Jumat, naskah A) | Reels A 11:30 "Customer minta harga jam 10 malam" (cerita, ditutup soft selling; 39,7 dtk, sedikit di atas target 35) | — | — | contoh format baru atas permintaan Rizky |
+| 2026-11-14 (Sabtu, naskah B) | Reels B 19:30 "Kasih harga Surabaya–Jakarta dari HP" (naskah 13 Nov, gaya Iklan 3D, layar app data simulasi, CTA ghostrip.id/WA; 35,6 dtk) | — | — | feed 17:00 + kartu manual dibuat di run 13 Nov siang |

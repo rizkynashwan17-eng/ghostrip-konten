@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-11T11:10+07:00",
+ "diperbarui": "2026-11-11T11:28+07:00",
  "posts": [
   {
    "id": "2026-10-29-0730-story-v2",
@@ -850,6 +850,25 @@
    "caption": "",
    "tiktok_title": "",
    "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-14-1930-reel-produk",
+   "tanggal": "2026-11-14",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Produk B naskah 13 Nov: kasih harga Surabaya-Jakarta langsung dari HP (hitung, surat PDF, kirim WhatsApp)",
+   "media": [
+    "media/2026-11-14/reel-produk.mp4"
+   ],
+   "cover": "media/2026-11-14/reel-produk-cover.jpg",
+   "caption": "Customer minta harga jam 10 malam? Jawab dari HP tanpa buka laptop. 📱\n\nDi Ghostrip: pilih jenis truk, isi rute, harga keluar otomatis (solar, tol, dan markup sudah masuk). Ketuk buat surat penawaran, jadi PDF lengkap dengan kop dan cap, lalu kirim langsung ke WhatsApp customer.\n\nContoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Kasih harga Surabaya-Jakarta dari HP, tanpa laptop",
+   "catatan": ""
   }
  ]
 }
