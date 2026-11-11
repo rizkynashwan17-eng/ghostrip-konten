@@ -30,7 +30,7 @@
       {
        "text": "Jenis truk",
        "sub": "pilih dari armada",
-       "icon": "🚚",
+       "icon": "◆",
        "x": 40,
        "y": 640
       },
@@ -55,7 +55,7 @@
       {
        "text": "Solar + tol",
        "sub": "sudah termasuk",
-       "icon": "⛽",
+       "icon": "◆",
        "x": 50,
        "y": 700
       },

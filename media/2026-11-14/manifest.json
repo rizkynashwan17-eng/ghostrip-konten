@@ -1,0 +1,11 @@
+[
+ {
+  "slot": "reel-produk",
+  "kind": "reel",
+  "media": "media/2026-11-14/reel-produk.mp4",
+  "cover": "media/2026-11-14/reel-produk-cover.jpg",
+  "dur": 35.6,
+  "engine": "remotion",
+  "bersuara": true
+ }
+]
