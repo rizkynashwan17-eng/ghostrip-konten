@@ -39,7 +39,8 @@ def cmd_suara(spec_path):
         text = "\n".join(plain(s["narasi"]) for s in post["scenes"] if s.get("narasi"))
         req = {"id": vid, "mode": "narasi", "rev": 1,
                "jadwal": f"{spec['date']}T{post.get('time', '23:59')}",
-               "lines": [{"who": "NARATOR", "tone": "narasi", "text": text}]}
+               "lines": [{"who": post.get("who") or ("PROMO" if post.get("gaya") == "produk" else "NARATOR"),
+                          "tone": post.get("tone") or ("asyik" if post.get("gaya") == "produk" else "narasi"), "text": text}]}
         p = os.path.join(ROOT, "voice", "requests", f"{vid}.json")
         if os.path.exists(p):
             req["rev"] = json.load(open(p)).get("rev", 0) + 1

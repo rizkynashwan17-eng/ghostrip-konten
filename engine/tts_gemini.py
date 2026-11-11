@@ -31,6 +31,7 @@ TONE = {
     "menjelaskan": "explaining enthusiastically like sharing a fun fact",
     "kecewa": "slightly worried and disappointed",
     "senang": "happy and satisfied",
+    "asyik": "upbeat, friendly and persuasive like a fun product demo told to a friend, bright smile in the voice, lively rises and falls, never slow, flat or sleepy, ending with an enthusiastic and inviting call to action",
     "mengajak": "energetic and inviting, like a closing call to action",
     "tegas": "firm and confident",
 }

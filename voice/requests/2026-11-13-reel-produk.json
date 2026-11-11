@@ -1,12 +1,12 @@
 {
  "id": "2026-11-13-reel-produk",
  "mode": "narasi",
- "rev": 1,
- "jadwal": "2026-11-13T19:30",
+ "rev": 2,
+ "jadwal": "2026-11-14T19:30",
  "lines": [
   {
-   "who": "NARATOR",
-   "tone": "narasi",
+   "who": "PROMO",
+   "tone": "asyik",
    "text": "Ini cara saya jawab chat customer jam sepuluh malam, tanpa buka laptop.\nBuka Ghostrip, pilih jenis truk, lalu masukkan rutenya.\nHarga keluar otomatis: solar, tol, dan markup sudah masuk. Nggak perlu kalkulator, nggak perlu Excel.\nKetuk buat surat penawaran, dan jadilah PDF lengkap dengan kop dan cap.\nLalu kirim langsung ke WhatsApp customer.\nHarga sesuai tarif truk kita sendiri. Coba Ghostrip gratis tujuh hari, lewat ghostrip.id atau chat WhatsApp."
   }
  ]
