@@ -1,0 +1,645 @@
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+KONTEN HARIAN
+
+Jadwal & Naskah Konten Ghostrip
+13–30 November 2026 · 36 konten · setiap hari 1 Cerita (A) dan 1 Produk (B)
+
+
+  Catatan teks judul: “Teks layar” di setiap naskah hanya dipakai di awal video (sekitar 3 detik pertama) sebagai
+  judul pembuka. Setelah itu hilangkan, lalu lanjut ke visual isi dan subtitle narasi.
+
+
+ Cerita (A)                20–35 detik. Video suasana (truk, pool, gudang, kantor, layar chat) dengan narasi suara dan
+                           subtitle. Tanpa jualan, CTA lembut: komentar, simpan, bagikan. Posting sekitar 11.00–12.00.
+
+ Produk (B)                30–45 detik. Rekaman layar HP saat memakai Ghostrip, dengan narasi suara. Posting sekitar
+                           19.00–20.00.
+
+ CTA produk standar        “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+ Angka contoh              Rute, harga, dan tanggal di naskah hanya contoh. Ganti dengan pengalaman Anda sendiri.
+
+
+Jadwal 18 hari
+ Tanggal           Cerita (A)                                             Produk (B)
+
+ MINGGU 1: Ribetnya kasih harga
+
+ Jumat, 13 Nov     Customer minta harga jam 10 malam                      Kasih harga Surabaya–Jakarta langsung dari HP
+
+ Sabtu, 14 Nov     Kasih harga terlalu murah, ternyata rugi di tol        Solar, tol, dan markup dihitung otomatis
+
+ Minggu, 15 Nov    Kalah order karena penawaran cuma diketik di chat      Surat penawaran PDF lengkap kop, TTD, dan cap
+
+ MINGGU 2: Drama admin
+
+ Senin, 16 Nov     Admin cuti, nggak ada yang tahu harga                  Satu akun untuk satu tim
+
+ Selasa, 17 Nov    Cari penawaran bulan lalu di ratusan chat              Riwayat tersimpan, cari dalam 3 detik
+
+ Rabu, 18 Nov      Excel harga ada 3 versi                                Atur tarif per jenis truk, sekali saja
+
+ Kamis, 19 Nov     Salah ketik satu nol di invoice                        Penawaran jadi invoice sekali ketuk
+
+ Jumat, 20 Nov     Ganti HP, semua data hilang                            Ganti HP, tinggal login
+
+ Sabtu, 21 Nov     Jam kerja admin ekspedisi yang sebenarnya              Dulu 5 aplikasi, sekarang 1
+
+ Minggu, 22 Nov    Pertanyaan customer yang bikin admin pusing            Pertanyaan yang paling sering soal Ghostrip
+
+ MINGGU 3: Uang dan tagihan
+
+ Senin, 23 Nov     Truk sudah jalan 3 kali, belum dibayar sekali pun      Pantau invoice yang lewat jatuh tempo
+
+ Selasa, 24 Nov    Customer bilang sudah transfer DP                      Catat DP dan pelunasan per invoice
+
+ Rabu, 25 Nov      Customer minta invoice format resmi                    Invoice PDF dengan stempel LUNAS
+
+ Kamis, 26 Nov     Solar naik, harga lama masih dipakai                   Ubah harga solar, semua tarif ikut berubah
+
+ MINGGU 4: Truk dan muatan
+
+ Jumat, 27 Nov     Truk ditahan karena KIR mati                           Pengingat STNK dan KIR otomatis
+
+ Sabtu, 28 Nov     Barang nggak muat, panggil truk kedua                  Cek muatan 3D sebelum truk berangkat
+
+ Minggu, 29 Nov    Muatan oversize, salah pilih truk                      Mode oversize untuk flatbed dan lowbed
+
+ Senin, 30 Nov     Kenapa saya bikin Ghostrip                             Coba gratis 7 hari, cara install dalam 1 menit
+
+
+
+
+                                                                                                                       Halaman 1
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+NASKAH LENGKAP
+
+36 naskah, urut per hari
+  MINGGU 1: Ribetnya kasih harga
+
+Jumat, 13 November
+  A · CERITA
+  Customer minta harga jam 10 malam
+  Teks layar (judul pembuka, 3 detik pertama): "Jam 10 malam. Customer: 'Pak, harga ke Surabaya berapa? Besok
+  pagi muat.'"
+  Hook (narasi): "Siapa yang pernah dapat chat kayak gini pas lagi santai di rumah?"
+  Isi:
+  • "Kalkulator di kantor, catatan tarif di laptop, harga solar terakhir lupa."
+  • "Mau jawab asal, takut rugi. Mau jawab besok, takut customer pindah ke ekspedisi lain."
+  • "Akhirnya hitung kasar di kertas, kirim angka bulat, terus nggak bisa tidur mikirin tolnya sudah masuk atau
+     belum."
+  CTA: "Kalau Anda pernah ngalamin, komen 'PERNAH'. Penasaran berapa banyak yang senasib."
+
+
+  B · PRODUK
+  Kasih harga Surabaya–Jakarta langsung dari HP
+  Teks layar (judul pembuka, 3 detik pertama): "Harga trip Sby–Jkt. Dihitung dari HP. Lihat waktunya."
+  Hook: "Ini cara saya jawab chat customer jam 10 malam tanpa buka laptop."
+  Isi (rekam layar):
+  1. Buka Ghostrip, pilih jenis truk.
+  2. Masukkan rute Surabaya–Jakarta.
+  3. Harga keluar otomatis: solar, tol, markup sudah masuk.
+  4. Ketuk jadikan surat penawaran, lalu kirim PDF ke WhatsApp.
+  • Narasi: "Nggak perlu kalkulator, nggak perlu Excel. Harga sesuai tarif truk kita sendiri."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Sabtu, 14 November
+  A · CERITA
+  Kasih harga terlalu murah, ternyata rugi di tol
+  Teks layar (judul pembuka, 3 detik pertama): "Dapat order. Senang. Pulang-pulang ternyata rugi."
+  Hook: "Ini kesalahan yang hampir semua pengusaha truk pernah lakukan."
+  Isi:
+  • "Kasih harga cepat biar dapat order. Hitungnya solar sama uang jalan saja."
+  • "Pas truk pulang, lihat struk tol, parkir, dan biaya tak terduga lain. Margin habis."
+  • "Capek kerja seminggu, hasilnya cuma balik modal."
+  CTA: "Biaya apa yang paling sering Anda lupa hitung? Tulis di komentar."
+
+
+
+
+                                                                                                                  Halaman 2
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+
+  B · PRODUK
+  Solar, tol, dan markup dihitung otomatis
+  Teks layar (judul pembuka, 3 detik pertama): "Biaya yang sering lupa dihitung, sekarang otomatis."
+  Hook: "Supaya nggak ada lagi trip yang ternyata rugi."
+  Isi:
+  1. Buka menu tarif: tunjukkan harga solar, rasio solar, markup, biaya operasional.
+  2. Hitung satu rute, tunjukkan rincian biayanya.
+  3. Ubah markup dari 20% ke 30%, harga langsung berubah.
+  • Narasi: "Semua biaya kita atur sekali. Setiap hitung, sudah termasuk semuanya."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Minggu, 15 November
+  A · CERITA
+  Kalah order karena penawaran cuma diketik di chat
+  Teks layar (judul pembuka, 3 detik pertama): "Harga saya lebih murah. Tapi yang dipilih ekspedisi lain."
+  Hook: "Ternyata bukan soal harga."
+  Isi:
+  • "Saya kirim harga lewat chat: 'Sby–Jkt 8,5 juta Pak.'"
+  • "Ekspedisi lain kirim surat penawaran resmi, ada kop, nomor surat, cap."
+  • "Bagian pembelian perusahaan butuh dokumen buat diajukan ke atasan. Yang rapi, yang dipilih."
+  CTA: "Setuju nggak, penampilan penawaran itu ngaruh? Komen di bawah."
+
+
+  B · PRODUK
+  Surat penawaran PDF lengkap kop, TTD, dan cap
+  Teks layar (judul pembuka, 3 detik pertama): "Surat penawaran resmi. Dari HP. Hitungan detik."
+  Hook: "Begini caranya bikin penawaran yang kelihatan profesional tanpa buka Word."
+  Isi:
+  1. Setelah hitung harga, ketuk buat surat penawaran.
+  2. Tunjukkan hasil PDF: kop, nomor surat, pajak, terbilang, TTD, cap.
+  3. Kirim langsung ke WhatsApp customer.
+  • Narasi: "Kop dan cap cukup diatur sekali di awal. Setelah itu setiap penawaran otomatis rapi."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+
+  MINGGU 2: Drama admin
+
+Senin, 16 November
+  A · CERITA
+  Admin cuti, nggak ada yang tahu harga
+  Teks layar (judul pembuka, 3 detik pertama): "Admin cuti 3 hari. Kantor langsung lumpuh."
+  Hook: "Pernah ngalamin semua harga cuma ada di kepala satu orang?"
+  Isi:
+  • "Customer telepon minta harga. Yang tahu cuma admin."
+  • "Telepon admin yang lagi kondangan. Admin buka file dari HP, file-nya di laptop kantor."
+  • "Bos akhirnya tebak-tebak harga sendiri."
+  CTA: "Tag teman admin Anda yang nggak bisa cuti karena ini."
+
+
+
+
+                                                                                                             Halaman 3
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+
+  B · PRODUK
+  Satu akun untuk satu tim
+  Teks layar (judul pembuka, 3 detik pertama): "Admin cuti? Staf lain tetap bisa kasih harga."
+  Hook: "Ini cara supaya kantor tetap jalan walaupun admin libur."
+  Isi:
+  1. Tunjukkan menu tambah anggota tim.
+  2. Masuk sebagai staf, buat penawaran pakai tarif yang sama.
+  3. Tunjukkan pengaturan dan pencatatan pembayaran tetap dipegang pemilik dan admin.
+  • Narasi: "Tarifnya sama, datanya sama. Siapa pun yang masuk, harganya konsisten."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Selasa, 17 November
+  A · CERITA
+  Cari penawaran bulan lalu di ratusan chat
+  Teks layar (judul pembuka, 3 detik pertama): "Customer: 'Pak, harga yang bulan lalu berapa ya?'"
+  Hook: "Dan dimulailah perburuan di WhatsApp."
+  Isi:
+  • "Scroll chat ke atas. Nggak ketemu. Cari di galeri foto. Nggak ketemu."
+  • "Cari di folder Download, isinya 200 file 'Penawaran (1)', 'Penawaran (2)', 'Penawaran FINAL'."
+  • "Setengah jam kemudian, nyerah, hitung ulang."
+  CTA: "Berapa lama rekor Anda nyari file penawaran lama? Komen."
+
+
+  B · PRODUK
+  Riwayat tersimpan, cari dalam 3 detik
+  Teks layar (judul pembuka, 3 detik pertama): "Penawaran bulan lalu? Ketik nama customer. Ketemu."
+  Hook: "Nggak ada lagi scroll WhatsApp sampai jempol pegal."
+  Isi:
+  1. Buka riwayat, tunjukkan daftar hitungan, penawaran, invoice.
+  2. Ketik nama perusahaan, hasil langsung muncul.
+  3. Ketik rute, misalnya "Surabaya", semua penawaran ke Surabaya muncul.
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Rabu, 18 November
+  A · CERITA
+  Excel harga ada 3 versi
+  Teks layar (judul pembuka, 3 detik pertama): "tarif_baru.xlsx, tarif_baru_REVISI.xlsx, tarif_FIX_banget.xlsx"
+  Hook: "Yang mana yang terbaru?"
+  Isi:
+  • "Admin A pakai file yang satu, admin B pakai file yang lain."
+  • "Customer yang sama dapat dua harga berbeda dari kantor yang sama."
+  • "Customer tanya: 'Jadi yang benar yang mana, Pak?'"
+  CTA: "Jujur, di kantor Anda ada berapa versi file tarif? Komen angkanya."
+
+
+
+
+                                                                                                                  Halaman 4
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+
+  B · PRODUK
+  Atur tarif per jenis truk, sekali saja
+  Teks layar (judul pembuka, 3 detik pertama): "Satu tarif. Dipakai semua orang. Tidak ada versi revisi."
+  Hook: "Begini cara supaya semua admin kasih harga yang sama."
+  Isi:
+  1. Buka pengaturan tarif: engkel, CDD, fuso, tronton, trailer.
+  2. Atur kecepatan, jam kerja, rasio solar, operasional per jenis truk.
+  3. Ubah satu angka, semua staf langsung pakai angka yang baru.
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Kamis, 19 November
+  A · CERITA
+  Salah ketik satu nol di invoice
+  Teks layar (judul pembuka, 3 detik pertama): "Invoice Rp8.200.000. Yang terketik Rp820.000."
+  Hook: "Dan customer langsung transfer. Tepat sesuai invoice."
+  Isi:
+  • "Ketik ulang angka dari penawaran ke invoice, jam 11 malam, mata sudah berat."
+  • "Kurang satu nol. Customer bayar sesuai yang tertulis."
+  • "Nagih kekurangannya? Canggung, dan bikin kita kelihatan nggak profesional."
+  CTA: "Pernah salah ketik di invoice? Ceritain di komentar, biar yang lain belajar."
+
+
+  B · PRODUK
+  Penawaran jadi invoice sekali ketuk
+  Teks layar (judul pembuka, 3 detik pertama): "Nggak ketik ulang. Nggak salah angka."
+  Hook: "Penawaran yang sudah disetujui, langsung jadi invoice."
+  Isi:
+  1. Buka penawaran yang sudah deal.
+  2. Ketuk ubah jadi invoice.
+  3. Tunjukkan semua angka, nama customer, rute sudah terisi otomatis.
+  • Narasi: "Angkanya diambil langsung dari penawaran. Nggak ada ketik ulang."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Jumat, 20 November
+  A · CERITA
+  Ganti HP, semua data hilang
+  Teks layar (judul pembuka, 3 detik pertama): "HP jatuh. Layar mati. Semua catatan harga ada di situ."
+  Hook: "Ini mimpi buruk pengusaha yang kerja dari HP."
+  Isi:
+  • "Catatan tarif di notes, foto nota di galeri, penawaran di WhatsApp."
+  • "HP rusak, semua ikut hilang."
+  • "Mulai dari nol lagi, tanya-tanya customer 'Kemarin harga kita berapa ya, Pak?'"
+  CTA: "Simpan video ini sebagai pengingat untuk backup data usaha Anda."
+
+
+
+
+                                                                                                            Halaman 5
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+
+  B · PRODUK
+  Ganti HP, tinggal login
+  Teks layar (judul pembuka, 3 detik pertama): "HP baru. Login. Semua data kembali."
+  Hook: "Data usaha Anda nggak boleh tergantung sama satu HP."
+  Isi:
+  1. Tunjukkan login di HP lain atau di laptop lewat browser.
+  2. Kop surat, TTD, data truk, riwayat, invoice: semua sudah ada.
+  • Narasi: "Datanya tersimpan di akun. Bisa di Android, iPhone lewat browser, atau laptop."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Sabtu, 21 November
+  A · CERITA
+  Jam kerja admin ekspedisi yang sebenarnya
+  Teks layar (judul pembuka, 3 detik pertama): "Jam kerja: 08.00–17.00. Kenyataannya:"
+  Hook: "Admin ekspedisi pasti relate."
+  Isi (potongan cepat, teks di layar):
+  • "06.00: Sopir telepon, ban bocor."
+  • "09.00: Customer minta harga 3 rute sekaligus."
+  • "13.00: Makan siang sambil bikin invoice."
+  • "17.00: Mau pulang, customer: 'Pak, besok pagi bisa muat?'"
+  • "22.00: Masih balas chat customer."
+  CTA: "Tag admin yang paling berjasa di kantor Anda."
+
+
+  B · PRODUK
+  Dulu 5 aplikasi, sekarang 1
+  Teks layar (judul pembuka, 3 detik pertama): "Kalkulator. Excel. Word. Scan cap. WhatsApp. Atau..."
+  Hook: "Ini yang berubah di kantor ekspedisi setelah pakai Ghostrip."
+  Isi:
+  • Layar dibagi dua. Kiri "Dulu": buka kalkulator, Excel, Word, tempel cap, kirim WA. Kanan "Sekarang": Ghostrip,
+     hitung, PDF, kirim.
+  • Narasi: "Hitung trip, penawaran, invoice, cek muatan, pengingat KIR. Semua di 1 aplikasi."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Minggu, 22 November
+  A · CERITA
+  Pertanyaan customer yang bikin admin pusing
+  Teks layar (judul pembuka, 3 detik pertama): "Pertanyaan customer yang paling sering bikin pusing:"
+  Hook: "Nomor 3 pasti pernah Anda dengar."
+  Isi:
+  • "1. 'Bisa lebih murah lagi nggak, Pak?' (setelah ditawar 3 kali)"
+  • "2. 'Truknya bisa sampai dalam 1 hari kan?' (rute 900 km)"
+  • "3. 'Barangnya cuma sedikit kok' (ternyata 2 truk)"
+  • "4. 'Bayarnya bulan depan ya' (sudah 3 bulan lalu)"
+  CTA: "Tambahin nomor 5 versi Anda di komentar."
+
+
+
+
+                                                                                                             Halaman 6
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+
+  B · PRODUK
+  Pertanyaan yang paling sering soal Ghostrip
+  Teks layar (judul pembuka, 3 detik pertama): "5 pertanyaan tentang Ghostrip, dijawab dalam 40 detik."
+  Hook: "Sebelum coba, biasanya orang tanya ini dulu."
+  Isi (teks + suara):
+  • "Aman nggak? File dibagikan resmi oleh tim Ghostrip."
+  • "Bisa di iPhone? Bisa, lewat browser."
+  • "Bisa dipakai bareng staf? Bisa, satu akun satu tim."
+  • "Harus online terus? Saat sinyal lemah tetap bisa hitung, data terkirim saat tersambung."
+  • "Berapa harganya? Rp219 ribu per bulan, semua fitur, berapa pun jumlah truknya."
+  CTA: "Ada pertanyaan lain? Tulis di komentar, saya jawab satu per satu."
+
+
+
+  MINGGU 3: Uang dan tagihan
+
+Senin, 23 November
+  A · CERITA
+  Truk sudah jalan 3 kali, belum dibayar sekali pun
+  Teks layar (judul pembuka, 3 detik pertama): "Trip 1: belum bayar. Trip 2: belum bayar. Trip 3: 'Minggu depan ya,
+  Pak.'"
+  Hook: "Ini yang bikin usaha truk kelihatan ramai tapi kas kosong."
+  Isi:
+  • "Truk jalan terus, solar keluar terus, gaji sopir jalan terus."
+  • "Tapi uangnya masih di customer."
+  • "Kita sibuk kerja sampai lupa nagih. Pas ingat, sudah lewat 2 bulan."
+  CTA: "Berapa lama paling lama Anda nunggu pembayaran? Komen."
+
+
+  B · PRODUK
+  Pantau invoice yang lewat jatuh tempo
+  Teks layar (judul pembuka, 3 detik pertama): "Invoice mana yang belum dibayar? Langsung kelihatan."
+  Hook: "Supaya nggak ada lagi tagihan yang kelupaan."
+  Isi:
+  1. Buka daftar invoice.
+  2. Tunjukkan status: belum bayar, DP, lunas, lewat jatuh tempo.
+  3. Ketuk invoice yang telat, kirim ulang ke customer.
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Selasa, 24 November
+  A · CERITA
+  Customer bilang sudah transfer DP
+  Teks layar (judul pembuka, 3 detik pertama): "Customer: 'DP sudah saya transfer minggu lalu, Pak.'"
+  Hook: "Masalahnya: kapan, berapa, dan ke rekening mana?"
+  Isi:
+  • "Buka mutasi rekening. Ada 40 transferan masuk."
+  • "Yang mana dari customer ini? Berapa sisanya?"
+  • "Customer mulai kesal karena ditanya terus."
+  CTA: "Gimana cara Anda nyatat DP selama ini? Buku, Excel, atau ingatan? Komen."
+
+
+
+
+                                                                                                               Halaman 7
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+
+  B · PRODUK
+  Catat DP dan pelunasan per invoice
+  Teks layar (judul pembuka, 3 detik pertama): "DP berapa, sisa berapa, kapan bayar. Tercatat."
+  Hook: "Nggak perlu bongkar mutasi rekening lagi."
+  Isi:
+  1. Buka invoice, catat pembayaran DP.
+  2. Sisa tagihan langsung terhitung.
+  3. Catat pelunasan, status berubah jadi lunas.
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Rabu, 25 November
+  A · CERITA
+  Customer minta invoice format resmi
+  Teks layar (judul pembuka, 3 detik pertama): "Bagian keuangan customer: 'Invoicenya harus resmi, Pak. Ada cap.'"
+  Hook: "Dan pembayaran tertahan cuma gara-gara format."
+  Isi:
+  • "Kirim tagihan lewat foto nota. Ditolak bagian keuangan."
+  • "Bikin ulang di Word, cari file cap, tempel, simpan PDF."
+  • "Pembayaran mundur seminggu cuma karena urusan administrasi."
+  CTA: "Pernah pembayaran tertunda gara-gara dokumen? Share pengalaman Anda."
+
+
+  B · PRODUK
+  Invoice PDF dengan stempel LUNAS
+  Teks layar (judul pembuka, 3 detik pertama): "Invoice resmi. Dan saat lunas, ada stempelnya."
+  Hook: "Ini invoice yang nggak bakal ditolak bagian keuangan."
+  Isi:
+  1. Tunjukkan PDF invoice: kop, nomor, rincian, TTD, cap.
+  2. Setelah pelunasan dicatat, tunjukkan PDF dengan stempel LUNAS.
+  3. Kirim ke customer sebagai bukti.
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Kamis, 26 November
+  A · CERITA
+  Solar naik, harga lama masih dipakai
+  Teks layar (judul pembuka, 3 detik pertama): "Solar sudah naik. Harga ke customer belum."
+  Hook: "Tanpa sadar, setiap trip untungnya makin tipis."
+  Isi:
+  • "Tabel tarif dibuat waktu solar masih harga lama."
+  • "Nggak sempat update, admin tetap pakai tabel yang sama."
+  • "Baru sadar pas hitung laporan bulanan: untung turun, kerja sama."
+  CTA: "Seberapa sering Anda update harga ke customer? Komen."
+
+
+
+
+                                                                                                            Halaman 8
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+
+  B · PRODUK
+  Ubah harga solar, semua tarif ikut berubah
+  Teks layar (judul pembuka, 3 detik pertama): "Ganti 1 angka. Semua harga trip ikut menyesuaikan."
+  Hook: "Begini cara update tarif dalam 10 detik."
+  Isi:
+  1. Hitung satu rute, catat harganya.
+  2. Buka pengaturan, ubah harga solar per liter.
+  3. Hitung rute yang sama, harga sudah menyesuaikan.
+  • Narasi: "Tidak perlu edit tabel satu per satu."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+
+  MINGGU 4: Truk dan muatan
+
+Jumat, 27 November
+  A · CERITA
+  Truk ditahan karena KIR mati
+  Teks layar (judul pembuka, 3 detik pertama): "Truk berhenti di jalan. Petugas: 'KIR-nya sudah habis, Pak.'"
+  Hook: "Dan barang customer ikut tertahan."
+  Isi:
+  • "Punya beberapa truk, tanggal STNK dan KIR beda-beda."
+  • "Dicatat di buku, buku ada di laci, laci jarang dibuka."
+  • "Ketahuannya pas sudah di jalan. Rugi waktu, rugi denda, rugi nama."
+  CTA: "Coba cek sekarang: KIR truk Anda habis kapan? Simpan video ini sebagai pengingat."
+
+
+  B · PRODUK
+  Pengingat STNK dan KIR otomatis
+  Teks layar (judul pembuka, 3 detik pertama): "Ghostrip yang ingat. Anda tinggal urus."
+  Hook: "Nggak ada lagi KIR yang ketahuan habis di jalan."
+  Isi:
+  1. Buka data truk: plat, STNK, KIR.
+  2. Tunjukkan label: tinggal sebulan, tinggal 7 hari, sudah lewat.
+  • Narasi: "Semua truk kelihatan di satu layar. Yang mau habis langsung ketahuan."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Sabtu, 28 November
+  A · CERITA
+  Barang nggak muat, panggil truk kedua
+  Teks layar (judul pembuka, 3 detik pertama): "Customer: 'Barangnya cukup 1 CDD kok.' Kenyataannya:"
+  Hook: "Truk datang, barang setengahnya nggak naik."
+  Isi:
+  • "Customer kasih perkiraan, kita percaya."
+  • "Di lokasi, barang nggak muat. Harus panggil truk kedua."
+  • "Siapa yang tanggung biayanya? Biasanya kita."
+  CTA: "Pernah ngalamin? Komen 'TRUK KEDUA'."
+
+
+
+
+                                                                                                                Halaman 9
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+
+  B · PRODUK
+  Cek muatan 3D sebelum truk berangkat
+  Teks layar (judul pembuka, 3 detik pertama): "Muat atau nggak? Cek dulu sebelum truk jalan."
+  Hook: "Ini cara tahu barang muat di truk mana, tanpa nebak."
+  Isi:
+  1. Masukkan ukuran, berat, dan jumlah barang.
+  2. Tunjukkan susunan 3D di dalam truk, persentase volume, dan status berat.
+  3. Ganti jenis truk, lihat perbedaannya.
+  • Narasi: "Bisa kirim hasilnya ke customer sebagai dasar pilih truk dan harga."
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Minggu, 29 November
+  A · CERITA
+  Muatan oversize, salah pilih truk
+  Teks layar (judul pembuka, 3 detik pertama): "Barangnya lebih lebar dari bak truk."
+  Hook: "Dan baru ketahuan waktu mau dimuat."
+  Isi:
+  • "Alat berat atau mesin pabrik, ukurannya nggak biasa."
+  • "Kirim flatbed, ternyata harusnya lowbed."
+  • "Truk balik kosong, jadwal mundur, customer kecewa."
+  CTA: "Muatan paling aneh yang pernah Anda angkut apa? Komen, penasaran."
+
+
+  B · PRODUK
+  Mode oversize untuk flatbed dan lowbed
+  Teks layar (judul pembuka, 3 detik pertama): "Muatan oversize? Cek dulu di sini."
+  Hook: "Fitur ini khusus buat yang sering angkut barang besar."
+  Isi:
+  1. Pilih flatbed, masukkan ukuran barang besar.
+  2. Aktifkan mode oversize, lihat tampilan 3D dan 2D.
+  3. Bandingkan dengan lowbed.
+  CTA: “Coba Ghostrip gratis 7 hari. Link di bio, atau chat admin di WhatsApp.”
+
+
+Senin, 30 November
+  A · CERITA
+  Kenapa saya bikin Ghostrip
+  Teks layar (judul pembuka, 3 detik pertama): "Kenapa saya bikin aplikasi ini."
+  Hook: "Saya bikin Ghostrip karena capek dengan cara lama."
+  Isi (narasi suara dengan foto atau video perjalanan usaha Anda; isi dengan cerita asli, panduan ini hanya kerangka):
+  • Masalah yang Anda lihat atau alami sendiri di dunia ekspedisi.
+  • Momen yang bikin Anda memutuskan "harus ada cara yang lebih gampang".
+  • Apa yang sekarang bisa dilakukan Ghostrip.
+  • Harapan Anda untuk pengusaha truk kecil dan menengah.
+  CTA: "Terima kasih buat yang sudah ngikutin konten bulan ini. Kalau ada masalah di kantor ekspedisi yang belum
+  terjawab, tulis di komentar. Bisa jadi fitur berikutnya."
+
+
+
+
+                                                                                                                Halaman 10
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+
+  B · PRODUK
+  Coba gratis 7 hari, cara install dalam 1 menit
+  Teks layar (judul pembuka, 3 detik pertama): "Cara mulai pakai Ghostrip. 1 menit."
+  Hook: "Sudah lihat fiturnya sebulan ini. Ini cara mulai."
+  Isi:
+  1. Buka ghostrip.id, ketuk download.
+  2. Buka file, izinkan pemasangan, install.
+  3. Muncul peringatan Play Protect? Ketuk "Detail lainnya", lalu "Tetap instal".
+  4. Login, langsung hitung trip pertama.
+  • Narasi: "Pakai iPhone atau laptop? Buka lewat browser."
+  CTA: "Coba gratis 7 hari. Chat admin di WhatsApp untuk akunnya. Link di bio."
+
+
+
+
+                                                                                       Halaman 11
+GHOSTRIP · NASKAH KONTEN 13–30 NOVEMBER 2026
+
+
+EVALUASI
+
+Catatan hasil harian
+Isi setiap malam. Setelah 7 hari, pilih 3 konten dengan chat atau trial terbanyak, buat versi baru dengan hook
+berbeda, lalu jadikan iklan.
+
+ Tanggal             Konten       Views                Komentar             Chat WA              Trial
+
+ 13 Nov              A
+ 13 Nov              B
+ 14 Nov              A
+ 14 Nov              B
+ 15 Nov              A
+ 15 Nov              B
+ 16 Nov              A
+ 16 Nov              B
+ 17 Nov              A
+ 17 Nov              B
+ 18 Nov              A
+ 18 Nov              B
+ 19 Nov              A
+ 19 Nov              B
+ 20 Nov              A
+ 20 Nov              B
+ 21 Nov              A
+ 21 Nov              B
+ 22 Nov              A
+ 22 Nov              B
+ 23 Nov              A
+ 23 Nov              B
+ 24 Nov              A
+ 24 Nov              B
+ 25 Nov              A
+ 25 Nov              B
+ 26 Nov              A
+ 26 Nov              B
+ 27 Nov              A
+ 27 Nov              B
+ 28 Nov              A
+ 28 Nov              B
+ 29 Nov              A
+ 29 Nov              B
+ 30 Nov              A
+ 30 Nov              B
+
+
+
+
+                                                                                                           Halaman 12
+

@@ -131,6 +131,18 @@ def scan(spec_path):
             except ValueError:
                 want = None
             got = post.get("gaya", "whatif")
+            if want == "naskah":
+                # PATEN 11 Nov 2026: 2 Reels per hari dari naskah. A = cerita (11:30, animasi gaya kita, ditutup soft selling),
+                # B = produk (19:30, gaya iklan 3D, ditutup ajakan ke ghostrip.id / WhatsApp)
+                if got not in ("cerita", "produk"):
+                    issues.append("mulai 13 Nov Reels wajib gaya 'cerita' (A) atau 'produk' (B) sesuai naskah/naskah-13-30-nov.txt")
+                jam_w = {"cerita": "11:30", "produk": "19:30"}.get(got)
+                if jam_w and post.get("time") != jam_w:
+                    issues.append(f"jam Reels '{got}' wajib {jam_w}")
+                tail = (post.get("scenes") or [{}])[-1]
+                if got == "produk" and tail.get("key", tail.get("type")) != "cta":
+                    issues.append("Reels produk wajib ditutup kartu CTA (ghostrip.id / WhatsApp)")
+                want = None
             if want and got != want:
                 issues.append(f"gaya Reels salah: tanggal ini wajib gaya '{want}', file berisi '{got}' (selang-seling mulai 8 Nov 2026)")
             if got == "bedah" and post.get("tema") != "teknikal":
