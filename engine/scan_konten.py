@@ -131,11 +131,11 @@ def scan(spec_path):
             except ValueError:
                 want = None
             got = post.get("gaya", "whatif")
-            if want == "naskah":
+            if day >= "2026-11-13":
                 # PATEN 11 Nov 2026: 2 Reels per hari dari naskah. A = cerita (11:30, animasi gaya kita, ditutup soft selling),
                 # B = produk (19:30, gaya iklan 3D, ditutup ajakan ke ghostrip.id / WhatsApp)
-                if got not in ("cerita", "produk"):
-                    issues.append("mulai 13 Nov Reels wajib gaya 'cerita' (A) atau 'produk' (B) sesuai naskah/naskah-13-30-nov.txt")
+                if got != want:
+                    issues.append(f"mulai 13 Nov 1 Reels/hari selang-seling: tanggal ini wajib gaya '{want}' (A cerita / B produk), file berisi '{got}' (lihat engine/gaya_reels.py)")
                 jam_w = {"cerita": "11:30", "produk": "19:30"}.get(got)
                 if jam_w and post.get("time") != jam_w:
                     issues.append(f"jam Reels '{got}' wajib {jam_w}")
