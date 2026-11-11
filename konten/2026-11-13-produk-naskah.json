@@ -1,0 +1,108 @@
+{
+ "date": "2026-11-13",
+ "posts": [
+  {
+   "slot": "reel-produk",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "produk",
+   "tema": "fitur",
+   "time": "19:30",
+   "judul": "HARGA TRIP DARI HP",
+   "part": 1,
+   "lokasi": "",
+   "voice_id": "2026-11-13-reel-produk",
+   "topic": "Produk B naskah 13 Nov: kasih harga Surabaya-Jakarta langsung dari HP (hitung, surat PDF, kirim WhatsApp)",
+   "scenes": [
+    {
+     "key": "hook",
+     "head": "Harga trip *Sby–Jkt* dari HP",
+     "shot": "iklan3d/home.png",
+     "narasi": "Ini cara saya jawab chat customer jam sepuluh malam, *tanpa buka laptop*."
+    },
+    {
+     "key": "layar",
+     "tag": "HITUNG TRIP",
+     "n": "01",
+     "head": "Pilih truk, isi *rute*",
+     "shot": "iklan3d/calc.png",
+     "chips": [
+      {
+       "text": "Jenis truk",
+       "sub": "pilih dari armada",
+       "icon": "🚚",
+       "x": 40,
+       "y": 640
+      },
+      {
+       "text": "Rute",
+       "sub": "Jakarta ↔ Surabaya",
+       "icon": "↗",
+       "x": 600,
+       "y": 1280,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Buka Ghostrip, pilih jenis truk, lalu masukkan *rutenya*."
+    },
+    {
+     "key": "layar",
+     "tag": "HASIL",
+     "n": "02",
+     "head": "Harga keluar *otomatis*",
+     "shot": "iklan3d/hasil.png",
+     "chips": [
+      {
+       "text": "Solar + tol",
+       "sub": "sudah termasuk",
+       "icon": "⛽",
+       "x": 50,
+       "y": 700
+      },
+      {
+       "text": "Markup",
+       "sub": "sesuai pengaturan",
+       "icon": "%",
+       "x": 70,
+       "y": 1230,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Harga keluar otomatis: solar, tol, dan markup *sudah masuk*. Nggak perlu kalkulator, nggak perlu Excel."
+    },
+    {
+     "key": "layar",
+     "tag": "SURAT PENAWARAN",
+     "n": "03",
+     "head": "Jadi *PDF* rapi",
+     "shot": "iklan3d/surat.png",
+     "chips": [
+      {
+       "text": "Kop surat",
+       "icon": "✓",
+       "x": 560,
+       "y": 1260
+      },
+      {
+       "text": "TTD & cap",
+       "icon": "✓",
+       "x": 600,
+       "y": 1364
+      }
+     ],
+     "narasi": "Ketuk buat surat penawaran, dan jadilah *PDF* lengkap dengan kop dan cap."
+    },
+    {
+     "key": "wa",
+     "narasi": "Lalu kirim langsung ke *WhatsApp* customer."
+    },
+    {
+     "key": "cta",
+     "narasi": "Harga sesuai tarif truk kita sendiri. Coba Ghostrip gratis tujuh hari, lewat *ghostrip.id* atau chat WhatsApp."
+    }
+   ],
+   "caption": "Customer minta harga jam 10 malam? Jawab dari HP tanpa buka laptop. 📱\n\nDi Ghostrip: pilih jenis truk, isi rute, harga keluar otomatis (solar, tol, dan markup sudah masuk). Ketuk buat surat penawaran, jadi PDF lengkap dengan kop dan cap, lalu kirim langsung ke WhatsApp customer.\n\nContoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Kasih harga Surabaya-Jakarta dari HP, tanpa laptop"
+  }
+ ]
+}

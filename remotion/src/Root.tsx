@@ -7,6 +7,7 @@ import {C, FPS, H, W, WhatIfProps} from './theme';
 import {SCENES} from './scenes';
 import {Grain, clamp} from './parts';
 import {Iklan3D, IklanProps} from './Iklan3D';
+import {Produk, ProdukProps} from './Produk';
 import {IklanFokus} from './IklanFokus';
 import {Bedah, BedahProps} from './Bedah';
 
@@ -120,6 +121,16 @@ export const RemotionRoot: React.FC = () => (
     height={H}
     defaultProps={{scenes: [], durationInFrames: 900} as IklanProps}
     calculateMetadata={({props}) => ({durationInFrames: (props as IklanProps).durationInFrames})}
+  />
+  <Composition
+    id="Produk"
+    component={Produk as any}
+    durationInFrames={900}
+    fps={FPS}
+    width={W}
+    height={H}
+    defaultProps={{scenes: [], durationInFrames: 900} as ProdukProps}
+    calculateMetadata={({props}) => ({durationInFrames: (props as ProdukProps).durationInFrames})}
   />
   <Composition
     id="Bedah"

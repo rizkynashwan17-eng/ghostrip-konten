@@ -62,9 +62,10 @@
     },
     {
      "type": "angka",
-     "nilai": "Rp 8.500.000",
-     "label": "ANGKA BULAT, HITUNG KASAR",
-     "narasi": "Akhirnya hitung kasar di kertas, kirim angka bulat, lalu *nggak bisa tidur* mikirin tolnya sudah masuk atau belum."
+     "label": "HARGA KASAR, TANPA HITUNGAN",
+     "narasi": "Akhirnya hitung kasar di kertas, kirim angka bulat, lalu *nggak bisa tidur* mikirin tolnya sudah masuk atau belum.",
+     "dari": 0,
+     "ke": 8500000
     },
     {
      "type": "cta",

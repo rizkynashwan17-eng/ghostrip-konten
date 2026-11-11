@@ -223,7 +223,7 @@ const S3Surat: React.FC<{dur: number}> = () => {
   );
 };
 
-const S4WA: React.FC<{dur: number}> = () => {
+export const S4WA: React.FC<{dur: number}> = () => {
   const f = useCurrentFrame();
   const a = sp(f, 15, 120);
   const fly = sp(f - 10, 14, 90);
