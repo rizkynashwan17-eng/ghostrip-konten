@@ -9,7 +9,7 @@ Pakai: python3 engine/tema_feed.py [tanggal_awal] [jumlah_hari]
 """
 import datetime as dt, sys
 
-AWAL = dt.date(2026, 11, 10)
+AWAL = dt.date(2026, 11, 11)  # digeser 1 hari (11 Nov 2026): feed digeser ke hari berikutnya
 URUT = ["logistik", "trucking", "fitur"]
 
 

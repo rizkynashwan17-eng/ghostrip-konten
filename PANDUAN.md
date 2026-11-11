@@ -205,3 +205,5 @@ Coba Ghostrip gratis selama 7 hari!
 - Emoji hanya di caption, bukan di gambar. Sumber fakta ("Sumber: …") boleh di badan bila ada.
 
 > Catatan teknis suara: `engine/tts_gemini.py` hanya memproses request yang belum punya `voice/out/<id>/done.json`. Untuk MEMBUAT ULANG suara (mis. ganti nada), hapus dulu folder `voice/out/<id>` (git rm), commit & push, lalu dispatch workflow voice.yml; menaikkan "rev" saja TIDAK cukup.
+
+> GESER FEED (permintaan Rizky 11 Nov 2026): feed 17:00 yang semula 11 Nov digeser ke 12 Nov ("Penawaran kontainer"), dan yang 12 Nov digeser ke 13 Nov ("Dari hitungan trip"). Tema feed digilir ulang mulai 11 Nov (`engine/tema_feed.py`: 11 logistik, 12 trucking, 13 fitur, 14 logistik, ...). Hari 11 Nov tidak ada feed 17:00. Run harian membuat feed 14 Nov dst. sesuai tema_feed.

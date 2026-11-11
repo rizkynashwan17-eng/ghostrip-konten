@@ -725,24 +725,6 @@
    "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
   },
   {
-   "id": "2026-11-11-1700-feed-tips",
-   "tanggal": "2026-11-11",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Penawaran\nkontainer? Tulis\n4 biaya ini.",
-   "media": [
-    "media/2026-11-11/feed-tips-ed.jpg"
-   ],
-   "cover": null,
-   "caption": "Kontainer telat dibongkar atau dikembalikan, siapa yang menanggung biayanya? 📦\n\nMenurut DHL, ada tiga biaya yang sering muncul: demurrage (kontainer terlalu lama di terminal pelabuhan), detention (kontainer terlalu lama di luar terminal, misalnya di gudang customer), dan storage (pemakaian ruang simpan). Semuanya dihitung per kontainer per hari setelah masa bebas biaya (free time) habis, dan lamanya free time berbeda-beda.\n\nTipsnya untuk admin: pastikan penawaran mencantumkan free time serta tarif demurrage dan detention per hari per kontainer, supaya customer tahu sejak awal.\n\nAngka di gambar hanya contoh format. Sumber: DHL Global Forwarding, Demurrage, Detention and Storage Charges.\n\nKalau menyiapkan penawaran mulai menyita waktu, Ghostrip bantu bikin quotation lebih rapi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
    "id": "2026-11-11-1930-reel-tips",
    "tanggal": "2026-11-11",
    "jam": "19:30",
@@ -779,7 +761,7 @@
    "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
   },
   {
-   "id": "2026-11-12-1700-feed-fitur",
+   "id": "2026-11-12-1700-feed-tips",
    "tanggal": "2026-11-12",
    "jam": "17:00",
    "jenis": "feed",
@@ -787,12 +769,12 @@
     "ig",
     "fb"
    ],
-   "judul": "Dari hitungan trip\nke harga jual.",
+   "judul": "Penawaran\nkontainer? Tulis\n4 biaya ini.",
    "media": [
-    "media/2026-11-12/feed-fitur-ed.jpg"
+    "media/2026-11-11/feed-tips-ed.jpg"
    ],
    "cover": null,
-   "caption": "Hitung biaya trip masih pakai kalkulator dan kertas coretan? 🧮\n\nDi Ghostrip, admin cukup isi rute dan jenis truk. Solar, tol, dan biaya driver terhitung, lalu markup bisa diatur sesuai kebijakan perusahaan. Harga jual dan total langsung terlihat, siap dijadikan penawaran.\n\nContoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "caption": "Kontainer telat dibongkar atau dikembalikan, siapa yang menanggung biayanya? 📦\n\nMenurut DHL, ada tiga biaya yang sering muncul: demurrage (kontainer terlalu lama di terminal pelabuhan), detention (kontainer terlalu lama di luar terminal, misalnya di gudang customer), dan storage (pemakaian ruang simpan). Semuanya dihitung per kontainer per hari setelah masa bebas biaya (free time) habis, dan lamanya free time berbeda-beda.\n\nTipsnya untuk admin: pastikan penawaran mencantumkan free time serta tarif demurrage dan detention per hari per kontainer, supaya customer tahu sejak awal.\n\nAngka di gambar hanya contoh format. Sumber: DHL Global Forwarding, Demurrage, Detention and Storage Charges.\n\nKalau menyiapkan penawaran mulai menyita waktu, Ghostrip bantu bikin quotation lebih rapi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "",
    "catatan": ""
   },
@@ -850,6 +832,24 @@
    "caption": "",
    "tiktok_title": "",
    "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-13-1700-feed-fitur",
+   "tanggal": "2026-11-13",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Dari hitungan trip\nke harga jual.",
+   "media": [
+    "media/2026-11-12/feed-fitur-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Hitung biaya trip masih pakai kalkulator dan kertas coretan? 🧮\n\nDi Ghostrip, admin cukup isi rute dan jenis truk. Solar, tol, dan biaya driver terhitung, lalu markup bisa diatur sesuai kebijakan perusahaan. Harga jual dan total langsung terlihat, siap dijadikan penawaran.\n\nContoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
+   "catatan": ""
   },
   {
    "id": "2026-11-14-1930-reel-produk",
