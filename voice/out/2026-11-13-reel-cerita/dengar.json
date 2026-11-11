@@ -1,0 +1,21 @@
+{
+ "sig": [
+  [
+   61.69
+  ],
+  1
+ ],
+ "lolos": true,
+ "belum_dicek": false,
+ "lines": [
+  {
+   "naskah": "Jam sepuluh malam, customer kirim chat: harga ke Surabaya berapa, besok pagi muat.\nSiapa yang pernah dapat chat kayak gini pas lagi santai di rumah?\nKalkulator ada di kantor, catatan tarif di laptop, harga solar terakhir lupa.\nMau jawab asal, takut rugi. Mau jawab besok, takut customer pindah ke ekspedisi lain.\nAkhirnya hitung kasar di kertas, kirim angka bulat, lalu nggak bisa tidur mikirin tolnya sudah masuk atau belum.\nKalau kamu pernah ngalamin, komen PERNAH. Dan kalau mau jawab cepat dari HP, ada Ghostrip.",
+   "transkrip": "Jam sepuluh malam, customer kirim chat: harga ke Surabaya berapa, besok pagi muat. Siapa yang pernah dapat chat kayak gini pas lagi santai di rumah? Kalkulator ada di kantor, catatan tarif di laptop, harga solar terakhir lupa. Mau jawab asal, takut rugi. Mau jawab besok, takut customer pindah ke ekspedisi lain. Akhirnya hitung kasar di kertas, kirim angka bulat, lalu nggak bisa tidur mikirin tolnya sudah masuk atau belum. Kalau kamu pernah ngalamin, komen pernah. Dan kalau mau jawab cepat dari HP, ada Ghostrip.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  }
+ ]
+}
