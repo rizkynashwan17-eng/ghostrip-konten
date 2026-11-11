@@ -1,0 +1,11 @@
+[
+ {
+  "slot": "reel-cerita",
+  "kind": "reel",
+  "media": "media/2026-11-13/reel-cerita.mp4",
+  "cover": "media/2026-11-13/reel-cerita-cover.jpg",
+  "dur": 39.7,
+  "engine": "remotion",
+  "bersuara": true
+ }
+]
