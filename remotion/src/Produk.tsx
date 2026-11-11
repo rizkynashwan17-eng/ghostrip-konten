@@ -16,7 +16,7 @@ const SubC: React.FC<{chunks: {text: string; from: number; to: number}[]}> = ({c
   const o = interpolate(f, [c.from, c.from + 4], [0, 1], cl);
   return (
     <div style={{position: 'absolute', left: 80, right: 80, top: 1590, textAlign: 'center', opacity: o}}>
-      <span style={{fontFamily: F, fontWeight: 700, fontSize: 44, lineHeight: 1.3, color: '#eafaf6', background: 'rgba(4,13,19,0.7)', padding: '8px 20px', borderRadius: 14, boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone'}}>{c.text}</span>
+      <span style={{fontFamily: F, fontWeight: 700, fontSize: 44, lineHeight: 1.3, color: '#eafaf6', background: 'rgba(4,13,19,0.7)', padding: '8px 20px', borderRadius: 14, boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone'}}>{c.text.split('*').map((t, i) => (i % 2 ? <span key={i} style={{color: C.mint}}>{t}</span> : t))}</span>
     </div>
   );
 };
