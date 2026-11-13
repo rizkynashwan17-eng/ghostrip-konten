@@ -16,3 +16,4 @@
 | 2026-11-13 (Jumat, naskah A) | Reels A 11:30 "Customer minta harga jam 10 malam" (cerita, ditutup soft selling; 39,7 dtk, sedikit di atas target 35) | — | — | contoh format baru atas permintaan Rizky |
 | 2026-11-14 (Sabtu, naskah B) | Reels B 19:30 "Kasih harga Surabaya–Jakarta dari HP" (naskah 13 Nov, gaya Iklan 3D, layar app data simulasi, CTA ghostrip.id/WA; 35,6 dtk) | — | — | feed 17:00 + kartu manual dibuat di run 13 Nov siang |
 | 2026-11-11 | Feed digeser +1 hari atas permintaan Rizky: "Penawaran kontainer" ke 12 Nov, "Dari hitungan trip" ke 13 Nov; tema feed digilir ulang (mulai 11 Nov) | — | — | — |
+| 2026-11-14 (Sabtu, feed logistik) | — | — | — | feed 17:00 navy "B/L atau D/O? Beda urusan." (Maersk, Shapiro) + kartu manual 12:00; dibuat run 13 Nov siang |

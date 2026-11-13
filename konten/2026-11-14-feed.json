@@ -1,0 +1,40 @@
+{
+ "date": "2026-11-14",
+ "posts": [
+  {
+   "slot": "feed-logistik",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "logistik",
+   "scene": {
+    "layout": "banding",
+    "kicker": "DUNIA LOGISTIK",
+    "pill": "DOKUMEN IMPOR",
+    "title": "B/L atau D/O?\nBeda *urusan*.",
+    "title_size": 96,
+    "sub": "Dua dokumen yang sering tertukar saat kontainer tiba.",
+    "kiri": {
+     "judul": "B/L · BILL OF LADING",
+     "items": [
+      "Diterbitkan pelayaran saat barang dimuat",
+      "Tanda terima barang di kapal",
+      "Bukti kontrak pengangkutan",
+      "Bisa jadi bukti hak atas barang"
+     ]
+    },
+    "kanan": {
+     "judul": "D/O · DELIVERY ORDER",
+     "items": [
+      "Diterbitkan di pelabuhan tujuan",
+      "Ditukar dengan B/L dan biaya lokal",
+      "Izin ambil kontainer di terminal",
+      "Dibawa saat truk menjemput"
+     ]
+    },
+    "note": "Simpan buat pengingat sebelum\njemput kontainer impor."
+   },
+   "caption": "B/L dan D/O sering dianggap sama, padahal fungsinya beda. 📄\n\nB/L (Bill of Lading) diterbitkan perusahaan pelayaran saat barang dimuat ke kapal. Isinya tanda terima barang, bukti kontrak pengangkutan, dan bisa menjadi bukti hak atas barang.\n\nD/O (Delivery Order) diterbitkan di pelabuhan tujuan, biasanya setelah B/L diserahkan dan biaya lokal diselesaikan. D/O inilah yang menjadi izin untuk mengambil kontainer dari terminal, jadi wajib dibawa saat truk menjemput.\n\nBuat pemilik armada dan admin, urusan jemput kontainer masih perlu hitungan biaya trip yang rapi. Ghostrip bantu hitung harga trip dan bikin surat penawarannya.\n\nDi kantormu, siapa yang biasanya mengurus D/O? Tulis di komentar 👇\n\nSumber: Maersk (Important shipping documents) dan Shapiro (What is a delivery order in shipping).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "gaya": "editorial"
+  }
+ ]
+}

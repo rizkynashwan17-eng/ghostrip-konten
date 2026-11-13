@@ -7,5 +7,12 @@
   "dur": 29.27,
   "engine": "remotion",
   "bersuara": true
+ },
+ {
+  "slot": "feed-logistik",
+  "kind": "feed",
+  "media": "media/2026-11-14/feed-logistik-ed.jpg",
+  "gaya": "editorial",
+  "warna": "navy"
  }
 ]

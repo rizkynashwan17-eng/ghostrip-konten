@@ -1,61 +1,6 @@
 {
- "diperbarui": "2026-11-12T19:08+07:00",
+ "diperbarui": "2026-11-13T12:09+07:00",
  "posts": [
-  {
-   "id": "2026-11-02-0730-story-realita",
-   "tanggal": "2026-11-02",
-   "jam": "07:30",
-   "jenis": "story",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Pernah dapat permintaan harga mepet jam pulang?",
-   "media": [
-    "media/2026-11-02/story-realita.jpg"
-   ],
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-02-1700-feed-realita",
-   "tanggal": "2026-11-02",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Yang sering lupa ditulis di penawaran",
-   "media": [
-    "media/2026-11-02/feed-realita.jpg"
-   ],
-   "cover": null,
-   "caption": "Penawaran yang kurang lengkap sering jadi sumber salah paham di lapangan. Cek lagi, poin mana yang suka kelewat? 📝\n\n✔ Titik muat & titik bongkar\n✔ Jenis armada & kapasitas\n✔ Jam operasional gudang\n✔ Ketentuan biaya inap/menunggu\n✔ Masa berlaku harga\n✔ PPN/PPh termasuk atau belum\n\nBikin penawaran PDF yang rapi (kop, TTD, cap, PPN/PPh) di Ghostrip. Coba gratis 7 hari, komen DEMO atau WA 0815-1704-7930.\n\n#ghostrip #ekspedisi #trucking #logistik #adminlogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-02-1930-reel2-realita",
-   "tanggal": "2026-11-02",
-   "jam": "19:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Truk sampai setelah jam bongkar gudang tutup, biaya hari tambahan tidak tertulis di penawaran",
-   "media": [
-    "media/2026-11-02/reel2-realita.mp4"
-   ],
-   "cover": "media/2026-11-02/reel2-realita-cover.jpg",
-   "caption": "Truk sampai jam 5 sore, gudang bongkarnya tutup jam 4. Terus siapa yang nanggung? 🚛\n\nTrip 1 hari jadi 2 hari: ada uang makan sopir, parkir menginap, dan order besok yang terpaksa dilepas. Sering kali masalahnya bukan di jalan, tapi di penawaran yang tidak menulis jam bongkar dan ketentuan biaya inap.\n\nPelajarannya:\n✔ Tulis jam operasional gudang\n✔ Tulis ketentuan biaya inap\n✔ Konfirmasi jadwal bongkar H-1\n\nSusun penawaran PDF yang rapi (kop, TTD, cap) di Ghostrip. Coba gratis 7 hari, chat WA 0815-1704-7930.\n\nCerita ilustrasi, nama fiktif.\n\n#ghostrip #ekspedisi #trucking #logistik #dispatcher",
-   "tiktok_title": "Truk sampai jam 5, gudang tutup jam 4. Siapa yang nanggung?",
-   "catatan": ""
-  },
   {
    "id": "2026-11-03-0730-story-cerita",
    "tanggal": "2026-11-03",
@@ -579,6 +524,41 @@
    ],
    "cover": null,
    "caption": "Hitung biaya trip masih pakai kalkulator dan kertas coretan? 🧮\n\nDi Ghostrip, admin cukup isi rute dan jenis truk. Solar, tol, dan biaya driver terhitung, lalu markup bisa diatur sesuai kebijakan perusahaan. Harga jual dan total langsung terlihat, siap dijadikan penawaran.\n\nContoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-14-1200-feed-manual",
+   "tanggal": "2026-11-14",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-14-1700-feed-logistik",
+   "tanggal": "2026-11-14",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "B/L atau D/O?\nBeda urusan.",
+   "media": [
+    "media/2026-11-14/feed-logistik-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "B/L dan D/O sering dianggap sama, padahal fungsinya beda. 📄\n\nB/L (Bill of Lading) diterbitkan perusahaan pelayaran saat barang dimuat ke kapal. Isinya tanda terima barang, bukti kontrak pengangkutan, dan bisa menjadi bukti hak atas barang.\n\nD/O (Delivery Order) diterbitkan di pelabuhan tujuan, biasanya setelah B/L diserahkan dan biaya lokal diselesaikan. D/O inilah yang menjadi izin untuk mengambil kontainer dari terminal, jadi wajib dibawa saat truk menjemput.\n\nBuat pemilik armada dan admin, urusan jemput kontainer masih perlu hitungan biaya trip yang rapi. Ghostrip bantu hitung harga trip dan bikin surat penawarannya.\n\nDi kantormu, siapa yang biasanya mengurus D/O? Tulis di komentar 👇\n\nSumber: Maersk (Important shipping documents) dan Shapiro (What is a delivery order in shipping).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "",
    "catatan": ""
   },
