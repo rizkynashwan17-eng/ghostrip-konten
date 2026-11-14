@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   28.09
+  ],
+  2
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Ini kesalahan yang hampir semua pengusaha truk pernah lakukan.\nBiar dapat order, harga dikasih cepat. Hitungnya cuma solar dan uang jalan.\nPas truk pulang, struk tol, parkir, dan biaya lain mulai menumpuk.\nDijumlah semua, hasil trip habis.\nCapek kerja seminggu, hasilnya cuma balik modal.\nDi Ghostrip, solar, tol, dan markup masuk hitungan sejak awal. Biaya apa yang paling sering kamu lupa hitung? Tulis di komentar.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
