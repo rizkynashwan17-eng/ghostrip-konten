@@ -28,7 +28,8 @@
        "aku": true
       }
      ],
-     "narasi": "Ini kesalahan yang hampir semua *pengusaha truk* pernah lakukan."
+     "narasi": "Ini kesalahan yang hampir semua *pengusaha truk* pernah lakukan.",
+     "geser": 150
     },
     {
      "type": "daftar",

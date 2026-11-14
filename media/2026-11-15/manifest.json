@@ -5,5 +5,14 @@
   "media": "media/2026-11-15/feed-trucking-ed.jpg",
   "gaya": "editorial",
   "warna": "teal"
+ },
+ {
+  "slot": "reel-cerita",
+  "kind": "reel",
+  "media": "media/2026-11-15/reel-cerita.mp4",
+  "cover": "media/2026-11-15/reel-cerita-cover.jpg",
+  "dur": 27.67,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]
