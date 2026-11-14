@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-13T12:09+07:00",
+ "diperbarui": "2026-11-14T12:10+07:00",
  "posts": [
   {
    "id": "2026-11-03-0730-story-cerita",
@@ -579,6 +579,41 @@
    "cover": "media/2026-11-14/reel-produk-cover.jpg",
    "caption": "Customer minta harga jam 10 malam? Jawab dari HP tanpa buka laptop. 📱\n\nDi Ghostrip: pilih jenis truk, isi rute, harga keluar otomatis (solar, tol, dan markup sudah masuk). Ketuk buat surat penawaran, jadi PDF lengkap dengan kop dan cap, lalu kirim langsung ke WhatsApp customer.\n\nContoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Kasih harga Surabaya-Jakarta dari HP, tanpa laptop",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-15-1200-feed-manual",
+   "tanggal": "2026-11-15",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-15-1700-feed-trucking",
+   "tanggal": "2026-11-15",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Nyetir 4 jam?\nWajib istirahat.",
+   "media": [
+    "media/2026-11-15/feed-trucking-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Sudah nyetir 4 jam berturut-turut? Menurut aturan, sopir wajib istirahat. 🚛\n\nUU 22/2009 tentang Lalu Lintas dan Angkutan Jalan Pasal 90 mengatur waktu kerja pengemudi kendaraan bermotor umum: paling lama 8 jam sehari, dan setelah mengemudi 4 jam berturut-turut wajib istirahat paling singkat setengah jam. Dalam hal tertentu, pengemudi dapat dipekerjakan paling lama 12 jam sehari termasuk waktu istirahat 1 jam.\n\nArtinya, jadwal trip jarak jauh perlu memberi ruang untuk istirahat sopir, bukan cuma waktu di jalan. Biaya tripnya pun perlu dihitung rapi sebelum harga dikirim, dan Ghostrip bantu hitung harga trip sampai jadi surat penawaran.\n\nDi armadamu, trip jarak jauh biasanya pakai sopir cadangan atau tidak? Tulis di komentar 👇\n\nSumber: UU No. 22 Tahun 2009 Pasal 90; Hukumonline (Waktu Istirahat Pengemudi Kendaraan Bermotor Umum).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
    "catatan": ""
   }
  ]

@@ -1,0 +1,37 @@
+{
+ "date": "2026-11-15",
+ "posts": [
+  {
+   "slot": "feed-trucking",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "trucking",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "alur",
+    "kicker": "DUNIA TRUCKING",
+    "pill": "JAM KERJA SOPIR",
+    "title": "Nyetir 4 jam?\nWajib *istirahat*.",
+    "title_size": 100,
+    "sub": "Aturan waktu kerja pengemudi kendaraan umum, UU 22/2009 Pasal 90.",
+    "kartu": "ATURAN JAM KERJA",
+    "items": [
+     "Kerja paling lama 8 jam sehari",
+     "Tiap 4 jam nyetir: istirahat min. 30 menit",
+     "Kondisi tertentu: maks. 12 jam, termasuk istirahat 1 jam"
+    ],
+    "doc": {
+     "judul": "RENCANA TRIP",
+     "sub": "Contoh simulasi",
+     "rows": [
+      "Waktu tempuh",
+      "Jeda istirahat sopir",
+      "Sopir cadangan?"
+     ]
+    },
+    "note": "Simpan buat pengingat sebelum\natur jadwal trip jarak jauh."
+   },
+   "caption": "Sudah nyetir 4 jam berturut-turut? Menurut aturan, sopir wajib istirahat. 🚛\n\nUU 22/2009 tentang Lalu Lintas dan Angkutan Jalan Pasal 90 mengatur waktu kerja pengemudi kendaraan bermotor umum: paling lama 8 jam sehari, dan setelah mengemudi 4 jam berturut-turut wajib istirahat paling singkat setengah jam. Dalam hal tertentu, pengemudi dapat dipekerjakan paling lama 12 jam sehari termasuk waktu istirahat 1 jam.\n\nArtinya, jadwal trip jarak jauh perlu memberi ruang untuk istirahat sopir, bukan cuma waktu di jalan. Biaya tripnya pun perlu dihitung rapi sebelum harga dikirim, dan Ghostrip bantu hitung harga trip sampai jadi surat penawaran.\n\nDi armadamu, trip jarak jauh biasanya pakai sopir cadangan atau tidak? Tulis di komentar 👇\n\nSumber: UU No. 22 Tahun 2009 Pasal 90; Hukumonline (Waktu Istirahat Pengemudi Kendaraan Bermotor Umum).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}
