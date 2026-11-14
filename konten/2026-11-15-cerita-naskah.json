@@ -1,0 +1,98 @@
+{
+ "date": "2026-11-15",
+ "posts": [
+  {
+   "slot": "reel-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "cerita",
+   "tema": "realita",
+   "time": "11:30",
+   "seri": "CERITA",
+   "judul": "DAPAT ORDER. PULANG-PULANG RUGI.",
+   "part": 1,
+   "lokasi": "08.00 WIB · KANTOR",
+   "jam": "08:00",
+   "voice_id": "2026-11-15-reel-cerita",
+   "topic": "Cerita A naskah 14 Nov: kasih harga terlalu murah, ternyata rugi di tol; ditutup soft selling",
+   "scenes": [
+    {
+     "type": "chat",
+     "kontak": "Customer · PT Maju Jaya",
+     "pesan": [
+      {
+       "teks": "Pak, bisa kirim hari ini? Harga paling miring ya."
+      },
+      {
+       "teks": "Bisa Pak, saya kasih harga spesial.",
+       "aku": true
+      }
+     ],
+     "narasi": "Ini kesalahan yang hampir semua *pengusaha truk* pernah lakukan."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "Yang dihitung",
+     "item": [
+      "Solar",
+      "Uang jalan",
+      "Tol",
+      "Parkir",
+      "Biaya tak terduga"
+     ],
+     "merah": [
+      2,
+      3,
+      4
+     ],
+     "narasi": "Biar dapat order, harga dikasih cepat. Hitungnya cuma *solar dan uang jalan*."
+    },
+    {
+     "type": "jalan",
+     "papan": "GERBANG TOL",
+     "narasi": "Pas truk pulang, struk tol, parkir, dan biaya lain *mulai menumpuk*."
+    },
+    {
+     "type": "struk",
+     "judulKartu": "BIAYA YANG TERLEWAT",
+     "subjudul": "Contoh simulasi · satu trip",
+     "item": [
+      [
+       "Tol",
+       900000
+      ],
+      [
+       "Parkir & retribusi",
+       150000
+      ],
+      [
+       "Biaya tak terduga",
+       250000
+      ]
+     ],
+     "catatan": "Angka simulasi, bukan tarif sebenarnya.",
+     "narasi": "Dijumlah semua, *margin habis*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Capek kerja seminggu, hasilnya cuma *balik modal*."
+    },
+    {
+     "type": "cta",
+     "tagline": "Solar, tol, dan markup masuk hitungan sejak awal",
+     "pil": "GHOSTRIP",
+     "ajakan": "Biaya apa yang sering lupa?",
+     "narasi": "Di *Ghostrip*, solar, tol, dan markup masuk hitungan sejak awal. Biaya apa yang paling sering kamu lupa hitung? *Tulis di komentar*."
+    }
+   ],
+   "caption": "Dapat order, senang. Pulang-pulang, ternyata rugi. 🚛\n\nHarga dikasih cepat biar order nggak lepas, hitungnya cuma solar dan uang jalan. Pas truk pulang, struk tol, parkir, dan biaya tak terduga lain baru kelihatan. Capek kerja seminggu, hasilnya cuma balik modal.\n\nBiaya apa yang paling sering kamu lupa hitung? Tulis di komentar 👇\n\nDi Ghostrip, solar, tol, dan markup masuk hitungan sejak awal, jadi harga yang dikirim sudah lebih lengkap.\n\nCerita fiksi. Nama tokoh rekaan. Angka dan data: simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Dapat order, senang. Pulang-pulang ternyata rugi di tol."
+  }
+ ]
+}
