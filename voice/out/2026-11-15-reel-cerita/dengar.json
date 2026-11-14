@@ -1,0 +1,21 @@
+{
+ "sig": [
+  [
+   46.85
+  ],
+  1
+ ],
+ "lolos": true,
+ "belum_dicek": false,
+ "lines": [
+  {
+   "naskah": "Ini kesalahan yang hampir semua pengusaha truk pernah lakukan.\nBiar dapat order, harga dikasih cepat. Hitungnya cuma solar dan uang jalan.\nPas truk pulang, struk tol, parkir, dan biaya lain mulai menumpuk.\nDijumlah semua, margin habis.\nCapek kerja seminggu, hasilnya cuma balik modal.\nDi Ghostrip, solar, tol, dan markup masuk hitungan sejak awal. Biaya apa yang paling sering kamu lupa hitung? Tulis di komentar.",
+   "transkrip": "Ini kesalahan yang hampir semua pengusaha truk pernah lakukan. Biar dapat order, harga dikasih cepat. Hitungnya cuma solar dan uang jalan. Pas truk pulang, struk tol, parkir, dan biaya lain mulai menumpuk. Dijumlah semua, margin habis. Capek kerja seminggu, hasilnya cuma balik modal. Di Ghostrip, solar, tol, dan markup masuk hitungan sejak awal. Biaya apa yang paling sering kamu lupa hitung? Tulis di komentar.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  }
+ ]
+}
