@@ -1,0 +1,13 @@
+{
+ "id": "2026-11-14-reel-produk",
+ "mode": "narasi",
+ "rev": 1,
+ "jadwal": "2026-11-16T19:30",
+ "lines": [
+  {
+   "who": "PROMO",
+   "tone": "asyik",
+   "text": "Supaya nggak ada lagi trip yang ternyata rugi.\nBuka menu OPS dan tarif truk. Isi harga solar, rasio solar, biaya operasional, dan markup.\nHitung satu rute, rinciannya langsung keluar: solar, operasional, tarif truk, sampai tol.\nUbah markup dari dua puluh ke tiga puluh persen, harga jualnya langsung berubah.\nTarif diatur sekali. Setiap hitung, semua biayanya sudah termasuk.\nCoba Ghostrip gratis tujuh hari. Kunjungi ghostrip.id atau chat WhatsApp."
+  }
+ ]
+}

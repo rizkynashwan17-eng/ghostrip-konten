@@ -1,0 +1,119 @@
+{
+ "date": "2026-11-16",
+ "posts": [
+  {
+   "slot": "reel-produk",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "produk",
+   "tema": "fitur",
+   "time": "19:30",
+   "judul": "BIAYA OTOMATIS",
+   "part": 1,
+   "lokasi": "",
+   "voice_id": "2026-11-14-reel-produk",
+   "topic": "Produk B naskah 14 Nov: solar, operasional, tol & markup masuk ke harga (atur tarif sekali, rincian biaya, ubah markup 20%→30%)",
+   "scenes": [
+    {
+     "key": "hook",
+     "head": "Biaya yang sering lupa dihitung, sekarang *otomatis*",
+     "headSize": 92,
+     "shot": "iklan3d/p16_hasil20.png",
+     "narasi": "Supaya nggak ada lagi trip yang ternyata *rugi*."
+    },
+    {
+     "key": "layar",
+     "tag": "OPS & TARIF TRUK",
+     "n": "01",
+     "head": "Atur tarif *sekali*",
+     "shot": "iklan3d/p16_tarif.png",
+     "chips": [
+      {
+       "text": "Harga solar",
+       "sub": "per liter",
+       "icon": "◆",
+       "x": 40,
+       "y": 640
+      },
+      {
+       "text": "Rasio & operasional",
+       "sub": "per jenis truk",
+       "icon": "↗",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Buka menu OPS dan tarif truk. Isi harga solar, rasio solar, biaya operasional, dan *markup*."
+    },
+    {
+     "key": "layar",
+     "tag": "RINCIAN BIAYA",
+     "n": "02",
+     "head": "Rinciannya *lengkap*",
+     "shot": "iklan3d/p16_hasil20.png",
+     "chips": [
+      {
+       "text": "Solar + operasional",
+       "sub": "dari pengaturan",
+       "icon": "◆",
+       "x": 40,
+       "y": 700
+      },
+      {
+       "text": "Tol",
+       "sub": "tinggal diisi per rute",
+       "icon": "✓",
+       "x": 600,
+       "y": 1280,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Hitung satu rute, rinciannya langsung keluar: solar, operasional, tarif truk, sampai *tol*."
+    },
+    {
+     "key": "layar",
+     "tag": "UBAH MARKUP",
+     "n": "03",
+     "head": "Markup 20% jadi *30%*",
+     "shot": "iklan3d/p16_calc30.png",
+     "shot2": "iklan3d/p16_hasil30.png",
+     "chips": [
+      {
+       "text": "Markup 30%",
+       "sub": "harga ikut berubah",
+       "icon": "%",
+       "x": 600,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Ubah markup dari dua puluh ke tiga puluh persen, harga jualnya langsung *berubah*."
+    },
+    {
+     "key": "layar",
+     "tag": "SIAP DIKIRIM",
+     "n": "04",
+     "head": "Semua sudah *masuk*",
+     "shot": "iklan3d/p16_hasil30.png",
+     "chips": [
+      {
+       "text": "Harga jual",
+       "sub": "markup sudah termasuk",
+       "icon": "✓",
+       "x": 40,
+       "y": 660
+      }
+     ],
+     "narasi": "Tarif diatur sekali. Setiap hitung, semua biayanya sudah *termasuk*."
+    },
+    {
+     "key": "cta",
+     "narasi": "Coba Ghostrip gratis tujuh hari. Kunjungi *ghostrip.id* atau chat WhatsApp."
+    }
+   ],
+   "caption": "Trip sudah jalan, ternyata rugi karena ada biaya yang lupa dihitung? 🚛\n\nDi Ghostrip, harga solar, rasio solar, biaya operasional, dan markup diatur sekali di menu OPS & tarif truk. Hitung satu rute, rinciannya langsung keluar: solar, operasional, tarif truk, sampai tol. Ubah markup dari 20% ke 30%, harga jual langsung ikut berubah.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Solar, tol, dan markup masuk otomatis ke harga trip"
+  }
+ ]
+}
