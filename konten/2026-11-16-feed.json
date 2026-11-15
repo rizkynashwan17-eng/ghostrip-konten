@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-16",
+ "posts": [
+  {
+   "slot": "feed-fitur",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "fitur",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "alur",
+    "kicker": "FITUR GHOSTRIP",
+    "pill": "INVOICE",
+    "title": "Invoice terkirim.\nSudah *dibayar*?",
+    "title_size": 100,
+    "sub": "Pantau tagihan dari penawaran sampai lunas, tanpa catatan terpisah.",
+    "kartu": "ALUR INVOICE",
+    "items": [
+     "Buat invoice dari surat penawaran",
+     "Atur termin & jatuh tempo",
+     "Catat DP, sisa tagihan langsung terlihat",
+     "Status: sebagian, lunas, lewat tempo"
+    ],
+    "doc": {
+     "judul": "INVOICE",
+     "sub": "Contoh simulasi",
+     "rows": [
+      "Termin 14 hari",
+      "DP tercatat",
+      "Sisa tagihan"
+     ]
+    },
+    "note": "Simpan buat cek tagihan\nsebelum tutup buku bulan ini."
+   },
+   "caption": "Invoice sudah dikirim, tapi sudah dibayar atau belum? Jangan sampai cuma diingat-ingat. 🧾\n\nDi menu Invoice Ghostrip, invoice bisa dibuat langsung dari surat penawaran, lengkap dengan termin dan tanggal jatuh tempo. Pembayaran yang masuk, misalnya DP, tinggal dicatat dan sisa tagihannya langsung terlihat. Statusnya jelas: belum lunas, sebagian, lunas, atau lewat jatuh tempo.\n\nDi kantormu, tagihan yang telat biasanya dicatat di mana? Tulis di komentar 👇\n\nContoh tampilan: data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}
