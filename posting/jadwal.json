@@ -1,61 +1,6 @@
 {
- "diperbarui": "2026-11-15T12:10+07:00",
+ "diperbarui": "2026-11-15T12:22+07:00",
  "posts": [
-  {
-   "id": "2026-11-04-0730-story-tips",
-   "tanggal": "2026-11-04",
-   "jam": "07:30",
-   "jenis": "story",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Pernah kirim quotation lalu direvisi?",
-   "media": [
-    "media/2026-11-04/story-tips.jpg"
-   ],
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-04-1700-feed-tips",
-   "tanggal": "2026-11-04",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Sebelum klik\nkirim, cek\n~5 hal~ ini.",
-   "media": [
-    "media/2026-11-04/feed-tips-ed.jpg"
-   ],
-   "cover": null,
-   "caption": "Checklist sebelum kirim quotation ke customer 📋\n\n1. Nama & alamat customer benar\n2. Rute dan jenis armada sesuai permintaan\n3. Komponen biaya lengkap (solar, hari jalan, tol, dll)\n4. Masa berlaku harga tertulis\n5. TTD & cap perusahaan\n\nSimpan postingan ini buat pengingat. Kalau menyiapkan penawaran mulai menyita waktu, Ghostrip bisa bantu bikin quotation lebih rapi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-04-1930-reel-tips",
-   "tanggal": "2026-11-04",
-   "jam": "19:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Tips admin: lima hal yang wajib dicek sebelum mengirim quotation",
-   "media": [
-    "media/2026-11-04/reel-tips.mp4"
-   ],
-   "cover": "media/2026-11-04/reel-tips-cover.jpg",
-   "caption": "Jam 4 sore, quotation siap dikirim. Tapi satu kolom kecil terlewat. 📋\n\nSebelum klik kirim, cek 5 hal ini: nama & alamat customer, rute dan armada, komponen biaya, masa berlaku harga, TTD & cap.\n\nKalau menyiapkan penawaran mulai menyita waktu, Ghostrip bantu bikin quotation lebih rapi.\n\nNama tokoh dan perusahaan rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "Sebelum kirim quotation, cek 5 hal ini dulu",
-   "catatan": ""
-  },
   {
    "id": "2026-11-05-0730-story-fitur",
    "tanggal": "2026-11-05",
@@ -632,6 +577,25 @@
    "cover": null,
    "caption": "Invoice sudah dikirim, tapi sudah dibayar atau belum? Jangan sampai cuma diingat-ingat. 🧾\n\nDi menu Invoice Ghostrip, invoice bisa dibuat langsung dari surat penawaran, lengkap dengan termin dan tanggal jatuh tempo. Pembayaran yang masuk, misalnya DP, tinggal dicatat dan sisa tagihannya langsung terlihat. Statusnya jelas: belum lunas, sebagian, lunas, atau lewat jatuh tempo.\n\nDi kantormu, tagihan yang telat biasanya dicatat di mana? Tulis di komentar 👇\n\nContoh tampilan: data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-16-1930-reel-produk",
+   "tanggal": "2026-11-16",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Produk B naskah 14 Nov: solar, operasional, tol & markup masuk ke harga (atur tarif sekali, rincian biaya, ubah markup 20%→30%)",
+   "media": [
+    "media/2026-11-16/reel-produk.mp4"
+   ],
+   "cover": "media/2026-11-16/reel-produk-cover.jpg",
+   "caption": "Trip sudah jalan, ternyata rugi karena ada biaya yang lupa dihitung? 🚛\n\nDi Ghostrip, harga solar, rasio solar, biaya operasional, dan markup diatur sekali di menu OPS & tarif truk. Hitung satu rute, rinciannya langsung keluar: solar, operasional, tarif truk, sampai tol. Ubah markup dari 20% ke 30%, harga jual langsung ikut berubah.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Solar, tol, dan markup masuk otomatis ke harga trip",
    "catatan": ""
   }
  ]
