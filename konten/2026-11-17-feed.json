@@ -1,0 +1,40 @@
+{
+ "date": "2026-11-17",
+ "posts": [
+  {
+   "slot": "feed-logistik",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "logistik",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "banding",
+    "kicker": "DUNIA LOGISTIK",
+    "pill": "INCOTERMS 2020",
+    "title": "FOB atau CIF?\nBeda *tanggungan*.",
+    "title_size": 96,
+    "sub": "Dua istilah ekspor-impor yang menentukan siapa bayar apa.",
+    "kiri": {
+     "judul": "FOB · FREE ON BOARD",
+     "items": [
+      "Penjual urus barang sampai naik kapal",
+      "Ongkos kapal dibayar pembeli",
+      "Asuransi diurus pembeli",
+      "Risiko pindah saat barang di kapal"
+     ]
+    },
+    "kanan": {
+     "judul": "CIF · COST, INSURANCE, FREIGHT",
+     "items": [
+      "Penjual bayar ongkos kapal ke tujuan",
+      "Penjual wajib beli asuransi minimum",
+      "Risiko tetap pindah di pelabuhan muat",
+      "Juga khusus angkutan laut"
+     ]
+    },
+    "note": "Simpan buat pengingat sebelum\nmenghitung trucking ekspor-impor."
+   },
+   "caption": "FOB dan CIF sering muncul di dokumen ekspor-impor. Bedanya ada di siapa yang menanggung biaya. 🚢\n\nFOB (Free On Board): penjual mengurus barang sampai dimuat ke kapal di pelabuhan muat. Ongkos kapal dan asuransi selanjutnya urusan pembeli.\n\nCIF (Cost, Insurance and Freight): penjual membayar ongkos kapal sampai pelabuhan tujuan dan wajib membeli asuransi minimum. Yang sering terlewat: risiko barang tetap pindah ke pembeli saat barang sudah di atas kapal di pelabuhan muat, sama seperti FOB. Keduanya khusus untuk angkutan laut.\n\nBuat pemilik armada dan admin, istilah ini membantu memastikan siapa yang membayar trucking ke pelabuhan. Hitung harga trip dan surat penawarannya bisa dibantu Ghostrip.\n\nDi kantormu, order ekspor lebih sering FOB atau CIF? Tulis di komentar 👇\n\nSumber: ICC Incoterms 2020 (ICC Academy) dan UPS (Incoterms 2020).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}

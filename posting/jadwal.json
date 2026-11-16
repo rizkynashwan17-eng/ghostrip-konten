@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-15T12:22+07:00",
+ "diperbarui": "2026-11-16T12:11+07:00",
  "posts": [
   {
    "id": "2026-11-05-0730-story-fitur",
@@ -596,6 +596,41 @@
    "cover": "media/2026-11-16/reel-produk-cover.jpg",
    "caption": "Trip sudah jalan, ternyata rugi karena ada biaya yang lupa dihitung? 🚛\n\nDi Ghostrip, harga solar, rasio solar, biaya operasional, dan markup diatur sekali di menu OPS & tarif truk. Hitung satu rute, rinciannya langsung keluar: solar, operasional, tarif truk, sampai tol. Ubah markup dari 20% ke 30%, harga jual langsung ikut berubah.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Solar, tol, dan markup masuk otomatis ke harga trip",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-17-1200-feed-manual",
+   "tanggal": "2026-11-17",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-17-1700-feed-logistik",
+   "tanggal": "2026-11-17",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "FOB atau CIF?\nBeda tanggungan.",
+   "media": [
+    "media/2026-11-17/feed-logistik-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "FOB dan CIF sering muncul di dokumen ekspor-impor. Bedanya ada di siapa yang menanggung biaya. 🚢\n\nFOB (Free On Board): penjual mengurus barang sampai dimuat ke kapal di pelabuhan muat. Ongkos kapal dan asuransi selanjutnya urusan pembeli.\n\nCIF (Cost, Insurance and Freight): penjual membayar ongkos kapal sampai pelabuhan tujuan dan wajib membeli asuransi minimum. Yang sering terlewat: risiko barang tetap pindah ke pembeli saat barang sudah di atas kapal di pelabuhan muat, sama seperti FOB. Keduanya khusus untuk angkutan laut.\n\nBuat pemilik armada dan admin, istilah ini membantu memastikan siapa yang membayar trucking ke pelabuhan. Hitung harga trip dan surat penawarannya bisa dibantu Ghostrip.\n\nDi kantormu, order ekspor lebih sering FOB atau CIF? Tulis di komentar 👇\n\nSumber: ICC Incoterms 2020 (ICC Academy) dan UPS (Incoterms 2020).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
    "catatan": ""
   }
  ]
