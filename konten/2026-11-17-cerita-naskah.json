@@ -1,0 +1,101 @@
+{
+ "date": "2026-11-17",
+ "posts": [
+  {
+   "slot": "reel-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "cerita",
+   "tema": "realita",
+   "time": "11:30",
+   "seri": "CERITA",
+   "judul": "HARGA LEBIH MURAH, TAPI KALAH ORDER",
+   "part": 1,
+   "lokasi": "10.00 WIB · KANTOR",
+   "jam": "10:00",
+   "voice_id": "2026-11-17-reel-cerita",
+   "topic": "Cerita A naskah 15 Nov: kalah order karena penawaran cuma diketik di chat; ditutup soft selling surat penawaran PDF",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Harga saya lebih murah, tapi yang dipilih ekspedisi lain. Ternyata *bukan soal harga*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Customer · PT Makmur Semakmurnya",
+     "pesan": [
+      {
+       "teks": "Pak, minta harga Surabaya–Jakarta ya."
+      },
+      {
+       "teks": "Sby–Jkt 8,5 juta Pak.",
+       "aku": true
+      }
+     ],
+     "narasi": "Saya kirim harga lewat chat: *Surabaya–Jakarta, delapan setengah juta*, Pak."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "SURAT PENAWARAN",
+     "nomor": "No. 045/SP/XI",
+     "baris": [
+      [
+       "Kepada",
+       "PT Makmur Semakmurnya"
+      ],
+      [
+       "Rute",
+       "Surabaya → Jakarta"
+      ],
+      [
+       "Armada",
+       "Tronton wing box"
+      ],
+      [
+       "Berlaku",
+       "14 hari"
+      ]
+     ],
+     "sorot": 0,
+     "cap": "PT SINAR ABADI CARGO",
+     "narasi": "Ekspedisi lain kirim *surat penawaran resmi*: ada kop, nomor surat, dan cap."
+    },
+    {
+     "type": "karakter",
+     "siapa": "customer",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Bagian pembelian butuh *dokumen* buat diajukan ke atasan."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Yang rapi, itu yang *dipilih*."
+    },
+    {
+     "type": "cta",
+     "tagline": "Hitungan harga langsung jadi surat penawaran PDF",
+     "pil": "GHOSTRIP",
+     "ajakan": "Penampilan penawaran ngaruh?",
+     "narasi": "Di *Ghostrip*, hitungan harga bisa langsung jadi surat penawaran PDF, lengkap kop, tanda tangan, dan cap. Setuju nggak, penampilan penawaran itu ngaruh? *Komen di bawah*."
+    }
+   ],
+   "caption": "Harga saya lebih murah. Tapi yang dipilih ekspedisi lain. 🚛\n\nHarga cuma dikirim lewat chat, sementara ekspedisi lain kirim surat penawaran resmi lengkap kop, nomor surat, dan cap. Bagian pembelian butuh dokumen untuk diajukan ke atasan, jadi yang rapi yang dipilih.\n\nSetuju nggak, penampilan penawaran itu ngaruh? Komen di bawah 👇\n\nDi Ghostrip, hasil hitungan harga bisa langsung dibuat jadi surat penawaran PDF dengan kop, tanda tangan, dan cap.\n\nCerita fiksi. Nama tokoh rekaan. Angka dan data: simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Harga lebih murah, tapi kalah order. Ternyata bukan soal harga."
+  }
+ ]
+}
