@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   40.69
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Harga saya lebih murah, tapi yang dipilih ekspedisi lain. Ternyata bukan soal harga.\nSaya kirim harga lewat chat: Surabaya–Jakarta, delapan setengah juta, Pak.\nEkspedisi lain kirim surat penawaran resmi: ada kop, nomor surat, dan cap.\nBagian pembelian butuh dokumen buat diajukan ke atasan.\nYang rapi, itu yang dipilih.\nDi Ghostrip, hitungan harga bisa langsung jadi surat penawaran PDF, lengkap kop, tanda tangan, dan cap. Setuju nggak, penampilan penawaran itu ngaruh? Komen di bawah.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: gemini-flash-latest: The read operation timed out || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
