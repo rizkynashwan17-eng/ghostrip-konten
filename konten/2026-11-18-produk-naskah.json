@@ -1,0 +1,122 @@
+{
+ "date": "2026-11-18",
+ "posts": [
+  {
+   "slot": "reel-produk",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "produk",
+   "tema": "fitur",
+   "time": "19:30",
+   "judul": "SURAT PENAWARAN",
+   "part": 1,
+   "lokasi": "",
+   "voice_id": "2026-11-15-reel-produk",
+   "topic": "Produk B naskah 15 Nov: surat penawaran PDF lengkap kop, nomor surat, pajak, terbilang, TTD & cap, kirim ke WhatsApp",
+   "scenes": [
+    {
+     "key": "hook",
+     "head": "Surat penawaran *resmi*. Dari HP.",
+     "headSize": 96,
+     "shot": "iklan3d/surat.png",
+     "narasi": "Begini caranya bikin penawaran yang kelihatan profesional, tanpa buka *Word*."
+    },
+    {
+     "key": "layar",
+     "tag": "HASIL HITUNG",
+     "n": "01",
+     "head": "Ketuk *Buat penawaran*",
+     "shot": "iklan3d/hasil.png",
+     "chips": [
+      {
+       "text": "Harga sudah dihitung",
+       "sub": "solar, tol, operasional",
+       "icon": "◆",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Buat penawaran",
+       "sub": "satu ketukan",
+       "icon": "→",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Setelah hitung harga, tinggal ketuk *buat penawaran*."
+    },
+    {
+     "key": "layar",
+     "tag": "PDF SIAP",
+     "n": "02",
+     "head": "Kop sampai *terbilang*",
+     "shot": "iklan3d/surat.png",
+     "chips": [
+      {
+       "text": "Kop & nomor surat",
+       "sub": "otomatis",
+       "icon": "✓",
+       "x": 40,
+       "y": 640
+      },
+      {
+       "text": "Pajak & terbilang",
+       "sub": "sudah tertulis",
+       "icon": "✓",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "PDF-nya langsung jadi: ada kop, nomor surat, keterangan pajak, sampai *terbilang*."
+    },
+    {
+     "key": "layar",
+     "tag": "TTD & CAP",
+     "n": "03",
+     "head": "Tanda tangan & *cap*",
+     "shot": "iklan3d/surat.png",
+     "chips": [
+      {
+       "text": "TTD & cap",
+       "sub": "ikut tercetak",
+       "icon": "✓",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Tanda tangan dan cap perusahaan juga sudah *terpasang*."
+    },
+    {
+     "key": "wa",
+     "narasi": "Lalu kirim langsung ke *WhatsApp* customer."
+    },
+    {
+     "key": "layar",
+     "tag": "PENGATURAN QUOTATION",
+     "n": "04",
+     "head": "Atur *sekali* saja",
+     "shot": "iklan3d/warna.png",
+     "chips": [
+      {
+       "text": "Kop, warna, TTD & cap",
+       "sub": "tersimpan per akun",
+       "icon": "◆",
+       "x": 40,
+       "y": 660
+      }
+     ],
+     "narasi": "Kop dan cap cukup diatur sekali di awal. Setelah itu, setiap penawaran otomatis *rapi*."
+    },
+    {
+     "key": "cta",
+     "narasi": "Coba Ghostrip gratis tujuh hari. Kunjungi *ghostrip.id* atau chat WhatsApp."
+    }
+   ],
+   "caption": "Bikin surat penawaran resmi tanpa buka Word? Bisa dari HP. 📄\n\nSetelah hitung harga di Ghostrip, ketuk Buat penawaran. PDF-nya langsung jadi: kop, nomor surat, keterangan pajak, terbilang, tanda tangan, dan cap. Kirim langsung ke WhatsApp customer. Kop dan cap cukup diatur sekali di Pengaturan quotation.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Surat penawaran resmi dari HP: kop, TTD, cap, kirim WhatsApp"
+  }
+ ]
+}
