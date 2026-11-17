@@ -61,8 +61,8 @@ def doc_card(d):
     rows = "".join(f'<div class="row">{e(r)} <span class="ok">✓</span></div>' for r in d.get("rows", []))
     return f'''<div class="panel"><div class="doc"><div class="h">{e(d.get("judul","QUOTATION"))}</div>
 <div class="n">{e(d.get("sub",""))}</div><div class="ln" style="width:80%"></div>{rows}
-<div class="tot"><span>Total</span><span>Rp ••.•••.•••</span></div></div>
-<div class="stamp">TTD<br>&amp; CAP</div><div class="sim">SIMULASI</div></div>'''
+{'' if d.get("tanpa_total") else '<div class="tot"><span>Total</span><span>Rp ••.•••.•••</span></div>'}</div>
+{'' if d.get("tanpa_total") else '<div class="stamp">TTD<br>&amp; CAP</div>'}<div class="sim">SIMULASI</div></div>'''
 
 
 def chat(msgs):

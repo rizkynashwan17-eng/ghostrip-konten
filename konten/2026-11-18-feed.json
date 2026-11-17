@@ -1,0 +1,38 @@
+{
+ "date": "2026-11-18",
+ "posts": [
+  {
+   "slot": "feed-trucking",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "trucking",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "checklist",
+    "kicker": "DUNIA TRUCKING",
+    "pill": "SURAT KENDARAAN",
+    "title": "STNK 5 tahun.\nPengesahan *tiap tahun*.",
+    "title_size": 96,
+    "sub": "UU 22/2009 Pasal 70: STNK berlaku 5 tahun dan wajib disahkan setiap tahun.",
+    "items": [
+     "Berlaku 5 tahun",
+     "Disahkan tiap tahun",
+     "Telat? Bisa ditilang"
+    ],
+    "doc": {
+     "judul": "DATA TRUK",
+     "sub": "Contoh simulasi",
+     "rows": [
+      "Nomor polisi & jenis truk",
+      "Masa berlaku STNK",
+      "Masa berlaku KIR",
+      "Status: aktif / mati"
+     ],
+     "tanpa_total": true
+    },
+    "note": "Cek tanggalnya sebelum truk\ndijadwalkan jalan jauh."
+   },
+   "caption": "STNK truk berlaku 5 tahun, tapi pengesahannya wajib tiap tahun. Sudah dicek semua armada? 🚛\n\nMenurut UU 22/2009 Pasal 70, STNK berlaku selama 5 tahun dan harus dimintakan pengesahan setiap tahun, yang dilakukan bersamaan dengan pembayaran pajak kendaraan. Korlantas Polri menyebut STNK yang belum disahkan karena pajak belum dibayar menjadi tidak sah, dan kendaraannya bisa ditilang.\n\nKalau armadanya banyak, tanggal-tanggal ini gampang terlewat. Di menu Data truk Ghostrip, masa berlaku STNK dan KIR tiap truk bisa dicatat dan dilihat di satu tempat.\n\nTruk di armadamu, siapa yang biasanya mengingatkan jadwal pajak? Tulis di komentar 👇\n\nSumber: UU No. 22 Tahun 2009 Pasal 70; CNN Indonesia (Okt 2022), Korlantas soal STNK tidak sah karena pajak belum dibayar.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}

@@ -1,62 +1,6 @@
 {
- "diperbarui": "2026-11-16T12:23+07:00",
+ "diperbarui": "2026-11-17T12:26+07:00",
  "posts": [
-  {
-   "id": "2026-11-06-1200-feed-manual",
-   "tanggal": "2026-11-06",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [
-    "foto/manual/2026-11-06.jpg"
-   ],
-   "manual": true,
-   "cover": null,
-   "caption": "Hitung margin di laptop, cek hasilnya di HP. 📱💻\n\nDengan Ghostrip, kalkulasi biaya operasional kargo selesai dalam hitungan menit, bukan berjam-jam di kalkulator dan kertas coretan. Tinggal pilih rute dan muatan, rincian solar, tol, driver sampai harga jual langsung tersusun rapi, siap jadi penawaran.\n\nTampilan di gambar memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-06-1700-feed-cerita",
-   "tanggal": "2026-11-06",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Kiriman bisa diatur ulang. Nyawa tidak.",
-   "media": [
-    "media/2026-11-06/feed-cerita-ed.jpg"
-   ],
-   "cover": null,
-   "caption": "Malam sebelum order terbesar tahun itu, satu dari tiga truk Pak Harso remnya bermasalah. Customer menunggu jam 6 pagi. 🔧\n\nKalau kamu di posisinya, kamu pilih apa?\n\nCeritanya tayang malam ini jam 19.30.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-06-1930-reel2-cerita",
-   "tanggal": "2026-11-06",
-   "jam": "19:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Cerita fiksi: pemilik armada kecil memilih keselamatan di malam sebelum order terbesar",
-   "media": [
-    "media/2026-11-06/reel2-cerita.mp4"
-   ],
-   "cover": "media/2026-11-06/reel2-cerita-cover.jpg",
-   "caption": "Order terbesar tahun itu, tiga truk dibutuhkan, dan satu truk remnya bermasalah. Kamu pilih apa? 🔧\n\nIni cerita Pak Harso, pemilik armada kecil, di malam sebelum order paling penting.\n\nKiriman bisa diatur ulang. Nyawa tidak.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "Truk remnya bermasalah, besok order terbesar. Kamu pilih apa?",
-   "catatan": ""
-  },
   {
    "id": "2026-11-07-1200-feed-manual",
    "tanggal": "2026-11-07",
@@ -596,6 +540,60 @@
    "caption": "FOB dan CIF sering muncul di dokumen ekspor-impor. Bedanya ada di siapa yang menanggung biaya. 🚢\n\nFOB (Free On Board): penjual mengurus barang sampai dimuat ke kapal di pelabuhan muat. Ongkos kapal dan asuransi selanjutnya urusan pembeli.\n\nCIF (Cost, Insurance and Freight): penjual membayar ongkos kapal sampai pelabuhan tujuan dan wajib membeli asuransi minimum. Yang sering terlewat: risiko barang tetap pindah ke pembeli saat barang sudah di atas kapal di pelabuhan muat, sama seperti FOB. Keduanya khusus untuk angkutan laut.\n\nBuat pemilik armada dan admin, istilah ini membantu memastikan siapa yang membayar trucking ke pelabuhan. Hitung harga trip dan surat penawarannya bisa dibantu Ghostrip.\n\nDi kantormu, order ekspor lebih sering FOB atau CIF? Tulis di komentar 👇\n\nSumber: ICC Incoterms 2020 (ICC Academy) dan UPS (Incoterms 2020).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "",
    "catatan": ""
+  },
+  {
+   "id": "2026-11-18-1200-feed-manual",
+   "tanggal": "2026-11-18",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-18-1700-feed-trucking",
+   "tanggal": "2026-11-18",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "STNK 5 tahun.\nPengesahan tiap tahun.",
+   "media": [
+    "media/2026-11-18/feed-trucking-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "STNK truk berlaku 5 tahun, tapi pengesahannya wajib tiap tahun. Sudah dicek semua armada? 🚛\n\nMenurut UU 22/2009 Pasal 70, STNK berlaku selama 5 tahun dan harus dimintakan pengesahan setiap tahun, yang dilakukan bersamaan dengan pembayaran pajak kendaraan. Korlantas Polri menyebut STNK yang belum disahkan karena pajak belum dibayar menjadi tidak sah, dan kendaraannya bisa ditilang.\n\nKalau armadanya banyak, tanggal-tanggal ini gampang terlewat. Di menu Data truk Ghostrip, masa berlaku STNK dan KIR tiap truk bisa dicatat dan dilihat di satu tempat.\n\nTruk di armadamu, siapa yang biasanya mengingatkan jadwal pajak? Tulis di komentar 👇\n\nSumber: UU No. 22 Tahun 2009 Pasal 70; CNN Indonesia (Okt 2022), Korlantas soal STNK tidak sah karena pajak belum dibayar.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-18-1930-reel-produk",
+   "tanggal": "2026-11-18",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Produk B naskah 15 Nov: surat penawaran PDF lengkap kop, nomor surat, pajak, terbilang, TTD & cap, kirim ke WhatsApp",
+   "media": [
+    "media/2026-11-18/reel-produk.mp4"
+   ],
+   "cover": "media/2026-11-18/reel-produk-cover.jpg",
+   "caption": "Bikin surat penawaran resmi tanpa buka Word? Bisa dari HP. 📄\n\nSetelah hitung harga di Ghostrip, ketuk Buat penawaran. PDF-nya langsung jadi: kop, nomor surat, keterangan pajak, terbilang, tanda tangan, dan cap. Kirim langsung ke WhatsApp customer. Kop dan cap cukup diatur sekali di Pengaturan quotation.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Surat penawaran resmi dari HP: kop, TTD, cap, kirim WhatsApp",
+   "catatan": "Pemeriksa dengar otomatis belum jalan (server Gemini 503, Scribe sibuk); cek lain aman. Dengarkan sekilas sebelum posting."
   }
  ]
 }
