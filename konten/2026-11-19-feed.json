@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-19",
+ "posts": [
+  {
+   "slot": "feed-fitur",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "fitur",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "alur",
+    "kicker": "FITUR GHOSTRIP",
+    "pill": "CEK MUATAN",
+    "title": "Barangnya *muat*\nnggak, ya?",
+    "title_size": 100,
+    "sub": "Cek susunan barang di truk sebelum kasih harga.",
+    "kartu": "ALUR CEK MUATAN",
+    "items": [
+     "Pilih jenis truk",
+     "Isi ukuran & berat barang",
+     "Lihat susunannya dalam 3D dan 2D",
+     "Flatbed/lowbed: mode oversize"
+    ],
+    "doc": {
+     "judul": "CEK MUATAN",
+     "sub": "Contoh simulasi",
+     "rows": [
+      "Tampilan 3D",
+      "Tampilan 2D",
+      "Mode oversize"
+     ],
+     "tanpa_total": true
+    },
+    "note": "Simpan buat cek sebelum\nkirim penawaran berikutnya."
+   },
+   "caption": "Customer kirim daftar barang. Muat di satu truk atau harus dua? Jangan sampai baru ketahuan waktu muat di gudang. 📦\n\nDi menu Cek muatan Ghostrip, pilih jenis truk lalu isi ukuran dan berat barang. Perkiraan susunannya langsung terlihat dalam tampilan 3D dan 2D. Untuk flatbed dan lowbed ada mode oversize: barang boleh lebih lebar atau tinggi, panjang dan beratnya tetap dicek.\n\nBiasanya kamu cek muatan pakai cara apa? Tulis di komentar 👇\n\nHasil cek muatan adalah perkiraan. Contoh tampilan: data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}

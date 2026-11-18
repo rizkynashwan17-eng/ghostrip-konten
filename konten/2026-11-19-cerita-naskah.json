@@ -1,0 +1,79 @@
+{
+ "date": "2026-11-19",
+ "posts": [
+  {
+   "slot": "reel-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "cerita",
+   "tema": "realita",
+   "time": "11:30",
+   "seri": "CERITA",
+   "judul": "ADMIN CUTI 3 HARI. KANTOR LANGSUNG LUMPUH.",
+   "part": 1,
+   "lokasi": "09.00 WIB · KANTOR",
+   "jam": "09:00",
+   "voice_id": "2026-11-19-reel-cerita",
+   "topic": "Cerita A naskah 16 Nov: admin cuti, nggak ada yang tahu harga; ditutup soft selling satu akun untuk satu tim",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Pernah ngalamin, semua harga cuma ada di *kepala satu orang*?"
+    },
+    {
+     "type": "karakter",
+     "siapa": "customer",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Admin lagi cuti tiga hari. Customer telepon minta harga, yang tahu *cuma admin*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Mbak Dewi · Admin",
+     "status": "sedang cuti",
+     "pesan": [
+      {
+       "teks": "Mbak, harga Surabaya–Semarang berapa? Customer nunggu.",
+       "aku": true
+      },
+      {
+       "teks": "Aduh Pak, saya lagi kondangan."
+      },
+      {
+       "teks": "File tarifnya di laptop kantor, Pak."
+      }
+     ],
+     "narasi": "Bos telepon admin yang lagi kondangan. Tapi *file tarifnya* ada di laptop kantor."
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Akhirnya bos *tebak-tebak harga* sendiri. Semoga nggak rugi."
+    },
+    {
+     "type": "cta",
+     "tagline": "Tarif tersimpan di akun perusahaan, dipakai bareng satu tim",
+     "pil": "GHOSTRIP",
+     "ajakan": "Tag teman admin kamu",
+     "narasi": "Di *Ghostrip*, tarif tersimpan di akun perusahaan dan dipakai bareng tim, jadi staf lain tetap bisa kasih harga. Tag teman admin yang nggak bisa cuti gara-gara ini."
+    }
+   ],
+   "caption": "Admin cuti 3 hari. Kantor langsung lumpuh. 🚛\n\nCustomer minta harga, yang tahu cuma admin. Admin lagi kondangan, file tarifnya ada di laptop kantor. Akhirnya bos tebak-tebak harga sendiri.\n\nTag teman admin kamu yang nggak bisa cuti gara-gara ini 👇\n\nDi Ghostrip, tarif tersimpan di akun perusahaan dan bisa dipakai bareng tim, jadi staf lain tetap bisa kasih harga.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Admin cuti 3 hari, kantor langsung lumpuh. Harga cuma ada di kepala satu orang."
+  }
+ ]
+}
