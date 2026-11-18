@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   27.97
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Pernah ngalamin, semua harga cuma ada di kepala satu orang?\nAdmin lagi cuti tiga hari. Customer telepon minta harga, yang tahu cuma admin.\nBos telepon admin yang lagi kondangan. Tapi file tarifnya ada di laptop kantor.\nAkhirnya bos tebak-tebak harga sendiri. Semoga nggak rugi.\nDi Ghostrip, tarif tersimpan di akun perusahaan dan dipakai bareng tim, jadi staf lain tetap bisa kasih harga. Tag teman admin yang nggak bisa cuti gara-gara ini.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: gemini-flash-latest: The read operation timed out || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
