@@ -5,5 +5,14 @@
   "media": "media/2026-11-19/feed-fitur-ed.jpg",
   "gaya": "editorial",
   "warna": "teal"
+ },
+ {
+  "slot": "reel-cerita",
+  "kind": "reel",
+  "media": "media/2026-11-19/reel-cerita.mp4",
+  "cover": "media/2026-11-19/reel-cerita-cover.jpg",
+  "dur": 26.97,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]

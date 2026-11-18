@@ -13,5 +13,12 @@
    "transkrip": null,
    "catatan": "tidak bisa didengar: gemini-flash-latest: The read operation timed out || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
   }
- ]
+ ],
+ "scribe": {
+  "alat": "ElevenLabs Scribe v1",
+  "tanggal": "2026-11-18",
+  "cocok": true,
+  "transkrip": "Pernah ngalamin semua harga cuma ada di kepala satu orang? Admin lagi cuti tiga hari. Customer telepon minta harga yang tahu cuma admin. Bos telepon admin yang lagi kondangan, tapi file tarifnya ada di laptop kantor. Akhirnya bos tebak-tebak harga sendiri. Semoga enggak rugi. Di GoTrip, tarif tersimpan di akun perusahaan dan dipakai bareng tim. Jadi staf lain tetap bisa kasih harga. Tag teman admin yang enggak bisa cuti gara-gara ini.",
+  "catatan": "Semua kalimat cocok dengan naskah; 'GoTrip' = salah dengar Scribe untuk Ghostrip. Durasi bicara 27,9 dtk, tempo wajar."
+ }
 }

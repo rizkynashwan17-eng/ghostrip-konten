@@ -1,60 +1,6 @@
 {
- "diperbarui": "2026-11-17T12:26+07:00",
+ "diperbarui": "2026-11-18T12:23+07:00",
  "posts": [
-  {
-   "id": "2026-11-07-1200-feed-manual",
-   "tanggal": "2026-11-07",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [],
-   "manual": true,
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
-  },
-  {
-   "id": "2026-11-07-1700-feed-humor",
-   "tanggal": "2026-11-07",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Isi folder penawaran\nsetelah 5 kali revisi",
-   "media": [
-    "media/2026-11-07/feed-humor-ed3.jpg"
-   ],
-   "cover": null,
-   "caption": "Admin mana yang foldernya begini juga? 😅\n\nquotation_final → final2 → FIX → fix_beneran → PAKAI_INI\n\nTips: beri nama file pakai tanggal & versi, dan catat setiap perubahan. Di Ghostrip, riwayat hitungan tersimpan otomatis.\n\nTag teman admin kamu 👇\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-07-1930-reel-humor",
-   "tanggal": "2026-11-07",
-   "jam": "19:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Humor relatable: admin menghadapi revisi quotation berulang dari customer yang sama",
-   "media": [
-    "media/2026-11-07/reel-humor.mp4"
-   ],
-   "cover": "media/2026-11-07/reel-humor-cover.jpg",
-   "caption": "POV: revisi kelima dari customer yang sama 😅\n\nGanti armada, tambah titik bongkar, tanggal maju... lalu akhirnya: \"yang versi pertama aja, Mbak.\" Padahal versi pertama sudah ditimpa.\n\nTips: simpan tiap versi dengan tanggal dan catat setiap perubahan. Di Ghostrip, riwayat hitungan tersimpan otomatis.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "POV admin: revisi kelima, lalu customer minta versi pertama",
-   "catatan": ""
-  },
   {
    "id": "2026-11-08-1200-feed-manual",
    "tanggal": "2026-11-08",
@@ -594,6 +540,60 @@
    "caption": "Bikin surat penawaran resmi tanpa buka Word? Bisa dari HP. 📄\n\nSetelah hitung harga di Ghostrip, ketuk Buat penawaran. PDF-nya langsung jadi: kop, nomor surat, keterangan pajak, terbilang, tanda tangan, dan cap. Kirim langsung ke WhatsApp customer. Kop dan cap cukup diatur sekali di Pengaturan quotation.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Surat penawaran resmi dari HP: kop, TTD, cap, kirim WhatsApp",
    "catatan": "Pemeriksa dengar otomatis belum jalan (server Gemini 503, Scribe sibuk); cek lain aman. Dengarkan sekilas sebelum posting."
+  },
+  {
+   "id": "2026-11-19-1130-reel-cerita",
+   "tanggal": "2026-11-19",
+   "jam": "11:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Cerita A naskah 16 Nov: admin cuti, nggak ada yang tahu harga; ditutup soft selling satu akun untuk satu tim",
+   "media": [
+    "media/2026-11-19/reel-cerita.mp4"
+   ],
+   "cover": "media/2026-11-19/reel-cerita-cover.jpg",
+   "caption": "Admin cuti 3 hari. Kantor langsung lumpuh. 🚛\n\nCustomer minta harga, yang tahu cuma admin. Admin lagi kondangan, file tarifnya ada di laptop kantor. Akhirnya bos tebak-tebak harga sendiri.\n\nTag teman admin kamu yang nggak bisa cuti gara-gara ini 👇\n\nDi Ghostrip, tarif tersimpan di akun perusahaan dan bisa dipakai bareng tim, jadi staf lain tetap bisa kasih harga.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Admin cuti 3 hari, kantor langsung lumpuh. Harga cuma ada di kepala satu orang.",
+   "catatan": "Pemeriksa dengar Gemini error (timeout/404) → dicek ElevenLabs Scribe: cocok dengan naskah. Cek lain aman."
+  },
+  {
+   "id": "2026-11-19-1200-feed-manual",
+   "tanggal": "2026-11-19",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-19-1700-feed-fitur",
+   "tanggal": "2026-11-19",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Barangnya muat\nnggak, ya?",
+   "media": [
+    "media/2026-11-19/feed-fitur-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Customer kirim daftar barang. Muat di satu truk atau harus dua? Jangan sampai baru ketahuan waktu muat di gudang. 📦\n\nDi menu Cek muatan Ghostrip, pilih jenis truk lalu isi ukuran dan berat barang. Perkiraan susunannya langsung terlihat dalam tampilan 3D dan 2D. Untuk flatbed dan lowbed ada mode oversize: barang boleh lebih lebar atau tinggi, panjang dan beratnya tetap dicek.\n\nBiasanya kamu cek muatan pakai cara apa? Tulis di komentar 👇\n\nHasil cek muatan adalah perkiraan. Contoh tampilan: data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
+   "catatan": ""
   }
  ]
 }
