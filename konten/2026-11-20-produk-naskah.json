@@ -1,0 +1,150 @@
+{
+ "date": "2026-11-20",
+ "posts": [
+  {
+   "slot": "reel-produk",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "produk",
+   "tema": "fitur",
+   "time": "19:30",
+   "judul": "SATU AKUN SATU TIM",
+   "part": 1,
+   "lokasi": "",
+   "voice_id": "2026-11-16-reel-produk",
+   "topic": "Produk B naskah 16 Nov: satu akun untuk satu tim (tambah anggota, peran Staf, tarif sama, pembayaran & pengaturan di pemilik/admin)",
+   "scenes": [
+    {
+     "key": "hook",
+     "head": "Admin cuti? Staf lain tetap bisa *kasih harga*.",
+     "headSize": 88,
+     "shot": "iklan3d/p20_tim.png",
+     "narasi": "Ini cara supaya kantor tetap jalan, walaupun admin lagi *libur*."
+    },
+    {
+     "key": "layar",
+     "tag": "TIM & PERAN",
+     "n": "01",
+     "head": "Tambah *anggota tim*",
+     "shot": "iklan3d/p20_tim.png",
+     "chips": [
+      {
+       "text": "Menu Tim",
+       "sub": "dari halaman Akun",
+       "icon": "◆",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Pemilik, Admin, Staf",
+       "sub": "peran jelas",
+       "icon": "✓",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Buka menu Tim, lalu tambah anggota *baru*."
+    },
+    {
+     "key": "layar",
+     "tag": "ANGGOTA BARU",
+     "n": "02",
+     "head": "Pilih peran *Staf*",
+     "shot": "iklan3d/p20_baru.png",
+     "chips": [
+      {
+       "text": "Nama & email",
+       "sub": "akun sendiri",
+       "icon": "✓",
+       "x": 40,
+       "y": 640
+      },
+      {
+       "text": "Peran Staf",
+       "sub": "hitung & buat penawaran",
+       "icon": "→",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Isi nama dan email, pilih peran staf, akunnya langsung *jadi*."
+    },
+    {
+     "key": "layar",
+     "tag": "MASUK SEBAGAI STAF",
+     "n": "03",
+     "head": "Login sebagai *Staf*",
+     "shot": "iklan3d/p20_staf.png",
+     "chips": [
+      {
+       "text": "Perusahaan sama",
+       "sub": "data & riwayat sama",
+       "icon": "◆",
+       "x": 40,
+       "y": 660
+      }
+     ],
+     "narasi": "Staf masuk pakai akunnya sendiri, di perusahaan yang *sama*."
+    },
+    {
+     "key": "layar",
+     "tag": "TARIF SAMA",
+     "n": "04",
+     "head": "Harga tetap *konsisten*",
+     "shot": "iklan3d/hasil.png",
+     "chips": [
+      {
+       "text": "Tarif dari pengaturan",
+       "sub": "sama untuk semua",
+       "icon": "✓",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Buat penawaran",
+       "sub": "staf juga bisa",
+       "icon": "→",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Tarifnya sama, datanya sama. Siapa pun yang masuk, harganya *konsisten*."
+    },
+    {
+     "key": "layar",
+     "tag": "PEMILIK & ADMIN",
+     "n": "05",
+     "head": "Pembayaran tetap di *pemilik*",
+     "shot": "iklan3d/p20_bayar.png",
+     "chips": [
+      {
+       "text": "Catat pembayaran",
+       "sub": "hanya pemilik & admin",
+       "icon": "◆",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Tarif & kop",
+       "sub": "tidak diubah staf",
+       "icon": "✓",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Tapi ubah tarif, kop, dan catat pembayaran, tetap dipegang pemilik dan *admin*."
+    },
+    {
+     "key": "cta",
+     "narasi": "Coba Ghostrip gratis tujuh hari. Kunjungi *ghostrip.id* atau chat WhatsApp."
+    }
+   ],
+   "caption": "Admin cuti, kantor tetap bisa kasih harga? Bisa. 👥\n\nDi Ghostrip, pemilik menambah anggota tim lewat menu Tim dan memilih perannya. Staf bisa menghitung dan membuat surat penawaran dengan tarif yang sama, jadi harga tetap konsisten siapa pun yang mengerjakan. Ubah tarif, kop, dan catat pembayaran tetap dipegang pemilik dan admin.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Admin cuti? Staf lain tetap bisa kasih harga, tarif tetap sama"
+  }
+ ]
+}
