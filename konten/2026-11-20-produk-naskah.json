@@ -58,7 +58,7 @@
        "sub": "akun sendiri",
        "icon": "✓",
        "x": 40,
-       "y": 640
+       "y": 1180
       },
       {
        "text": "Peran Staf",
@@ -82,8 +82,8 @@
        "text": "Perusahaan sama",
        "sub": "data & riwayat sama",
        "icon": "◆",
-       "x": 40,
-       "y": 660
+       "x": 560,
+       "y": 1300
       }
      ],
      "narasi": "Staf masuk pakai akunnya sendiri, di perusahaan yang *sama*."

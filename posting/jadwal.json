@@ -1,60 +1,6 @@
 {
- "diperbarui": "2026-11-18T12:23+07:00",
+ "diperbarui": "2026-11-19T12:31+07:00",
  "posts": [
-  {
-   "id": "2026-11-08-1200-feed-manual",
-   "tanggal": "2026-11-08",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [],
-   "manual": true,
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
-  },
-  {
-   "id": "2026-11-08-1700-feed-bebas",
-   "tanggal": "2026-11-08",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Harga PP = dua kali lipat?",
-   "media": [
-    "media/2026-11-08/feed-bebas-ed2.jpg"
-   ],
-   "cover": null,
-   "caption": "\"Kalau sekali jalan segini, PP berarti dua kali ya?\" Belum tentu 🤔\n\nYang membedakan: ada muatan balik atau tidak, hari jalan & istirahat sopir, waktu tunggu bongkar muat, dan tol dua arah. Makanya PP sebaiknya dihitung sebagai satu perjalanan utuh.\n\nPunya pertanyaan lain soal hitung trip? Tulis di komentar.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-08-1930-reel-bedah",
-   "tanggal": "2026-11-08",
-   "jam": "19:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Teknikal: kenapa rem truk bisa blong di turunan panjang (brake fade, angin tekor) dan cara mencegahnya (gigi rendah, engine brake)",
-   "media": [
-    "media/2026-11-08/reel-bedah.mp4"
-   ],
-   "cover": "media/2026-11-08/reel-bedah-cover.jpg",
-   "caption": "Rem diinjak, truk tetap meluncur. Kenapa bisa begitu di turunan panjang?\n\nKita bedah: kampas rem yang kepanasan jadi licin, dan angin rem bisa tekor kalau diinjak terus-terusan. Solusinya: gigi rendah sebelum turunan, jangan pindah gigi di jalan menurun, biar mesin ikut menahan.\n\nSumber: keterangan KNKT (CNN Indonesia 25/9/2023, otodriver 28/1/2022, detikOto 30/11/2022). Ilustrasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "Kenapa rem truk bisa blong di turunan panjang? Kita bedah",
-   "catatan": ""
-  },
   {
    "id": "2026-11-09-1200-feed-manual",
    "tanggal": "2026-11-09",
@@ -594,6 +540,60 @@
    "caption": "Customer kirim daftar barang. Muat di satu truk atau harus dua? Jangan sampai baru ketahuan waktu muat di gudang. 📦\n\nDi menu Cek muatan Ghostrip, pilih jenis truk lalu isi ukuran dan berat barang. Perkiraan susunannya langsung terlihat dalam tampilan 3D dan 2D. Untuk flatbed dan lowbed ada mode oversize: barang boleh lebih lebar atau tinggi, panjang dan beratnya tetap dicek.\n\nBiasanya kamu cek muatan pakai cara apa? Tulis di komentar 👇\n\nHasil cek muatan adalah perkiraan. Contoh tampilan: data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "",
    "catatan": ""
+  },
+  {
+   "id": "2026-11-20-1200-feed-manual",
+   "tanggal": "2026-11-20",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-20-1700-feed-logistik",
+   "tanggal": "2026-11-20",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "20 ft atau 40 ft?\nDua kali lebih lega.",
+   "media": [
+    "media/2026-11-20/feed-logistik-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Kontainer 40 ft isinya dua kali kontainer 20 ft. Tapi apakah bisa memuat dua kali lebih berat? Ternyata tidak. 📦\n\n20 ft dry: panjang dalam sekitar 5,9 m, isi sekitar 33 m³, muatan maksimal sekitar 25 ton.\n40 ft dry: panjang dalam sekitar 12 m, lebar dan tinggi sama, isi sekitar 67 m³, muatan maksimal sekitar 27,6 ton.\n\nArtinya, barang berat seperti besi atau semen sering lebih pas di 20 ft, sedangkan barang ringan tapi makan tempat lebih hemat di 40 ft. Ukuran persisnya bisa beda sedikit tergantung pabrikan dan pemilik kontainer.\n\nSebelum kirim penawaran trucking kontainer, Ghostrip bisa bantu hitung harga trip dan cek muatan barang.\n\nMuatan di kantormu lebih sering habis di berat atau di volume? Tulis di komentar 👇\n\nSumber: DSV, spesifikasi dry container (20' dan 40').\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-20-1930-reel-produk",
+   "tanggal": "2026-11-20",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Produk B naskah 16 Nov: satu akun untuk satu tim (tambah anggota, peran Staf, tarif sama, pembayaran & pengaturan di pemilik/admin)",
+   "media": [
+    "media/2026-11-20/reel-produk.mp4"
+   ],
+   "cover": "media/2026-11-20/reel-produk-cover.jpg",
+   "caption": "Admin cuti, kantor tetap bisa kasih harga? Bisa. 👥\n\nDi Ghostrip, pemilik menambah anggota tim lewat menu Tim dan memilih perannya. Staf bisa menghitung dan membuat surat penawaran dengan tarif yang sama, jadi harga tetap konsisten siapa pun yang mengerjakan. Ubah tarif, kop, dan catat pembayaran tetap dipegang pemilik dan admin.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Admin cuti? Staf lain tetap bisa kasih harga, tarif tetap sama",
+   "catatan": "Pemeriksa dengar Gemini error (timeout/404) → dicek ElevenLabs Scribe: cocok dengan naskah. Cek lain aman."
   }
  ]
 }
