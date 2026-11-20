@@ -1,0 +1,21 @@
+{
+ "sig": [
+  [
+   38.61
+  ],
+  1
+ ],
+ "lolos": true,
+ "belum_dicek": false,
+ "lines": [
+  {
+   "naskah": "Customer nanya harga bulan lalu. Dan dimulailah perburuan di WhatsApp.\nScroll chat ke atas, nggak ketemu. Cari di galeri foto, nggak ketemu juga.\nBuka folder Download, isinya dua ratus file. Penawaran satu, penawaran dua, penawaran final.\nSetengah jam kemudian, nyerah. Akhirnya hitung ulang dari nol.\nDi Ghostrip, setiap hitungan dan penawaran tersimpan di riwayat, jadi harga bulan lalu tinggal dibuka lagi. Berapa lama rekor kamu nyari file penawaran lama? Komen di bawah.",
+   "transkrip": "Customer nanya harga bulan lalu dan dimulailah perburuan di WhatsApp. Scroll chat ke atas, nggak ketemu. Cari di galeri foto, nggak ketemu juga. Buka folder download, isinya dua ratus file. Penawaran satu, penawaran dua, penawaran final. Setengah jam kemudian, nyerah. Akhirnya hitung ulang dari nol. Di Ghostrip, setiap hitungan dan penawaran tersimpan di riwayat. Jadi harga bulan lalu, tinggal dibuka lagi. Berapa lama rekor kamu nyari file penawaran lama? Komen di bawah.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  }
+ ]
+}
