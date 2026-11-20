@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-19T12:31+07:00",
+ "diperbarui": "2026-11-20T12:08+07:00",
  "posts": [
   {
    "id": "2026-11-09-1200-feed-manual",
@@ -594,6 +594,23 @@
    "caption": "Admin cuti, kantor tetap bisa kasih harga? Bisa. 👥\n\nDi Ghostrip, pemilik menambah anggota tim lewat menu Tim dan memilih perannya. Staf bisa menghitung dan membuat surat penawaran dengan tarif yang sama, jadi harga tetap konsisten siapa pun yang mengerjakan. Ubah tarif, kop, dan catat pembayaran tetap dipegang pemilik dan admin.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Admin cuti? Staf lain tetap bisa kasih harga, tarif tetap sama",
    "catatan": "Pemeriksa dengar Gemini error (timeout/404) → dicek ElevenLabs Scribe: cocok dengan naskah. Cek lain aman."
+  },
+  {
+   "id": "2026-11-21-1200-feed-manual",
+   "tanggal": "2026-11-21",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
   }
  ]
 }
