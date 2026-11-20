@@ -1,41 +1,6 @@
 {
- "diperbarui": "2026-11-20T12:10+07:00",
+ "diperbarui": "2026-11-20T12:27+07:00",
  "posts": [
-  {
-   "id": "2026-11-09-1200-feed-manual",
-   "tanggal": "2026-11-09",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [],
-   "manual": true,
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
-  },
-  {
-   "id": "2026-11-09-1700-feed-realita",
-   "tanggal": "2026-11-09",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Penawaran terkirim.\nBalasannya: \"nanti kami kabari\"",
-   "media": [
-    "media/2026-11-09/feed-realita-ed.jpg"
-   ],
-   "cover": null,
-   "caption": "Penawaran sudah dikirim, balasannya \"nanti kami kabari\". Lalu hening. 😶\n\nSetiap admin dan pemilik armada pasti pernah di posisi ini. Kadang order lepas bukan karena harganya, tapi karena penawaran datang terlambat atau tampil kurang meyakinkan.\n\nKalau pekerjaan hitung dan bikin surat penawaran bisa selesai lebih cepat, kamu punya lebih banyak waktu untuk follow-up. Itu salah satu alasan Ghostrip dibuat.\n\nKalian paling lama menunggu kabar penawaran berapa hari? Tulis di komentar 👇\n\nIlustrasi, bukan data nyata.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
   {
    "id": "2026-11-10-1200-feed-manual",
    "tanggal": "2026-11-10",
@@ -594,6 +559,25 @@
    "caption": "Admin cuti, kantor tetap bisa kasih harga? Bisa. 👥\n\nDi Ghostrip, pemilik menambah anggota tim lewat menu Tim dan memilih perannya. Staf bisa menghitung dan membuat surat penawaran dengan tarif yang sama, jadi harga tetap konsisten siapa pun yang mengerjakan. Ubah tarif, kop, dan catat pembayaran tetap dipegang pemilik dan admin.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Admin cuti? Staf lain tetap bisa kasih harga, tarif tetap sama",
    "catatan": "Pemeriksa dengar Gemini error (timeout/404) → dicek ElevenLabs Scribe: cocok dengan naskah. Cek lain aman."
+  },
+  {
+   "id": "2026-11-21-1130-reel-cerita",
+   "tanggal": "2026-11-21",
+   "jam": "11:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Cerita A naskah 17 Nov: cari penawaran bulan lalu di ratusan chat; ditutup soft selling riwayat hitungan & penawaran",
+   "media": [
+    "media/2026-11-21/reel-cerita.mp4"
+   ],
+   "cover": "media/2026-11-21/reel-cerita-cover.jpg",
+   "caption": "Customer: \"Pak, harga yang bulan lalu berapa ya?\" Dan dimulailah perburuan di WhatsApp. 🔍\n\nScroll chat ke atas, nggak ketemu. Cari di galeri, nggak ketemu. Folder Download isinya 200 file \"Penawaran (1)\", \"Penawaran (2)\", \"Penawaran FINAL\". Setengah jam kemudian, nyerah, hitung ulang.\n\nBerapa lama rekor kamu nyari file penawaran lama? Komen di bawah 👇\n\nDi Ghostrip, setiap hitungan dan penawaran tersimpan di riwayat, jadi harga lama tinggal dibuka lagi.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Customer minta harga bulan lalu. Dimulailah perburuan di WhatsApp.",
+   "catatan": ""
   },
   {
    "id": "2026-11-21-1200-feed-manual",

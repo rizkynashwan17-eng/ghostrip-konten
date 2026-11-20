@@ -27,7 +27,8 @@
        "teks": "Mau order lagi, rute yang sama."
       }
      ],
-     "narasi": "Customer nanya harga bulan lalu. Dimulailah *perburuan di WhatsApp*."
+     "narasi": "Customer nanya harga bulan lalu. Dimulailah *perburuan di WhatsApp*.",
+     "geser": 170
     },
     {
      "type": "karakter",
