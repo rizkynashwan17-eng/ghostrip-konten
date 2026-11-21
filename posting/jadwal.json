@@ -1,41 +1,6 @@
 {
- "diperbarui": "2026-11-20T12:27+07:00",
+ "diperbarui": "2026-11-21T12:27+07:00",
  "posts": [
-  {
-   "id": "2026-11-10-1200-feed-manual",
-   "tanggal": "2026-11-10",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [],
-   "manual": true,
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
-  },
-  {
-   "id": "2026-11-10-1700-feed-logistik",
-   "tanggal": "2026-11-10",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "FCL atau LCL?\nBedanya di berbagi",
-   "media": [
-    "media/2026-11-10/feed-logistik-ed.jpg"
-   ],
-   "cover": null,
-   "caption": "FCL atau LCL? Kirim barang lewat kontainer laut punya dua cara. 🚢\n\nFCL (Full Container Load): satu kontainer dipakai untuk satu pengirim saja. Kontainernya tidak harus terisi penuh, tapi tidak dibagi dengan pengirim lain. Biasanya cocok untuk muatan besar dan waktu transit lebih cepat.\n\nLCL (Less than Container Load): barang kamu berbagi ruang kontainer dengan kiriman lain. Cocok untuk muatan kecil karena biaya dihitung dari volume dan berat. Konsekuensinya, ada proses gabung dan pisah barang yang bisa membuat waktunya lebih lama.\n\nSetelah sampai pelabuhan, kontainer tetap butuh truk darat untuk menuju gudang. Kalau kamu pemilik armada atau admin penawaran, Ghostrip bantu hitung harga trip dan bikin surat penawarannya dengan lebih rapi.\n\nPilihan mana yang paling sering kamu pakai, FCL atau LCL? Tulis di komentar 👇\n\nSumber: FedEx Indonesia, glosarium pengiriman (FCL dan LCL).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
   {
    "id": "2026-11-11-1200-feed-manual",
    "tanggal": "2026-11-11",
@@ -613,6 +578,60 @@
    "caption": "Sopir baru mau bawa truk, SIM A-nya cukup nggak? Tergantung truknya. 🚛\n\nSIM B I: untuk mobil barang dengan jumlah berat yang diperbolehkan (JBB) di atas 3.500 kg, misalnya truk engkel atau tronton. Usia minimal 20 tahun dan sudah memegang SIM A minimal 12 bulan.\n\nSIM B II: untuk kendaraan penarik kereta tempelan atau gandengan di atas 1.000 kg (trailer, truk gandeng) dan alat berat. Usia minimal 21 tahun dan sudah memegang SIM B I minimal 12 bulan.\n\nKendaraan dengan JBB sampai 3.500 kg cukup SIM A. Cek dulu SIM sopir sebelum menugaskan armada. Di Ghostrip, data sopir dan truk bisa dicatat rapi bersama masa berlakunya.\n\nArmada di kantormu lebih banyak yang butuh SIM B I atau B II? Tulis di komentar 👇\n\nSumber: UU No. 22 Tahun 2009 Pasal 80–81; Perpol No. 5 Tahun 2021 tentang SIM.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "SIM A cukup buat bawa truk? Beda SIM B I dan B II.",
    "catatan": ""
+  },
+  {
+   "id": "2026-11-22-1200-feed-manual",
+   "tanggal": "2026-11-22",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-22-1700-feed-fitur",
+   "tanggal": "2026-11-22",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Kabar logistik?\nCukup buka satu menu.",
+   "media": [
+    "media/2026-11-22/feed-fitur-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Harga solar berubah, ada aturan baru soal angkutan barang, pelabuhan lagi padat. Kabar seperti ini sering telat sampai ke meja admin. 📰\n\nDi Ghostrip ada menu News logistik: berita logistik terbaru dari internet, dikelompokkan jadi Darat & truk, Laut & pelabuhan, Tarif & BBM, dan Kebijakan. Ketuk judulnya untuk membaca selengkapnya, jadi tetap update sebelum menghitung harga atau membalas customer.\n\nKabar apa yang paling sering kamu pantau? Tulis di komentar 👇\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Kabar logistik terbaru? Cukup buka satu menu di Ghostrip",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-22-1930-reel-produk",
+   "tanggal": "2026-11-22",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Produk B naskah 17 Nov: riwayat hitungan, surat penawaran & invoice tersimpan; ketik nama perusahaan atau rute, hasil langsung muncul",
+   "media": [
+    "media/2026-11-22/reel-produk.mp4"
+   ],
+   "cover": "media/2026-11-22/reel-produk-cover.jpg",
+   "caption": "Customer tanya: \"Pak, harga yang bulan lalu berapa, ya?\" Nggak perlu scroll WhatsApp sampai jempol pegal. 🔎\n\nDi Ghostrip, hitungan, surat penawaran, dan invoice tersimpan di akun:\n1. Buka Riwayat hitung atau Riwayat surat\n2. Ketik nama perusahaan, hasilnya langsung muncul\n3. Atau ketik rute, misalnya Surabaya\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Harga bulan lalu berapa? Ketik nama customer, langsung ketemu",
+   "catatan": "Pemeriksa dengar otomatis belum jalan (Gemini timeout/404; ElevenLabs Scribe tidak bisa dijangkau dari server). Cek lain aman. Dengarkan sekilas sebelum posting."
   }
  ]
 }
