@@ -1,0 +1,127 @@
+{
+ "date": "2026-11-22",
+ "posts": [
+  {
+   "slot": "reel-produk",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "produk",
+   "tema": "fitur",
+   "time": "19:30",
+   "judul": "RIWAYAT & CARI CEPAT",
+   "part": 1,
+   "lokasi": "",
+   "voice_id": "2026-11-17-reel-produk",
+   "topic": "Produk B naskah 17 Nov: riwayat hitungan, surat penawaran & invoice tersimpan; ketik nama perusahaan atau rute, hasil langsung muncul",
+   "scenes": [
+    {
+     "key": "hook",
+     "head": "Penawaran bulan lalu? Ketik nama customer. *Ketemu.*",
+     "headSize": 84,
+     "shot": "iklan3d/p22_cari.png",
+     "narasi": "Nggak ada lagi scroll WhatsApp sampai jempol *pegal*."
+    },
+    {
+     "key": "layar",
+     "tag": "RIWAYAT",
+     "n": "01",
+     "head": "Semua tersimpan di *akun*",
+     "shot": "iklan3d/home.png",
+     "shot2": "iklan3d/p22_tagihan.png",
+     "chips": [
+      {
+       "text": "Riwayat hitung & surat",
+       "sub": "dari menu Beranda",
+       "icon": "◆",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Invoice",
+       "sub": "lunas & jatuh tempo",
+       "icon": "✓",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Semua hitungan, surat penawaran, dan invoice tersimpan rapi di *akun*."
+    },
+    {
+     "key": "layar",
+     "tag": "CARI PERUSAHAAN",
+     "n": "02",
+     "head": "Ketik nama *perusahaan*",
+     "shot": "iklan3d/p22_cari.png",
+     "chips": [
+      {
+       "text": "Kotak cari",
+       "sub": "perusahaan, rute, jenis truk",
+       "icon": "◆",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Hasil langsung muncul",
+       "sub": "tanpa scroll panjang",
+       "icon": "→",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Customer tanya harga bulan lalu? Ketik nama perusahaannya, hasilnya langsung *muncul*."
+    },
+    {
+     "key": "layar",
+     "tag": "CARI RUTE",
+     "n": "03",
+     "head": "Atau ketik *rute*",
+     "shot": "iklan3d/hasil.png",
+     "chips": [
+      {
+       "text": "Contoh: Surabaya",
+       "sub": "semua hitungan ke sana",
+       "icon": "◆",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Edit & duplikat",
+       "sub": "pakai ulang hitungan lama",
+       "icon": "✓",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Atau ketik rutenya, misalnya Surabaya. Semua hitungan ke Surabaya ikut *muncul*."
+    },
+    {
+     "key": "layar",
+     "tag": "RIWAYAT SURAT",
+     "n": "04",
+     "head": "Surat penawaran juga *ketemu*",
+     "shot": "iklan3d/surat.png",
+     "chips": [
+      {
+       "text": "Nama, nomor, perihal",
+       "sub": "bisa dicari",
+       "icon": "✓",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Surat penawarannya juga bisa dicari, pakai nama perusahaan atau nomor *surat*."
+    },
+    {
+     "key": "cta",
+     "narasi": "Coba Ghostrip gratis tujuh hari. Kunjungi *ghostrip.id* atau chat WhatsApp."
+    }
+   ],
+   "caption": "Customer tanya: \"Pak, harga yang bulan lalu berapa, ya?\" Nggak perlu scroll WhatsApp sampai jempol pegal. 🔎\n\nDi Ghostrip, hitungan, surat penawaran, dan invoice tersimpan di akun:\n1. Buka Riwayat hitung atau Riwayat surat\n2. Ketik nama perusahaan, hasilnya langsung muncul\n3. Atau ketik rute, misalnya Surabaya\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Harga bulan lalu berapa? Ketik nama customer, langsung ketemu"
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-22",
+ "posts": [
+  {
+   "slot": "feed-fitur",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "fitur",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "checklist",
+    "kicker": "FITUR GHOSTRIP",
+    "pill": "NEWS LOGISTIK",
+    "title": "Kabar logistik?\nCukup buka *satu menu*.",
+    "title_size": 96,
+    "sub": "Berita logistik terbaru dari internet, dikelompokkan per kategori.",
+    "items": [
+     "Darat & truk",
+     "Laut & pelabuhan",
+     "Tarif & BBM",
+     "Kebijakan"
+    ],
+    "doc": {
+     "judul": "NEWS LOGISTIK",
+     "sub": "Di dalam aplikasi",
+     "rows": [
+      "Berita terbaru",
+      "Pilih kategori",
+      "Ketuk untuk membaca"
+     ],
+     "tanpa_total": true
+    },
+    "note": "Cek dulu sebelum\nkasih harga ke customer."
+   },
+   "caption": "Harga solar berubah, ada aturan baru soal angkutan barang, pelabuhan lagi padat. Kabar seperti ini sering telat sampai ke meja admin. 📰\n\nDi Ghostrip ada menu News logistik: berita logistik terbaru dari internet, dikelompokkan jadi Darat & truk, Laut & pelabuhan, Tarif & BBM, dan Kebijakan. Ketuk judulnya untuk membaca selengkapnya, jadi tetap update sebelum menghitung harga atau membalas customer.\n\nKabar apa yang paling sering kamu pantau? Tulis di komentar 👇\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Kabar logistik terbaru? Cukup buka satu menu di Ghostrip"
+  }
+ ]
+}
