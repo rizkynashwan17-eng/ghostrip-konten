@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   28.17
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Nggak ada lagi scroll WhatsApp sampai jempol pegal.\nSemua hitungan, surat penawaran, dan invoice tersimpan rapi di akun.\nCustomer tanya harga bulan lalu? Ketik nama perusahaannya, hasilnya langsung muncul.\nAtau ketik rutenya, misalnya Surabaya. Semua hitungan ke Surabaya ikut muncul.\nSurat penawarannya juga bisa dicari, pakai nama perusahaan atau nomor surat.\nCoba Ghostrip gratis tujuh hari. Kunjungi ghostrip.id atau chat WhatsApp.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: gemini-flash-latest: The read operation timed out || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
