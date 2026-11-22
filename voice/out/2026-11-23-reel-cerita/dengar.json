@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   29.57
+  ],
+  3
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Tarif baru, tarif revisi, tarif fix banget. Mana yang terbaru?\nAdmin satu pakai file ini, admin dua file lain.\nCustomer yang sama dapat dua harga.\nCustomer tanya: yang benar yang mana, Pak?\nDi Ghostrip, tarif per jenis truk diatur sekali untuk satu tim. Kantor kamu punya berapa versi file tarif? Komen angkanya.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
