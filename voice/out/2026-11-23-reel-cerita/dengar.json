@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   40.25
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Tarif baru, tarif baru revisi, tarif fix banget. Yang mana yang terbaru?\nAdmin satu pakai file yang ini, admin dua pakai file yang lain.\nCustomer yang sama dapat dua harga berbeda dari kantor yang sama.\nLalu customer tanya: jadi yang benar yang mana, Pak?\nBos cuma bisa diam. Dua-duanya keluar dari kantor sendiri.\nDi Ghostrip, tarif per jenis truk diatur sekali di akun perusahaan, jadi satu tim pakai harga yang sama. Jujur, di kantor kamu ada berapa versi file tarif? Komen angkanya.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: gemini-flash-latest: The read operation timed out || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
