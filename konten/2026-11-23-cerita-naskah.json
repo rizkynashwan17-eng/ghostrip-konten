@@ -1,0 +1,85 @@
+{
+ "date": "2026-11-23",
+ "posts": [
+  {
+   "slot": "reel-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "cerita",
+   "tema": "realita",
+   "time": "11:30",
+   "seri": "CERITA",
+   "judul": "FILE TARIF ADA 3 VERSI. YANG MANA YANG TERBARU?",
+   "part": 1,
+   "lokasi": "09.00 WIB · KANTOR",
+   "jam": "09:00",
+   "voice_id": "2026-11-23-reel-cerita",
+   "topic": "Cerita A naskah 18 Nov: file Excel tarif ada 3 versi, customer dapat dua harga; ditutup soft selling tarif per jenis truk diatur sekali di akun perusahaan",
+   "scenes": [
+    {
+     "type": "daftar",
+     "judulKartu": "Folder Tarif · Laptop Kantor",
+     "item": [
+      "tarif_baru.xlsx",
+      "tarif_baru_REVISI.xlsx",
+      "tarif_FIX_banget.xlsx"
+     ],
+     "tanda": "x",
+     "narasi": "Tarif baru, tarif baru revisi, tarif fix banget. *Yang mana yang terbaru?*"
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Admin satu pakai file yang ini, admin dua pakai *file yang lain*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Customer · PT Makmur Semakmurnya",
+     "pesan": [
+      {
+       "teks": "Pak, kemarin admin Bapak kasih harga beda."
+      },
+      {
+       "teks": "Rutenya sama, truknya sama."
+      }
+     ],
+     "narasi": "Customer yang sama dapat *dua harga berbeda* dari kantor yang sama."
+    },
+    {
+     "type": "karakter",
+     "siapa": "customer",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Lalu customer tanya: jadi yang benar *yang mana*, Pak?"
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Bos cuma bisa diam. Dua-duanya keluar dari *kantor sendiri*."
+    },
+    {
+     "type": "cta",
+     "tagline": "Tarif per jenis truk diatur sekali, dipakai satu tim",
+     "pil": "GHOSTRIP",
+     "ajakan": "Ada berapa versi? Komen angkanya",
+     "narasi": "Di *Ghostrip*, tarif per jenis truk diatur sekali di akun perusahaan, jadi satu tim pakai harga yang sama. Jujur, di kantor kamu ada berapa versi file tarif? *Komen angkanya*."
+    }
+   ],
+   "caption": "tarif_baru.xlsx, tarif_baru_REVISI.xlsx, tarif_FIX_banget.xlsx. Yang mana yang terbaru? 📂\n\nAdmin satu pakai file yang ini, admin dua pakai file yang lain. Hasilnya, customer yang sama dapat dua harga berbeda dari kantor yang sama, lalu bertanya: \"Jadi yang benar yang mana, Pak?\"\n\nJujur, di kantor kamu ada berapa versi file tarif? Komen angkanya 👇\n\nDi Ghostrip, tarif per jenis truk diatur sekali di akun perusahaan, jadi satu tim memakai harga yang sama.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "File tarif ada 3 versi. Customer dapat dua harga dari kantor yang sama."
+  }
+ ]
+}
