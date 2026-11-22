@@ -25,7 +25,7 @@
       "tarif_FIX_banget.xlsx"
      ],
      "tanda": "x",
-     "narasi": "Tarif baru, tarif baru revisi, tarif fix banget. *Yang mana yang terbaru?*"
+     "narasi": "Tarif baru, tarif revisi, tarif fix banget. *Yang mana yang terbaru?*"
     },
     {
      "type": "karakter",
@@ -35,7 +35,7 @@
      "x": 320,
      "y": 860,
      "hadap": 1,
-     "narasi": "Admin satu pakai file yang ini, admin dua pakai *file yang lain*."
+     "narasi": "Admin satu pakai file ini, admin dua pakai *file lain*."
     },
     {
      "type": "chat",
@@ -48,7 +48,7 @@
        "teks": "Rutenya sama, truknya sama."
       }
      ],
-     "narasi": "Customer yang sama dapat *dua harga berbeda* dari kantor yang sama."
+     "narasi": "Customer yang sama dapat *dua harga berbeda*."
     },
     {
      "type": "karakter",
@@ -58,24 +58,14 @@
      "x": 320,
      "y": 860,
      "hadap": 1,
-     "narasi": "Lalu customer tanya: jadi yang benar *yang mana*, Pak?"
-    },
-    {
-     "type": "karakter",
-     "siapa": "bos",
-     "pose": "cemas",
-     "set": "kantor",
-     "x": 320,
-     "y": 860,
-     "hadap": 1,
-     "narasi": "Bos cuma bisa diam. Dua-duanya keluar dari *kantor sendiri*."
+     "narasi": "Customer tanya: jadi yang benar *yang mana*, Pak?"
     },
     {
      "type": "cta",
      "tagline": "Tarif per jenis truk diatur sekali, dipakai satu tim",
      "pil": "GHOSTRIP",
      "ajakan": "Ada berapa versi? Komen angkanya",
-     "narasi": "Di *Ghostrip*, tarif per jenis truk diatur sekali di akun perusahaan, jadi satu tim pakai harga yang sama. Jujur, di kantor kamu ada berapa versi file tarif? *Komen angkanya*."
+     "narasi": "Di *Ghostrip*, tarif per jenis truk diatur sekali, jadi satu tim pakai harga yang sama. Di kantor kamu ada berapa versi file tarif? *Komen angkanya*."
     }
    ],
    "caption": "tarif_baru.xlsx, tarif_baru_REVISI.xlsx, tarif_FIX_banget.xlsx. Yang mana yang terbaru? 📂\n\nAdmin satu pakai file yang ini, admin dua pakai file yang lain. Hasilnya, customer yang sama dapat dua harga berbeda dari kantor yang sama, lalu bertanya: \"Jadi yang benar yang mana, Pak?\"\n\nJujur, di kantor kamu ada berapa versi file tarif? Komen angkanya 👇\n\nDi Ghostrip, tarif per jenis truk diatur sekali di akun perusahaan, jadi satu tim memakai harga yang sama.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
