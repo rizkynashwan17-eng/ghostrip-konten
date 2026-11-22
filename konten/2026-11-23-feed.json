@@ -1,0 +1,40 @@
+{
+ "date": "2026-11-23",
+ "posts": [
+  {
+   "slot": "feed-logistik",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "logistik",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "banding",
+    "kicker": "DUNIA LOGISTIK",
+    "pill": "JALUR IMPOR",
+    "title": "Jalur merah atau hijau?\nBeda *pemeriksaan*.",
+    "title_size": 88,
+    "sub": "Jalur dari Bea Cukai menentukan kapan barang impor boleh keluar.",
+    "kiri": {
+     "judul": "JALUR MERAH",
+     "items": [
+      "Barang diperiksa fisik",
+      "Dokumen diteliti lebih dulu",
+      "SPPB terbit setelah diperiksa",
+      "Jadwal truk jemput ikut SPPB"
+     ]
+    },
+    "kanan": {
+     "judul": "JALUR HIJAU",
+     "items": [
+      "Tanpa periksa fisik sebelum SPPB",
+      "Tanpa teliti dokumen sebelum SPPB",
+      "Barang bisa keluar lebih cepat",
+      "Sejak 2025 bisa kena cek acak"
+     ]
+    },
+    "note": "Jalur kuning sudah dihapus\nsejak April 2022 (PER-2/BC/2022)."
+   },
+   "caption": "Barang impor sudah sandar di pelabuhan, tapi truk belum bisa jemput. Salah satu penyebabnya: jalurnya merah. 🚦\n\nJalur merah: barang diperiksa fisik dan dokumennya diteliti dulu, baru Surat Persetujuan Pengeluaran Barang (SPPB) terbit.\nJalur hijau: tanpa pemeriksaan fisik dan tanpa penelitian dokumen sebelum SPPB, jadi barang bisa keluar lebih cepat. Sejak akhir September 2025, Bea Cukai juga menerapkan pemeriksaan fisik acak untuk sebagian barang jalur hijau.\n\nJalur kuning sudah dihapus sejak April 2022 lewat PER-2/BC/2022.\n\nBuat admin trucking, jalur impor ikut menentukan kapan truk jemput dijadwalkan. Hitung harga trip dan surat penawarannya bisa dibantu Ghostrip.\n\nBarang customer kamu paling sering kena jalur apa? Tulis di komentar 👇\n\nSumber: DDTC News (PER-2/BC/2022, Agustus 2024) dan Bisnis.com (pemeriksaan acak jalur hijau, September 2025).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+[
+ {
+  "slot": "feed-logistik",
+  "kind": "feed",
+  "media": "media/2026-11-23/feed-logistik-ed.jpg",
+  "gaya": "editorial",
+  "warna": "teal"
+ },
+ {
+  "slot": "reel-cerita",
+  "kind": "reel",
+  "media": "media/2026-11-23/reel-cerita.mp4",
+  "cover": "media/2026-11-23/reel-cerita-cover.jpg",
+  "dur": 24.87,
+  "engine": "remotion",
+  "bersuara": true
+ }
+]

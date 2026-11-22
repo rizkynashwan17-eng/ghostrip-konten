@@ -1,42 +1,6 @@
 {
- "diperbarui": "2026-11-21T12:27+07:00",
+ "diperbarui": "2026-11-22T12:26+07:00",
  "posts": [
-  {
-   "id": "2026-11-11-1200-feed-manual",
-   "tanggal": "2026-11-11",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [],
-   "manual": true,
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
-  },
-  {
-   "id": "2026-11-11-1930-reel-tips",
-   "tanggal": "2026-11-11",
-   "jam": "19:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Tips sopir: keliling truk lima area sebelum berangkat (depan, kiri, belakang, kanan, kabin)",
-   "media": [
-    "media/2026-11-11/reel-tips.mp4"
-   ],
-   "cover": "media/2026-11-11/reel-tips-cover.jpg",
-   "caption": "Sebelum berangkat, Pak Yanto keliling truk dulu. Kamu juga? 🚛\n\nMenurut trainer Daimler Commercial Vehicles Indonesia, cek truk dibagi lima area: bagian depan, sisi kiri, bagian belakang, sisi kanan, dan kabin. Lampu, rem, ban, tangki, sampai indikator di dasbor tidak boleh terlewat.\n\nUrusan hitung trip dan penawaran, Ghostrip bantu bikin lebih praktis.\n\nSumber: detikOto, 20 Agustus 2024 (Ardi Yanto, Daimler Commercial Vehicles Indonesia).\n\nNama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "Sebelum berangkat, sopir keliling truk dulu. Cek 5 area ini",
-   "catatan": ""
-  },
   {
    "id": "2026-11-12-1200-feed-manual",
    "tanggal": "2026-11-12",
@@ -632,6 +596,60 @@
    "caption": "Customer tanya: \"Pak, harga yang bulan lalu berapa, ya?\" Nggak perlu scroll WhatsApp sampai jempol pegal. 🔎\n\nDi Ghostrip, hitungan, surat penawaran, dan invoice tersimpan di akun:\n1. Buka Riwayat hitung atau Riwayat surat\n2. Ketik nama perusahaan, hasilnya langsung muncul\n3. Atau ketik rute, misalnya Surabaya\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Harga bulan lalu berapa? Ketik nama customer, langsung ketemu",
    "catatan": "Pemeriksa dengar otomatis belum jalan (Gemini timeout/404; ElevenLabs Scribe tidak bisa dijangkau dari server). Cek lain aman. Dengarkan sekilas sebelum posting."
+  },
+  {
+   "id": "2026-11-23-1130-reel-cerita",
+   "tanggal": "2026-11-23",
+   "jam": "11:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Cerita A naskah 18 Nov: file Excel tarif ada 3 versi, customer dapat dua harga; ditutup soft selling tarif per jenis truk diatur sekali di akun perusahaan",
+   "media": [
+    "media/2026-11-23/reel-cerita.mp4"
+   ],
+   "cover": "media/2026-11-23/reel-cerita-cover.jpg",
+   "caption": "tarif_baru.xlsx, tarif_baru_REVISI.xlsx, tarif_FIX_banget.xlsx. Yang mana yang terbaru? 📂\n\nAdmin satu pakai file yang ini, admin dua pakai file yang lain. Hasilnya, customer yang sama dapat dua harga berbeda dari kantor yang sama, lalu bertanya: \"Jadi yang benar yang mana, Pak?\"\n\nJujur, di kantor kamu ada berapa versi file tarif? Komen angkanya 👇\n\nDi Ghostrip, tarif per jenis truk diatur sekali di akun perusahaan, jadi satu tim memakai harga yang sama.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "File tarif ada 3 versi. Customer dapat dua harga dari kantor yang sama.",
+   "catatan": "Pemeriksa dengar Gemini error (503/timeout) → dicek ElevenLabs Scribe: cocok dengan naskah. Cek lain aman."
+  },
+  {
+   "id": "2026-11-23-1200-feed-manual",
+   "tanggal": "2026-11-23",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-23-1700-feed-logistik",
+   "tanggal": "2026-11-23",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Jalur merah atau hijau?\nBeda pemeriksaan.",
+   "media": [
+    "media/2026-11-23/feed-logistik-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Barang impor sudah sandar di pelabuhan, tapi truk belum bisa jemput. Salah satu penyebabnya: jalurnya merah. 🚦\n\nJalur merah: barang diperiksa fisik dan dokumennya diteliti dulu, baru Surat Persetujuan Pengeluaran Barang (SPPB) terbit.\nJalur hijau: tanpa pemeriksaan fisik dan tanpa penelitian dokumen sebelum SPPB, jadi barang bisa keluar lebih cepat. Sejak akhir September 2025, Bea Cukai juga menerapkan pemeriksaan fisik acak untuk sebagian barang jalur hijau.\n\nJalur kuning sudah dihapus sejak April 2022 lewat PER-2/BC/2022.\n\nBuat admin trucking, jalur impor ikut menentukan kapan truk jemput dijadwalkan. Hitung harga trip dan surat penawarannya bisa dibantu Ghostrip.\n\nBarang customer kamu paling sering kena jalur apa? Tulis di komentar 👇\n\nSumber: DDTC News (PER-2/BC/2022, Agustus 2024) dan Bisnis.com (pemeriksaan acak jalur hijau, September 2025).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
+   "catatan": ""
   }
  ]
 }
