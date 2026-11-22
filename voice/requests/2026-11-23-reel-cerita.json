@@ -1,13 +1,13 @@
 {
  "id": "2026-11-23-reel-cerita",
  "mode": "narasi",
- "rev": 2,
+ "rev": 3,
  "jadwal": "2026-11-23T11:30",
  "lines": [
   {
    "who": "NARATOR",
    "tone": "narasi",
-   "text": "Tarif baru, tarif revisi, tarif fix banget. Yang mana yang terbaru?\nAdmin satu pakai file ini, admin dua pakai file lain.\nCustomer yang sama dapat dua harga berbeda.\nCustomer tanya: jadi yang benar yang mana, Pak?\nDi Ghostrip, tarif per jenis truk diatur sekali, jadi satu tim pakai harga yang sama. Di kantor kamu ada berapa versi file tarif? Komen angkanya."
+   "text": "Tarif baru, tarif revisi, tarif fix banget. Mana yang terbaru?\nAdmin satu pakai file ini, admin dua file lain.\nCustomer yang sama dapat dua harga.\nCustomer tanya: yang benar yang mana, Pak?\nDi Ghostrip, tarif per jenis truk diatur sekali untuk satu tim. Kantor kamu punya berapa versi file tarif? Komen angkanya."
   }
  ]
 }
