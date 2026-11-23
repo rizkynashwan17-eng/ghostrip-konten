@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-22T12:26+07:00",
+ "diperbarui": "2026-11-23T12:08+07:00",
  "posts": [
   {
    "id": "2026-11-12-1200-feed-manual",
@@ -650,6 +650,23 @@
    "caption": "Barang impor sudah sandar di pelabuhan, tapi truk belum bisa jemput. Salah satu penyebabnya: jalurnya merah. 🚦\n\nJalur merah: barang diperiksa fisik dan dokumennya diteliti dulu, baru Surat Persetujuan Pengeluaran Barang (SPPB) terbit.\nJalur hijau: tanpa pemeriksaan fisik dan tanpa penelitian dokumen sebelum SPPB, jadi barang bisa keluar lebih cepat. Sejak akhir September 2025, Bea Cukai juga menerapkan pemeriksaan fisik acak untuk sebagian barang jalur hijau.\n\nJalur kuning sudah dihapus sejak April 2022 lewat PER-2/BC/2022.\n\nBuat admin trucking, jalur impor ikut menentukan kapan truk jemput dijadwalkan. Hitung harga trip dan surat penawarannya bisa dibantu Ghostrip.\n\nBarang customer kamu paling sering kena jalur apa? Tulis di komentar 👇\n\nSumber: DDTC News (PER-2/BC/2022, Agustus 2024) dan Bisnis.com (pemeriksaan acak jalur hijau, September 2025).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "",
    "catatan": ""
+  },
+  {
+   "id": "2026-11-24-1200-feed-manual",
+   "tanggal": "2026-11-24",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
   }
  ]
 }

@@ -1,0 +1,125 @@
+{
+ "date": "2026-11-24",
+ "posts": [
+  {
+   "slot": "reel-produk",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "produk",
+   "tema": "fitur",
+   "time": "19:30",
+   "judul": "TARIF SATU TIM",
+   "part": 1,
+   "lokasi": "",
+   "voice_id": "2026-11-18-reel-produk",
+   "topic": "Produk B naskah 18 Nov: tarif per jenis truk diatur sekali di OPS & tarif truk (rasio solar, kecepatan, jam kerja, operasional), tersimpan per akun, seluruh tim pakai angka yang sama; staf tidak bisa ubah tarif",
+   "scenes": [
+    {
+     "key": "hook",
+     "head": "Satu tarif. Dipakai semua orang. *Tanpa versi revisi.*",
+     "headSize": 84,
+     "shot": "iklan3d/p16_tarif.png",
+     "narasi": "Begini caranya supaya semua admin kasih harga yang *sama*."
+    },
+    {
+     "key": "layar",
+     "tag": "OPS & TARIF TRUK",
+     "n": "01",
+     "head": "Tarif di *akun*, bukan di Excel",
+     "shot": "iklan3d/p16_tarif.png",
+     "chips": [
+      {
+       "text": "OPS & tarif truk",
+       "sub": "satu menu",
+       "icon": "◆",
+       "x": 40,
+       "y": 640
+      },
+      {
+       "text": "Tersimpan per akun",
+       "sub": "bukan file terpisah",
+       "icon": "✓",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Buka menu OPS dan tarif truk. Tarifnya tersimpan di akun perusahaan, bukan di file *Excel*."
+    },
+    {
+     "key": "layar",
+     "tag": "PER JENIS TRUK",
+     "n": "02",
+     "head": "Atur per *jenis truk*",
+     "shot": "iklan3d/p16_tarif.png",
+     "chips": [
+      {
+       "text": "Rasio solar & kecepatan",
+       "sub": "per jenis truk",
+       "icon": "◆",
+       "x": 40,
+       "y": 700
+      },
+      {
+       "text": "Jam kerja & operasional",
+       "sub": "per hari",
+       "icon": "↗",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Atur per jenis truk: rasio solar, kecepatan, jam kerja, sampai biaya *operasional*."
+    },
+    {
+     "key": "layar",
+     "tag": "SATU TIM",
+     "n": "03",
+     "head": "Ubah sekali, *satu tim* ikut",
+     "shot": "iklan3d/p20_tim.png",
+     "chips": [
+      {
+       "text": "Pengaturan sama",
+       "sub": "untuk semua anggota",
+       "icon": "✓",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Staf tidak bisa ubah tarif",
+       "sub": "diatur pemilik/admin",
+       "icon": "◆",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Ubah satu angka, seluruh tim langsung pakai angka yang *baru*."
+    },
+    {
+     "key": "layar",
+     "tag": "HARGA SAMA",
+     "n": "04",
+     "head": "Siapa pun hitung, *harganya sama*",
+     "shot": "iklan3d/p16_hasil20.png",
+     "chips": [
+      {
+       "text": "Dari tarif yang sama",
+       "sub": "admin mana pun",
+       "icon": "✓",
+       "x": 40,
+       "y": 660
+      }
+     ],
+     "narasi": "Siapa pun yang menghitung, harganya keluar dari tarif yang *sama*."
+    },
+    {
+     "key": "cta",
+     "narasi": "Coba Ghostrip gratis tujuh hari. Kunjungi *ghostrip.id* atau chat WhatsApp."
+    }
+   ],
+   "caption": "Admin A pakai tarif_baru.xlsx, admin B pakai tarif_FIX_banget.xlsx. Customer yang sama dapat dua harga. 😅\n\nDi Ghostrip, tarif cukup diatur sekali di akun perusahaan:\n1. Buka menu OPS & tarif truk\n2. Atur per jenis truk: rasio solar, kecepatan, jam kerja, operasional\n3. Ubah satu angka, seluruh tim memakai angka yang sama (staf tidak bisa mengubah tarif)\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Tarif di Excel ada 3 versi? Atur sekali, satu tim pakai angka sama"
+  }
+ ]
+}
