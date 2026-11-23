@@ -1,60 +1,6 @@
 {
- "diperbarui": "2026-11-23T12:08+07:00",
+ "diperbarui": "2026-11-23T12:30+07:00",
  "posts": [
-  {
-   "id": "2026-11-12-1200-feed-manual",
-   "tanggal": "2026-11-12",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [],
-   "manual": true,
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
-  },
-  {
-   "id": "2026-11-12-1700-feed-tips",
-   "tanggal": "2026-11-12",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Penawaran\nkontainer? Tulis\n4 biaya ini.",
-   "media": [
-    "media/2026-11-11/feed-tips-ed.jpg"
-   ],
-   "cover": null,
-   "caption": "Kontainer telat dibongkar atau dikembalikan, siapa yang menanggung biayanya? 📦\n\nMenurut DHL, ada tiga biaya yang sering muncul: demurrage (kontainer terlalu lama di terminal pelabuhan), detention (kontainer terlalu lama di luar terminal, misalnya di gudang customer), dan storage (pemakaian ruang simpan). Semuanya dihitung per kontainer per hari setelah masa bebas biaya (free time) habis, dan lamanya free time berbeda-beda.\n\nTipsnya untuk admin: pastikan penawaran mencantumkan free time serta tarif demurrage dan detention per hari per kontainer, supaya customer tahu sejak awal.\n\nAngka di gambar hanya contoh format. Sumber: DHL Global Forwarding, Demurrage, Detention and Storage Charges.\n\nKalau menyiapkan penawaran mulai menyita waktu, Ghostrip bantu bikin quotation lebih rapi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-12-1930-reel-bedah",
-   "tanggal": "2026-11-12",
-   "jam": "19:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Teknikal: kenapa ban truk bisa pecah (kurang angin → lentur → panas, muatan berlebih, tekanan ban ganda, ukur saat dingin)",
-   "media": [
-    "media/2026-11-12/reel-bedah.mp4"
-   ],
-   "cover": "media/2026-11-12/reel-bedah-cover.jpg",
-   "caption": "Truk melaju di tol, lalu ban pecah. Kenapa bisa begitu?\n\nKita bedah: ban yang kurang angin melentur berlebihan dan menghasilkan panas, muatan melebihi batas membuat ban menanggung beban terlalu besar. Cek tekanan angin secara rutin, samakan tekanan pada ban ganda, dan ukur saat ban masih dingin.\n\nSumber: detikOto, 22 September 2024 dan 22 Oktober 2020 (Ahmad Juweni, Hankook Tire Sales Indonesia). Ilustrasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "Kenapa ban truk bisa pecah di tol? Kita bedah",
-   "catatan": ""
-  },
   {
    "id": "2026-11-13-1130-reel-cerita",
    "tanggal": "2026-11-13",
@@ -667,6 +613,43 @@
    "caption": "",
    "tiktok_title": "",
    "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-24-1700-feed-trucking",
+   "tanggal": "2026-11-24",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Truk di lajur kanan?\nCuma untuk menyalip.",
+   "media": [
+    "media/2026-11-24/feed-trucking-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Truk jalan pelan di lajur kanan? Selain bikin antrean panjang, aturannya juga jelas. 🚛\n\nLajur kiri: tempat sepeda motor, kendaraan yang lebih lambat, dan mobil barang (UU 22/2009 Pasal 108 ayat 3).\n\nLajur kanan: hanya untuk kendaraan yang lebih cepat, akan belok kanan, mengubah arah, atau mendahului (Pasal 108 ayat 4). Selesai menyalip, kembali ke kiri.\n\nIngatkan sopir sebelum berangkat, apalagi di tol. Rute dan biaya trip-nya bisa dihitung rapi di Ghostrip, keselamatannya tetap di tangan sopir.\n\nDi jalur yang sering kamu lewati, truk sudah tertib di lajur kiri belum? Tulis di komentar 👇\n\nSumber: UU No. 22 Tahun 2009 Pasal 108; detikOto, 24 Juli 2026.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Truk boleh di lajur kanan? Cuma untuk menyalip, lalu balik kiri.",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-24-1930-reel-produk",
+   "tanggal": "2026-11-24",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Produk B naskah 18 Nov: tarif per jenis truk diatur sekali di OPS & tarif truk (rasio solar, kecepatan, jam kerja, operasional), tersimpan per akun, seluruh tim pakai angka yang sama; staf tidak bisa ubah tarif",
+   "media": [
+    "media/2026-11-24/reel-produk.mp4"
+   ],
+   "cover": "media/2026-11-24/reel-produk-cover.jpg",
+   "caption": "Admin A pakai tarif_baru.xlsx, admin B pakai tarif_FIX_banget.xlsx. Customer yang sama dapat dua harga. 😅\n\nDi Ghostrip, tarif cukup diatur sekali di akun perusahaan:\n1. Buka menu OPS & tarif truk\n2. Atur per jenis truk: rasio solar, kecepatan, jam kerja, operasional\n3. Ubah satu angka, seluruh tim memakai angka yang sama (staf tidak bisa mengubah tarif)\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Tarif di Excel ada 3 versi? Atur sekali, satu tim pakai angka sama",
+   "catatan": "Pemeriksa dengar Gemini error (timeout/404) → dicek ElevenLabs Scribe: cocok dengan naskah. Cek lain aman."
   }
  ]
 }

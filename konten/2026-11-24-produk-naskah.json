@@ -61,8 +61,8 @@
        "y": 700
       },
       {
-       "text": "Jam kerja & operasional",
-       "sub": "per hari",
+       "text": "Jam kerja",
+       "sub": "& operasional per hari",
        "icon": "↗",
        "x": 560,
        "y": 1300,
@@ -86,8 +86,8 @@
        "y": 660
       },
       {
-       "text": "Staf tidak bisa ubah tarif",
-       "sub": "diatur pemilik/admin",
+       "text": "Tarif terkunci",
+       "sub": "staf tidak bisa ubah",
        "icon": "◆",
        "x": 560,
        "y": 1300,

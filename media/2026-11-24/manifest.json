@@ -1,0 +1,18 @@
+[
+ {
+  "slot": "feed-trucking",
+  "kind": "feed",
+  "media": "media/2026-11-24/feed-trucking-ed.jpg",
+  "gaya": "editorial",
+  "warna": "navy"
+ },
+ {
+  "slot": "reel-produk",
+  "kind": "reel",
+  "media": "media/2026-11-24/reel-produk.mp4",
+  "cover": "media/2026-11-24/reel-produk-cover.jpg",
+  "dur": 28.2,
+  "engine": "remotion",
+  "bersuara": true
+ }
+]
