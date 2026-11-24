@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-23T12:30+07:00",
+ "diperbarui": "2026-11-24T12:10+07:00",
  "posts": [
   {
    "id": "2026-11-13-1130-reel-cerita",
@@ -650,6 +650,23 @@
    "caption": "Admin A pakai tarif_baru.xlsx, admin B pakai tarif_FIX_banget.xlsx. Customer yang sama dapat dua harga. 😅\n\nDi Ghostrip, tarif cukup diatur sekali di akun perusahaan:\n1. Buka menu OPS & tarif truk\n2. Atur per jenis truk: rasio solar, kecepatan, jam kerja, operasional\n3. Ubah satu angka, seluruh tim memakai angka yang sama (staf tidak bisa mengubah tarif)\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Tarif di Excel ada 3 versi? Atur sekali, satu tim pakai angka sama",
    "catatan": "Pemeriksa dengar Gemini error (timeout/404) → dicek ElevenLabs Scribe: cocok dengan naskah. Cek lain aman."
+  },
+  {
+   "id": "2026-11-25-1200-feed-manual",
+   "tanggal": "2026-11-25",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
   }
  ]
 }

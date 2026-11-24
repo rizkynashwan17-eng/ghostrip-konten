@@ -1,0 +1,98 @@
+{
+ "date": "2026-11-25",
+ "posts": [
+  {
+   "slot": "reel-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "cerita",
+   "tema": "realita",
+   "time": "11:30",
+   "seri": "CERITA",
+   "judul": "INVOICE RP8.200.000. YANG TERKETIK RP820.000.",
+   "part": 1,
+   "lokasi": "23.00 WIB · KANTOR",
+   "jam": "23:00",
+   "voice_id": "2026-11-25-reel-cerita",
+   "topic": "Cerita A naskah 19 Nov: salah ketik satu nol di invoice, customer transfer sesuai invoice; ditutup soft selling invoice dibuat langsung dari penawaran",
+   "scenes": [
+    {
+     "type": "dokumen",
+     "judulKartu": "INVOICE",
+     "nomor": "No. 118/INV/XI",
+     "baris": [
+      [
+       "Kepada",
+       "PT Makmur Semakmurnya"
+      ],
+      [
+       "Rute",
+       "Surabaya → Jakarta"
+      ],
+      [
+       "Seharusnya",
+       "Rp8.200.000"
+      ],
+      [
+       "Tertulis",
+       "Rp820.000"
+      ]
+     ],
+     "sorot": 3,
+     "cap": "CONTOH SIMULASI",
+     "narasi": "Invoice delapan juta dua ratus ribu. Yang terketik, *delapan ratus dua puluh ribu*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Customer · PT Makmur Semakmurnya",
+     "pesan": [
+      {
+       "teks": "Sudah kami transfer ya, Pak."
+      },
+      {
+       "teks": "Sesuai invoice."
+      }
+     ],
+     "narasi": "Dan customer langsung transfer. *Tepat sesuai invoice*."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Jam sebelas malam, angka dari penawaran *diketik ulang* ke invoice."
+    },
+    {
+     "type": "angka",
+     "label": "KURANG SATU NOL",
+     "dari": 8200000,
+     "ke": 820000,
+     "catatan": "Angka simulasi, bukan tarif sebenarnya.",
+     "narasi": "Kurang *satu nol*. Customer bayar sesuai yang tertulis."
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Mau nagih kekurangannya? *Canggung*, dan kelihatan nggak profesional."
+    },
+    {
+     "type": "cta",
+     "tagline": "Invoice dibuat dari penawaran, angkanya ikut terbawa",
+     "pil": "GHOSTRIP",
+     "ajakan": "Pernah salah ketik? Cerita di komentar",
+     "narasi": "Di *Ghostrip*, invoice dibuat langsung dari penawaran, angkanya ikut terbawa. Pernah salah ketik di invoice? *Ceritain di komentar*, biar yang lain belajar."
+    }
+   ],
+   "caption": "Invoice seharusnya Rp8.200.000. Yang terketik Rp820.000. Dan customer langsung transfer, tepat sesuai invoice. 😶\n\nAngka dari penawaran diketik ulang ke invoice jam 11 malam, mata sudah berat, kurang satu nol. Mau nagih kekurangannya? Canggung, dan bikin kita kelihatan nggak profesional.\n\nPernah salah ketik di invoice? Ceritain di komentar, biar yang lain belajar 👇\n\nDi Ghostrip, invoice bisa dibuat langsung dari surat penawaran, jadi angkanya ikut terbawa tanpa ketik ulang.\n\nCerita fiksi. Nama tokoh rekaan. Angka simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Invoice Rp8,2 juta, yang terketik Rp820 ribu. Customer transfer sesuai invoice."
+  }
+ ]
+}
