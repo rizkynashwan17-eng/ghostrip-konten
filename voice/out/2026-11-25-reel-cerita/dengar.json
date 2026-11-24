@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   33.37
+  ],
+  2
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Invoice delapan koma dua juta. Yang terketik, delapan ratus dua puluh ribu.\nDan customer langsung transfer. Tepat sesuai invoice.\nJam sebelas malam, angka dari penawaran diketik ulang ke invoice.\nKurang satu nol. Customer bayar sesuai yang tertulis.\nNagih kekurangannya? Canggung, kelihatan nggak profesional.\nDi Ghostrip, invoice dibuat langsung dari penawaran, angkanya ikut terbawa. Pernah salah ketik di invoice? Ceritain di komentar.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: gemini-flash-latest: The read operation timed out || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
