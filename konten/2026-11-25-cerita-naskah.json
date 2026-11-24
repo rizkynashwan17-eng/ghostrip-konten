@@ -40,7 +40,7 @@
      ],
      "sorot": 3,
      "cap": "CONTOH SIMULASI",
-     "narasi": "Invoice delapan juta dua ratus ribu. Yang terketik, *delapan ratus dua puluh ribu*."
+     "narasi": "Invoice delapan koma dua juta. Yang terketik, *delapan ratus dua puluh ribu*."
     },
     {
      "type": "chat",
@@ -81,14 +81,14 @@
      "x": 320,
      "y": 860,
      "hadap": 1,
-     "narasi": "Mau nagih kekurangannya? *Canggung*, dan kelihatan nggak profesional."
+     "narasi": "Nagih kekurangannya? *Canggung*, kelihatan nggak profesional."
     },
     {
      "type": "cta",
      "tagline": "Invoice dibuat dari penawaran, angkanya ikut terbawa",
      "pil": "GHOSTRIP",
      "ajakan": "Pernah salah ketik? Cerita di komentar",
-     "narasi": "Di *Ghostrip*, invoice dibuat langsung dari penawaran, angkanya ikut terbawa. Pernah salah ketik di invoice? *Ceritain di komentar*, biar yang lain belajar."
+     "narasi": "Di *Ghostrip*, invoice dibuat langsung dari penawaran, angkanya ikut terbawa. Pernah salah ketik di invoice? *Ceritain di komentar*."
     }
    ],
    "caption": "Invoice seharusnya Rp8.200.000. Yang terketik Rp820.000. Dan customer langsung transfer, tepat sesuai invoice. 😶\n\nAngka dari penawaran diketik ulang ke invoice jam 11 malam, mata sudah berat, kurang satu nol. Mau nagih kekurangannya? Canggung, dan bikin kita kelihatan nggak profesional.\n\nPernah salah ketik di invoice? Ceritain di komentar, biar yang lain belajar 👇\n\nDi Ghostrip, invoice bisa dibuat langsung dari surat penawaran, jadi angkanya ikut terbawa tanpa ketik ulang.\n\nCerita fiksi. Nama tokoh rekaan. Angka simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",

@@ -1,13 +1,13 @@
 {
  "id": "2026-11-25-reel-cerita",
  "mode": "narasi",
- "rev": 1,
+ "rev": 2,
  "jadwal": "2026-11-25T11:30",
  "lines": [
   {
    "who": "NARATOR",
    "tone": "narasi",
-   "text": "Invoice delapan juta dua ratus ribu. Yang terketik, delapan ratus dua puluh ribu.\nDan customer langsung transfer. Tepat sesuai invoice.\nJam sebelas malam, angka dari penawaran diketik ulang ke invoice.\nKurang satu nol. Customer bayar sesuai yang tertulis.\nMau nagih kekurangannya? Canggung, dan kelihatan nggak profesional.\nDi Ghostrip, invoice dibuat langsung dari penawaran, angkanya ikut terbawa. Pernah salah ketik di invoice? Ceritain di komentar, biar yang lain belajar."
+   "text": "Invoice delapan koma dua juta. Yang terketik, delapan ratus dua puluh ribu.\nDan customer langsung transfer. Tepat sesuai invoice.\nJam sebelas malam, angka dari penawaran diketik ulang ke invoice.\nKurang satu nol. Customer bayar sesuai yang tertulis.\nNagih kekurangannya? Canggung, kelihatan nggak profesional.\nDi Ghostrip, invoice dibuat langsung dari penawaran, angkanya ikut terbawa. Pernah salah ketik di invoice? Ceritain di komentar."
   }
  ]
 }
