@@ -1,0 +1,17 @@
+{
+ "sig": [
+  [
+   26.97
+  ],
+  1
+ ],
+ "lolos": false,
+ "belum_dicek": true,
+ "lines": [
+  {
+   "naskah": "Penawaran yang sudah disetujui, langsung jadi invoice.\nBuka surat penawaran yang sudah deal dengan customer.\nBuat invoice langsung dari penawaran itu, lengkap dengan termin dan tanggal jatuh tempo.\nAngkanya diambil langsung dari penawaran. Nggak ada ketik ulang, nggak ada nol yang hilang.\nCatat DP, lihat sisa tagihan, dan pantau mana yang sudah lewat jatuh tempo.\nCoba Ghostrip gratis tujuh hari. Kunjungi ghostrip.id atau chat WhatsApp.",
+   "transkrip": null,
+   "catatan": "tidak bisa didengar: HTTP 503 gemini-flash-latest: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later || HTTP 404 gemini-2.0-flash: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flas || HTTP 404 gemini-2.5-flash-lite: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use mode"
+  }
+ ]
+}
