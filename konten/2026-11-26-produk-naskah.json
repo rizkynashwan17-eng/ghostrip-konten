@@ -1,0 +1,133 @@
+{
+ "date": "2026-11-26",
+ "posts": [
+  {
+   "slot": "reel-produk",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "produk",
+   "tema": "fitur",
+   "time": "19:30",
+   "judul": "PENAWARAN JADI INVOICE",
+   "part": 1,
+   "lokasi": "",
+   "voice_id": "2026-11-19-reel-produk",
+   "topic": "Produk B naskah 19 Nov: invoice dibuat langsung dari surat penawaran yang sudah deal, angka terbawa tanpa ketik ulang; termin/jatuh tempo, DP & sisa tagihan, status invoice",
+   "scenes": [
+    {
+     "key": "hook",
+     "head": "Nggak ketik ulang. *Nggak salah angka.*",
+     "headSize": 84,
+     "shot": "iklan3d/surat.png",
+     "narasi": "Penawaran yang sudah disetujui, langsung jadi *invoice*."
+    },
+    {
+     "key": "layar",
+     "tag": "PENAWARAN DEAL",
+     "n": "01",
+     "head": "Buka penawaran yang *sudah deal*",
+     "shot": "iklan3d/surat.png",
+     "chips": [
+      {
+       "text": "Surat penawaran",
+       "sub": "sudah disetujui",
+       "icon": "✓",
+       "x": 40,
+       "y": 640
+      },
+      {
+       "text": "Angka sudah final",
+       "sub": "dari hasil hitung",
+       "icon": "◆",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Buka surat penawaran yang sudah *deal* dengan customer."
+    },
+    {
+     "key": "layar",
+     "tag": "INVOICE",
+     "n": "02",
+     "head": "Jadikan *invoice*",
+     "shot": "iklan3d/p22_tagihan.png",
+     "chips": [
+      {
+       "text": "Dari surat penawaran",
+       "sub": "tanpa mulai dari nol",
+       "icon": "↗",
+       "x": 40,
+       "y": 700
+      },
+      {
+       "text": "Termin & jatuh tempo",
+       "sub": "ikut diatur",
+       "icon": "◆",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Buat invoice langsung dari penawaran itu, lengkap dengan termin dan tanggal *jatuh tempo*."
+    },
+    {
+     "key": "layar",
+     "tag": "TANPA KETIK ULANG",
+     "n": "03",
+     "head": "Angkanya *ikut terbawa*",
+     "shot": "iklan3d/p20_bayar.png",
+     "chips": [
+      {
+       "text": "Subtotal & total",
+       "sub": "dari penawaran",
+       "icon": "✓",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Terbilang",
+       "sub": "ikut menyesuaikan",
+       "icon": "◆",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Angkanya diambil langsung dari penawaran. Nggak ada ketik ulang, nggak ada *nol yang hilang*."
+    },
+    {
+     "key": "layar",
+     "tag": "SAMPAI LUNAS",
+     "n": "04",
+     "head": "Pantau sampai *lunas*",
+     "shot": "iklan3d/p22_tagihan.png",
+     "chips": [
+      {
+       "text": "DP & sisa tagihan",
+       "sub": "langsung terlihat",
+       "icon": "✓",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Lewat jatuh tempo",
+       "sub": "kelihatan jelas",
+       "icon": "!",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Catat DP, lihat sisa tagihan, dan pantau mana yang sudah lewat *jatuh tempo*."
+    },
+    {
+     "key": "cta",
+     "narasi": "Coba Ghostrip gratis tujuh hari. Kunjungi *ghostrip.id* atau chat WhatsApp."
+    }
+   ],
+   "caption": "Angka dari penawaran diketik ulang ke invoice, lalu kurang satu nol. Customer bayar sesuai yang tertulis. 😶\n\nDi Ghostrip, invoice dibuat langsung dari surat penawaran:\n1. Buka surat penawaran yang sudah deal\n2. Buat invoice dari penawaran itu, atur termin dan jatuh tempo\n3. Angkanya ikut terbawa, tanpa ketik ulang\n4. Catat DP dan pantau sisa tagihan sampai lunas\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Penawaran deal, langsung jadi invoice. Nggak ketik ulang, nggak salah angka"
+  }
+ ]
+}
