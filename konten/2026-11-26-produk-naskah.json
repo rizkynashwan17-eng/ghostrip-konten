@@ -44,7 +44,7 @@
        "warna": "orange"
       }
      ],
-     "narasi": "Buka surat penawaran yang sudah *deal* dengan customer."
+     "narasi": "Buka surat penawaran yang sudah *deal* dengan customer. Semua angkanya sudah final."
     },
     {
      "key": "layar",
@@ -94,7 +94,7 @@
        "warna": "orange"
       }
      ],
-     "narasi": "Angkanya diambil langsung dari penawaran. Nggak ada ketik ulang, nggak ada *nol yang hilang*."
+     "narasi": "Angkanya diambil langsung dari penawaran. Nggak ada ketik ulang, nggak ada *nol yang hilang*. Total dan terbilangnya ikut terisi."
     },
     {
      "key": "layar",
