@@ -1,0 +1,18 @@
+[
+ {
+  "slot": "feed-logistik",
+  "kind": "feed",
+  "media": "media/2026-11-26/feed-logistik-ed.jpg",
+  "gaya": "editorial",
+  "warna": "navy"
+ },
+ {
+  "slot": "reel-produk",
+  "kind": "reel",
+  "media": "media/2026-11-26/reel-produk.mp4",
+  "cover": "media/2026-11-26/reel-produk-cover.jpg",
+  "dur": 26.67,
+  "engine": "remotion",
+  "bersuara": true
+ }
+]

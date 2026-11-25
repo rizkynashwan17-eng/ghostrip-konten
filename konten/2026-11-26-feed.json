@@ -1,0 +1,41 @@
+{
+ "date": "2026-11-26",
+ "posts": [
+  {
+   "slot": "feed-logistik",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "logistik",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "banding",
+    "kicker": "DUNIA LOGISTIK",
+    "pill": "KIRIM KONTAINER",
+    "title": "FCL atau LCL?\nBeda *cara bayar*.",
+    "title_size": 92,
+    "sub": "Sewa satu kontainer penuh, atau berbagi kontainer dengan pengirim lain.",
+    "kiri": {
+     "judul": "FCL",
+     "items": [
+      "Full Container Load",
+      "Satu kontainer untuk satu pengirim",
+      "Bayar per kontainer",
+      "Dimuat & dibongkar di gudang sendiri"
+     ]
+    },
+    "kanan": {
+     "judul": "LCL",
+     "items": [
+      "Less than Container Load",
+      "Berbagi dengan pengirim lain",
+      "Bayar per m³ (CBM) atau berat",
+      "Dikumpulkan dulu di gudang konsolidasi"
+     ]
+    },
+    "note": "LCL biasanya butuh waktu lebih lama\nkarena digabung dan dipisah lagi."
+   },
+   "caption": "Barang customer cuma setengah kontainer. Sewa satu kontainer penuh, atau numpang berbagi? 📦\n\nFCL (Full Container Load): satu kontainer dipakai satu pengirim, dibayar per kontainer. Barang dimuat dan dibongkar di gudang pengirim atau penerima.\nLCL (Less than Container Load): barang berbagi kontainer dengan pengirim lain, dibayar per m³ (CBM) atau berat, mana yang lebih besar. Barang dikumpulkan dulu di gudang konsolidasi, jadi waktunya biasanya lebih lama.\n\nBuat admin trucking, beda FCL dan LCL ikut menentukan truk dan jadwal jemputnya. Hitung harga trip dan surat penawarannya bisa dibantu Ghostrip.\n\nCustomer kamu lebih sering kirim FCL atau LCL? Tulis di komentar 👇\n\nSumber: DHL Global Forwarding (Freight Forwarding Education Center, biaya LCL).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "FCL atau LCL? Beda cara bayar"
+  }
+ ]
+}

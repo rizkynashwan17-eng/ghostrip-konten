@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-24T12:23+07:00",
+ "diperbarui": "2026-11-25T12:10+07:00",
  "posts": [
   {
    "id": "2026-11-14-1200-feed-manual",
@@ -647,6 +647,41 @@
    "cover": null,
    "caption": "Customer minta harga sudah termasuk PPN, yang lain minta PPh dipotong. Hitung manual lagi? 🧾\n\nDi Ghostrip, bagian Pajak di surat penawaran dan invoice tinggal dinyalakan: Include PPN, Include PPh, lalu isi tarifnya sesuai ketentuan yang berlaku untuk usahamu. PPh bisa ditambahkan ke total atau dipotong dari total. Subtotal, pajak, total, dan terbilang di PDF langsung menyesuaikan.\n\nCustomer kamu lebih sering minta harga sebelum atau sesudah pajak? Tulis di komentar 👇\n\nContoh tampilan: data simulasi. Tarif pajak mengikuti ketentuan yang berlaku.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-26-1200-feed-manual",
+   "tanggal": "2026-11-26",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-26-1700-feed-logistik",
+   "tanggal": "2026-11-26",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "FCL atau LCL?\nBeda cara bayar.",
+   "media": [
+    "media/2026-11-26/feed-logistik-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Barang customer cuma setengah kontainer. Sewa satu kontainer penuh, atau numpang berbagi? 📦\n\nFCL (Full Container Load): satu kontainer dipakai satu pengirim, dibayar per kontainer. Barang dimuat dan dibongkar di gudang pengirim atau penerima.\nLCL (Less than Container Load): barang berbagi kontainer dengan pengirim lain, dibayar per m³ (CBM) atau berat, mana yang lebih besar. Barang dikumpulkan dulu di gudang konsolidasi, jadi waktunya biasanya lebih lama.\n\nBuat admin trucking, beda FCL dan LCL ikut menentukan truk dan jadwal jemputnya. Hitung harga trip dan surat penawarannya bisa dibantu Ghostrip.\n\nCustomer kamu lebih sering kirim FCL atau LCL? Tulis di komentar 👇\n\nSumber: DHL Global Forwarding (Freight Forwarding Education Center, biaya LCL).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "FCL atau LCL? Beda cara bayar",
    "catatan": ""
   }
  ]
