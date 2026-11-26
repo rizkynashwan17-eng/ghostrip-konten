@@ -1,60 +1,6 @@
 {
- "diperbarui": "2026-11-26T12:11+07:00",
+ "diperbarui": "2026-11-26T12:22+07:00",
  "posts": [
-  {
-   "id": "2026-11-15-1130-reel-cerita",
-   "tanggal": "2026-11-15",
-   "jam": "11:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Cerita A naskah 14 Nov: kasih harga terlalu murah, ternyata rugi di tol; ditutup soft selling",
-   "media": [
-    "media/2026-11-15/reel-cerita.mp4"
-   ],
-   "cover": "media/2026-11-15/reel-cerita-cover.jpg",
-   "caption": "Dapat order, senang. Pulang-pulang, ternyata rugi. 🚛\n\nHarga dikasih cepat biar order nggak lepas, hitungnya cuma solar dan uang jalan. Pas truk pulang, struk tol, parkir, dan biaya tak terduga lain baru kelihatan. Capek kerja seminggu, hasilnya cuma balik modal.\n\nBiaya apa yang paling sering kamu lupa hitung? Tulis di komentar 👇\n\nDi Ghostrip, solar, tol, dan markup masuk hitungan sejak awal, jadi harga yang dikirim sudah lebih lengkap.\n\nCerita fiksi. Nama tokoh rekaan. Angka dan data: simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "Dapat order, senang. Pulang-pulang ternyata rugi di tol.",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-15-1200-feed-manual",
-   "tanggal": "2026-11-15",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [],
-   "manual": true,
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
-  },
-  {
-   "id": "2026-11-15-1700-feed-trucking",
-   "tanggal": "2026-11-15",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Nyetir 4 jam?\nWajib istirahat.",
-   "media": [
-    "media/2026-11-15/feed-trucking-ed.jpg"
-   ],
-   "cover": null,
-   "caption": "Sudah nyetir 4 jam berturut-turut? Menurut aturan, sopir wajib istirahat. 🚛\n\nUU 22/2009 tentang Lalu Lintas dan Angkutan Jalan Pasal 90 mengatur waktu kerja pengemudi kendaraan bermotor umum: paling lama 8 jam sehari, dan setelah mengemudi 4 jam berturut-turut wajib istirahat paling singkat setengah jam. Dalam hal tertentu, pengemudi dapat dipekerjakan paling lama 12 jam sehari termasuk waktu istirahat 1 jam.\n\nArtinya, jadwal trip jarak jauh perlu memberi ruang untuk istirahat sopir, bukan cuma waktu di jalan. Biaya tripnya pun perlu dihitung rapi sebelum harga dikirim, dan Ghostrip bantu hitung harga trip sampai jadi surat penawaran.\n\nDi armadamu, trip jarak jauh biasanya pakai sopir cadangan atau tidak? Tulis di komentar 👇\n\nSumber: UU No. 22 Tahun 2009 Pasal 90; Hukumonline (Waktu Istirahat Pengemudi Kendaraan Bermotor Umum).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
   {
    "id": "2026-11-16-1200-feed-manual",
    "tanggal": "2026-11-16",
@@ -648,6 +594,25 @@
    "caption": "Angka dari penawaran diketik ulang ke invoice, lalu kurang satu nol. Customer bayar sesuai yang tertulis. 😶\n\nDi Ghostrip, invoice dibuat langsung dari surat penawaran:\n1. Buka surat penawaran yang sudah deal\n2. Buat invoice dari penawaran itu, atur termin dan jatuh tempo\n3. Angkanya ikut terbawa, tanpa ketik ulang\n4. Catat DP dan pantau sisa tagihan sampai lunas\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Penawaran deal, langsung jadi invoice. Nggak ketik ulang, nggak salah angka",
    "catatan": "Pemeriksa dengar Gemini 503/404 → dicek ElevenLabs Scribe: cocok dengan naskah. Cek lain aman."
+  },
+  {
+   "id": "2026-11-27-1130-reel-cerita",
+   "tanggal": "2026-11-27",
+   "jam": "11:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Cerita A naskah 20 Nov: HP rusak, catatan tarif/foto nota/penawaran ikut hilang, tanya harga ke customer; ditutup soft selling data tersimpan di akun, ganti HP tinggal login",
+   "media": [
+    "media/2026-11-27/reel-cerita.mp4"
+   ],
+   "cover": "media/2026-11-27/reel-cerita-cover.jpg",
+   "caption": "HP jatuh. Layar mati. Dan semua catatan harga ada di situ. 📵\n\nCatatan tarif di notes, foto nota di galeri, penawaran di WhatsApp. Begitu HP rusak, semuanya ikut hilang, lalu terpaksa tanya ke customer: \"Kemarin harga kita berapa ya, Pak?\"\n\nSimpan video ini sebagai pengingat untuk backup data usaha kamu. Pernah kehilangan data gara-gara HP rusak? Cerita di komentar 👇\n\nDi Ghostrip, pengaturan tarif, penawaran, dan riwayat hitungan tersimpan di akun, bukan di satu HP. Ganti HP, tinggal login.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "HP rusak, semua catatan harga ikut hilang. Data usahamu disimpan di mana?",
+   "catatan": "Pemeriksa dengar Gemini lolos (kemiripan 1,0). cek_konten & scan AMAN."
   },
   {
    "id": "2026-11-27-1200-feed-manual",
