@@ -1,13 +1,13 @@
 {
  "id": "2026-11-27-reel-cerita",
  "mode": "narasi",
- "rev": 1,
+ "rev": 2,
  "jadwal": "2026-11-27T11:30",
  "lines": [
   {
    "who": "NARATOR",
    "tone": "narasi",
-   "text": "Ini mimpi buruk pengusaha yang kerja dari HP.\nCatatan tarif di notes, foto nota di galeri, penawaran di WhatsApp.\nHP rusak, semua ikut hilang.\nMulai dari nol lagi. Tanya ke customer, kemarin harga kita berapa ya, Pak?\nYang rusak cuma HP. Tapi yang hilang, catatan usaha bertahun-tahun.\nDi Ghostrip, pengaturan tarif, penawaran, dan riwayat tersimpan di akun. Ganti HP, tinggal login. Simpan video ini sebagai pengingat untuk backup data usaha Anda."
+   "text": "Mimpi buruk pengusaha yang kerja dari HP.\nTarif di notes, nota di galeri, penawaran di WhatsApp.\nHP rusak, semua hilang.\nTerpaksa tanya customer, kemarin harga kita berapa, Pak?\nDi Ghostrip, data usaha tersimpan di akun. Ganti HP, tinggal login. Simpan video ini sebagai pengingat backup data."
   }
  ]
 }

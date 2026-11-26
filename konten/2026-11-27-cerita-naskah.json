@@ -24,7 +24,7 @@
      "x": 320,
      "y": 860,
      "hadap": 1,
-     "narasi": "Ini *mimpi buruk* pengusaha yang kerja dari HP."
+     "narasi": "*Mimpi buruk* pengusaha yang kerja dari HP."
     },
     {
      "type": "daftar",
@@ -44,7 +44,7 @@
       ]
      ],
      "tanda": "cek",
-     "narasi": "Catatan tarif di notes, foto nota di galeri, penawaran di *WhatsApp*."
+     "narasi": "Tarif di notes, nota di galeri, penawaran di *WhatsApp*."
     },
     {
      "type": "daftar",
@@ -64,7 +64,7 @@
       ]
      ],
      "tanda": "x",
-     "narasi": "HP rusak, *semua ikut hilang*."
+     "narasi": "HP rusak, *semua hilang*."
     },
     {
      "type": "chat",
@@ -78,24 +78,14 @@
        "teks": "Lho, saya kira Bapak yang catat."
       }
      ],
-     "narasi": "Mulai dari nol lagi. Tanya ke customer, *kemarin harga kita berapa ya, Pak?*"
-    },
-    {
-     "type": "karakter",
-     "siapa": "bos",
-     "pose": "pikir",
-     "set": "kantor",
-     "x": 320,
-     "y": 860,
-     "hadap": 1,
-     "narasi": "Yang rusak cuma HP. Tapi yang hilang, *catatan usaha bertahun-tahun*."
+     "narasi": "Terpaksa tanya customer, *kemarin harga kita berapa, Pak?*"
     },
     {
      "type": "cta",
      "tagline": "Data tersimpan di akun, bukan di satu HP",
      "pil": "GHOSTRIP",
      "ajakan": "Simpan video ini sebagai pengingat",
-     "narasi": "Di *Ghostrip*, pengaturan tarif, penawaran, dan riwayat tersimpan di akun. Ganti HP, tinggal login. *Simpan video ini* sebagai pengingat untuk backup data usaha Anda."
+     "narasi": "Di *Ghostrip*, data usaha tersimpan di akun. Ganti HP, tinggal login. *Simpan video ini* sebagai pengingat backup data."
     }
    ],
    "caption": "HP jatuh. Layar mati. Dan semua catatan harga ada di situ. 📵\n\nCatatan tarif di notes, foto nota di galeri, penawaran di WhatsApp. Begitu HP rusak, semuanya ikut hilang, lalu terpaksa tanya ke customer: \"Kemarin harga kita berapa ya, Pak?\"\n\nSimpan video ini sebagai pengingat untuk backup data usaha kamu. Pernah kehilangan data gara-gara HP rusak? Cerita di komentar 👇\n\nDi Ghostrip, pengaturan tarif, penawaran, dan riwayat hitungan tersimpan di akun, bukan di satu HP. Ganti HP, tinggal login.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
