@@ -1,0 +1,21 @@
+{
+ "sig": [
+  [
+   33.77
+  ],
+  2
+ ],
+ "lolos": true,
+ "belum_dicek": false,
+ "lines": [
+  {
+   "naskah": "Mimpi buruk pengusaha yang kerja dari HP.\nTarif di notes, nota di galeri, penawaran di WhatsApp.\nHP rusak, semua hilang.\nTerpaksa tanya customer, kemarin harga kita berapa, Pak?\nDi Ghostrip, data usaha tersimpan di akun. Ganti HP, tinggal login. Simpan video ini sebagai pengingat backup data.",
+   "transkrip": "Mimpi buruk pengusaha yang kerja dari HP. Tarif di notes, nota di galeri, penawaran di WhatsApp. HP rusak, semua hilang. Terpaksa tanya customer, kemarin harga kita berapa, Pak? Di Ghostrip, data usaha tersimpan di akun. Ganti HP, tinggal login. Simpan video ini sebagai pengingat backup data.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  }
+ ]
+}
