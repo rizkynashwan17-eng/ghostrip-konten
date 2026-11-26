@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-25T12:34+07:00",
+ "diperbarui": "2026-11-26T12:11+07:00",
  "posts": [
   {
    "id": "2026-11-15-1130-reel-cerita",
@@ -648,6 +648,41 @@
    "caption": "Angka dari penawaran diketik ulang ke invoice, lalu kurang satu nol. Customer bayar sesuai yang tertulis. 😶\n\nDi Ghostrip, invoice dibuat langsung dari surat penawaran:\n1. Buka surat penawaran yang sudah deal\n2. Buat invoice dari penawaran itu, atur termin dan jatuh tempo\n3. Angkanya ikut terbawa, tanpa ketik ulang\n4. Catat DP dan pantau sisa tagihan sampai lunas\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Penawaran deal, langsung jadi invoice. Nggak ketik ulang, nggak salah angka",
    "catatan": "Pemeriksa dengar Gemini 503/404 → dicek ElevenLabs Scribe: cocok dengan naskah. Cek lain aman."
+  },
+  {
+   "id": "2026-11-27-1200-feed-manual",
+   "tanggal": "2026-11-27",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-27-1700-feed-trucking",
+   "tanggal": "2026-11-27",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Nataru 2026/27:\nTruk sumbu 3 dibatasi.",
+   "media": [
+    "media/2026-11-27/feed-trucking-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Libur Nataru tinggal hitungan minggu. Order akhir tahun sudah dijadwalkan? 🚛\n\nMenhub menyampaikan truk sumbu tiga akan dibatasi beroperasi mulai 18 Desember 2026 sampai 5 Januari 2027. Tahun ini tanpa window time, jadi tidak ada jam khusus untuk tetap jalan.\n\nPengecualian untuk angkutan kebutuhan penting (sembako, BBM, ternak, pakan ternak, pupuk) juga disinggung, tapi rincian ruas jalan dan aturan pengecualiannya menunggu SKB resmi. Cek lagi sebelum menjadwalkan armada.\n\nYang bisa disiapkan dari sekarang: majukan kiriman sebelum 18 Desember, cek apakah muatan bisa pakai truk sumbu 2, dan kabari customer lebih awal. Penawaran untuk order akhir tahun bisa langsung dihitung dan dikirim dari Ghostrip.\n\nOrder kamu di akhir Desember aman, atau harus digeser? Tulis di komentar 👇\n\nSumber: CNN Indonesia, 24 November 2026; Suara.com, 25 November 2026.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Truk sumbu 3 dibatasi 18 Des 2026–5 Jan 2027, tanpa window time.",
+   "catatan": ""
   }
  ]
 }
