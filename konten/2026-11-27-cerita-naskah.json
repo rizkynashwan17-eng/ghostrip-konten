@@ -1,0 +1,105 @@
+{
+ "date": "2026-11-27",
+ "posts": [
+  {
+   "slot": "reel-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "cerita",
+   "tema": "realita",
+   "time": "11:30",
+   "seri": "CERITA",
+   "judul": "HP JATUH. LAYAR MATI. SEMUA CATATAN HARGA ADA DI SITU.",
+   "part": 1,
+   "lokasi": "08.00 WIB · KANTOR",
+   "jam": "08:00",
+   "voice_id": "2026-11-27-reel-cerita",
+   "topic": "Cerita A naskah 20 Nov: HP rusak, catatan tarif/foto nota/penawaran ikut hilang, tanya harga ke customer; ditutup soft selling data tersimpan di akun, ganti HP tinggal login",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Ini *mimpi buruk* pengusaha yang kerja dari HP."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "ISI HP SAYA",
+     "item": [
+      [
+       "Catatan tarif",
+       "Notes"
+      ],
+      [
+       "Foto nota",
+       "Galeri"
+      ],
+      [
+       "Penawaran",
+       "WhatsApp"
+      ]
+     ],
+     "tanda": "cek",
+     "narasi": "Catatan tarif di notes, foto nota di galeri, penawaran di *WhatsApp*."
+    },
+    {
+     "type": "daftar",
+     "judulKartu": "HP RUSAK",
+     "item": [
+      [
+       "Catatan tarif",
+       "Hilang"
+      ],
+      [
+       "Foto nota",
+       "Hilang"
+      ],
+      [
+       "Penawaran",
+       "Hilang"
+      ]
+     ],
+     "tanda": "x",
+     "narasi": "HP rusak, *semua ikut hilang*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Customer · PT Maju Jaya Logistik",
+     "pesan": [
+      {
+       "teks": "Pak, kemarin harga kita berapa ya?",
+       "aku": true
+      },
+      {
+       "teks": "Lho, saya kira Bapak yang catat."
+      }
+     ],
+     "narasi": "Mulai dari nol lagi. Tanya ke customer, *kemarin harga kita berapa ya, Pak?*"
+    },
+    {
+     "type": "karakter",
+     "siapa": "bos",
+     "pose": "pikir",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Yang rusak cuma HP. Tapi yang hilang, *catatan usaha bertahun-tahun*."
+    },
+    {
+     "type": "cta",
+     "tagline": "Data tersimpan di akun, bukan di satu HP",
+     "pil": "GHOSTRIP",
+     "ajakan": "Simpan video ini sebagai pengingat",
+     "narasi": "Di *Ghostrip*, pengaturan tarif, penawaran, dan riwayat tersimpan di akun. Ganti HP, tinggal login. *Simpan video ini* sebagai pengingat untuk backup data usaha Anda."
+    }
+   ],
+   "caption": "HP jatuh. Layar mati. Dan semua catatan harga ada di situ. 📵\n\nCatatan tarif di notes, foto nota di galeri, penawaran di WhatsApp. Begitu HP rusak, semuanya ikut hilang, lalu terpaksa tanya ke customer: \"Kemarin harga kita berapa ya, Pak?\"\n\nSimpan video ini sebagai pengingat untuk backup data usaha kamu. Pernah kehilangan data gara-gara HP rusak? Cerita di komentar 👇\n\nDi Ghostrip, pengaturan tarif, penawaran, dan riwayat hitungan tersimpan di akun, bukan di satu HP. Ganti HP, tinggal login.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "HP rusak, semua catatan harga ikut hilang. Data usahamu disimpan di mana?"
+  }
+ ]
+}
