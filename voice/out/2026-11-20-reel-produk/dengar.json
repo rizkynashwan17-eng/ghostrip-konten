@@ -1,0 +1,21 @@
+{
+ "sig": [
+  [
+   31.61
+  ],
+  1
+ ],
+ "lolos": true,
+ "belum_dicek": false,
+ "lines": [
+  {
+   "naskah": "Data usaha Anda nggak boleh tergantung sama satu HP.\nGanti HP? Buka Ghostrip, lalu login dengan akun yang sama. Bisa di Android, iPhone lewat browser, atau laptop.\nKop surat, tanda tangan, dan cap sudah terpasang. Semuanya tersimpan di akun, bukan di HP.\nData truk, lengkap dengan masa berlaku STNK dan KIR, masih ada semua.\nHitungan lama tinggal dicari di riwayat. Nggak perlu lagi tanya customer, harga kemarin berapa.\nCoba Ghostrip gratis tujuh hari. Kunjungi ghostrip.id atau chat WhatsApp.",
+   "transkrip": "Data usaha Anda nggak boleh tergantung sama satu HP. Ganti HP, buka Ghostrip, lalu login dengan akun yang sama. Bisa di Android, iPhone lewat browser, atau laptop. Kop surat, tanda tangan, dan cap sudah terpasang. Semuanya tersimpan di akun, bukan di HP. Data truk, lengkap dengan masa berlaku STNK dan KIR, masih ada semua. Hitungan lama tinggal dicari di riwayat, nggak perlu lagi tanya customer, harga kemarin berapa. Coba Ghostrip gratis tujuh hari, kunjungi ghostrip.id atau chat WhatsApp.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  }
+ ]
+}
