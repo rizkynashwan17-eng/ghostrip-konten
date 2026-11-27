@@ -1,60 +1,6 @@
 {
- "diperbarui": "2026-11-26T12:22+07:00",
+ "diperbarui": "2026-11-27T12:20+07:00",
  "posts": [
-  {
-   "id": "2026-11-16-1200-feed-manual",
-   "tanggal": "2026-11-16",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [],
-   "manual": true,
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
-  },
-  {
-   "id": "2026-11-16-1700-feed-fitur",
-   "tanggal": "2026-11-16",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Invoice terkirim.\nSudah dibayar?",
-   "media": [
-    "media/2026-11-16/feed-fitur-ed.jpg"
-   ],
-   "cover": null,
-   "caption": "Invoice sudah dikirim, tapi sudah dibayar atau belum? Jangan sampai cuma diingat-ingat. 🧾\n\nDi menu Invoice Ghostrip, invoice bisa dibuat langsung dari surat penawaran, lengkap dengan termin dan tanggal jatuh tempo. Pembayaran yang masuk, misalnya DP, tinggal dicatat dan sisa tagihannya langsung terlihat. Statusnya jelas: belum lunas, sebagian, lunas, atau lewat jatuh tempo.\n\nDi kantormu, tagihan yang telat biasanya dicatat di mana? Tulis di komentar 👇\n\nContoh tampilan: data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-16-1930-reel-produk",
-   "tanggal": "2026-11-16",
-   "jam": "19:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Produk B naskah 14 Nov: solar, operasional, tol & markup masuk ke harga (atur tarif sekali, rincian biaya, ubah markup 20%→30%)",
-   "media": [
-    "media/2026-11-16/reel-produk.mp4"
-   ],
-   "cover": "media/2026-11-16/reel-produk-cover.jpg",
-   "caption": "Trip sudah jalan, ternyata rugi karena ada biaya yang lupa dihitung? 🚛\n\nDi Ghostrip, harga solar, rasio solar, biaya operasional, dan markup diatur sekali di menu OPS & tarif truk. Hitung satu rute, rinciannya langsung keluar: solar, operasional, tarif truk, sampai tol. Ubah markup dari 20% ke 30%, harga jual langsung ikut berubah.\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "Solar, tol, dan markup masuk otomatis ke harga trip",
-   "catatan": ""
-  },
   {
    "id": "2026-11-17-1130-reel-cerita",
    "tanggal": "2026-11-17",
@@ -648,6 +594,60 @@
    "caption": "Libur Nataru tinggal hitungan minggu. Order akhir tahun sudah dijadwalkan? 🚛\n\nMenhub menyampaikan truk sumbu tiga akan dibatasi beroperasi mulai 18 Desember 2026 sampai 5 Januari 2027. Tahun ini tanpa window time, jadi tidak ada jam khusus untuk tetap jalan.\n\nPengecualian untuk angkutan kebutuhan penting (sembako, BBM, ternak, pakan ternak, pupuk) juga disinggung, tapi rincian ruas jalan dan aturan pengecualiannya menunggu SKB resmi. Cek lagi sebelum menjadwalkan armada.\n\nYang bisa disiapkan dari sekarang: majukan kiriman sebelum 18 Desember, cek apakah muatan bisa pakai truk sumbu 2, dan kabari customer lebih awal. Penawaran untuk order akhir tahun bisa langsung dihitung dan dikirim dari Ghostrip.\n\nOrder kamu di akhir Desember aman, atau harus digeser? Tulis di komentar 👇\n\nSumber: CNN Indonesia, 24 November 2026; Suara.com, 25 November 2026.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Truk sumbu 3 dibatasi 18 Des 2026–5 Jan 2027, tanpa window time.",
    "catatan": ""
+  },
+  {
+   "id": "2026-11-28-1200-feed-manual",
+   "tanggal": "2026-11-28",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-28-1700-feed-fitur",
+   "tanggal": "2026-11-28",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "KIR mati kapan?\nKelihatan duluan.",
+   "media": [
+    "media/2026-11-28/feed-fitur-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Truk sudah siap jalan, ternyata KIR-nya mati minggu lalu. 😬\n\nDi Ghostrip, menu Data truk menampilkan masa berlaku STNK, KIR kepala, dan KIR buntut tiap truk, lengkap dengan sisa harinya. Truk yang perlu diperpanjang muncul paling atas, dan notifikasi muncul saat masa berlaku tinggal 1 bulan, tinggal 7 hari, atau sudah lewat.\n\nBiasanya kamu catat jadwal KIR armada di mana? Tulis di komentar 👇\n\nContoh tampilan: data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "",
+   "catatan": ""
+  },
+  {
+   "id": "2026-11-28-1930-reel-produk",
+   "tanggal": "2026-11-28",
+   "jam": "19:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Produk B naskah 20 Nov: data usaha tersimpan di akun; ganti HP tinggal login, kop surat/TTD & cap, data truk (STNK/KIR), riwayat hitungan tetap ada; bisa dibuka lewat browser di Android, iPhone, laptop",
+   "media": [
+    "media/2026-11-28/reel-produk.mp4"
+   ],
+   "cover": "media/2026-11-28/reel-produk-cover.jpg",
+   "caption": "HP rusak, ganti HP baru. Data usaha kamu ikut pindah, atau mulai dari nol lagi? 📱\n\nDi Ghostrip, data tersimpan di akun:\n1. Login di HP baru dengan akun yang sama (Android, iPhone lewat browser, atau laptop)\n2. Kop surat, tanda tangan, dan cap sudah terpasang\n3. Data truk lengkap dengan masa berlaku STNK dan KIR\n4. Riwayat hitungan lama tinggal dicari\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Ganti HP, tinggal login. Kop, TTD, data truk, riwayat: semua kembali",
+   "catatan": "Pemeriksa dengar Gemini lolos (kemiripan 1,0). Audio dibersihkan adeclick (4 klik → 0). cek_konten & scan AMAN."
   }
  ]
 }
