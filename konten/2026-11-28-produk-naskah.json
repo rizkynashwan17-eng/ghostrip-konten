@@ -1,0 +1,133 @@
+{
+ "date": "2026-11-28",
+ "posts": [
+  {
+   "slot": "reel-produk",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "produk",
+   "tema": "fitur",
+   "time": "19:30",
+   "judul": "GANTI HP, TINGGAL LOGIN",
+   "part": 1,
+   "lokasi": "",
+   "voice_id": "2026-11-20-reel-produk",
+   "topic": "Produk B naskah 20 Nov: data usaha tersimpan di akun; ganti HP tinggal login, kop surat/TTD & cap, data truk (STNK/KIR), riwayat hitungan tetap ada; bisa dibuka lewat browser di Android, iPhone, laptop",
+   "scenes": [
+    {
+     "key": "hook",
+     "head": "HP baru. Login.\n*Semua data kembali.*",
+     "headSize": 80,
+     "shot": "iklan3d/home.png",
+     "narasi": "Data usaha Anda nggak boleh tergantung sama *satu HP*."
+    },
+    {
+     "key": "layar",
+     "tag": "LOGIN",
+     "n": "01",
+     "head": "HP baru? *Tinggal login*",
+     "shot": "iklan3d/home.png",
+     "chips": [
+      {
+       "text": "Akun yang sama",
+       "sub": "di perangkat baru",
+       "icon": "✓",
+       "x": 40,
+       "y": 640
+      },
+      {
+       "text": "Lewat browser",
+       "sub": "Android, iPhone, laptop",
+       "icon": "◆",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Ganti HP? Buka Ghostrip, lalu login dengan akun yang sama. Bisa di Android, iPhone lewat browser, atau *laptop*."
+    },
+    {
+     "key": "layar",
+     "tag": "KOP & TTD",
+     "n": "02",
+     "head": "Kop surat & TTD *sudah terpasang*",
+     "shot": "iklan3d/warna.png",
+     "chips": [
+      {
+       "text": "Tersimpan per akun",
+       "sub": "bukan di HP",
+       "icon": "✓",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "TTD & cap",
+       "sub": "siap di surat",
+       "icon": "◆",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Kop surat, tanda tangan, dan cap sudah terpasang. Semuanya tersimpan di *akun*, bukan di HP."
+    },
+    {
+     "key": "layar",
+     "tag": "DATA TRUK",
+     "n": "03",
+     "head": "Data truk *masih lengkap*",
+     "shot": "iklan3d/armada.png",
+     "chips": [
+      {
+       "text": "STNK & KIR",
+       "sub": "masa berlaku",
+       "icon": "✓",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Perlu diperpanjang",
+       "sub": "langsung kelihatan",
+       "icon": "!",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Data truk, lengkap dengan masa berlaku *STNK* dan *KIR*, masih ada semua."
+    },
+    {
+     "key": "layar",
+     "tag": "RIWAYAT",
+     "n": "04",
+     "head": "Harga lama? *Cari di riwayat*",
+     "shot": "iklan3d/p22_cari.png",
+     "chips": [
+      {
+       "text": "Riwayat hitung",
+       "sub": "tinggal dicari",
+       "icon": "✓",
+       "x": 40,
+       "y": 660
+      },
+      {
+       "text": "Nggak perlu tanya",
+       "sub": "ke customer",
+       "icon": "◆",
+       "x": 560,
+       "y": 1300,
+       "warna": "orange"
+      }
+     ],
+     "narasi": "Hitungan lama tinggal dicari di riwayat. Nggak perlu lagi tanya customer, *harga kemarin berapa*."
+    },
+    {
+     "key": "cta",
+     "narasi": "Coba Ghostrip gratis tujuh hari. Kunjungi *ghostrip.id* atau chat WhatsApp."
+    }
+   ],
+   "caption": "HP rusak, ganti HP baru. Data usaha kamu ikut pindah, atau mulai dari nol lagi? 📱\n\nDi Ghostrip, data tersimpan di akun:\n1. Login di HP baru dengan akun yang sama (Android, iPhone lewat browser, atau laptop)\n2. Kop surat, tanda tangan, dan cap sudah terpasang\n3. Data truk lengkap dengan masa berlaku STNK dan KIR\n4. Riwayat hitungan lama tinggal dicari\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Ganti HP, tinggal login. Kop, TTD, data truk, riwayat: semua kembali"
+  }
+ ]
+}

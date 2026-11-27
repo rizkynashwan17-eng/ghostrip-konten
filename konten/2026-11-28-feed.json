@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-28",
+ "posts": [
+  {
+   "slot": "feed-fitur",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "fitur",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "alur",
+    "kicker": "FITUR GHOSTRIP",
+    "pill": "DATA TRUK",
+    "title": "KIR mati kapan?\n*Kelihatan* duluan.",
+    "title_size": 100,
+    "sub": "Masa berlaku STNK dan KIR tiap truk terpantau di menu Data truk.",
+    "kartu": "PANTAU DOKUMEN",
+    "items": [
+     "Isi plat, jenis truk, STNK & KIR",
+     "Lihat sisa hari tiap dokumen",
+     "Filter STNK, KIR kepala, KIR buntut",
+     "Notifikasi 1 bulan & 7 hari sebelumnya"
+    ],
+    "doc": {
+     "judul": "DATA TRUK",
+     "sub": "Contoh simulasi",
+     "rows": [
+      "Plat & jenis truk",
+      "Masa berlaku STNK",
+      "KIR kepala & buntut"
+     ],
+     "tanpa_total": true
+    },
+    "note": "Yang perlu diperpanjang\nmuncul paling atas."
+   },
+   "caption": "Truk sudah siap jalan, ternyata KIR-nya mati minggu lalu. 😬\n\nDi Ghostrip, menu Data truk menampilkan masa berlaku STNK, KIR kepala, dan KIR buntut tiap truk, lengkap dengan sisa harinya. Truk yang perlu diperpanjang muncul paling atas, dan notifikasi muncul saat masa berlaku tinggal 1 bulan, tinggal 7 hari, atau sudah lewat.\n\nBiasanya kamu catat jadwal KIR armada di mana? Tulis di komentar 👇\n\nContoh tampilan: data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik"
+  }
+ ]
+}
