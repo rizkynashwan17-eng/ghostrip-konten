@@ -1,60 +1,6 @@
 {
- "diperbarui": "2026-11-28T12:10+07:00",
+ "diperbarui": "2026-11-28T12:16+07:00",
  "posts": [
-  {
-   "id": "2026-11-17-1130-reel-cerita",
-   "tanggal": "2026-11-17",
-   "jam": "11:30",
-   "jenis": "reel",
-   "platform": [
-    "ig",
-    "tiktok",
-    "fb"
-   ],
-   "judul": "Cerita A naskah 15 Nov: kalah order karena penawaran cuma diketik di chat; ditutup soft selling surat penawaran PDF",
-   "media": [
-    "media/2026-11-17/reel-cerita.mp4"
-   ],
-   "cover": "media/2026-11-17/reel-cerita-cover.jpg",
-   "caption": "Harga saya lebih murah. Tapi yang dipilih ekspedisi lain. 🚛\n\nHarga cuma dikirim lewat chat, sementara ekspedisi lain kirim surat penawaran resmi lengkap kop, nomor surat, dan cap. Bagian pembelian butuh dokumen untuk diajukan ke atasan, jadi yang rapi yang dipilih.\n\nSetuju nggak, penampilan penawaran itu ngaruh? Komen di bawah 👇\n\nDi Ghostrip, hasil hitungan harga bisa langsung dibuat jadi surat penawaran PDF dengan kop, tanda tangan, dan cap.\n\nCerita fiksi. Nama tokoh rekaan. Angka dan data: simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "Harga lebih murah, tapi kalah order. Ternyata bukan soal harga.",
-   "catatan": ""
-  },
-  {
-   "id": "2026-11-17-1200-feed-manual",
-   "tanggal": "2026-11-17",
-   "jam": "12:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "Feed manual (buatan Rizky)",
-   "media": [],
-   "manual": true,
-   "cover": null,
-   "caption": "",
-   "tiktok_title": "",
-   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
-  },
-  {
-   "id": "2026-11-17-1700-feed-logistik",
-   "tanggal": "2026-11-17",
-   "jam": "17:00",
-   "jenis": "feed",
-   "platform": [
-    "ig",
-    "fb"
-   ],
-   "judul": "FOB atau CIF?\nBeda tanggungan.",
-   "media": [
-    "media/2026-11-17/feed-logistik-ed.jpg"
-   ],
-   "cover": null,
-   "caption": "FOB dan CIF sering muncul di dokumen ekspor-impor. Bedanya ada di siapa yang menanggung biaya. 🚢\n\nFOB (Free On Board): penjual mengurus barang sampai dimuat ke kapal di pelabuhan muat. Ongkos kapal dan asuransi selanjutnya urusan pembeli.\n\nCIF (Cost, Insurance and Freight): penjual membayar ongkos kapal sampai pelabuhan tujuan dan wajib membeli asuransi minimum. Yang sering terlewat: risiko barang tetap pindah ke pembeli saat barang sudah di atas kapal di pelabuhan muat, sama seperti FOB. Keduanya khusus untuk angkutan laut.\n\nBuat pemilik armada dan admin, istilah ini membantu memastikan siapa yang membayar trucking ke pelabuhan. Hitung harga trip dan surat penawarannya bisa dibantu Ghostrip.\n\nDi kantormu, order ekspor lebih sering FOB atau CIF? Tulis di komentar 👇\n\nSumber: ICC Incoterms 2020 (ICC Academy) dan UPS (Incoterms 2020).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
-   "tiktok_title": "",
-   "catatan": ""
-  },
   {
    "id": "2026-11-18-1200-feed-manual",
    "tanggal": "2026-11-18",
@@ -648,6 +594,25 @@
    "caption": "HP rusak, ganti HP baru. Data usaha kamu ikut pindah, atau mulai dari nol lagi? 📱\n\nDi Ghostrip, data tersimpan di akun:\n1. Login di HP baru dengan akun yang sama (Android, iPhone lewat browser, atau laptop)\n2. Kop surat, tanda tangan, dan cap sudah terpasang\n3. Data truk lengkap dengan masa berlaku STNK dan KIR\n4. Riwayat hitungan lama tinggal dicari\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Ganti HP, tinggal login. Kop, TTD, data truk, riwayat: semua kembali",
    "catatan": "Pemeriksa dengar Gemini lolos (kemiripan 1,0). Audio dibersihkan adeclick (4 klik → 0). cek_konten & scan AMAN."
+  },
+  {
+   "id": "2026-11-29-1130-reel-cerita",
+   "tanggal": "2026-11-29",
+   "jam": "11:30",
+   "jenis": "reel",
+   "platform": [
+    "ig",
+    "tiktok",
+    "fb"
+   ],
+   "judul": "Cerita A naskah 21 Nov: jam kerja admin ekspedisi yang sebenarnya (06.00 ban bocor, 09.00 harga 3 rute, 13.00 invoice sambil makan, 17.00 besok bisa muat?, 22.00 masih balas chat); ditutup soft selling hitung harga, penawaran & invoice di satu aplikasi",
+   "media": [
+    "media/2026-11-29/reel-cerita.mp4"
+   ],
+   "cover": "media/2026-11-29/reel-cerita-cover.jpg",
+   "caption": "Jam kerja: 08.00–17.00. Kenyataannya? 😅\n\n06.00 sopir kabari ban bocor. 09.00 customer minta harga 3 rute sekaligus. 13.00 makan siang sambil bikin invoice. 17.00 mau pulang, \"Pak, besok pagi bisa muat?\" 22.00 masih balas chat.\n\nTag admin yang paling berjasa di kantor kamu 👇\n\nBiar urusan hitung harga, surat penawaran, dan invoice nggak makan waktu, Ghostrip bisa bantu dari HP.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Jam kerja admin ekspedisi: 08.00–17.00. Kenyataannya?",
+   "catatan": "Pemeriksa dengar Gemini lolos (kemiripan 1,0). cek_konten & scan AMAN."
   },
   {
    "id": "2026-11-29-1200-feed-manual",

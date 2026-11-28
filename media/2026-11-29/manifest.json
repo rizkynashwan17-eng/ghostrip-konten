@@ -5,5 +5,14 @@
   "media": "media/2026-11-29/feed-logistik-ed.jpg",
   "gaya": "editorial",
   "warna": "teal"
+ },
+ {
+  "slot": "reel-cerita",
+  "kind": "reel",
+  "media": "media/2026-11-29/reel-cerita.mp4",
+  "cover": "media/2026-11-29/reel-cerita-cover.jpg",
+  "dur": 25.4,
+  "engine": "remotion",
+  "bersuara": true
  }
 ]
