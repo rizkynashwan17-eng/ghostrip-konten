@@ -1,0 +1,104 @@
+{
+ "date": "2026-11-29",
+ "posts": [
+  {
+   "slot": "reel-cerita",
+   "kind": "reel",
+   "engine": "remotion",
+   "gaya": "cerita",
+   "tema": "realita",
+   "time": "11:30",
+   "seri": "CERITA",
+   "judul": "JAM KERJA: 08.00–17.00. KENYATAANNYA:",
+   "part": 1,
+   "lokasi": "SATU HARI · KANTOR EKSPEDISI",
+   "voice_id": "2026-11-29-reel-cerita",
+   "topic": "Cerita A naskah 21 Nov: jam kerja admin ekspedisi yang sebenarnya (06.00 ban bocor, 09.00 harga 3 rute, 13.00 invoice sambil makan, 17.00 besok bisa muat?, 22.00 masih balas chat); ditutup soft selling hitung harga, penawaran & invoice di satu aplikasi",
+   "scenes": [
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "cemas",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Admin ekspedisi pasti *relate*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Pak Yanto · Sopir",
+     "status": "06.00",
+     "pesan": [
+      {
+       "teks": "Bu, ban bocor di tol. Gimana ini?"
+      }
+     ],
+     "narasi": "Jam enam pagi, sopir telepon: *ban bocor*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Customer · PT Maju Jaya Logistik",
+     "status": "09.00",
+     "pesan": [
+      {
+       "teks": "Bu, minta harga 3 rute sekaligus ya. Ditunggu."
+      }
+     ],
+     "narasi": "Jam sembilan, customer minta harga *tiga rute* sekaligus."
+    },
+    {
+     "type": "dokumen",
+     "judulKartu": "INVOICE",
+     "nomor": "13.00",
+     "baris": [
+      [
+       "Customer",
+       "PT Maju Jaya"
+      ],
+      [
+       "Rute",
+       "Contoh"
+      ],
+      [
+       "Status",
+       "Belum jadi"
+      ]
+     ],
+     "cap": "SIMULASI",
+     "narasi": "Jam satu siang, makan siang sambil bikin *invoice*."
+    },
+    {
+     "type": "chat",
+     "kontak": "Customer · PT Maju Jaya Logistik",
+     "status": "17.00",
+     "pesan": [
+      {
+       "teks": "Pak, besok pagi bisa muat?"
+      }
+     ],
+     "narasi": "Jam lima, mau pulang. Customer: *besok pagi bisa muat?*"
+    },
+    {
+     "type": "karakter",
+     "siapa": "admin",
+     "pose": "telepon",
+     "set": "kantor",
+     "x": 320,
+     "y": 860,
+     "hadap": 1,
+     "narasi": "Jam sepuluh malam, *masih balas chat* customer."
+    },
+    {
+     "type": "cta",
+     "tagline": "Hitung harga, penawaran & invoice di satu aplikasi",
+     "pil": "GHOSTRIP",
+     "ajakan": "Tag admin paling berjasa di kantormu",
+     "narasi": "Biar urusan harga dan invoice lebih cepat, ada *Ghostrip*. *Tag admin* yang paling berjasa di kantor Anda."
+    }
+   ],
+   "caption": "Jam kerja: 08.00–17.00. Kenyataannya? 😅\n\n06.00 sopir kabari ban bocor. 09.00 customer minta harga 3 rute sekaligus. 13.00 makan siang sambil bikin invoice. 17.00 mau pulang, \"Pak, besok pagi bisa muat?\" 22.00 masih balas chat.\n\nTag admin yang paling berjasa di kantor kamu 👇\n\nBiar urusan hitung harga, surat penawaran, dan invoice nggak makan waktu, Ghostrip bisa bantu dari HP.\n\nCerita fiksi. Nama tokoh rekaan.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Jam kerja admin ekspedisi: 08.00–17.00. Kenyataannya?"
+  }
+ ]
+}
