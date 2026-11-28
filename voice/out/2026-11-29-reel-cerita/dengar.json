@@ -1,0 +1,21 @@
+{
+ "sig": [
+  [
+   25.85
+  ],
+  1
+ ],
+ "lolos": true,
+ "belum_dicek": false,
+ "lines": [
+  {
+   "naskah": "Admin ekspedisi pasti relate.\nJam enam pagi, sopir telepon: ban bocor.\nJam sembilan, customer minta harga tiga rute sekaligus.\nJam satu siang, makan siang sambil bikin invoice.\nJam lima, mau pulang. Customer: besok pagi bisa muat?\nJam sepuluh malam, masih balas chat customer.\nBiar urusan harga dan invoice lebih cepat, ada Ghostrip. Tag admin yang paling berjasa di kantor Anda.",
+   "transkrip": "Admin ekspedisi pasti relate. Jam enam pagi, sopir telepon, ban bocor. Jam sembilan, customer minta harga tiga rute sekaligus. Jam satu siang, makan siang sambil bikin invoice. Jam lima, mau pulang, customer, besok pagi bisa muat. Jam sepuluh malam, masih balas chat customer. Biar urusan harga dan invoice lebih cepat, ada Ghostrip. Tag admin yang paling berjasa di kantor Anda.",
+   "kemiripan": 1.0,
+   "rusak": false,
+   "alasan": "",
+   "lolos": true,
+   "model": "gemini-flash-latest"
+  }
+ ]
+}
