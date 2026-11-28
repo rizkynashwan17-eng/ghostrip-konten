@@ -1,5 +1,5 @@
 {
- "diperbarui": "2026-11-27T12:20+07:00",
+ "diperbarui": "2026-11-28T12:10+07:00",
  "posts": [
   {
    "id": "2026-11-17-1130-reel-cerita",
@@ -648,6 +648,41 @@
    "caption": "HP rusak, ganti HP baru. Data usaha kamu ikut pindah, atau mulai dari nol lagi? 📱\n\nDi Ghostrip, data tersimpan di akun:\n1. Login di HP baru dengan akun yang sama (Android, iPhone lewat browser, atau laptop)\n2. Kop surat, tanda tangan, dan cap sudah terpasang\n3. Data truk lengkap dengan masa berlaku STNK dan KIR\n4. Riwayat hitungan lama tinggal dicari\n\nKunjungi ghostrip.id. Contoh tampilan memakai data simulasi.\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
    "tiktok_title": "Ganti HP, tinggal login. Kop, TTD, data truk, riwayat: semua kembali",
    "catatan": "Pemeriksa dengar Gemini lolos (kemiripan 1,0). Audio dibersihkan adeclick (4 klik → 0). cek_konten & scan AMAN."
+  },
+  {
+   "id": "2026-11-29-1200-feed-manual",
+   "tanggal": "2026-11-29",
+   "jam": "12:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Feed manual (buatan Rizky)",
+   "media": [],
+   "manual": true,
+   "cover": null,
+   "caption": "",
+   "tiktok_title": "",
+   "catatan": "Unggah gambar buatanmu di sini. Caption: kirim gambarnya ke Claude di chat dengan kata \"caption\"."
+  },
+  {
+   "id": "2026-11-29-1700-feed-logistik",
+   "tanggal": "2026-11-29",
+   "jam": "17:00",
+   "jenis": "feed",
+   "platform": [
+    "ig",
+    "fb"
+   ],
+   "judul": "Barang ringan,\nongkos berat?",
+   "media": [
+    "media/2026-11-29/feed-logistik-ed.jpg"
+   ],
+   "cover": null,
+   "caption": "Kardusnya cuma 8 kg, kok ditagih 20 kg? 📦\n\nDi kargo udara, yang ditagih adalah chargeable weight: berat timbang atau berat volume, mana yang lebih besar. Barang ringan tapi makan tempat tetap dihitung dari ruangnya.\n\nCara hitung berat volume yang umum dipakai: panjang × lebar × tinggi (cm) dibagi 6.000.\nContoh simulasi: kardus 60 × 50 × 40 cm = 120.000 ÷ 6.000 = 20 kg. Berat timbangnya 8 kg, jadi yang ditagih 20 kg.\n\nPembagi bisa berbeda antar jasa dan moda, jadi cek ketentuan vendor sebelum kasih harga ke customer. Untuk hitung harga trip truk dan surat penawarannya, Ghostrip bisa bantu.\n\nPernah kaget lihat tagihan berat volume? Cerita di komentar 👇\n\nSumber: DHL Global Forwarding (Calculating chargeable weights), Maersk (Air cargo chargeable weight, Mar 2025).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Barang ringan, ongkos berat? Kenalan dengan berat volume",
+   "catatan": ""
   }
  ]
 }

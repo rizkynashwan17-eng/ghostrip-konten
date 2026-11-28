@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-29",
+ "posts": [
+  {
+   "slot": "feed-logistik",
+   "kind": "feed",
+   "time": "17:00",
+   "tema": "logistik",
+   "gaya": "editorial",
+   "scene": {
+    "layout": "alur",
+    "kicker": "DUNIA LOGISTIK",
+    "pill": "KARGO UDARA",
+    "title": "Barang ringan,\nongkos *berat*?",
+    "title_size": 100,
+    "sub": "Kargo udara ditagih dari berat timbang atau berat volume, mana yang lebih besar.",
+    "kartu": "CARA HITUNG",
+    "items": [
+     "Ukur panjang × lebar × tinggi (cm)",
+     "Bagi 6.000 = berat volume (kg)",
+     "Bandingkan dengan berat timbang",
+     "Yang lebih besar yang ditagih"
+    ],
+    "doc": {
+     "judul": "CONTOH HITUNG",
+     "sub": "Contoh simulasi",
+     "rows": [
+      "Kardus 60 × 50 × 40 cm",
+      "Berat volume 20 kg",
+      "Timbang 8 kg → ditagih 20 kg"
+     ]
+    },
+    "note": "Pembagi 6.000 umum di kargo udara.\nJasa lain bisa memakai pembagi berbeda."
+   },
+   "caption": "Kardusnya cuma 8 kg, kok ditagih 20 kg? 📦\n\nDi kargo udara, yang ditagih adalah chargeable weight: berat timbang atau berat volume, mana yang lebih besar. Barang ringan tapi makan tempat tetap dihitung dari ruangnya.\n\nCara hitung berat volume yang umum dipakai: panjang × lebar × tinggi (cm) dibagi 6.000.\nContoh simulasi: kardus 60 × 50 × 40 cm = 120.000 ÷ 6.000 = 20 kg. Berat timbangnya 8 kg, jadi yang ditagih 20 kg.\n\nPembagi bisa berbeda antar jasa dan moda, jadi cek ketentuan vendor sebelum kasih harga ke customer. Untuk hitung harga trip truk dan surat penawarannya, Ghostrip bisa bantu.\n\nPernah kaget lihat tagihan berat volume? Cerita di komentar 👇\n\nSumber: DHL Global Forwarding (Calculating chargeable weights), Maersk (Air cargo chargeable weight, Mar 2025).\n\n🚛 Mau urusan logistik lebih praktis?\n\nCoba Ghostrip gratis selama 7 hari!\n\n📲 WhatsApp: 0815-1704-7930\n🌐 ghostrip.id\n\n#Ghostrip #LogistikIndonesia #Transportasi #BisnisLogistik #AplikasiLogistik",
+   "tiktok_title": "Barang ringan, ongkos berat? Kenalan dengan berat volume"
+  }
+ ]
+}
